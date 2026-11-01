@@ -15,7 +15,7 @@ nothing to show.
 
 ## What Easy Job adds
 
-![The Floor: three Projects at their Benches, the Boss in the aisle, and a Conversation open beside it](docs/readme/floor.png)
+![The Floor in the Cozy Office theme: teams at their Benches, one agent raising a hand, and its chat open beside it with the question to answer](docs/readme/floor.png)
 
 - Each Orcha workspace is a team at a Bench; each agent sits at a Desk.
 - A raised hand means an agent has a question. Click it, read the question, answer from the page.
@@ -24,6 +24,10 @@ nothing to show.
   (it asks first).
 
 It runs only on your machine: 127.0.0.1, a token per run, no account, no telemetry.
+
+Two looks: Cozy Office, above, and Compound, below. Calm mode stills the motion and sound in either.
+
+![The same office in the Compound theme](docs/readme/compound.png)
 
 ## Install
 
