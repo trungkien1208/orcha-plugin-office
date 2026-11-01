@@ -1,0 +1,34 @@
+# The released plugin. CI copies this file and fetch.sh to the `plugin` branch with the version filled in, so
+# `orcha plugin install trungkien1208/orcha-plugin-office --ref plugin` fetches two small files, not the repo.
+# The dev manifest (one folder up) runs `easy-job` from PATH instead.
+id = "easy-job"
+name = "Easy Job"
+version = "0.1.2"
+min_herdr_version = "0.9.0"
+description = "A pixel-art office for your agents: chat with them, watch them work, switch accounts"
+platforms = ["macos", "linux"]
+
+# Downloads the prebuilt binary for this machine from the matching GitHub release and checks its sha256.
+[[build]]
+command = ["sh", "fetch.sh"]
+
+[[actions]]
+id = "open"
+title = "Open Easy Job"
+command = ["bin/easy-job", "open", "--via-orcha"]
+
+[[actions]]
+id = "status"
+title = "Easy Job status"
+command = ["bin/easy-job", "status"]
+
+[[actions]]
+id = "stop"
+title = "Stop Easy Job"
+command = ["bin/easy-job", "stop"]
+
+[[panes]]
+id = "server"
+title = "Easy Job"
+placement = "tab"
+command = ["bin/easy-job", "serve", "--no-open"]
