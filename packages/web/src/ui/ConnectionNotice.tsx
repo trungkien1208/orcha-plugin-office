@@ -33,7 +33,8 @@ export function ConnectionNotice() {
     const timer = setTimeout(() => setToast(false), 2000);
     return () => clearTimeout(timer);
   }, [toast]);
-  if (snap.tokenMissing) return null;
+  // During Easy Job's own update the bridge restarts on purpose; the update notice explains it.
+  if (snap.tokenMissing || snap.updateFlow.phase === "updating") return null;
   const warning = snap.office?.orcha.protocolWarning;
   const delay = Math.max(0, Math.ceil(((snap.reconnectAt ?? now + 3000) - now) / 1000));
   if (snap.socket === "closed")

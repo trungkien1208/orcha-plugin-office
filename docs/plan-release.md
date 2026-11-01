@@ -40,8 +40,8 @@ curl -fsSL https://raw.githubusercontent.com/trungkien1208/orcha/HEAD/install.sh
 Add Easy Job, a pixel-art office for your agents? (y/N)
 ```
 
-- Yes: Orcha runs `orcha plugin install trungkien1208/orcha-plugin-office --ref plugin --yes`. `prefix E` or
-  `orcha office` opens it.
+- Yes: Orcha runs `orcha plugin install trungkien1208/orcha-plugin-office --ref plugin --yes`. `orcha office`
+  opens it. There is no default key (plugins can't declare one); the README shows an opt-in `[[keys.command]]`.
 - No: never asked again. `orcha office install` adds it later, `orcha office remove` takes it out.
 
 Updates never happen without a click:

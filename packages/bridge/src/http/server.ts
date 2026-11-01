@@ -4,6 +4,8 @@ import { handoffReady } from "../handoff.ts";
 import { mapAccounts, supports } from "../orcha/v24.ts";
 import { flushModels } from "../model-queue.ts";
 import { flushSwitches } from "../switch.ts";
+import { watchUpdates } from "../updates.ts";
+import { APP_VERSION } from "../version.ts";
 import { terminalConversation } from "../conversation/terminal.ts";
 import { watchTranscript, type TranscriptWatch } from "../conversation/watch.ts";
 import { allowedHost, allowedOrigin, bearer, websocketToken } from "./guard.ts";
@@ -63,8 +65,12 @@ export function startServer(input: {
   const bridgeId = input.bridgeId ?? crypto.randomUUID();
   let version = 0;
   const accountRoots = input.accountRoots ?? defaultAccountRoots();
-  const deps: RouteDeps = { link: input.link, activity: input.activity, home: input.home, accountRoots };
   const sockets = new Set<OfficeSocket>();
+  const updates = watchUpdates(input.link, (update) => {
+    const message = JSON.stringify({ type: "update", update } satisfies ServerMessage);
+    for (const socket of sockets) socket.send(message);
+  });
+  const deps: RouteDeps = { link: input.link, activity: input.activity, home: input.home, accountRoots, updates };
   const retryMs = input.transcriptRetryMs ?? 2_000;
   const giveUpMs = input.transcriptGiveUpMs ?? 60_000;
   const terminalPollMs = input.terminalPollMs ?? 2_000;
@@ -131,6 +137,7 @@ export function startServer(input: {
   }, (state) => {
     state.capabilities = capabilities();
     stampAccounts(state.agents, knownAccounts);
+    updates.check();
     syncSessions(state);
     void flushModels(input.link, state.agents, input.activity);
     void flushSwitches({ link: input.link, agents: state.agents, roots: accountRoots, activity: input.activity });
@@ -151,8 +158,9 @@ export function startServer(input: {
               return;
             }
             sockets.add(socket);
-            socket.send(JSON.stringify({ type: "hello", bridgeId, serverTime: Date.now(), version } satisfies ServerMessage));
+            socket.send(JSON.stringify({ type: "hello", bridgeId, serverTime: Date.now(), version, app: APP_VERSION } satisfies ServerMessage));
             socket.send(JSON.stringify({ type: "state", version, state: input.link.state() } satisfies ServerMessage));
+            socket.send(JSON.stringify({ type: "update", update: updates.current() } satisfies ServerMessage));
           },
           message(socket, raw) {
             onMessage(socket, raw);
@@ -365,6 +373,7 @@ export function startServer(input: {
       stopLinkListener();
       clearInterval(accountTimer);
       stopAccounts?.();
+      updates.stop();
       clearInterval(heartbeat);
       if (timer) clearTimeout(timer);
       for (const tail of tails.values()) {

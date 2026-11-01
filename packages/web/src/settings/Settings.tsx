@@ -1,7 +1,7 @@
 import { useState } from "react";
 import type { ReactNode } from "react";
 import { HURRY } from "../floor/actions.ts";
-import { askNotifications, go, setCalm, setMuted, setTheme, unlockSound, type SettingsSection } from "../store.ts";
+import { askNotifications, beginUpdate, checkForUpdate, go, setCalm, setMuted, setTheme, unlockSound, type SettingsSection } from "../store.ts";
 import { useOffice } from "../useOffice.ts";
 import { AccountsPanel } from "../ui/AccountsSettings.tsx";
 import "./settings.css";
@@ -100,11 +100,48 @@ function Boss() {
   );
 }
 
+function UpdateRow() {
+  const snap = useOffice();
+  const [checking, setChecking] = useState(false);
+  const [error, setError] = useState("");
+  const update = snap.update;
+  const updating = snap.updateFlow.phase === "updating";
+  const status = !update?.available || !update.latest || update.latest === update.running
+    ? "Up to date"
+    : update.compatible
+      ? `Easy Job ${update.latest} is out`
+      : `Easy Job ${update.latest} needs a newer Orcha; run orcha update`;
+  return (
+    <span className="settings-update">
+      <span>{updating ? "Updating…" : error || status}</span>
+      {update?.available && update.compatible && update.latest !== update.running && !updating ? (
+        <button type="button" className="btn" onClick={() => void beginUpdate()}>Update</button>
+      ) : null}
+      <button
+        type="button"
+        className="btn"
+        disabled={checking || updating}
+        title="Orcha asks GitHub now; it also checks once a day by itself"
+        onClick={() => {
+          setChecking(true);
+          setError("");
+          void checkForUpdate()
+            .catch((reason: unknown) => setError(reason instanceof Error ? reason.message : "Check failed"))
+            .finally(() => setChecking(false));
+        }}
+      >
+        {checking ? "Checking…" : "Check now"}
+      </button>
+    </span>
+  );
+}
+
 function Connection() {
   const snap = useOffice();
   const orcha = snap.office?.orcha;
   const caps = snap.office?.capabilities;
   const facts: Array<[string, ReactNode]> = [
+    ["Easy Job version", snap.app ?? "—"],
     ["Browser ↔ bridge", snap.socket === "open" ? "Connected" : "Reconnecting…"],
     ["Bridge ↔ Orcha", orcha?.connected ? "Connected" : "Orcha isn't running"],
     ["Orcha version", orcha?.version ?? "—"],
@@ -113,6 +150,8 @@ function Connection() {
     ["Account API", caps?.accountApi ? "Available" : "Not in this Orcha"],
     ["Hand off", caps?.handoff ? "Available" : "handoff.py not installed"],
   ];
+  // Only an Orcha with the plugin update API gets this row; an older one shows nothing about updates.
+  if (snap.update?.supported) facts.splice(1, 0, ["Updates", <UpdateRow key="updates" />]);
   return (
     <div className="settings-stack">
       {orcha?.protocolWarning ? <p className="settings-note">{orcha.protocolWarning}</p> : null}

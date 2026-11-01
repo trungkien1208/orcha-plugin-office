@@ -339,6 +339,7 @@ describe("link", () => {
     const snapshots = () => fake.calls.filter((call) => call.method === "session.snapshot").length;
     try {
       await waitFor(() => link.state().orcha.connected, "connected");
+      await waitFor(() => fake.statusSubscribers() > 0, "status subscription");
       const before = snapshots();
       expect(before).toBeGreaterThan(0);
       for (let i = 0; i < 4; i += 1) fake.pushStatus("w1:p1", i % 2 === 0 ? "working" : "idle");
@@ -406,5 +407,80 @@ describe("local state and activity", () => {
     const action = log.append({ kind: "action", text: "x".repeat(400), paneId: "w1:p1" });
     expect(action.text).toHaveLength(200);
     expect(log.recent(10)[0]?.text).toHaveLength(200);
+  });
+});
+
+describe("plugin updates on the sync link", () => {
+  /** A protocol 23+ Orcha on one multiplexed connection, with Orcha 0.11's plugin update events. */
+  function syncOrcha(caps: { methods: string[]; events: string[]; features: string[] }) {
+    const subscriptions: Sub[][] = [];
+    let pushEvent: (event: string, data: unknown) => void = () => {};
+    const connect = async (): Promise<Conn> => {
+      const conn = new MockConn();
+      void (async () => {
+        for (;;) {
+          const message = (await conn.fromClient.pull()) as { id: string; method: string; params?: { subscriptions?: Sub[] } } | null;
+          if (!message) return;
+          if (message.method === "server.capabilities") {
+            conn.deliver({ id: message.id, result: { type: "server_capabilities", protocol: 24, ...caps } });
+            conn.close();
+            return;
+          }
+          if (message.method === "server.multiplex") conn.deliver({ id: message.id, result: { type: "ok" } });
+          else if (message.method === "events.subscribe") {
+            const subs = message.params?.subscriptions ?? [];
+            subscriptions.push(subs);
+            if (subs.some((item) => item.type === "plugin.updates_changed")) {
+              pushEvent = (event, data) => conn.deliver({ id: message.id, event, data });
+            }
+            conn.deliver({ id: message.id, result: { type: "subscription_started" } });
+          } else if (message.method === "session.snapshot") {
+            conn.deliver({ id: message.id, result: { type: "session_snapshot", snapshot: { ...tinySnapshot(), session_version: 1, session_epoch: "e1" } } });
+          } else conn.deliver({ id: message.id, result: {} });
+        }
+      })();
+      return conn;
+    };
+    return { connect, subscriptions, push: (event: string, data: unknown) => pushEvent(event, data) };
+  }
+
+  const SYNC = {
+    methods: ["server.multiplex", "plugin.updates", "plugin.update"],
+    events: ["session.changed"],
+    features: ["events.subscribe.agent_status_all_panes", "session.snapshot.since", "plugin.updates"],
+  };
+
+  test("plugin.updates_changed joins the pane subscription and reaches listeners", async () => {
+    const orcha = syncOrcha({ ...SYNC, events: [...SYNC.events, "plugin.updates_changed"] });
+    const office = tempOffice();
+    const link = startLink({ connect: orcha.connect, socketPath: "mock", local: office.local, activity: office.activity, backoffStartMs: 0 });
+    const seen: unknown[][] = [];
+    link.onPluginUpdates?.((plugins) => seen.push(plugins));
+    try {
+      await waitFor(() => orcha.subscriptions.length === 2, "subscriptions");
+      expect(orcha.subscriptions[1]?.map((item) => item.type)).toEqual([
+        "pane.agent_status_changed",
+        "pane.agent_model_changed",
+        "plugin.updates_changed",
+      ]);
+      await waitFor(() => link.state().orcha.connected, "connected");
+      orcha.push("plugin_updates_changed", { type: "plugin_updates_changed", plugins: [{ id: "easy-job", latest_version: "0.2.0" }] });
+      await waitFor(() => seen.length === 1, "plugin update event");
+      expect(seen[0]).toEqual([{ id: "easy-job", latest_version: "0.2.0" }]);
+    } finally {
+      link.stop();
+    }
+  });
+
+  test("an Orcha without the event is not asked for it", async () => {
+    const orcha = syncOrcha(SYNC);
+    const office = tempOffice();
+    const link = startLink({ connect: orcha.connect, socketPath: "mock", local: office.local, activity: office.activity, backoffStartMs: 0 });
+    try {
+      await waitFor(() => orcha.subscriptions.length === 2, "subscriptions");
+      expect(orcha.subscriptions.flat().some((item) => item.type === "plugin.updates_changed")).toBe(false);
+    } finally {
+      link.stop();
+    }
   });
 });

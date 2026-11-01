@@ -7,3 +7,4 @@ export * from "./orcha.ts";
 export * from "./question.ts";
 export * from "./skins.ts";
 export * from "./sound.ts";
+export * from "./updates.ts";

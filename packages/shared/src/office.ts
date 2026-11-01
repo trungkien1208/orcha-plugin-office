@@ -1,6 +1,7 @@
 import type { AccountInfo, Capabilities } from "./accounts.ts";
 import type { AgentSessionInfo, OrchaStatus } from "./orcha.ts";
 import { fallbackCatalog, type SkinCatalog } from "./skins.ts";
+import type { AppUpdate } from "./updates.ts";
 
 /** Office status. `blocked` is shown as Needs me. `done` is a finish the Observer has not Seen. */
 export type Status = OrchaStatus;
@@ -185,12 +186,13 @@ export type ConversationItem = {
 };
 
 export type ServerMessage =
-  | { type: "hello"; bridgeId: string; serverTime: number; version: number }
+  | { type: "hello"; bridgeId: string; serverTime: number; version: number; /** Easy Job version of this bridge. */ app?: string }
   | { type: "state"; version: number; state: OfficeState }
   | { type: "ping"; at: number }
   | { type: "activity"; entry: ActivityEntry }
   | { type: "conversation"; paneId: string; items: ConversationItem[]; reset?: boolean; terminal?: boolean }
   | { type: "accounts"; accounts: AccountInfo[] }
+  | { type: "update"; update: AppUpdate }
   | { type: "error"; message: string };
 
 export type ClientMessage =

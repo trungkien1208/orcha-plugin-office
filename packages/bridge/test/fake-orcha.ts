@@ -4,10 +4,24 @@ import net from "node:net";
 
 export type FakeCall = { method: string; params: unknown };
 
+/**
+ * Easy Job's own update as Orcha 0.11 would report it. "none" is an older Orcha (no `server.capabilities`);
+ * "restart" answers `plugin.update` with nothing and calls `onUpdate`, like Orcha restarting the plugin pane.
+ */
+export type FakeUpdates = {
+  mode: "none" | "current" | "available" | "incompatible" | "fail" | "restart";
+  installed: string;
+  latest: string;
+  onUpdate?: () => void;
+};
+
 export type FakeOrcha = {
   socketPath: string;
   calls: FakeCall[];
   snapshot: SessionSnapshot;
+  updates: FakeUpdates;
+  /** Open status subscriptions; push only once there is one. */
+  statusSubscribers(): number;
   /** Push a status event to the status subscription only. Does not change the snapshot. */
   pushStatus(paneId: string, agentStatus: string): void;
   close(): Promise<void>;
@@ -17,6 +31,7 @@ type RequestLine = { id?: string; method?: string; params?: Record<string, unkno
 
 export function startFakeOrcha(input: { socketPath: string; snapshot: SessionSnapshot; pingProtocol?: number }): Promise<FakeOrcha> {
   const calls: FakeCall[] = [];
+  const updates: FakeUpdates = { mode: "none", installed: "0.1.0", latest: "0.2.0" };
   const snapshot = structuredClone(input.snapshot);
   const subscribers = new Set<net.Socket>();
   const statusSockets = new Set<net.Socket>();
@@ -41,6 +56,13 @@ export function startFakeOrcha(input: { socketPath: string; snapshot: SessionSna
       const method = request.method ?? "";
       const params = request.params ?? {};
       if (method !== "events.subscribe") calls.push({ method, params });
+      const updateReply = pluginReply(request.id ?? "", method, updates);
+      if (updateReply !== undefined) {
+        if (updateReply) write(socket, updateReply);
+        else updates.onUpdate?.();
+        socket.end();
+        return;
+      }
       write(socket, reply(request.id ?? "", method, params, snapshot, input.pingProtocol));
       if (method === "events.subscribe") {
         const subs = Array.isArray(params.subscriptions) ? (params.subscriptions as Array<{ type?: string }>) : [];
@@ -66,6 +88,8 @@ export function startFakeOrcha(input: { socketPath: string; snapshot: SessionSna
         socketPath: input.socketPath,
         calls,
         snapshot,
+        updates,
+        statusSubscribers: () => statusSockets.size,
         pushStatus(paneId, agentStatus) {
           const line = { event: "pane.agent_status_changed", data: { pane_id: paneId, agent_status: agentStatus } };
           for (const socket of statusSockets) write(socket, line);
@@ -80,6 +104,44 @@ export function startFakeOrcha(input: { socketPath: string; snapshot: SessionSna
       });
     });
   });
+}
+
+/** Replies for the plugin update methods; null means "no answer" (restarting), undefined means not ours. */
+function pluginReply(id: string, method: string, updates: FakeUpdates): unknown | null | undefined {
+  if (updates.mode === "none") return undefined;
+  if (method === "server.capabilities") {
+    return { id, result: { type: "server_capabilities", protocol: 24, methods: ["plugin.updates", "plugin.update"], events: [], features: ["plugin.updates"] } };
+  }
+  if (method === "plugin.updates") {
+    const available = updates.mode !== "current";
+    const row = {
+      id: "easy-job",
+      current_version: updates.installed,
+      latest_version: available ? updates.latest : updates.installed,
+      update_available: available,
+      compatible: updates.mode !== "incompatible",
+      ...(updates.mode === "incompatible" ? { needs_herdr_version: "0.9.9" } : {}),
+      source: "trungkien1208/orcha-plugin-office",
+      ref: "plugin",
+    };
+    return { id, result: { type: "plugin_updates", plugins: [row] } };
+  }
+  if (method === "plugin.update") {
+    if (updates.mode === "fail") {
+      const log = [
+        "+ sh fetch.sh",
+        `curl: (22) The requested URL returned error: 404 Not Found`,
+        `  https://github.com/trungkien1208/orcha-plugin-office/releases/download/v${updates.latest}/easy-job-darwin-arm64.tar.gz`,
+        "build command exited with status 22",
+      ].join("\n");
+      return { id, error: { code: "plugin_update_failed", message: log } };
+    }
+    if (updates.mode === "incompatible") return { id, error: { code: "plugin_requires_newer_herdr", message: "needs herdr 0.9.9" } };
+    if (updates.mode === "restart") return null;
+    updates.installed = updates.latest;
+    return { id, result: { type: "plugin_updated", id: "easy-job", version: updates.latest } };
+  }
+  return undefined;
 }
 
 function write(socket: net.Socket, body: unknown) {

@@ -32,6 +32,9 @@ import type { StructuredQuestion } from "@easy-job/shared";
 import { locateTranscript, readTranscript, type TranscriptQuery } from "../conversation/load.ts";
 import { terminalConversation } from "../conversation/terminal.ts";
 import type { OfficeLink } from "../orcha/link.ts";
+import { OrchaError } from "../orcha/client.ts";
+import type { UpdateWatch } from "../updates.ts";
+import type { UpdateFailure } from "@easy-job/shared";
 import { listSkills } from "../skills.ts";
 import type { ActivityLog } from "../state/activity.ts";
 import { saveUpload, uploadFile } from "../uploads.ts";
@@ -65,7 +68,22 @@ export type RouteDeps = {
   home?: string;
   /** Orcha config, fuel cache, and home. Tests pass a temp folder. */
   accountRoots?: AccountRoots;
+  /** Easy Job's own update (Orcha 0.11's plugin manager). Missing in tests that don't need it. */
+  updates?: UpdateWatch;
 };
+
+/** Orcha's `plugin.update` refusals, as the web shows them. The build log tail stays verbatim for copying. */
+function updateFailure(error: OrchaError): Response {
+  const body: UpdateFailure =
+    error.code === "plugin_update_failed"
+      ? { error: "The update failed while building Easy Job", code: error.code, log: error.message }
+      : error.code === "plugin_requires_newer_herdr"
+        ? { error: "This Easy Job needs a newer Orcha; run `orcha update`", code: error.code }
+        : error.code === "plugin_not_found"
+          ? { error: "Orcha doesn't have Easy Job installed as a plugin", code: error.code }
+          : { error: error.message || "The update failed", code: error.code };
+  return json(body, error.code === "plugin_update_failed" ? 502 : 409);
+}
 
 function json(body: unknown, status = 200): Response {
   return new Response(JSON.stringify(body), {
@@ -144,6 +162,23 @@ export async function handleApi(req: Request, deps: RouteDeps): Promise<Response
   const path = url.pathname;
   try {
     if (req.method === "GET" && path === "/api/state") return json(deps.link.state());
+    if (path === "/api/update" && req.method === "GET") {
+      if (!deps.updates) return json({ error: "Not found" }, 404);
+      return json(deps.updates.current());
+    }
+    if (path === "/api/update/check" && req.method === "POST") {
+      if (!deps.updates) return json({ error: "Not found" }, 404);
+      return json(await deps.updates.refresh());
+    }
+    if (path === "/api/update/apply" && req.method === "POST") {
+      if (!deps.updates) return json({ error: "Not found" }, 404);
+      try {
+        return json(await deps.updates.apply());
+      } catch (error) {
+        if (error instanceof OrchaError && error.code.startsWith("plugin_")) return updateFailure(error);
+        throw error;
+      }
+    }
     if (req.method === "GET" && path === "/api/activity") {
       const before = Number(url.searchParams.get("before") ?? "");
       return json(deps.activity.recent(100, Number.isFinite(before) && before > 0 ? before : undefined));

@@ -1,4 +1,4 @@
-import { demoSnapshot, startFakeOrcha } from "../test/fake-orcha.ts";
+import { demoSnapshot, startFakeOrcha, type FakeUpdates } from "../test/fake-orcha.ts";
 import type { SessionSnapshot } from "@easy-job/shared";
 import fs from "node:fs";
 import os from "node:os";
@@ -13,10 +13,13 @@ const urlFile = path.resolve(import.meta.dir, "../../../.dev-fake.url");
 const controlFile = path.resolve(import.meta.dir, "../../../.dev-fake.control");
 fs.rmSync(urlFile, { force: true });
 
+// The version the fake bridge claims, so the update flow can be watched end to end (see POST /update below).
+let bridgeVersion = "";
+
 function spawnBridge() {
   return Bun.spawn(
     ["bun", path.resolve(import.meta.dir, "main.ts"), "--no-open", "--socket", socketPath, "--port", "4599"],
-    { stdout: "pipe", stderr: "inherit", env: { ...process.env, EASY_JOB_HOME: home } },
+    { stdout: "pipe", stderr: "inherit", env: { ...process.env, EASY_JOB_HOME: home, ...(bridgeVersion ? { EASY_JOB_DEV_VERSION: bridgeVersion } : {}) } },
   );
 }
 
@@ -57,6 +60,27 @@ const control = Bun.serve({
       const body = (await req.json()) as { paneId?: string; status?: string };
       if (body.paneId && body.status) fake.pushStatus(body.paneId, body.status);
       return Response.json({ ok: true });
+    }
+    // { mode } picks the plugin update scenario (FakeUpdates). "restart" restarts the bridge as the new version.
+    if (req.method === "POST" && pathname === "/update") {
+      const body = (await req.json()) as { mode?: FakeUpdates["mode"]; latest?: string };
+      if (body.mode) fake.updates.mode = body.mode;
+      if (body.latest) fake.updates.latest = body.latest;
+      fake.updates.onUpdate = () => {
+        void (async () => {
+          await new Promise((resolve) => setTimeout(resolve, 300));
+          child.kill("SIGTERM");
+          await child.exited;
+          await new Promise((resolve) => setTimeout(resolve, 1500));
+          fake.updates.installed = fake.updates.latest;
+          fake.updates.mode = "current";
+          bridgeVersion = fake.updates.latest;
+          child = spawnBridge();
+          url = await readUrl(child);
+          publish();
+        })();
+      };
+      return Response.json({ ok: true, updates: { ...fake.updates, onUpdate: undefined } });
     }
     if (req.method === "POST" && pathname === "/stop") {
       child.kill("SIGTERM");

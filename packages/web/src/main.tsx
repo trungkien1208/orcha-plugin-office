@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { ConnectionNotice } from "./ui/ConnectionNotice.tsx";
+import { UpdateNotice } from "./ui/UpdateNotice.tsx";
 import { AccountHost } from "./ui/Accounts.tsx";
 import { HandoffHost } from "./ui/Handoff.tsx";
 import { CreatedAgentSelection } from "./ui/CreatedAgent.tsx";
@@ -29,6 +30,7 @@ createRoot(document.getElementById("root") as HTMLElement).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
       <ConnectionNotice />
+      <UpdateNotice />
       <AccountHost />
       <HandoffHost />
       <CreatedAgentSelection />

@@ -69,6 +69,8 @@ export type OfficeLink = {
   capabilities?(): Capabilities | null;
   /** Raw `accounts.changed` payloads (protocol 24). Returns the unsubscribe function. */
   onAccounts?(listener: (accounts: unknown[]) => void): () => void;
+  /** Raw `plugin.updates_changed` plugin rows (Orcha 0.11). Returns the unsubscribe function. */
+  onPluginUpdates?(listener: (plugins: unknown[]) => void): () => void;
 };
 
 type SnapshotResult = { type?: string; snapshot?: SessionSnapshot };
@@ -103,6 +105,7 @@ export function startLink(opts: LinkOptions): OfficeLink {
   // Protocol 23: one multiplexed connection carries requests, status and session deltas.
   let mux: Mux | null = null;
   const accountListeners = new Set<(accounts: unknown[]) => void>();
+  const pluginUpdateListeners = new Set<(plugins: unknown[]) => void>();
   let caps: Capabilities | null = null;
   let syncCatchUp: (() => void) | null = null;
   // Kept across reconnects so a new connection asks only for what changed while it was down.
@@ -500,8 +503,16 @@ export function startLink(opts: LinkOptions): OfficeLink {
       if (!synced) early.push(event);
       else handle(event);
     });
-    await link.subscribe([{ type: "pane.agent_status_changed" }, { type: "pane.agent_model_changed" }], (line) => {
+    // Easy Job's own update notices ride on the same subscription when this Orcha has them.
+    const paneEvents: Array<{ type: string }> = [{ type: "pane.agent_status_changed" }, { type: "pane.agent_model_changed" }];
+    if (caps?.events?.includes("plugin.updates_changed")) paneEvents.push({ type: "plugin.updates_changed" });
+    await link.subscribe(paneEvents, (line) => {
       touch();
+      const data = line.data as { type?: string; plugins?: unknown[] } | undefined;
+      if (data?.type === "plugin_updates_changed" || line.event === "plugin.updates_changed" || line.event === "plugin_updates_changed") {
+        if (Array.isArray(data?.plugins)) for (const listener of pluginUpdateListeners) listener(data.plugins);
+        return;
+      }
       if (line.error) return catchUp();
       if (!synced) return;
       if (line.event === "pane.agent_status_changed") patchStatus(line);
@@ -603,6 +614,10 @@ export function startLink(opts: LinkOptions): OfficeLink {
     onAccounts(listener) {
       accountListeners.add(listener);
       return () => accountListeners.delete(listener);
+    },
+    onPluginUpdates(listener) {
+      pluginUpdateListeners.add(listener);
+      return () => pluginUpdateListeners.delete(listener);
     },
     request: (method, params, timeoutMs) => (mux ? mux.request(method, params, timeoutMs) : client.request(method, params, timeoutMs)),
     reemit() {

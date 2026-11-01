@@ -47,16 +47,38 @@ The office comes in two themes, Cozy Office and Compound.
 
 ### With Orcha
 
-Orcha offers Easy Job when you install or update it. Say yes, then press `prefix E` or run `orcha office`. To add it
-later:
+Orcha offers Easy Job when you install or update it. Say yes, then run `orcha office` (or pick Open Easy Job in
+Orcha's command palette). To add it later:
 
 ```bash
-orcha plugin install trungkien1208/orcha-plugin-office --ref plugin
+orcha office install
+# same as: orcha plugin install trungkien1208/orcha-plugin-office --ref plugin --yes
 ```
 
 You do not need Bun for this. The plugin downloads the prebuilt `easy-job` for your machine (macOS arm64 or x64,
-Linux x64 or arm64) from the matching release and checks its sha256. When a new Easy Job is out, Orcha tells you;
-click Update there or run `orcha plugin update easy-job`.
+Linux x64 or arm64) from the matching release and checks its sha256.
+
+Plugins can't bring their own shortcut. To open Easy Job with a key, add one to Orcha's `config.toml`
+(`prefix+e` is taken by the scrollback editor):
+
+```toml
+[[keys.command]]
+key = "prefix+shift+e"
+type = "plugin_action"
+command = "easy-job.open"
+description = "open Easy Job"
+```
+
+#### Updates
+
+Orcha checks for a new Easy Job once a day; Easy Job itself never goes online. When one is out, the office shows
+"Easy Job X is out · Update". Click Update and Orcha downloads and checks the new build, restarts the Easy Job
+server, and the page reconnects and reloads on the new version. Nothing updates without that click. Settings →
+Connection has "Check now" to ask right away. If the new version needs a newer Orcha, the notice says so: run
+`orcha update` first. If the build fails, the notice shows the build log with a Copy button.
+
+From a terminal: `orcha office update` (or `orcha plugin update easy-job`). An older Orcha (before 0.11) shows no
+update notice; update Easy Job from the terminal there.
 
 If you don't have Orcha yet:
 

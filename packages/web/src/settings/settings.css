@@ -38,3 +38,4 @@
 .settings-account-name small { color: var(--ink-3); font-size: 11.5px; }
 .settings-account p { margin: 0; font-size: 12px; }
 @media (max-width: 720px) { .settings-card { flex-direction: column; } .settings-nav { width: auto; flex-direction: row; overflow-x: auto; border-right: 0; border-bottom: 1px solid var(--line); padding: 8px; } .settings-nav h1, .settings-nav small { display: none; } .settings-body { padding: 14px; } }
+.settings-update { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }

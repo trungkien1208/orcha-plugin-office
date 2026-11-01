@@ -1,3 +1,5 @@
+import * as flowOf from "./update-flow.ts";
+import type { AppUpdate, UpdateApplied, UpdateFailure } from "@easy-job/shared";
 import { allowSound, type ActivityEntry, type ClientMessage, type ConversationItem, type OfficeState, type ServerMessage, type Status, type StructuredQuestion } from "@easy-job/shared";
 import { pushAccounts } from "./queries.ts";
 import type { AccountInfo } from "./api-accounts.ts";
@@ -28,6 +30,13 @@ export type AppSnap = {
   theme: Theme;
   /** Calm mode: no flicker, shake, fire or gags; needs-you is a quiet dot. */
   calm: boolean;
+  /** Easy Job's own update as Orcha reports it; `supported: false` hides every update UI. */
+  update: AppUpdate | null;
+  /** Easy Job version of the bridge serving this page, from its hello. */
+  app: string | null;
+  updateFlow: flowOf.UpdateFlow;
+  /** The version whose notice the Owner dismissed (remembered in this browser). */
+  updateDismissed: string | null;
 };
 
 export type Theme = "compound" | "office";
@@ -57,6 +66,31 @@ function storedFlag(key: string, oldKey: string): boolean {
   return old === "1";
 }
 
+const FLOW_KEY = "easy-job-update-flow";
+const DISMISS_KEY = "easy-job-update-dismissed";
+
+function readStored(storage: Storage, key: string): string | null {
+  try {
+    return storage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+function writeStored(storage: Storage, key: string, value: string | null) {
+  try {
+    if (value == null) storage.removeItem(key);
+    else storage.setItem(key, value);
+  } catch {
+    /* private window or blocked storage: the notice just comes back */
+  }
+}
+/** "Updating…" survives a reload; "done" is shown once after the reload onto the new build. */
+function loadFlow(): flowOf.UpdateFlow {
+  const flow = flowOf.restore(readStored(sessionStorage, FLOW_KEY), Date.now());
+  if (flow.phase === "done") writeStored(sessionStorage, FLOW_KEY, null);
+  return flow;
+}
+
 type Listener = () => void;
 const listeners = new Set<Listener>();
 let snap: AppSnap = {
@@ -77,6 +111,10 @@ let snap: AppSnap = {
   pending: null,
   theme: storedTheme(),
   calm: storedFlag("easy-job-calm", "easy-job-calm"),
+  update: null,
+  app: null,
+  updateFlow: loadFlow(),
+  updateDismissed: readStored(localStorage, DISMISS_KEY),
 };
 applyLook(snap.theme, snap.calm);
 let prevCounts = { needsMe: 0, done: 0 };
@@ -122,6 +160,63 @@ function emit() {
 function patch(partial: Partial<AppSnap>) {
   snap = { ...snap, ...partial };
   emit();
+}
+
+function setFlow(updateFlow: flowOf.UpdateFlow) {
+  if (updateFlow === snap.updateFlow) return;
+  writeStored(sessionStorage, FLOW_KEY, updateFlow.phase === "updating" ? JSON.stringify(updateFlow) : null);
+  patch({ updateFlow });
+  if (updateFlow.phase === "done") {
+    // The restarted bridge serves the new build; reload onto it and say so once there.
+    writeStored(sessionStorage, FLOW_KEY, JSON.stringify(updateFlow));
+    window.setTimeout(() => location.reload(), 600);
+  }
+}
+
+/** The Owner clicked Update: the click is the consent. Orcha restarts our bridge, so the answer may never come. */
+export async function beginUpdate() {
+  if (!snap.update || snap.updateFlow.phase === "updating") return;
+  const started = flowOf.startUpdate(snap.update, Date.now());
+  if (started.phase !== "updating") return;
+  setFlow(started);
+  const auth = token();
+  let response: Response;
+  try {
+    response = await fetch("/api/update/apply", { method: "POST", headers: auth ? { authorization: `Bearer ${auth}` } : {} });
+  } catch {
+    return; // The bridge went down mid-call: that is the restart. The reconnect confirms the version.
+  }
+  const body = (await response.json().catch(() => null)) as UpdateApplied | UpdateFailure | null;
+  if (response.ok && body && "outcome" in body) setFlow(flowOf.applied(snap.updateFlow, body, Date.now()));
+  else if (body && "error" in body) setFlow(flowOf.failed(snap.updateFlow, body));
+  else if (response.status >= 500 && !body) return; // A dying bridge can answer with nothing.
+  else setFlow(flowOf.failed(snap.updateFlow, { error: `The update failed (${response.status})`, code: "http" }));
+}
+
+/** "Check now": Orcha asks GitHub. Only from a click. */
+export async function checkForUpdate(): Promise<AppUpdate> {
+  const update = await api<AppUpdate>("/api/update/check", { method: "POST" });
+  patch({ update });
+  return update;
+}
+
+export function dismissUpdate() {
+  const notice = flowOf.noticeFor(snap.update, snap.updateFlow, snap.updateDismissed, Date.now());
+  if (notice?.kind === "offer" || notice?.kind === "incompatible") {
+    writeStored(localStorage, DISMISS_KEY, notice.version);
+    patch({ updateDismissed: notice.version });
+    return;
+  }
+  setFlow(flowOf.IDLE);
+}
+
+if (typeof window !== "undefined") {
+  window.setInterval(() => {
+    if (snap.updateFlow.phase !== "updating") return;
+    setFlow(flowOf.tick(snap.updateFlow, Date.now(), snap.socket === "open"));
+    // Re-render so "Updating…" can turn into its slow hint.
+    emit();
+  }, 2000);
 }
 
 export function getSnap(): AppSnap {
@@ -313,9 +408,12 @@ function connect() {
     heard();
     const incoming = JSON.parse(String(event.data)) as ServerMessage|{type:"accounts";accounts:AccountInfo[]};
     if(incoming.type==="accounts"){pushAccounts(incoming.accounts);return;}
+    if(incoming.type==="update"){patch({update:incoming.update});return;}
     const message=incoming;
     if (message.type === "hello") {
       clockOffset = message.serverTime - Date.now();
+      patch({ app: message.app ?? null });
+      setFlow(flowOf.hello(snap.updateFlow, message.app, !!bridgeId && bridgeId !== message.bridgeId));
       if (bridgeId && bridgeId !== message.bridgeId) {
         seenVersion = -1;
         patch({ conversations: {}, activity: [] });
