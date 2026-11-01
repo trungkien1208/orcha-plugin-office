@@ -11,7 +11,7 @@ needs no special installer for it.
 
 | | Orcha | Easy Job |
 |---|---|---|
-| Repo | `trungkien1208/orcha` (public, Apache-2.0, herdr fork) | `trungkien1208/orcha-plugin-office` (private now, public at launch) |
+| Repo | `trungkien1208/orcha` (public, Apache-2.0, herdr fork) | `trungkien1208/orcha-plugin-office` (public snapshots, Apache-2.0); work happens in the private `orcha-plugin-office-dev` and reaches it through `scripts/publish-public.ts` |
 | Tag | `orcha-X.Y.Z` (exists) | `vX.Y.Z` (version in `package.json`) |
 | Release | packages per platform (exists) | `easy-job-<platform>.tar.gz` for darwin-arm64/x64, linux-x64/arm64, and `SHA256SUMS` |
 | Install | `install.sh` / `install.ps1` (exists) | `orcha plugin install trungkien1208/orcha-plugin-office --ref plugin` |

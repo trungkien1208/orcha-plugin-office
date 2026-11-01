@@ -4,7 +4,7 @@ export type AgentState = "working" | "blocked" | "done" | "idle";
 export type Theme = "office" | "compound";
 
 /** Public repository; leave empty to hide the GitHub link. */
-export const REPO_URL = "";
+export const REPO_URL = "https://github.com/trungkien1208/orcha-plugin-office";
 export const ORCHA_URL = "https://github.com/trungkien1208/orcha";
 export const BUN_URL = "https://bun.sh/";
 export const DOCS_URL = "./README.md";

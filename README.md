@@ -2,6 +2,8 @@
 
 # easy job · The Agent office
 
+Try the sample office in your browser at [trungkien1208.github.io/orcha-plugin-office](https://trungkien1208.github.io/orcha-plugin-office/).
+
 Easy Job shows what [Orcha](https://github.com/trungkien1208/orcha) is running as a pixel-art office. Each Orcha
 workspace is a Bench and each Agent sits at a Desk. You walk the Floor as the Boss and answer whoever raised a hand.
 
@@ -126,7 +128,10 @@ manual and not part of `check`.
 
 ### Releasing
 
-Bump `version` in `package.json` and push a tag `vX.Y.Z`. CI checks the tag against the version, builds every
+Day-to-day work happens in a private repo with the full history; this public repo receives clean snapshots.
+`bun scripts/publish-public.ts --ref origin/main` exports the ref, leaves out review screenshots, refuses to go on
+if a file still names something private, and pushes one commit here. Then bump `version` in `package.json` and
+push a tag `vX.Y.Z` here. CI checks the tag against the version, builds every
 platform with `bun run release`, publishes the GitHub release with `SHA256SUMS`, and rewrites the `plugin` branch
 that Orcha installs from. `bun run release --only darwin-arm64` builds one platform locally. The full plan is in
 `docs/plan-release.md`.

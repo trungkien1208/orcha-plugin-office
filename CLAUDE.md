@@ -56,7 +56,9 @@ Small batches (3–5 tasks) with a review between them work better than long lis
 
 ## Branches
 
-`build/orcha-office` is the working branch; `main` is the PR base. Agent branches (`be/*`, `ui/*`) merge into
+`build/orcha-office` is the working branch; `main` is the PR base. `origin` is the private `orcha-plugin-office-dev`
+(full history); the public `orcha-plugin-office` only gets clean snapshots from `scripts/publish-public.ts`, whose
+denylist (`scripts/publish-denylist.txt`, never published) blocks real project names and paths. Agent branches (`be/*`, `ui/*`) merge into
 `build/orcha-office` after review. Commit or push only when the Owner asks; never push from an agent worktree.
 
 ## Done means
