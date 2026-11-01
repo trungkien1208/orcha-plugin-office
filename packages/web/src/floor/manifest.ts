@@ -1,3 +1,4 @@
+import { officeAssetUrl } from "./asset-url";
 export type CharacterArt = { sheet?: string; polo?: string; portrait?: string; portraitPolo?: string };
 export type Manifest = {
   characters?: { frame?: { width?: number; height?: number; columns?: number; rows?: number; foot?: number }; bossRows?: number; cast?: string[]; boss?: CharacterArt;
@@ -23,17 +24,23 @@ function paths(value: unknown): string[] {
   if (value && typeof value === "object") return Object.values(value).flatMap(paths);
   return [];
 }
-export function loadArt(url = "/office/manifest.json"): Promise<ArtBank> {
+export function loadArt(url = officeAssetUrl("office/manifest.json")): Promise<ArtBank> {
   const existing = cache.get(url); if (existing) return existing;
   const loading = (async () => {
     let manifest: Manifest = {};
     try { const response = await fetch(url); if (response.ok) manifest = await response.json() as Manifest; } catch { /* per-key placeholders remain */ }
     const images = new Map<string, HTMLImageElement>(), missing: string[] = [];
-    await Promise.all([...new Set(paths(manifest))].map((path) => new Promise<void>((resolve) => {
-      const target = new URL(path.startsWith("/") ? path : `/${path}`, window.location.origin);
+    const pendingPaths = [...new Set(paths(manifest))];
+    const loadImage = (path: string) => new Promise<void>((resolve) => {
+      const artRoot = new URL("../", new URL(url, document.baseURI));
+      const target = new URL(path.replace(/^\/+/, ""), artRoot);
       if (target.origin !== window.location.origin) { missing.push(path); resolve(); return; }
       const img = new Image(); img.onload = () => { images.set(path, img); resolve(); }; img.onerror = () => { missing.push(path); resolve(); }; img.src = target.href;
-    })));
+    });
+    // Bound requests so the standalone demo also works on simple static servers.
+    await Promise.all(Array.from({ length: 8 }, async () => {
+      for (let path = pendingPaths.shift(); path; path = pendingPaths.shift()) await loadImage(path);
+    }));
     return { manifest, images, missing };
   })(); cache.set(url, loading); return loading;
 }

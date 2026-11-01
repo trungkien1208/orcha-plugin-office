@@ -21,7 +21,9 @@ project live in `home/Launch.tsx`. Prefer a library to hand-rolled UI plumbing: 
 `@floating-ui/react-dom` (`ui/usePopoverPosition.ts`), the Files tree is `@headless-tree` (rows rendered by us),
 outcomes of actions are `sonner` toasts (`toast.success/error`; context that belongs to a dialog stays inline).
 Icons come from
-`ui/Icon.tsx` (pixel sheets by name from `layout.iconsUi*.order`, text glyph fallback). Styles: `theme.css`
+`ui/Icon.tsx` (native pixel icons by semantic name, backed by `floor/PixelIcon.tsx`).
+The Floor action menu uses the same mint/peach/lavender family without importing the app shell.
+`node tools/office-art/pixel-icons.cjs` regenerates the manifest-backed sheet, TypeScript index and light/dark preview gallery. Styles: `theme.css`
 (tokens and components) and `looks.css` (theme decoration, Cozy Office palette, calm mode). UI copy is English.
 
 ## Floor (`src/floor/`)

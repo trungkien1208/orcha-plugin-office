@@ -186,3 +186,27 @@ Verification: standalone build and TypeScript pass; `bun run check` passes with 
 - Added `@fontsource/source-serif-4` and bundled just Latin 700 normal (masthead/headline) and Latin 400 italic (signature) through `landing/main.tsx`. Replaced Georgia with Source Serif 4; body copy remains IBM Plex Sans.
 - Intentional visual difference: newspaper and signature glyph shapes/line breaks now use a consistent locally served serif across machines. No CDN or runtime external font request.
 - Landing build and targeted Biome checks pass. Final browser verification follows item 5.
+
+## Claude review follow-up · 3 · themed colours and readable text
+
+- Replaced all CSS `rgb()`/`rgba()` literals with the existing paper/surface/ink/line/desk/accent/sage tokens and explicit theme pairs for missing status, metal, shadow, board-label and fallback-door material roles. Removed near-duplicate fixed browns from Conversation, staff pass, captions and controls. There are no colour literals in component rules outside token definitions.
+- Raised all CSS text sizes, including font shorthands and punch timestamps, to at least 11px. The 8px Project tag drawn inside the pixel-art vignette remains decoration. Phone navigation now uses named, titled icon controls with hidden label spans rather than 0px text; the short visible guide link keeps the full accessible name.
+- Intentional differences: Compound now gets properly themed Conversation/staff-pass/reception surfaces and ink, status colours and metal/material details. Small labels and captions are larger; paper buttons use consistent theme colours. The actual 3D door geometry/art and native Floor are preserved.
+- Landing build passes. CSS and changed markup: zero Biome errors/warnings. Browser checks at 390/1024/1440/2560 show no document overflow and no visible HTML text below 11px. Final matrix follows item 5.
+
+## Claude review follow-up · 4 · office-aligned paperwork
+
+- `.pitch` now uses `width: var(--office-width)` at every breakpoint. Removed the separate phone width and redundant phone image-rendering declaration. Kept the existing ResizeObserver because its measured office content width is now consumed by the pitch.
+- Intentional difference: the newspaper, board and time-card area follows the office's viewport-height-dependent width, including wide/short screens, rather than a separate 1320px cap.
+- Gave the page grid an explicit shrinkable column so a previously measured desktop pitch cannot hold the office wider than the viewport during a phone resize.
+- Added a layout assertion comparing the pitch width against the observer's office-width value throughout the viewport/DPR matrix. CSS/script Biome checks pass with zero warnings.
+
+## Claude review follow-up · 5 · mount-time vignette stills and verification
+
+- Every vignette now decodes its native art and draws frame zero on mount, regardless of visibility. IntersectionObserver, hidden-tab state, Calm and reduced motion still gate RAF; scrolling out of view redraws a stable still. The offscreen HR pair is centred so the ended Agent and both bouncers are visible in whole-page captures.
+- Added ready/theme metadata to distinguish a freshly painted scene from stale art during a theme change. Activity checks compare all five offscreen canvas images before scrolling and require real painted sprites, not merely the baseline. Capture checks require frame zero, no active RAF, current-theme art and painted pixels before `fullPage: true` screenshots.
+- Refreshed reception, office, pitch and Calm details at 390×844 and 1440×900 in both themes, plus eight new full-page captures (two sizes × two themes × normal/Calm). The full-page images are taken from scroll position zero before visiting any vignette. Review links are in `docs/review/landing-revamp.md`.
+- Intentional differences: offscreen scenes are populated immediately; the HR exit starts from a readable centred still. The pitch and font/colour/text-size changes described in items 2–4 are visible throughout the refreshed screenshots. The reception door, staff pass, playable Floor and Projects/Conversation column remain.
+- Verification **passes**: `bun run check` (TypeScript, Biome, 155 tests / 0 failures), `bun scripts/build-landing.ts`, `node scripts/check-landing-layout.mjs` (all 16 viewport/DPR cases, both themes, alignment and 11px text assertions), and `node scripts/check-landing-activity.mjs` (local serif faces, all five mount-time/offscreen and Calm stills, visibility pause, native movement/collision, Answer/Seen, clipboard punch/fallback and door retry). Refreshed captures via `node scripts/capture-landing-revamp.mjs 390 1440`; visually inspected desktop/phone full pages and both palettes. Landing-specific Biome checks: zero errors and warnings. Full record: `docs/review/landing-revamp-verification.txt`. No source art or approval hashes were changed; no push.
+
+- Final integration: `build/orcha-office` advanced during review and already included items 1–2 plus its old-HTML/Pages cleanup. Rebased the remaining three item commits onto `ebaa6ed`; no conflicts. Verified all landing product/test sources are identical to the browser-tested version, then re-ran `bun run check` and `build-landing` successfully. Restored all unrelated starting text/source changes and 96 older review artifacts; the existing Pages file is now tracked by the base with identical bytes. Temporary preservation stashes were restored and removed.

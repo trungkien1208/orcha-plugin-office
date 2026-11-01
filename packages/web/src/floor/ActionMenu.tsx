@@ -1,40 +1,10 @@
-import { useEffect, useState } from "react";
+import { PixelIcon } from "./PixelIcon.tsx";
+import { useState } from "react";
 import { ACTION_LABELS, FUN_ACTIONS, WORK_ACTIONS, availableActions } from "./actions.ts";
 import type { BossAction, NearAgent } from "./contract.ts";
-import { loadArt } from "./manifest.ts";
 
-/** One 20 px icon per action in ui/act-icons.png, found by name in layout.actIcons.order; emoji until the sheet loads. */
-const SHEET = "/office/ui/act-icons.png";
-const ICONS: Record<BossAction | "more", { names: string[]; emoji: string }> = {
-  tap: { names: ["tap"], emoji: "💬" },
-  knock: { names: ["knock"], emoji: "✊" },
-  whip: { names: ["hurry", "whip"], emoji: "⏩" },
-  bonk: { names: ["stop", "bonk"], emoji: "✋" },
-  megaphone: { names: ["megaphone"], emoji: "📣" },
-  buzzer: { names: ["buzzer"], emoji: "🔴" },
-  zap: { names: ["zap"], emoji: "⚡" },
-  coffee: { names: ["coffee"], emoji: "☕" },
-  "high-five": { names: ["high-five"], emoji: "🙌" },
-  more: { names: ["gags"], emoji: "🎉" },
-};
+
 const HINTS: Partial<Record<BossAction, string>> = { tap: "Open chat", knock: "Nudge: back to work", whip: "Faster! (asks it to hurry up)", bonk: "Stop (interrupt)", megaphone: "Message the whole team" };
-
-let sheetOrder: string[] | null | undefined;
-/** The icon order once the sheet and manifest have loaded, else null. */
-function useSheet(): string[] | null {
-  const [order, setOrder] = useState<string[] | null>(sheetOrder ?? null);
-  useEffect(() => {
-    if (sheetOrder !== undefined) return;
-    sheetOrder = null;
-    void loadArt().then((bank) => {
-      const list = (bank.manifest.layout as { actIcons?: { order?: string[] } } | undefined)?.actIcons?.order;
-      if (!list || !bank.images.has("office/ui/act-icons.png")) return;
-      sheetOrder = list;
-      setOrder(list);
-    });
-  }, []);
-  return order;
-}
 
 const STATUS: Record<string, string> = { blocked: "needs you", working: "working", done: "done", idle: "idle", unknown: "unknown" };
 
@@ -52,7 +22,6 @@ export function ActionMenu({ near, connected, calm, perform, close }: {
   const [text, setText] = useState("");
   const [message, setMessage] = useState("");
   const [busy, setBusy] = useState(false);
-  const sheet = useSheet();
   const allowed = availableActions(near.status, connected);
   const run = async (kind: BossAction, payload?: Record<string, string>) => {
     const work = (WORK_ACTIONS as readonly string[]).includes(kind);
@@ -62,8 +31,7 @@ export function ActionMenu({ near, connected, calm, perform, close }: {
     if (work) setBusy(false);
   };
   const icon = (kind: BossAction | "more") => {
-    const { names, emoji } = ICONS[kind], index = sheet ? Math.max(...names.map((name) => sheet.indexOf(name))) : -1;
-    return index >= 0 ? <i className="ej-act-icon" style={{ backgroundImage: `url(${SHEET})`, backgroundPosition: `-${index * 20}px 0` }} /> : <span className="ej-act-emoji">{emoji}</span>;
+    return <PixelIcon name={`action-${kind}`} />;
   };
   const button = (kind: BossAction, work: boolean) => {
     const label = HINTS[kind] ?? ACTION_LABELS[kind];
@@ -106,7 +74,7 @@ export function ActionMenu({ near, connected, calm, perform, close }: {
               <button type="button" className={fun ? "ej-act on" : "ej-act"} aria-label={fun ? "Hide fun actions" : "Fun actions (local only)"} aria-expanded={fun}
                 onMouseEnter={() => setHover(fun ? "Hide fun actions" : "Fun actions (local only)")} onMouseLeave={() => setHover("")}
                 onClick={() => setFun((value) => !value)}>
-                {fun ? <span className="ej-act-emoji">×</span> : icon("more")}
+                {fun ? <PixelIcon name="close" /> : icon("more")}
               </button>
             </>
           )}

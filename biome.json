@@ -1,7 +1,7 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.6.4/schema.json",
   "files": {
-    "includes": ["packages/**", "scripts/**", "!**/fixtures/**", "!**/dist/**", "!**/node_modules/**"]
+    "includes": ["packages/**", "scripts/**", "!**/fixtures/**", "!**/landing/kit/**", "!**/dist/**", "!**/node_modules/**"]
   },
   "formatter": { "enabled": false },
   "linter": {

@@ -4,10 +4,8 @@ import type { Worker } from "./FloorScene.ts";
 import type { Layout } from "./layout.ts";
 import type { Room } from "./Room.ts";
 import { STATUS_COLOR } from "./Room.ts";
-export function statusFrame(status: string, time: number, reduced: boolean): number {
-  const phase = reduced ? 0 : Math.floor(time/320)%2;
-  return status === "working" ? 16+(reduced ? 0 : Math.floor(time/160)%4) : status === "blocked" ? 20+phase : status === "done" ? 22+phase : status === "idle" ? 24+phase : 26;
-}
+import { statusFrame } from "./status-frame.ts";
+export { statusFrame } from "./status-frame.ts";
 export class Statuses {
   private marks = new Map<string, { name: string; image: Phaser.GameObjects.Image }>();
   private ink: Phaser.GameObjects.Graphics;

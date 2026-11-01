@@ -1,88 +1,48 @@
-/** Sample office for the public landing. Nothing here talks to Orcha or the bridge. */
+/** Copy and links for the public landing. Nothing here talks to Orcha or the bridge. */
 
-export type AgentState = "working" | "blocked" | "done" | "idle";
 export type Theme = "office" | "compound";
 
-/** Public repository; leave empty to hide the GitHub link. */
+/** Public repository. */
 export const REPO_URL = "https://github.com/trungkien1208/orcha-plugin-office";
 export const ORCHA_URL = "https://github.com/trungkien1208/orcha";
 export const BUN_URL = "https://bun.sh/";
-export const DOCS_URL = "./README.md";
 
-export const INSTALL_COMMANDS = "bun install\nbun run install-local\neasy-job";
+/** What a visitor runs: get Orcha, then add Easy Job through it. */
+export const INSTALL_STEPS = [
+  { cmd: "curl -fsSL https://raw.githubusercontent.com/trungkien1208/orcha/HEAD/install.sh | sh", note: "get Orcha" },
+  { cmd: "orcha office install", note: "add Easy Job" },
+  { cmd: "orcha office", note: "open the office" },
+];
+export const INSTALL_COMMANDS = INSTALL_STEPS.map((step) => step.cmd).join("\n");
 
-export const STATE_LABEL: Record<AgentState, string> = {
-  working: "Working",
-  blocked: "Needs you",
-  done: "Done",
-  idle: "On a break",
-};
-
-export const PROJECTS = [
-  { name: "Website", color: "#c77550" },
-  { name: "API", color: "#70a597" },
-  { name: "Desktop", color: "#9282a7" },
+/** The cast that walks across the title screen, each in a Project colour. */
+export const PARADE: { skin: string; color: string }[] = [
+  { skin: "headset", color: "#e0552f" },
+  { skin: "robot", color: "#8fb08a" },
+  { skin: "tabby", color: "#f0c24b" },
+  { skin: "red-cap", color: "#c9b8a0" },
+  { skin: "shiba", color: "#e0552f" },
+  { skin: "crt-bot", color: "#8fb08a" },
+  { skin: "curly", color: "#f0c24b" },
+  { skin: "capybara", color: "#c9b8a0" },
+  { skin: "specs", color: "#e0552f" },
+  { skin: "raccoon", color: "#8fb08a" },
+  { skin: "bun", color: "#f0c24b" },
+  { skin: "black-cat", color: "#c9b8a0" },
 ];
 
-/** Four Agents per Project, in Bench order. */
-export const AGENTS_PER_PROJECT = 4;
-export const CAST = [
-  "headset",
-  "red-cap",
-  "robot",
-  "tabby",
-  "bun",
-  "shiba",
-  "crt-bot",
-  "curly",
-  "specs",
-  "capybara",
-  "raccoon",
-  "black-cat",
-];
-export const NAMES = ["Patch", "Pixel", "Bits", "Tabby", "Loop", "Bean", "Byte", "Syntax", "Root", "Mochi", "Echo", "Mint"];
-export const INITIAL_STATES: AgentState[] = [
-  "working",
-  "blocked",
-  "working",
-  "idle",
-  "working",
-  "done",
-  "idle",
-  "working",
-  "done",
-  "idle",
-  "working",
-  "idle",
+/** The Boss's moves on the Floor. Work moves reach the Agent; gags never leave the browser. */
+export const MOVES: { icon: string; name: string; does: string; kind: "work" | "gag" }[] = [
+  { icon: "action-knock", name: "Knock", does: "Nudge an idle Agent with a short Prompt.", kind: "work" },
+  { icon: "action-megaphone", name: "Megaphone", does: "Broadcast one Prompt to every Agent of a Project.", kind: "work" },
+  { icon: "action-whip", name: "Whip crack", does: "A polite “hurry up”.", kind: "work" },
+  { icon: "action-bonk", name: "Bonk", does: "Stop an Agent. Always asks first.", kind: "work" },
+  { icon: "action-coffee", name: "Coffee", does: "Just a coffee. Nothing is sent.", kind: "gag" },
+  { icon: "action-high-five", name: "High five", does: "Morale only. Nothing is sent.", kind: "gag" },
 ];
 
-export const SAMPLE_MESSAGE: Record<AgentState, string> = {
-  blocked: "The changes are ready. Can I run the full test suite?",
-  done: "All done. The tests passed and the changes are ready for you to review.",
-  working: "Working through the changes. I'll give you a shout when I'm done.",
-  idle: "I'm all caught up. Ready for the next task whenever you are.",
-};
-
-export const projectOf = (agent: number) => Math.floor(agent / AGENTS_PER_PROJECT);
-export const benchOf = (project: number) =>
-  Array.from({ length: AGENTS_PER_PROJECT }, (_, offset) => project * AGENTS_PER_PROJECT + offset);
-
-type Point = { icon: string; title: string; body: string };
-
-export const HOUSE_RULES: Point[] = [
-  {
-    icon: "privacy",
-    title: "Everything stays on this machine",
-    body: "Easy Job listens on 127.0.0.1 with a per-run token. No account, no telemetry.",
-  },
-  {
-    icon: "stop",
-    title: "Stopping work always asks first",
-    body: "Removing an Agent or closing a Project always asks for confirmation.",
-  },
-  {
-    icon: "moon",
-    title: "Calm mode stills the Floor",
-    body: "Switch Calm on to pause motion, gags and sound.",
-  },
+export const WARNINGS: { title: string; body: string }[] = [
+  { title: "Local only", body: "127.0.0.1, no account, no telemetry." },
+  { title: "Stopping work asks first", body: "Always." },
+  { title: "Gags stay here", body: "Coffee and high fives never reach an Agent." },
 ];

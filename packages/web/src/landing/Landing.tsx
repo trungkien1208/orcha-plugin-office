@@ -1,61 +1,48 @@
-import { useEffect, useRef, useState } from "react";
-import type { Theme } from "./data";
-import { InstallDialog } from "./Install";
-import { Office } from "./Office";
-import { Pitch } from "./Pitch";
-import { Reception } from "./Reception";
-import { useEntrance } from "./useEntrance";
+import { useEffect, useState } from "react";
+import { Intro } from "./Intro";
+import { Manual } from "./Manual";
 
-/** Reception first, then the office with the pitch below it. `#office` skips reception. */
+const SKIP_HASH = "#play";
+
+/** Title screen first, then the manual. `#play` (or any section link) skips the title screen. */
 export function Landing() {
-  const [theme, setTheme] = useState<Theme>("office");
+  // Follows the system "reduce motion" setting; there is no switch on the page.
   const [calm, setCalm] = useState(() => matchMedia("(prefers-reduced-motion: reduce)").matches);
-  const [installing, setInstalling] = useState(false);
-  const pitch = useRef<HTMLElement>(null);
-  const entrance = useEntrance(calm);
-  const atReception = !entrance.entered || entrance.phase === "revealing";
-  const world = useRef<HTMLDivElement>(null);
-
-  // The office width depends on the viewport height too; the pitch lines up with whatever it ends up as.
   useEffect(() => {
-    const root = world.current;
-    const office = root?.querySelector(".workplace");
-    if (!root || !office) return;
-    const observer = new ResizeObserver(([entry]) => {
-      if (entry) root.style.setProperty("--office-width", `${entry.contentBoxSize[0]?.inlineSize ?? 0}px`);
-    });
-    observer.observe(office);
-    return () => observer.disconnect();
+    const media = matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setCalm(media.matches);
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
   }, []);
+  const [atTitle, setAtTitle] = useState(() => !location.hash);
+  // The product demo is hidden under the title screen: build it once the entrance has settled
+  // (or straight away when the title is skipped), so its load work never competes with the animation.
+  const [demo, setDemo] = useState(() => !!location.hash);
+  useEffect(() => {
+    if (demo) return;
+    const id = setTimeout(() => {
+      if ("requestIdleCallback" in window) requestIdleCallback(() => setDemo(true), { timeout: 800 });
+      else setDemo(true);
+    }, 2400);
+    return () => clearTimeout(id);
+  }, [demo]);
+
+  function start() {
+    setDemo(true);
+    setAtTitle(false);
+    if (!location.hash) history.replaceState(null, "", SKIP_HASH);
+    scrollTo(0, 0);
+  }
+
+  function title() {
+    history.replaceState(null, "", location.pathname + location.search);
+    setAtTitle(true);
+  }
 
   return (
-    <div ref={world} className="landing-world" data-theme={theme} data-calm={calm ? "true" : "false"}>
-      <Office
-        entered={entrance.entered}
-        nativeReady={entrance.nativeReady}
-        inert={atReception}
-        theme={theme}
-        calm={calm}
-        onTheme={setTheme}
-        onCalm={setCalm}
-        onLeave={entrance.leave}
-        onInstall={() => setInstalling(true)}
-        onAbout={() => pitch.current?.scrollIntoView({ behavior: calm ? "auto" : "smooth" })}
-      />
-      <Pitch ref={pitch} inert={atReception} calm={calm} theme={theme} />
-      {atReception && (
-        <Reception
-          phase={entrance.phase}
-          opening={entrance.opening}
-          progress={entrance.progress}
-          loadError={entrance.loadError}
-          flight={entrance.flight}
-          door={entrance.door}
-          calm={calm}
-          onEnter={() => void entrance.enter()}
-        />
-      )}
-      <InstallDialog open={installing} onClose={() => setInstalling(false)} />
+    <div className="landing" data-calm={calm ? "true" : "false"}>
+      <Manual calm={calm} inert={atTitle} demo={demo} onTitle={title} />
+      {atTitle && <Intro calm={calm} onStart={start} />}
     </div>
   );
 }
