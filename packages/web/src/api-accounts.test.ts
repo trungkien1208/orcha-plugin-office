@@ -1,0 +1,11 @@
+import {afterEach,beforeEach,expect,test} from 'bun:test';
+import {AccountsError,accountRequest,changeModel,teamPrompt} from './api-accounts.ts';
+import {demoAgent} from './floor/demo-state.ts';
+const originalFetch=globalThis.fetch,storage=Object.getOwnPropertyDescriptor(globalThis,'sessionStorage');
+beforeEach(()=>Object.defineProperty(globalThis,'sessionStorage',{configurable:true,value:{getItem:()=>null}}));
+afterEach(()=>{globalThis.fetch=originalFetch;if(storage)Object.defineProperty(globalThis,'sessionStorage',storage);else Reflect.deleteProperty(globalThis,'sessionStorage');});
+test('missing feature is unavailable, never a fabricated success',async()=>{globalThis.fetch=(async()=>new Response('{}',{status:404})) as unknown as typeof fetch;expect((await accountRequest('/api/accounts')).available).toBe(false);});
+test('idle model change falls back only on 404, through the existing prompt route',async()=>{const calls:{path:string;body:string}[]=[];globalThis.fetch=(async(path:RequestInfo|URL,init?:RequestInit)=>{calls.push({path:String(path),body:String(init?.body)});return new Response('{}',{status:calls.length===1?404:200});}) as unknown as typeof fetch;const agent=demoAgent(3,'p');const result=await changeModel(agent,'sonnet');expect(result.available).toBe(true);expect(calls[1]?.path).toEndWith('/prompt');expect(JSON.parse(calls[1]?.body??'{}')).toEqual({text:'/model sonnet'});});
+test('busy model fallback never injects a command into the active turn',async()=>{let calls=0;globalThis.fetch=(async()=>{calls++;return new Response('{}',{status:404});}) as unknown as typeof fetch;expect((await changeModel(demoAgent(0,'p'),'opus')).available).toBe(false);expect(calls).toBe(1);});
+test('401 and 409 are errors, not unsupported-route fallbacks',async()=>{for(const status of [401,409]){globalThis.fetch=(async()=>new Response(JSON.stringify({error:'Not allowed'}),{status})) as unknown as typeof fetch;try{await accountRequest('/api/accounts');throw new Error('Expected rejection');}catch(error){expect(error).toBeInstanceOf(AccountsError);expect((error as AccountsError).status).toBe(status);}}});
+test('team recipient limit is enforced before any request',()=>{expect(()=>teamPrompt('p',[],'hello')).toThrow();expect(()=>teamPrompt('p',['1','2','3','4','5','6'],'hello')).toThrow();});

@@ -1,0 +1,159 @@
+  ✗ background/compound-night.png: not redrawn yet
+  ✗ background/compound-night-2.png: missing
+  ✗ background/compound-dusk.png: missing
+  ✗ objects/razor-wire.png: missing
+  ✗ objects/wall-lamp.png: missing
+  ✗ objects/searchlight.png: missing
+  ✗ objects/neon-sign.png: missing
+  ✗ objects/water-tank.png: missing
+  ✗ objects/satellite-dish.png: missing
+  ✗ objects/tangled-cables.png: missing
+  ✗ objects/banner-hanging-1.png: missing
+  ✗ objects/banner-hanging-2.png: missing
+  ✗ objects/banner-hanging-3.png: missing
+  ✗ objects/banner-wide-2.png: missing
+  ✗ objects/poster-kpi.png: missing
+  ✗ objects/poster-target.png: missing
+  ✗ objects/poster-team.png: missing
+  ✗ objects/tv-leaderboard.png: missing
+  ✗ objects/ceiling-light.png: missing
+  ✗ objects/light-pool.png: missing
+  ✗ objects/tube-broken.png: missing
+  ✗ objects/bulb-bare.png: missing
+  ✗ objects/stain-damp.png: missing
+  ✗ objects/crack-wall.png: missing
+  ✗ objects/notice-board.png: missing
+  ✗ tiles/floor-wear.png: missing
+  ✗ tiles/floor-dirty.png: missing
+  ✗ tiles/floor-cracked.png: missing
+  ✗ objects/floor-tape.png: missing
+  ✗ objects/leak-bucket.png: missing
+  ✗ objects/fan-rusty.png: missing
+  ✗ objects/generator.png: missing
+  ✗ objects/extension-mess.png: missing
+  ✗ objects/locker-row.png: missing
+  ✗ objects/shrine.png: missing
+  ✗ objects/money-counter-table.png: missing
+  ✗ objects/supervisor-podium.png: missing
+  ✗ objects/turnstile.png: missing
+  ✗ objects/stacked-chairs.png: missing
+  ✗ objects/water-jugs.png: missing
+  ✗ objects/printer-big.png: missing
+  ✗ objects/server-rack.png: missing
+  ✗ objects/plant-dead.png: missing
+  ✗ objects/phone-tray.png: missing
+  ✗ objects/laptop-open.png: missing
+  ✗ objects/sim-cards.png: missing
+  ✗ objects/cash-small.png: missing
+  ✗ objects/snack-pack.png: missing
+  ✗ objects/ashtray.png: missing
+  ✗ objects/name-card.png: missing
+  ✗ objects/battery-lamp.png: missing
+  ✗ objects/desk-fan.png: missing
+  ✗ ui/icons-ui-16.png: missing
+  ✗ ui/icons-ui-32.png: missing
+  ✗ ui/act-icons.png: missing
+  ✗ ui/popup-frame.png: missing
+  ✗ ui/popup-tail.png: missing
+  ✗ ui/panel-frame.png: missing
+  ✗ ui/panel-header.png: missing
+  ✗ ui/hazard-tape.png: missing
+  ✗ ui/stamp-urgent.png: missing
+  ✗ ui/stamp-done.png: missing
+  ✗ ui/stamp-closed.png: missing
+  ✗ ui/crt-bezel.png: missing
+  ✗ ui/avatar-frame.png: missing
+  ✗ ui/avatar-frame-needs.png: missing
+  ✗ ui/skin-frame.png: missing
+  ✗ ui/skin-frame-selected.png: missing
+  ✗ ui/stage-strip.png: missing
+  ✗ ui/git-status.png: missing
+  ✗ ui/badge-model.png: missing
+  ✗ ui/logo.png: missing
+  ✗ ui/favicon-32.png: missing
+  ✗ ui/favicon-needs-32.png: missing
+  ✗ ui/cursor-boss.png: missing
+  ✗ ui/cursor-hand.png: missing
+  ✗ ui/empty-inbox.png: missing
+  ✗ ui/empty-floor.png: missing
+  ✗ ui/orcha-down.png: missing
+  ✗ manifest: background/compound-night-2.png not listed
+  ✗ manifest: background/compound-dusk.png not listed
+  ✗ manifest: objects/razor-wire.png not listed
+  ✗ manifest: objects/wall-lamp.png not listed
+  ✗ manifest: objects/searchlight.png not listed
+  ✗ manifest: objects/neon-sign.png not listed
+  ✗ manifest: objects/water-tank.png not listed
+  ✗ manifest: objects/satellite-dish.png not listed
+  ✗ manifest: objects/tangled-cables.png not listed
+  ✗ manifest: objects/banner-hanging-1.png not listed
+  ✗ manifest: objects/banner-hanging-2.png not listed
+  ✗ manifest: objects/banner-hanging-3.png not listed
+  ✗ manifest: objects/banner-wide-2.png not listed
+  ✗ manifest: objects/poster-kpi.png not listed
+  ✗ manifest: objects/poster-target.png not listed
+  ✗ manifest: objects/poster-team.png not listed
+  ✗ manifest: objects/tv-leaderboard.png not listed
+  ✗ manifest: objects/ceiling-light.png not listed
+  ✗ manifest: objects/light-pool.png not listed
+  ✗ manifest: objects/tube-broken.png not listed
+  ✗ manifest: objects/bulb-bare.png not listed
+  ✗ manifest: objects/stain-damp.png not listed
+  ✗ manifest: objects/crack-wall.png not listed
+  ✗ manifest: objects/notice-board.png not listed
+  ✗ manifest: tiles/floor-wear.png not listed
+  ✗ manifest: tiles/floor-dirty.png not listed
+  ✗ manifest: tiles/floor-cracked.png not listed
+  ✗ manifest: objects/floor-tape.png not listed
+  ✗ manifest: objects/leak-bucket.png not listed
+  ✗ manifest: objects/fan-rusty.png not listed
+  ✗ manifest: objects/generator.png not listed
+  ✗ manifest: objects/extension-mess.png not listed
+  ✗ manifest: objects/locker-row.png not listed
+  ✗ manifest: objects/shrine.png not listed
+  ✗ manifest: objects/money-counter-table.png not listed
+  ✗ manifest: objects/supervisor-podium.png not listed
+  ✗ manifest: objects/turnstile.png not listed
+  ✗ manifest: objects/stacked-chairs.png not listed
+  ✗ manifest: objects/water-jugs.png not listed
+  ✗ manifest: objects/printer-big.png not listed
+  ✗ manifest: objects/server-rack.png not listed
+  ✗ manifest: objects/plant-dead.png not listed
+  ✗ manifest: objects/phone-tray.png not listed
+  ✗ manifest: objects/laptop-open.png not listed
+  ✗ manifest: objects/sim-cards.png not listed
+  ✗ manifest: objects/cash-small.png not listed
+  ✗ manifest: objects/snack-pack.png not listed
+  ✗ manifest: objects/ashtray.png not listed
+  ✗ manifest: objects/name-card.png not listed
+  ✗ manifest: objects/battery-lamp.png not listed
+  ✗ manifest: objects/desk-fan.png not listed
+  ✗ manifest: ui/icons-ui-16.png not listed
+  ✗ manifest: ui/icons-ui-32.png not listed
+  ✗ manifest: ui/act-icons.png not listed
+  ✗ manifest: ui/popup-frame.png not listed
+  ✗ manifest: ui/popup-tail.png not listed
+  ✗ manifest: ui/panel-frame.png not listed
+  ✗ manifest: ui/panel-header.png not listed
+  ✗ manifest: ui/hazard-tape.png not listed
+  ✗ manifest: ui/stamp-urgent.png not listed
+  ✗ manifest: ui/stamp-done.png not listed
+  ✗ manifest: ui/stamp-closed.png not listed
+  ✗ manifest: ui/crt-bezel.png not listed
+  ✗ manifest: ui/avatar-frame.png not listed
+  ✗ manifest: ui/avatar-frame-needs.png not listed
+  ✗ manifest: ui/skin-frame.png not listed
+  ✗ manifest: ui/skin-frame-selected.png not listed
+  ✗ manifest: ui/stage-strip.png not listed
+  ✗ manifest: ui/git-status.png not listed
+  ✗ manifest: ui/badge-model.png not listed
+  ✗ manifest: ui/logo.png not listed
+  ✗ manifest: ui/favicon-32.png not listed
+  ✗ manifest: ui/favicon-needs-32.png not listed
+  ✗ manifest: ui/cursor-boss.png not listed
+  ✗ manifest: ui/cursor-hand.png not listed
+  ✗ manifest: ui/empty-inbox.png not listed
+  ✗ manifest: ui/empty-floor.png not listed
+  ✗ manifest: ui/orcha-down.png not listed
+
+24/104 checklist items done (checklist updated)

@@ -1,0 +1,13 @@
+{
+  "name": "@easy-job/bridge",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@easy-job/shared": "workspace:*",
+    "fdir": "6.5.0",
+    "lru-cache": "11.2.2",
+    "simple-git": "4.0.2",
+    "strip-ansi": "^7.2.0",
+    "zod": "3.25.76"
+  }
+}

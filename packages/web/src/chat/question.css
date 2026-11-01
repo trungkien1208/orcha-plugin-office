@@ -1,0 +1,10 @@
+/* The question reads in full on its own line; options and keys sit below and never strand one button. */
+.conv .question { display: grid; gap: 6px; padding: 6px 10px 8px; }
+.conv .question .q-head { flex: none; padding: 0; }
+.conv .question .q-text { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; white-space: normal; overflow: hidden; line-height: 1.35; }
+.conv .q-body { display: flex; flex-wrap: nowrap; align-items: center; gap: 8px; min-width: 0; }
+.conv .q-options { flex: 1 1 auto; display: flex; flex-wrap: wrap; gap: 4px; min-width: 0; }
+.conv .q-option { height: 28px; padding: 0 10px 0 4px; white-space: nowrap; }
+.conv .q-side { flex: none; display: flex; gap: 4px; }
+.conv .q-key { height: 28px; padding: 0 8px; white-space: nowrap; }
+@container conv (max-width: 640px) { .q-key-label { display: none; } .conv .q-key { width: 30px; padding: 0; } }

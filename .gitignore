@@ -1,0 +1,11 @@
+node_modules
+dist
+.DS_Store
+*.tsbuildinfo
+tools/**/node_modules
+.dev-fake.url
+playwright-report
+test-results
+docs/art-review/round78-sources/
+.dev-fake.control
+*.bun-build

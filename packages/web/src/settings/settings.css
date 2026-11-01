@@ -1,0 +1,40 @@
+.workspace.settings-page { display: flex; }
+.settings-page > .settings-card { flex: 1; }
+.settings-card { flex-direction: row; }
+.settings-nav { flex: none; width: 220px; display: flex; flex-direction: column; gap: 2px; padding: 16px 10px; border-right: 1px solid var(--line); background: var(--surface-2); overflow: auto; }
+.settings-nav h1 { margin: 0 6px 12px; font: 600 18px var(--display); letter-spacing: 0.06em; text-transform: uppercase; }
+.settings-nav button { display: grid; gap: 2px; padding: 8px 10px; border: 0; border-radius: var(--radius); background: transparent; color: var(--ink-2); text-align: left; cursor: pointer; }
+.settings-nav button:hover { background: var(--surface-3); color: var(--ink); }
+.settings-nav button[aria-current="page"] { background: var(--surface-3); color: var(--ink); box-shadow: inset 3px 0 0 var(--primary); }
+.settings-nav b { font: 600 13px var(--sans); }
+.settings-nav small { color: var(--ink-3); font-size: 11px; }
+.settings-body { flex: 1; min-width: 0; overflow: auto; padding: 18px 24px 32px; }
+.settings-body h2 { margin: 0 0 14px; font: 600 15px var(--display); letter-spacing: 0.08em; text-transform: uppercase; }
+.settings-stack { display: grid; gap: 10px; max-width: 720px; }
+.settings-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface-2); }
+.settings-row > span:first-child { display: grid; gap: 3px; min-width: 0; }
+.settings-row b { font-size: 13px; }
+.settings-row small { color: var(--ink-3); font-size: 11.5px; }
+.settings-control { flex: none; display: flex; align-items: center; gap: 8px; }
+.settings-note { margin: 0; padding: 8px 10px; border-left: 3px solid var(--needs); background: var(--surface-2); color: var(--ink-2); font-size: 12px; }
+.settings-row-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.settings-row-head p { margin: 0; }
+.theme-choice { display: flex; border: 1px solid var(--line-strong); border-radius: 4px; overflow: hidden; }
+.theme-choice label { position: relative; padding: 6px 12px; color: var(--ink-2); font: 500 12px var(--sans); cursor: pointer; }
+.theme-choice label + label { border-left: 1px solid var(--line); }
+.theme-choice label.on { background: var(--ink); color: var(--surface); font-weight: 600; }
+.theme-choice input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.settings-field { display: grid; gap: 6px; color: var(--ink-2); font-size: 12px; }
+.settings-field input { height: 34px; padding: 0 10px; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--surface-2); color: var(--ink); font: 13px var(--sans); }
+.settings-facts { display: grid; gap: 0; margin: 0; border: 1px solid var(--line); border-radius: var(--radius); }
+.settings-facts > div { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 12px; padding: 9px 12px; border-top: 1px solid var(--line); }
+.settings-facts > div:first-child { border-top: 0; }
+.settings-facts dt { color: var(--ink-3); font-size: 12px; }
+.settings-facts dd { margin: 0; min-width: 0; overflow-wrap: anywhere; font-size: 12.5px; }
+.settings-accounts { display: grid; gap: 10px; }
+.settings-account { display: grid; gap: 8px; padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface-2); }
+.settings-account header { display: flex; align-items: center; gap: 10px; }
+.settings-account-name { flex: 1; display: grid; gap: 2px; min-width: 0; }
+.settings-account-name small { color: var(--ink-3); font-size: 11.5px; }
+.settings-account p { margin: 0; font-size: 12px; }
+@media (max-width: 720px) { .settings-card { flex-direction: column; } .settings-nav { width: auto; flex-direction: row; overflow-x: auto; border-right: 0; border-bottom: 1px solid var(--line); padding: 8px; } .settings-nav h1, .settings-nav small { display: none; } .settings-body { padding: 14px; } }

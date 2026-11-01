@@ -1,0 +1,8 @@
+{"type":"session_meta","payload":{"type":"session_meta","id":"s1","cwd":"/tmp/demo"}}
+{"type":"response_item","timestamp":"2026-10-30T05:01:00.000Z","payload":{"type":"message","id":"m1","role":"user","content":[{"type":"text","text":"placeholder prompt"}]}}
+{"type":"response_item","timestamp":"2026-10-30T05:01:01.000Z","payload":{"type":"reasoning","id":"r1","summary":[{"type":"summary_text","text":"hidden"}]}}
+{"type":"response_item","timestamp":"2026-10-30T05:01:02.000Z","payload":{"type":"message","id":"m2","role":"assistant","content":[{"type":"text","text":"placeholder answer"}]}}
+{"type":"response_item","timestamp":"2026-10-30T05:01:03.000Z","payload":{"type":"function_call","id":"f1","name":"shell","call_id":"c1","arguments":"{\"command\":\"ls\"}"}}
+{"type":"response_item","timestamp":"2026-10-30T05:01:04.000Z","payload":{"type":"function_call_output","id":"o1","call_id":"c1","output":[{"type":"text","text":"file.txt"}]}}
+{"type":"event_msg","payload":{"type":"token_count","info":{}}}
+{"type":"response_item","payload":{"type":"custom_tool_call","id":"f2","name":"js","call_id":"c2","input":"{\"code\":\"1+1\"}"}}

@@ -1,0 +1,958 @@
+/* Reception and native Floor, followed by office paperwork. Shared breakpoints below. */
+:root { font-family: "IBM Plex Sans", system-ui, sans-serif; font-synthesis: none; color-scheme: light; background: rgb(238, 230, 216); }
+* { box-sizing: border-box; }
+html { margin: 0px; width: 100%; height: 100%; }
+body { margin: 0px; width: 100%; height: 100%; -webkit-font-smoothing: antialiased; overflow: hidden auto; }
+#root { margin: 0px; width: 100%; height: 100%; }
+button { font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+select { font: inherit; color: inherit; -webkit-tap-highlight-color: transparent; }
+a { color: inherit; text-underline-offset: 4px; -webkit-tap-highlight-color: transparent; }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+select:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+[tabindex]:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+button:disabled { cursor: wait; }
+img { max-width: 100%; }
+fieldset { min-width: 0px; }
+.landing-world {
+  --stationery: #fff3cf;
+  --paper: #f1eadd; --surface: #fffaf0; --ink: #42392d; --line: #d6c8b1; --desk: #e8dfce; --shadow: #cdbda3; --display: "Chakra Petch", sans-serif;
+  width: 100%; display: grid; place-items: center; color: var(--ink); background: var(--paper); --muted: #706250; --sage: #52755e; --accent: #a84f2f;
+  height: auto; min-height: 100%; grid-template-rows: minmax(100dvh, auto) auto; align-content: start;
+}
+.landing-world[data-theme="compound"] {
+  --stationery: #253129;
+  color-scheme: dark; --paper: #18221d; --surface: #253129; --ink: #e6e8d9; --line: #435044; --desk: #202c24; --shadow: #101912; --muted: #b6c1ae;
+  --sage: #a1b7a4; --accent: #e38362;
+}
+.workplace {
+  display: grid; width: min(100% - 48px, 1580px); height: min(100dvh - 32px, 1240px); padding: 0px;
+  grid-template-rows: 70px 78px minmax(0px, 1fr) 38px; gap: 14px;
+}
+.office-header { display: flex; align-items: center; border-bottom: 1px solid var(--line); padding: 0px 0px 13px; gap: 20px; }
+.wordmark {
+  display: inline-flex; gap: 10px; align-items: center; border: 0px; background: transparent; padding: 0px; color: var(--ink); font-weight: 600;
+  font-size: 25px; letter-spacing: -1px;
+}
+.on-shift {
+  display: flex; align-items: center; gap: 7px; color: var(--sage); font-size: 8px; font-weight: 500; letter-spacing: 1px; margin-left: 12px;
+}
+.on-shift i { width: 5px; height: 5px; border-radius: 50%; background: var(--sage); }
+.office-header nav { display: flex; align-items: center; gap: 20px; margin-left: auto; font-size: 11px; }
+.office-header nav a { text-decoration: none; }
+.office-header select {
+  background: transparent; border-top: 0px; border-right: 0px; border-left: 0px; border-image: none; border-bottom: 1px solid var(--line);
+  font-size: 11px; padding: 7px 18px 7px 4px;
+}
+.quiet-button {
+  display: inline-flex; align-items: center; gap: 6px; border: 0px; background: transparent; font-size: 10px; padding: 7px; color: var(--muted);
+}
+.office-heading { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+h1 { margin: 0px; font-weight: 600; font-size: clamp(29px, 2.8vw, 43px); line-height: 1.1; letter-spacing: -1.6px; }
+.room-caption > span { display: flex; align-items: center; gap: 5px; white-space: nowrap; }
+.binder-heading > span { margin-left: auto; font: 500 12px ui-monospace, monospace; opacity: 0.65; }
+.door-lettering > span { display: block; font: 500 8px / 1.5 "IBM Plex Sans", sans-serif; letter-spacing: 1.4px; margin-top: 12px; opacity: 0.7; }
+.pass-bottom > span { font-size: 7px; line-height: 1.8; letter-spacing: 0.9px; color: rgb(121, 98, 71); }
+.door-sign > span {
+  position: absolute; inset: 0px; display: grid; place-items: center; backface-visibility: hidden; border: 1px solid rgb(100, 83, 58);
+  border-radius: 2px; background: rgb(240, 226, 189); color: rgb(101, 80, 56); font: 600 17px / 1 "IBM Plex Sans", sans-serif; letter-spacing: 3px;
+  box-shadow: rgba(255, 255, 255, 0.533) 0px 1px inset, rgba(49, 69, 49, 0.208) 0px 3px 4px; transition: transform 0.55s; transform: rotateY(0deg);
+}
+.board-header > span { color: rgb(255, 243, 207); background: rgb(81, 75, 59); padding: 5px 9px; font-size: 12px; }
+.install-button {
+  display: flex; align-items: center; gap: 25px; justify-content: space-between; border: 1px solid var(--line); border-radius: 3px;
+  background: var(--surface); color: var(--ink); font-weight: 500; box-shadow: 0 3px 0 var(--shadow); white-space: nowrap;
+  transition: translate 150ms; min-height: 46px; font-size: 15px; padding: 12px 18px;
+}
+.install-button:hover { translate: 0px -2px; }
+.worktable {
+  min-height: 0px; position: relative; display: grid; grid-template-columns: minmax(0px, 1fr) 340px; grid-template-rows: 270px minmax(0px, 1fr);
+  gap: 18px 22px; align-items: stretch;
+}
+.note-panel {
+  position: relative; color: rgb(80, 68, 50); z-index: 3; grid-area: 2 / 2; align-self: stretch; margin: 0px; rotate: 0deg; padding: 20px;
+  border-radius: 5px; border: 1px solid rgb(216, 199, 169); box-shadow: none; background: rgb(255, 249, 236); display: flex; flex-direction: column;
+}
+.note-panel::before {
+  content: ""; position: absolute; inset: 4px -5px -5px 4px; background: rgb(232, 217, 195); border: 1px solid rgb(212, 192, 164); z-index: -1;
+  rotate: 2deg; display: none;
+}
+.paper-clip {
+  position: absolute; background: rgb(183, 185, 168); border: 1px solid rgb(142, 147, 129); border-radius: 3px;
+  box-shadow: rgba(142, 147, 129, 0.2) 0px 2px 0px; left: auto; right: 22px; top: -8px; width: 27px; height: 13px;
+}
+.note-top {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px; border-bottom: 1px solid rgb(230, 217, 195); padding: 5px 0px 12px;
+  color: rgb(121, 100, 74); font-size: 10px; margin-bottom: 17px; letter-spacing: 0.7px;
+}
+.state-stamp {
+  border: 1px solid rgb(197, 207, 181); letter-spacing: 0px; white-space: nowrap; color: rgb(82, 109, 63); font-size: 11px; padding: 4px 6px;
+}
+.state-stamp.blocked { border-color: rgb(225, 196, 142); background: rgb(255, 240, 213); color: rgb(135, 94, 31); }
+.state-stamp.working { border-color: rgb(182, 200, 208); color: rgb(78, 107, 123); }
+.note-person { display: flex; align-items: center; gap: 10px; }
+.portrait { display: block; image-rendering: pixelated; border-radius: 3px; object-fit: contain; }
+.note-person .portrait { background: rgb(232, 221, 200); border: 1px solid rgb(203, 185, 155); width: 56px; height: 56px; }
+.note-person h2 { margin: 0px 0px 3px; font-weight: 600; letter-spacing: -0.7px; font-size: 29px; }
+.note-person p { margin: 0px; color: rgb(121, 100, 74); font-size: 12px; }
+.note-message { color: rgb(121, 103, 79); font-size: 17px; line-height: 1.65; margin: 20px 0px; flex: 0 1 0%; }
+.note-rule {
+  height: 1px; background: repeating-linear-gradient(90deg, rgb(216, 198, 168) 0px, rgb(216, 198, 168) 3px, transparent 3px, transparent 6px);
+  margin-bottom: 15px;
+}
+.note-actions button {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 11px; width: 100%; border: 1px solid rgb(183, 197, 166);
+  background: rgb(227, 236, 213); color: rgb(82, 101, 63); border-radius: 2px; font-weight: 500; line-height: 1.5; font-size: 14px; min-height: 45px;
+}
+.note-actions button:hover { background: rgb(216, 229, 199); }
+.sample-copy { line-height: 1.6; color: rgb(121, 100, 74); font-size: 11px; margin: 12px 0px 0px; }
+.room-frame {
+  position: relative; height: 100%; min-width: 0px; min-height: 0px; grid-area: 1 / 1 / 3; display: grid;
+  grid-template-rows: 44px minmax(0px, 1fr) 37px; place-items: initial; padding: 0px 14px; background: var(--desk); border: 1px solid var(--line);
+  border-radius: 5px; overflow: hidden; container-type: size; --room-chrome: 81px;
+}
+.room-scene { position: relative; width: min(100cqw, 150cqh); aspect-ratio: 3 / 2; container-type: size; outline-offset: 5px; isolation: isolate; }
+.room-caption {
+  left: 6%; right: 6%; bottom: 0px; color: var(--muted); position: static; grid-row: 3; display: flex; align-items: center;
+  justify-content: space-between; font-size: 11px; gap: 8px; padding: 0px; border-top: 1px solid var(--line);
+}
+kbd { font: 500 8px "IBM Plex Sans", sans-serif; border-bottom: 1px solid var(--line); padding: 1px 3px; color: var(--muted); }
+.project-binder {
+  grid-area: 1 / 2; align-self: stretch; padding: 16px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 5px;
+  display: block;
+}
+.binder-heading { display: flex; align-items: center; color: var(--muted); margin: 0px 0px 12px; gap: 8px; }
+.binder-heading h2 { margin: 0px; font-size: 15px; font-weight: 600; }
+.project-file {
+  position: relative; text-align: left; border-right: 0px; border-bottom: 0px; border-left: 0px; border-image: none; background: transparent;
+  transition: translate 160ms; margin: 0px; width: 100%; border-top: 1px solid var(--line); padding: 8px 0px; display: grid;
+  grid-template-columns: 43px 1fr; align-items: center; gap: 10px; min-height: 65px;
+}
+.project-file:hover { translate: 2px; }
+.file-tab {
+  display: block; border: 0px; border-radius: 0px; width: auto; padding: 0px; font-size: 9px; letter-spacing: 0.4px; line-height: 1.5;
+  color: var(--muted); background: none;
+}
+.file-body {
+  display: grid; grid-template-columns: minmax(0px, 1fr) auto; grid-template-rows: auto auto; gap: 4px 7px; border-radius: 0px; box-shadow: none;
+  padding: 0px 0px 0px 10px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-image: none; border-left: 3px solid var(--project-ink);
+  background: transparent;
+}
+.file-body > b { display: block; font-weight: 500; font-size: 18px; letter-spacing: -0.4px; color: var(--ink); grid-area: 1 / 1; }
+.file-people { grid-area: 1 / 2 / 3; display: flex; align-items: center; gap: 0px; margin: 0px; }
+.file-people img { display: block; image-rendering: pixelated; width: 27px; height: 27px; margin-left: -3px; }
+.file-body small { display: flex; align-items: center; grid-area: 2 / 1; justify-content: start; gap: 8px; font-size: 11px; color: var(--muted); }
+.project-file.selected .file-body { background: rgb(244, 231, 207); border-color: rgb(174, 141, 98); }
+.project-file.selected .file-tab { background: rgb(241, 217, 181); border-color: rgb(174, 141, 98); }
+.office-footer {
+  display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); color: var(--muted); padding-top: 9px;
+  gap: 18px; font-size: 12px;
+}
+.live-message { display: flex; gap: 8px; align-items: center; line-height: 1.5; max-width: none; font-size: 12px; flex: 1 1 0%; }
+.status-counts { display: flex; margin: 0px; padding: 0px; border: 0px; gap: 17px; }
+.status-counts button {
+  display: flex; align-items: center; gap: 5px; border: 0px; padding: 8px 0px; background: transparent; color: var(--muted); white-space: nowrap;
+  font-size: 12px;
+}
+.status-counts b { color: var(--ink); font-weight: 600; }
+.status-counts i { display: block; width: 5px; height: 5px; border-radius: 50%; background: rgb(142, 171, 204); }
+.status-counts i.blocked { background: rgb(202, 163, 95); }
+.status-counts i.done { background: rgb(133, 162, 131); }
+.local-note { white-space: nowrap; font-size: 11px; }
+.entry-screen {
+  position: fixed; inset: 0px; z-index: 10; display: flex; flex-direction: column; background: rgb(238, 230, 216); color: rgb(66, 57, 45);
+  padding: 25px 4%; overflow: hidden;
+}
+.entry-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex: 0 0 auto; position: relative; z-index: 2; }
+.entry-header > span:first-child { font-size: 27px; letter-spacing: -1px; font-weight: 600; }
+.entry-header > span:last-child { font: 500 8px "IBM Plex Sans", sans-serif; letter-spacing: 1.6px; color: rgb(122, 103, 79); }
+.entry-layout {
+  margin-inline: auto; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 9%; width: min(1080px, 100%); min-height: 0px;
+  flex: 1 1 0%; margin: 0px auto; padding: 22px 0px;
+}
+.door-illustration {
+  position: relative; max-width: 430px; width: 100%; justify-self: center; display: block; border: 0px; background: transparent; color: inherit;
+  padding: 0px 0px 39px; text-align: inherit; cursor: pointer; perspective: 1800px; isolation: isolate; z-index: 2;
+}
+.door-transom {
+  font: 600 10px "Chakra Petch", sans-serif; position: relative; display: flex; justify-content: space-between; gap: 12px; align-items: center;
+  min-height: 46px; padding: 10px 16px; border: 0px; background: rgb(107, 116, 95); color: rgb(243, 232, 203);
+  box-shadow: rgb(137, 145, 124) 0px 2px inset, rgb(55, 75, 63) 0px -3px inset, rgba(81, 65, 43, 0.125) 0px 3px 5px; letter-spacing: 1.4px;
+}
+.door-transom > i { border-radius: 50%; width: 5px; height: 5px; background: rgb(232, 206, 139); box-shadow: none; }
+.door-frame {
+  position: relative; aspect-ratio: 0.7 / 1; border: 0px; background: rgb(54, 67, 55);
+  box-shadow: rgb(131, 117, 87) 0px 0px 0px 7px inset, rgb(184, 168, 134) 0px 0px 0px 9px inset, rgba(23, 36, 27, 0.565) 12px 9px 12px inset, rgba(72, 53, 30, 0.125) 8px 5px 14px;
+  transform-style: preserve-3d; padding: 15px 14px 9px;
+}
+.door-room {
+  position: absolute; image-rendering: pixelated; filter: none; inset: 13px 13px 8px; background: rgb(62, 68, 54);
+  box-shadow: rgba(23, 32, 24, 0.44) 6px 6px 14px inset;
+}
+.glass-door {
+  position: absolute; transform: rotateY(0deg); inset: 14px 14px 9px; border: 0px; background: transparent; box-shadow: none; backdrop-filter: none;
+  transform-origin: 0px 50%; transform-style: preserve-3d; backface-visibility: visible; transition: transform 1.1s cubic-bezier(0.25, 0.65, 0.3, 1);
+}
+.door-lettering {
+  font-family: var(--display); font-weight: 700; position: absolute; letter-spacing: 1px; font-size: 52px; top: 12%; left: 10%; right: 10%;
+  color: rgb(64, 83, 65); text-shadow: none; line-height: 1; text-align: center;
+}
+.door-pull {
+  position: absolute; right: 12px; top: 42%; height: 76px; width: 9px; border: 1px solid rgb(142, 120, 73); border-radius: 3px;
+  background: linear-gradient(90deg, rgb(168, 143, 87), rgb(225, 210, 162) 45%, rgb(181, 156, 99) 80%, rgb(140, 119, 72));
+  box-shadow: rgba(36, 59, 47, 0.314) 3px 2px 3px;
+}
+.door-mat {
+  position: absolute; text-align: center; font: 600 10px "Chakra Petch", sans-serif; left: 13%; right: 13%; padding: 8px 5px; bottom: -2px;
+  background: repeating-linear-gradient(0deg, rgb(142, 128, 100) 0px, rgb(142, 128, 100) 1px, rgb(162, 147, 116) 1px, rgb(162, 147, 116) 3px);
+  border: 2px solid rgb(125, 114, 92); outline: 0px; color: rgb(228, 217, 191); box-shadow: rgba(102, 80, 55, 0.19) 0px 2px 3px;
+  letter-spacing: 1.4px; transform: perspective(300px) rotateX(44deg);
+}
+.entry-copy > h1 { font-size: clamp(48px, 5.1vw, 76px); line-height: 1.04; letter-spacing: -3px; font-weight: 600; margin: 0px 0px 19px; }
+.entry-description { font-size: 14px; line-height: 1.8; margin: 0px 0px 28px; color: rgb(122, 103, 79); }
+.staff-pass {
+  position: relative; width: min(350px, 100%); border: 1px solid rgb(211, 190, 160); background: rgb(255, 249, 236); color: rgb(99, 80, 57);
+  box-shadow: rgba(214, 198, 173, 0.314) 5px 6px 0px; rotate: 2deg; border-radius: 5px;
+}
+.pass-heading {
+  display: flex; justify-content: space-between; padding: 12px 16px; border-bottom: 1px solid rgb(228, 211, 182); font-size: 8px;
+  letter-spacing: 1.3px; color: rgb(121, 98, 71);
+}
+.pass-person { display: flex; align-items: center; gap: 13px; padding: 21px 17px; }
+.pass-person .portrait { width: 64px; height: 64px; background: rgb(232, 221, 195); border: 1px solid rgb(203, 185, 154); border-radius: 3px; }
+.pass-person strong { display: block; font-size: 32px; font-weight: 600; letter-spacing: -1px; }
+.pass-person > div > span { font-size: 7px; letter-spacing: 1.3px; color: rgb(121, 98, 71); }
+.pass-person > .pixel-icon { margin-left: auto; opacity: 0.7; }
+.pass-bottom {
+  justify-content: space-between; padding: 15px 16px; border-top: 1px dashed rgb(216, 196, 162); display: flex; flex-direction: column;
+  align-items: stretch; gap: 12px;
+}
+.pass-bottom button {
+  gap: 21px; font-size: 12px; font-weight: 500; display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 70px;
+  background: rgb(168, 79, 47); border: 1px solid rgb(124, 54, 30); box-shadow: rgb(116, 59, 37) 0px 4px 0px; border-radius: 4px; padding: 14px 20px;
+  color: rgb(255, 247, 230); transition: translate 0.18s, background 0.18s;
+}
+.pass-bottom button:hover { background: rgb(189, 96, 58); translate: 0px -2px; }
+.pass-bottom button > span { font-size: 19px; }
+.entry-copy > small { display: block; margin-top: 20px; font-size: 9px; color: rgb(122, 103, 79); }
+.clock-stamp {
+  position: absolute; inset: 30% 12% auto; text-align: center; color: rgb(168, 82, 53); border: 3px solid rgb(168, 82, 53); padding: 12px 5px;
+  font: 700 35px "Chakra Petch", sans-serif; rotate: -15deg; background: rgba(255, 249, 236, 0.737);
+  animation: 0.15s ease-out 0s 1 normal none running stamp;
+}
+.opening .glass-door { transform: rotateY(-85deg); }
+.entry-footer {
+  display: flex; align-items: center; justify-content: space-between; gap: 15px; flex: 0 0 auto; padding-top: 15px;
+  border-top: 1px solid rgb(216, 202, 181); font-size: 9px; color: rgb(122, 103, 79); position: relative; z-index: 2;
+}
+.install-dialog {
+  width: min(430px, 100% - 30px); max-height: calc(100dvh - 35px); padding: 23px 26px 26px; border: 1px solid var(--line); border-radius: 4px;
+  background: var(--surface); color: var(--ink); box-shadow: rgba(17, 17, 17, 0.2) 6px 7px 0px;
+}
+.install-dialog::backdrop { background: rgba(31, 37, 27, 0.5); backdrop-filter: blur(4px); }
+.install-dialog > header {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; color: var(--muted); font-size: 8px; letter-spacing: 1.5px;
+  padding-bottom: 15px; margin-bottom: 20px; border-bottom: 1px solid var(--line);
+}
+.install-commands > button {
+  position: absolute; top: 10px; right: 11px; display: flex; align-items: center; gap: 5px; border: 0px; background: transparent; font-size: 9px;
+  color: var(--muted);
+}
+.door-loading button { padding: 10px; background: rgb(255, 244, 222); border: 1px solid rgb(180, 154, 116); border-radius: 3px; }
+.time-card-commands > button {
+  position: static; width: 100%; justify-content: center; padding: 9px; border-top: 0px; border-right: 0px; border-left: 0px; border-image: none;
+  border-bottom: 1px solid var(--line); border-radius: 0px;
+}
+.install-dialog > header button { display: grid; place-items: center; width: 26px; height: 26px; border: 0px; background: transparent; }
+.install-dialog > h2 { font-size: 39px; line-height: 1.1; letter-spacing: -1.3px; margin: 0px 0px 17px; font-weight: 600; }
+.install-dialog > p { font-size: 12px; line-height: 1.7; color: var(--muted); }
+.install-commands { position: relative; padding: 37px 15px 16px; border: 1px solid var(--line); background: var(--paper); margin-top: 20px; }
+pre { margin: 0px; white-space: pre-wrap; overflow-wrap: anywhere; font: 12px / 1.9 ui-monospace, monospace; }
+.install-dialog .copy-feedback { color: var(--sage); font-size: 9px; min-height: 16px; margin: 8px 0px; }
+.install-dialog .requirements { font-size: 10px; margin: 17px 0px; }
+.setup-docs { font-size: 10px; color: var(--accent); }
+.mobile-projects { display: none; }
+.brand-lockup { display: inline-flex; align-items: center; gap: 9px; text-align: left; white-space: nowrap; }
+.brand-logo { display: block; flex: 0 0 auto; width: 58px; height: 58px; object-fit: contain; }
+.brand-type { display: block; font-size: 34px; font-weight: 600; line-height: 0.97; letter-spacing: -1.7px; color: var(--ink); }
+.brand-tagline { display: block; margin-top: 8px; line-height: 1.3; color: var(--muted); font-size: 12px; letter-spacing: 0.2px; font-weight: 400; }
+.entry-header > .brand-lockup { font-size: inherit; letter-spacing: normal; }
+.entry-header .brand-type { font-size: 36px; color: rgb(66, 57, 45); }
+.entry-header .brand-tagline { color: rgb(122, 103, 79); }
+.door-brand-logo {
+  display: block; object-fit: contain; width: 76px; height: 76px; margin: 0px auto 12px; filter: brightness(0) saturate(100%) opacity(0.75);
+}
+.office-header .brand-logo { width: 62px; height: 62px; }
+.landing-world[data-theme="compound"] .wordmark .brand-logo { filter: brightness(0) invert(0.92) sepia(0.12); }
+.door-illustration:hover .door-pull { filter: brightness(1.2); }
+.door-sign {
+  position: absolute; z-index: 3; top: 50%; left: 24%; width: 48%; height: 42px; transform: rotate(-4deg); transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.3, 1);
+}
+.door-sign::before {
+  content: ""; position: absolute; width: 1px; height: 44px; bottom: 100%; background: rgb(111, 115, 91); border: 0px; clip-path: none;
+  transform-origin: 50% 100%; left: 19%; right: auto; transform: rotate(37deg); display: none;
+}
+.door-sign > span + span { transform: rotateY(-180deg); background: rgb(54, 93, 67); color: rgb(244, 234, 203); }
+.door-sign.sign-open { transform: rotate(3deg); }
+.pass-bottom button:active { translate: 0px 3px; box-shadow: rgb(116, 59, 37) 0px 1px 0px; }
+.door-transom > span:first-child { font-size: 9px; opacity: 0.7; letter-spacing: 1px; }
+.room-toolbar > span:first-child { display: flex; align-items: center; gap: 8px; color: var(--ink); font-weight: 600; font-size: 15px; }
+.pass-bottom button > span:first-child { text-align: left; }
+.pass-bottom button strong { font-size: 24px; font-weight: 600; display: block; line-height: 1.1; }
+.room-toolbar small { font-size: 9px; letter-spacing: 1px; font-weight: 400; color: var(--muted); margin-left: 8px; }
+.pass-bottom button small { display: block; font-size: 13px; font-weight: 400; margin-top: 5px; opacity: 0.85; }
+.room-toolbar > span:last-child { display: flex; gap: 8px; align-items: center; font-size: 12px; }
+.pass-bottom button > span:last-child { font-size: 30px; }
+.pass-bottom .enter-hint { font-size: 12px; text-align: center; line-height: 1.3; letter-spacing: 0px; }
+.entry-copy { grid-column: 2; position: relative; z-index: 2; }
+.is-entering .entry-copy { opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+.is-entering .entry-header { opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+.is-entering .entry-footer { opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+.is-entering .door-illustration {
+  position: fixed; left: 0px; top: 0px; max-width: none; margin: 0px; opacity: 1; z-index: 2; transform-origin: 0px 0px; pointer-events: none;
+  animation: 0.75s cubic-bezier(0.22, 0.8, 0.25, 1) 0s 1 normal both running door-center;
+}
+.entry-screen[data-phase="opening"] .glass-door { transform: rotateY(-108deg); transition: transform 1.1s cubic-bezier(0.25, 0.65, 0.3, 1); }
+.entry-screen[data-phase="revealing"] .glass-door { transform: rotateY(-108deg); transition: transform 1.1s cubic-bezier(0.25, 0.65, 0.3, 1); }
+.entry-screen[data-phase="revealing"] { opacity: 0; pointer-events: none; transition: opacity 0.35s; background: rgb(80, 69, 55); }
+.door-loading {
+  position: fixed; left: 50%; bottom: 6%; transform: translateX(-50%); display: grid; gap: 12px; width: min(280px, 75vw); text-align: center;
+  font-size: 16px; color: rgb(106, 86, 62); z-index: 4;
+}
+.door-loading progress {
+  width: 100%; height: 5px; appearance: none; border: 0px; background: rgb(217, 204, 181); border-radius: 2px; overflow: hidden;
+}
+.door-loading progress::-webkit-progress-bar { background: rgb(217, 204, 181); }
+.door-loading progress::-webkit-progress-value { background: rgb(82, 117, 94); transition: width 0.2s; }
+.entry-screen[data-phase="zooming"] .door-illustration {
+  animation: 1.05s cubic-bezier(0.5, 0.03, 0.7, 0.6) 0s 1 normal both running door-walk-through; will-change: transform;
+}
+.entry-screen[data-phase="revealing"] .door-illustration {
+  animation: 1.05s cubic-bezier(0.5, 0.03, 0.7, 0.6) 0s 1 normal both running door-walk-through; will-change: transform;
+}
+.landing-world[data-calm="true"] .is-entering .door-illustration { animation-duration: 0s; }
+.entry-screen[data-phase="zooming"] .glass-door { transform: rotateY(-108deg); transition: transform 1.1s cubic-bezier(0.25, 0.65, 0.3, 1); }
+.entry-screen[data-phase="zooming"] .door-loading { opacity: 0; transition: opacity 0.2s; }
+.landing-world[data-calm="true"] .entry-screen[data-phase="zooming"] .door-illustration { animation-duration: 0s; }
+.native-scene {
+  position: relative; grid-row: 2; place-self: center; container-type: size; max-height: 100%; border: 0px; border-radius: 0px; box-shadow: none;
+  overflow: hidden; background: transparent; width: min(100cqw, calc((100cqh - var(--room-chrome)) * 1.272727)); height: auto;
+  aspect-ratio: 896 / 704;
+}
+.native-office { position: absolute; inset: 0px; min-width: 0px; min-height: 0px; }
+.native-floor-host { position: absolute; inset: 0px; min-width: 0px; min-height: 0px; outline-offset: -3px; touch-action: none; }
+.native-floor-host canvas { display: block; image-rendering: pixelated; width: 100%; height: 100%; }
+.native-loading {
+  position: absolute; inset: 0px; display: grid; place-items: center; padding: 30px; text-align: center; color: var(--muted); font-size: 16px;
+  pointer-events: none;
+}
+.native-agent-option {
+  position: absolute; width: 1px; height: 1px; clip-path: inset(50%); padding: 0px; overflow: hidden; border: 0px; white-space: nowrap;
+}
+.native-agent-option:focus-visible {
+  width: auto; height: auto; clip-path: none; left: 12px; bottom: 12px; padding: 10px 16px; background: var(--surface); color: var(--ink);
+  border: 1px solid var(--line); z-index: 5;
+}
+.native-agent-directory { margin: 0px; padding: 0px; border: 0px; }
+.door-wall {
+  position: absolute; z-index: -1; inset: -32px -44px 22px;
+  background: linear-gradient(90deg, rgb(217, 205, 185), rgb(238, 229, 211) 18%, rgb(238, 229, 211) 82%, rgb(217, 205, 185));
+  border-top: 1px solid rgb(248, 241, 227);
+  box-shadow: rgba(255, 255, 255, 0.333) 1px 0px inset, rgba(116, 96, 68, 0.04) -1px 0px inset, rgba(72, 53, 30, 0.5) 0px 20px 30px -24px;
+}
+.door-wall::before {
+  content: ""; position: absolute; left: 0px; right: 0px; bottom: 0px; height: 23px; background: rgb(199, 187, 163);
+  border-top: 3px solid rgb(228, 216, 193); box-shadow: rgba(168, 154, 129, 0.565) 0px -6px inset;
+}
+.door-wall::after { content: ""; position: absolute; top: 0px; bottom: 23px; left: 17px; width: 1px; background: rgba(182, 167, 138, 0.19); }
+.door-face {
+  position: absolute; inset: 0px; background: rgb(98, 113, 90); border: 1px solid rgb(49, 71, 56);
+  box-shadow: rgb(139, 152, 124) 3px 2px inset, rgb(52, 75, 59) -4px -2px inset; backface-visibility: hidden; transform: translateZ(2px);
+}
+.door-slab-edge {
+  position: absolute; right: -11px; top: 0px; bottom: 0px; width: 12px;
+  background: linear-gradient(90deg, rgb(52, 75, 59), rgb(126, 135, 108) 50%, rgb(65, 86, 65)); transform-origin: 0px 50%; transform: rotateY(90deg);
+  backface-visibility: visible;
+}
+.door-glazing {
+  position: absolute; inset: 20px 22px 29%;
+  background: linear-gradient(119deg, transparent 0px, transparent 24%, rgba(255, 255, 255, 0.4) 24.3%, rgba(255, 255, 255, 0.4) 25.1%, transparent 25.4%, transparent 31%, rgba(255, 255, 255, 0.133) 31.3%, rgba(255, 255, 255, 0.133) 37%, transparent 37.3%, transparent 100%), linear-gradient(160deg, rgb(227, 226, 201), rgb(184, 195, 175) 46%, rgb(200, 204, 179) 72%, rgb(168, 181, 156));
+  border: 1px solid rgb(46, 69, 55); outline: rgb(66, 91, 69) solid 3px;
+  box-shadow: rgba(42, 59, 58, 0.208) 3px 3px 4px inset, rgb(247, 242, 217) -1px -1px inset; overflow: hidden;
+}
+.door-glazing::after {
+  content: ""; position: absolute; inset: 0px;
+  background: repeating-linear-gradient(0deg, rgba(52, 77, 52, 0.035) 0px, rgba(52, 77, 52, 0.035) 1px, transparent 1px, transparent 3px);
+  opacity: 0.55;
+}
+.door-lettering > b { display: block; font: 600 38px / 1 "IBM Plex Sans", sans-serif; letter-spacing: -1.5px; }
+.door-hinges {
+  position: absolute; left: 6px; top: 13%; bottom: 15%; display: flex; flex-direction: column; justify-content: space-between; z-index: 3;
+  pointer-events: none;
+}
+.door-hinges > i {
+  display: block; width: 12px; height: 22px;
+  background: linear-gradient(90deg, rgb(132, 114, 76), rgb(212, 195, 148) 40%, rgb(162, 140, 91) 80%, rgb(107, 97, 63));
+  border: 1px solid rgb(92, 95, 66); border-radius: 2px; box-shadow: rgba(22, 39, 31, 0.314) 1px 1px 2px;
+}
+.door-sign::after {
+  content: ""; position: absolute; width: 1px; height: 44px; bottom: 100%; background: rgb(111, 115, 91); border: 0px; clip-path: none;
+  transform-origin: 50% 100%; right: 19%; transform: rotate(-37deg); display: none;
+}
+.door-sign > span::before {
+  content: ""; position: absolute; top: 4px; width: 3px; height: 3px; border-radius: 50%; background: rgb(172, 149, 112); left: 6px;
+}
+.door-sign > span::after {
+  content: ""; position: absolute; top: 4px; width: 3px; height: 3px; border-radius: 50%; background: rgb(172, 149, 112); right: 6px;
+}
+.door-sign.sign-open > span:first-child { transform: rotateY(180deg); }
+.time-card header > span { font: 12px ui-monospace, monospace; }
+.door-sign.sign-open > span + span { transform: rotateY(0deg); }
+.door-pull > i {
+  position: absolute; width: 14px; height: 12px; right: 1px; border-radius: 2px; background: rgb(168, 142, 86);
+  box-shadow: rgb(223, 204, 153) 0px 1px inset; z-index: -1;
+}
+.door-pull > i:first-child { top: 5px; }
+.door-pull > i:last-child { bottom: 5px; }
+.door-lower-panel {
+  position: absolute; left: 22px; right: 22px; bottom: 7%; height: 17%; border: 1px solid rgb(63, 85, 64);
+  box-shadow: rgba(60, 83, 59, 0.333) 2px 2px inset, rgb(131, 144, 115) 1px 1px;
+  background: linear-gradient(100deg, rgb(102, 116, 91), rgb(90, 108, 80)); display: flex; align-items: end; justify-content: space-between;
+  padding: 12px; color: rgb(183, 192, 160); font: 500 7px "IBM Plex Sans", sans-serif; letter-spacing: 1px;
+}
+.door-kick {
+  position: absolute; bottom: 9px; left: 10px; right: 10px; height: 16px;
+  background: linear-gradient(rgb(167, 155, 117), rgb(199, 188, 149) 40%, rgb(155, 144, 107)); border: 1px solid rgb(84, 96, 68);
+  box-shadow: rgb(222, 211, 166) 0px 1px inset;
+}
+.door-threshold {
+  position: absolute; left: 3px; right: 3px; bottom: -6px; height: 11px; background: rgb(182, 167, 138); border-top: 3px solid rgb(224, 209, 178);
+  border-bottom: 3px solid rgb(124, 115, 92); box-shadow: rgba(60, 55, 39, 0.17) 0px 5px 5px; transform: translateZ(3px);
+}
+.is-entering .door-wall { opacity: 0; transition: opacity 0.4s; }
+.door-cord {
+  position: absolute; left: 0px; bottom: 100%; width: 100%; height: 48px; overflow: visible; color: rgb(111, 115, 91); pointer-events: none;
+}
+.door-cord path { fill: none; stroke: currentcolor; stroke-width: 1; vector-effect: non-scaling-stroke; }
+.door-cord circle { fill: rgb(83, 102, 77); stroke: rgb(161, 172, 139); stroke-width: 0.5; }
+.office-header .brand-type { font-size: 36px; }
+.office-header .brand-tagline { font-size: 12px; }
+.office-heading h1 { font-size: clamp(30px, 2.5vw, 45px); }
+.room-toolbar {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px; border-bottom: 1px solid var(--line); font-size: 13px;
+  color: var(--muted);
+}
+.room-toolbar i { width: 3px; height: 3px; border-radius: 50%; background: var(--muted); }
+.office-rules b { font-weight: 600; font-size: 17px; }
+.project-file.selected .file-body > b { color: var(--accent); }
+.reception-door-stage { position: absolute; inset: 0px; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
+.door-illustration[data-rendered="true"] > * { visibility: hidden; }
+.binder-heading > .pixel-icon { margin-left: 0px; }
+.bench-roster { display: none; }
+body:has(.entry-screen) { overflow: hidden; }
+.pitch h2 { margin: 0px; font-size: clamp(30px, 3.4vw, 52px); line-height: 1.05; letter-spacing: -1.5px; }
+.pitch { image-rendering: pixelated; width: min(100% - 48px, 1320px); display: grid; gap: 64px; padding: 64px 8px 32px; color: var(--ink); }
+.office-paper { border: 1px solid var(--line); background: var(--surface); padding: 28px 36px 32px; box-shadow: 4px 6px 0 var(--shadow); }
+.paper-masthead {
+  padding: 18px 0px; background: var(--art-masthead) center / 100% 100%; font: 700 clamp(32px, 4.8vw, 72px) / 1.1 "Source Serif 4", serif; text-align: center;
+  letter-spacing: -2px;
+}
+.paper-dateline {
+  display: flex; justify-content: space-between; gap: 12px; padding: 10px 0px; border-bottom: 1px solid var(--ink);
+  font: 12px / 1.5 ui-monospace, monospace;
+}
+.office-paper h2 { margin: 26px 0px 22px; max-width: 900px; font: 700 clamp(32px, 4vw, 58px) / 1.08 "Source Serif 4", serif; letter-spacing: -1.4px; }
+.paper-columns { display: grid; grid-template-columns: 1fr 1fr 0.7fr; gap: 28px; }
+.paper-columns p { margin: 0px; font-size: 17px; line-height: 1.7; text-wrap: pretty; }
+.paper-index { border-left: 1px solid var(--line); padding-left: 24px; display: flex; flex-direction: column; gap: 14px; font-size: 14px; }
+.notice-board {
+  padding: 26px 32px 40px; border: 9px ridge rgb(128, 101, 75); background: var(--art-cork) repeat; box-shadow: 4px 8px 0 var(--shadow);
+  scroll-margin-top: 20px;
+}
+.board-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+.board-header h3 { margin: 0px; font: 600 24px/1.3 var(--display); color: rgb(255, 243, 207); background: rgb(66, 57, 45); padding: 7px 13px; }
+.board-notes { display: grid; grid-template-columns: repeat(6, minmax(0px, 1fr)); gap: 28px 24px; align-items: start; }
+.board-note {
+  position: relative; grid-column: span 2; padding: 21px 18px 24px; background: var(--art-note) center / 100% 100%; transform: rotate(-1deg);
+  min-width: 0px;
+}
+.board-note-needs { transform: rotate(1.5deg); background-image: var(--art-noteAlt); }
+.board-note-seen { transform: rotate(-0.6deg); }
+.board-note-boss { grid-column: 2 / span 2; transform: rotate(0.8deg); }
+.board-note-hr { transform: rotate(-1.5deg); background-image: var(--art-noteAlt); }
+.notice-pin {
+  position: absolute; top: -9px; left: calc(50% - 9px); width: 18px; height: 21px; background: var(--art-pin) center / contain no-repeat;
+  image-rendering: pixelated;
+}
+.notice-number { font: 11px ui-monospace, monospace; color: var(--muted); }
+.board-note h4 { margin: 6px 0px 10px; font: 600 21px/1.2 var(--display); letter-spacing: -0.4px; }
+.board-note p { font-size: 15px; line-height: 1.65; margin: 0px; }
+.vignette { min-width: 0px; }
+.vignette canvas { display: block; width: 100%; max-width: 320px; height: auto; image-rendering: pixelated; margin: 0px auto; }
+.vignette-action {
+  width: 100%; padding: 7px 3px; border-top: 0px; border-right: 0px; border-left: 0px; border-image: none; border-bottom: 1px dashed var(--muted);
+  background: transparent; color: var(--ink); text-align: left; font-size: 12px;
+}
+.vignette-action:hover { color: var(--accent); }
+.paperwork-desk { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 70px; align-items: start; padding: 0px 26px; }
+.office-rules { padding: 40px 34px 28px; background: var(--art-wallNotice) center / 100% 100%; transform: rotate(-0.7deg); }
+.notice-reference { font: 12px ui-monospace, monospace; }
+.office-rules h3 { font: 600 32px var(--display); margin: 14px 0px 22px; }
+.office-rules ol { margin: 0px; padding-left: 24px; }
+.office-rules li { padding-left: 5px; margin-bottom: 22px; }
+.time-card > p { font-size: 15px; }
+.office-rules li p { font-size: 15px; line-height: 1.7; margin: 6px 0px 0px; }
+.rules-signature { border-top: 1px solid var(--line); padding-top: 16px; font: italic 17px "Source Serif 4", serif; }
+.time-card {
+  padding: 32px 30px 26px; background: var(--stationery); border: 8px solid transparent; border-image: var(--art-timeCard) 8 / 8px stretch; box-shadow: 4px 6px 0 var(--shadow); transform: rotate(0.6deg);
+  min-width: 0px;
+}
+.time-card header { padding-bottom: 18px; border-bottom: 2px solid var(--ink); }
+.time-card h3 { font: 600 34px var(--display); margin: 0px 0px 7px; }
+.time-card .time-card-commands { background: var(--surface); border: 1px solid var(--line); padding: 0px; }
+.time-card-commands pre { margin: 0px; padding: 0px; overflow: visible; white-space: normal; }
+.time-card-row {
+  display: grid; grid-template-columns: 16px minmax(0px, 1fr) 80px; gap: 8px; align-items: center; padding: 15px 10px;
+  border-bottom: 1px solid var(--line); font: 13px / 1.5 ui-monospace, monospace;
+}
+.pitch-footer { border-top: 1px solid var(--line); padding-top: 18px; font-size: 13px; color: var(--muted); }
+.time-card-row::before { content: attr(data-row); color: var(--muted); font-size: 10px; }
+.time-card-row::after { content: attr(data-punched); color: var(--sage); font-size: 10px; min-height: 17px; }
+.time-card-row[data-punched]:not([data-punched=""])::after { background: var(--art-punch) left center / 17px no-repeat; padding-left: 20px; }
+@media (min-width: 701px) {
+.workplace { width: min(100% - 48px, 127.27dvh - 18.172px, 1760px); }
+.wordmark { gap: 0px; }
+.on-shift { font-size: 12px; letter-spacing: 0.9px; margin-left: 10px; }
+.office-header nav { font-size: 15px; gap: 22px; }
+.office-header select { font-size: 15px; padding: 9px 22px 9px 6px; }
+.quiet-button { font-size: 14px; padding: 9px; gap: 8px; }
+.office-heading h1 { letter-spacing: -1.6px; }
+.install-button { background: var(--surface); color: var(--ink); border: 1px solid var(--line); gap: 25px; }
+.note-person h2 { margin-bottom: 5px; }
+.note-person p { line-height: 1.5; }
+.note-actions button { padding: 12px; }
+.sample-copy { line-height: 1.65; }
+kbd { font-size: 11px; padding: 2px 4px; }
+.status-counts button { gap: 7px; }
+.status-counts i { width: 7px; height: 7px; }
+.entry-header > span:last-child { font-size: 12px; letter-spacing: 1.3px; }
+.entry-layout { margin-inline: auto; width: min(1180px, 100%); max-width: none; gap: 8%; }
+.entry-copy > h1 { font-size: 80px; }
+.entry-description { font-size: 18px; line-height: 1.7; margin-bottom: 27px; }
+.staff-pass { width: 400px; }
+.pass-heading { font-size: 12px; padding: 15px 19px; letter-spacing: 1px; }
+.pass-person { padding: 22px 20px; gap: 16px; }
+.pass-person .portrait { width: 76px; height: 76px; }
+.pass-person strong { font-size: 39px; }
+.pass-bottom > span { font-size: 11px; letter-spacing: 0.5px; }
+.pass-person > div > span { font-size: 12px; letter-spacing: 1.1px; }
+.pass-bottom { padding: 19px; }
+.pass-bottom button { font-size: 16px; gap: 24px; }
+.entry-copy > small { font-size: 12px; line-height: 1.6; margin-top: 22px; }
+.entry-footer { font-size: 12px; line-height: 1.5; }
+.install-dialog { width: min(500px, 100% - 40px); padding: 27px 30px 30px; }
+.install-dialog > header { font-size: 12px; }
+.install-dialog > h2 { font-size: 46px; }
+.install-dialog > p { font-size: 16px; }
+.install-commands { padding: 45px 19px 20px; }
+.install-commands > button { font-size: 13px; }
+.install-commands pre { font-size: 16px; }
+.install-dialog .copy-feedback { font-size: 13px; }
+.install-dialog .requirements { font-size: 13px; }
+.setup-docs { font-size: 13px; }
+}
+@media (max-width: 1180px) {
+.on-shift { font-size: 12px; margin-left: 10px; }
+.local-note { display: none; }
+.room-caption { left: 4%; right: 4%; }
+.room-caption > span:last-child { display: none; }
+.entry-layout { max-width: none; margin-inline: auto; gap: 6%; }
+.door-illustration { max-width: 350px; }
+.entry-copy > h1 { font-size: 58px; }
+}
+@media (max-width: 1180px) and (min-width: 701px) {
+.brand-logo { width: 48px; height: 48px; }
+.brand-type { font-size: 28px; }
+.brand-tagline { font-size: 10px; letter-spacing: 0px; }
+.on-shift { display: none; }
+.office-header nav { gap: 13px; font-size: 13px; }
+.office-header select { font-size: 12px; }
+.quiet-button { font-size: 12px; }
+.entry-layout { margin-inline: auto; width: min(960px, 100%); gap: 7%; }
+.door-illustration { max-width: 340px; }
+.entry-copy > h1 { font-size: 67px; }
+.entry-description { font-size: 16px; }
+.staff-pass { width: 350px; }
+.pass-person .portrait { width: 62px; height: 62px; }
+.pass-person strong { font-size: 33px; }
+.pass-bottom button { font-size: 14px; }
+.pass-bottom > span { font-size: 9px; }
+}
+@media (min-height: 900px) and (min-width: 1700px) {
+.brand-logo { width: 68px; height: 68px; }
+.brand-type { font-size: 39px; }
+.brand-tagline { font-size: 13px; }
+.office-header nav { font-size: 16px; }
+.office-header select { font-size: 16px; }
+.quiet-button { font-size: 15px; }
+.entry-layout { margin-inline: auto; width: min(1330px, 100%); }
+.door-illustration { max-width: 480px; }
+.entry-copy > h1 { font-size: 94px; }
+.entry-description { font-size: 21px; }
+.staff-pass { width: 430px; }
+.pass-heading { font-size: 13px; }
+.pass-person strong { font-size: 44px; }
+.entry-header .brand-type { font-size: 43px; }
+.entry-header .brand-logo { width: 76px; height: 76px; }
+.entry-header .brand-tagline { font-size: 14px; }
+}
+@media (min-height: 1000px) and (min-width: 2200px) {
+.on-shift { font-size: 14px; }
+.brand-logo { width: 74px; height: 74px; }
+.brand-type { font-size: 43px; }
+.brand-tagline { font-size: 14px; }
+.entry-layout { margin-inline: auto; width: min(1460px, 100%); }
+.door-illustration { max-width: 520px; }
+.entry-copy > h1 { font-size: 104px; }
+.entry-description { font-size: 23px; }
+.staff-pass { width: 465px; }
+.pass-person .portrait { width: 90px; height: 90px; }
+.pass-person strong { font-size: 48px; }
+.pass-bottom > span { font-size: 15px; }
+.door-lettering > span { font-size: 10px; }
+.door-sign > span { font-size: 21px; }
+.pass-person > div > span { font-size: 15px; }
+.pass-heading { font-size: 15px; }
+.pass-bottom button { font-size: 19px; }
+.entry-copy > small { font-size: 15px; }
+.entry-footer { font-size: 15px; }
+.entry-header > span:last-child { font-size: 15px; }
+.entry-header .brand-tagline { font-size: 15px; }
+.door-transom { min-height: 54px; font-size: 13px; padding-inline: 20px; }
+.door-transom > span:first-child { font-size: 11px; }
+.door-lettering > b { font-size: 47px; }
+.door-brand-logo { width: 98px; height: 98px; }
+.door-sign { height: 51px; }
+.door-pull { height: 98px; width: 11px; right: 15px; }
+.door-lower-panel { font-size: 9px; padding: 18px; }
+}
+@media (min-height: 1000px) and (min-width: 1700px) {
+.workplace { height: min(100dvh - 64px, 1300px); grid-template-rows: 78px 88px minmax(0px, 1fr) 44px; gap: 18px; }
+.worktable { grid-template-columns: minmax(0px, 1fr) 390px; grid-template-rows: 316px minmax(0px, 1fr); gap: 22px 26px; }
+.office-header .brand-logo { width: 70px; height: 70px; }
+.office-header .brand-type { font-size: 41px; }
+.office-header .brand-tagline { font-size: 14px; }
+.office-heading h1 { font-size: 48px; }
+.room-toolbar { font-size: 15px; }
+.room-toolbar > span:first-child { font-size: 18px; }
+.room-toolbar > span:last-child { font-size: 14px; }
+.room-toolbar small { font-size: 11px; }
+.room-frame { grid-template-rows: 52px minmax(0px, 1fr) 44px; padding-inline: 20px; --room-chrome: 96px; }
+.room-caption { font-size: 13px; }
+.project-binder { padding: 20px 22px; }
+.binder-heading h2 { font-size: 18px; }
+.binder-heading { margin-bottom: 15px; }
+.project-file { min-height: 77px; padding-block: 11px; grid-template-columns: 49px 1fr; }
+.file-tab { font-size: 11px; }
+.file-body > b { font-size: 22px; }
+.file-body small { font-size: 13px; }
+.file-people img { width: 32px; height: 32px; }
+.note-panel { padding: 25px; }
+.note-top { font-size: 12px; }
+.state-stamp { font-size: 13px; }
+.note-person h2 { font-size: 34px; }
+.note-person p { font-size: 14px; }
+.note-person .portrait { width: 68px; height: 68px; }
+.note-message { font-size: 20px; }
+.note-actions button { font-size: 17px; min-height: 52px; }
+.sample-copy { font-size: 13px; }
+.live-message { font-size: 14px; }
+.status-counts button { font-size: 14px; }
+.local-note { font-size: 13px; }
+}
+@media (max-height: 1060px) and (min-height: 900px) and (min-width: 1700px) {
+.worktable { grid-template-rows: 260px minmax(0px, 1fr); }
+.project-binder { padding: 14px 18px; }
+.binder-heading { margin-bottom: 10px; }
+.binder-heading h2 { font-size: 16px; }
+.project-file { min-height: 62px; padding-block: 7px; }
+.file-body > b { font-size: 20px; }
+.file-people img { width: 28px; height: 28px; }
+.note-panel { padding: 20px; }
+.note-top { margin-bottom: 14px; }
+.note-person .portrait { width: 60px; height: 60px; }
+.note-person h2 { font-size: 31px; }
+.note-actions button { min-height: 48px; font-size: 16px; }
+.sample-copy { font-size: 12px; }
+}
+@media (max-height: 800px) and (min-width: 701px) {
+.workplace { height: calc(100dvh - 20px); grid-template-rows: 56px 58px minmax(0px, 1fr) 32px; gap: 10px; }
+.office-heading h1 { font-size: 31px; }
+.note-panel { padding: 13px 15px; }
+.note-top { padding-bottom: 9px; font-size: 9px; margin-bottom: 10px; }
+.note-message { margin-block: 13px; font-size: 14px; line-height: 1.55; margin: 9px 0px; }
+.note-person .portrait { width: 40px; height: 40px; }
+.note-person h2 { font-size: 24px; }
+.note-actions button { font-size: 12px; min-height: 36px; padding: 8px; }
+.sample-copy { font-size: 10px; margin-top: 6px; }
+.binder-heading { margin-bottom: 8px; }
+.project-file { padding: 6px 0px; grid-template-columns: 37px 1fr; min-height: 50px; padding-block: 5px; }
+.entry-layout { margin-inline: auto; max-width: 960px; padding: 15px 0px; padding-block: 15px; }
+.door-illustration { max-width: 295px; }
+.entry-copy > h1 { font-size: 53px; }
+.entry-description { font-size: 15px; margin-bottom: 17px; }
+.entry-copy > small { font-size: 10px; margin-top: 14px; }
+.pass-person { padding-block: 15px; padding: 14px 16px; }
+.entry-screen { padding-block: 16px; }
+.entry-footer { padding-top: 12px; font-size: 10px; }
+.worktable { grid-template-columns: minmax(0px, 1fr) 300px; gap: 13px 17px; grid-template-rows: 212px minmax(0px, 1fr); }
+.project-binder { padding: 11px 15px; }
+.local-note { display: none; }
+.room-caption { font-size: 9px; }
+.pass-heading { padding: 10px 15px; font-size: 10px; }
+.pass-person .portrait { width: 54px; height: 54px; }
+.pass-person strong { font-size: 31px; }
+.pass-bottom { padding: 13px 15px; }
+.pass-bottom button { font-size: 14px; }
+.door-lettering { font-family: var(--display); font-weight: 700; font-size: 40px; }
+.door-brand-logo { width: 53px; height: 53px; margin-bottom: 8px; }
+.door-lettering > span { font-size: 6px; margin-top: 7px; }
+.door-lettering > b { font-size: 28px; }
+.door-transom { min-height: 32px; font-size: 8px; padding: 8px 11px; }
+.door-transom > span:first-child { font-size: 7px; }
+.door-sign { height: 30px; }
+.door-sign > span { font-size: 13px; }
+.door-sign::before { height: 30px; }
+.door-sign::after { height: 30px; }
+.door-pull { height: 55px; width: 7px; right: 10px; }
+.door-lower-panel { left: 18px; right: 18px; padding: 8px; font-size: 5px; }
+.door-glazing { inset: 16px 18px 29%; }
+.door-cord { height: 34px; }
+.office-header .brand-logo { width: 48px; height: 48px; }
+.office-header .brand-type { font-size: 29px; }
+.office-header .brand-tagline { font-size: 10px; }
+.binder-heading h2 { font-size: 13px; }
+.file-body > b { font-size: 16px; }
+.file-body small { font-size: 10px; }
+.file-people img { width: 23px; height: 23px; }
+.note-person p { font-size: 10px; }
+.note-rule { margin-bottom: 10px; }
+.room-frame { grid-template-rows: 37px minmax(0px, 1fr) 29px; padding-inline: 11px; --room-chrome: 66px; }
+.room-toolbar > span:first-child { font-size: 13px; }
+.room-toolbar > span:last-child { font-size: 11px; }
+.room-toolbar small { font-size: 8px; }
+}
+@media (min-height: 1200px) and (min-width: 1500px) {
+.bench-roster {
+  flex-direction: column; border-top: 1px dashed rgb(216, 198, 168); display: grid; grid-template-columns: repeat(2, minmax(0px, 1fr)); gap: 8px;
+  flex: 0 0 auto; margin-top: 16px; padding-top: 12px; min-height: auto;
+}
+.bench-roster > span { font-size: 11px; color: rgb(121, 100, 74); letter-spacing: 0.8px; grid-column: 1 / -1; margin: 0px; }
+.bench-roster > button {
+  align-items: center; border: 0px; border-radius: 3px; background: transparent; color: rgb(101, 83, 59); text-align: left; display: grid;
+  grid-template-columns: 32px minmax(0px, 1fr); grid-template-rows: auto auto; gap: 1px 8px; min-height: 48px; padding: 5px 6px;
+}
+.bench-roster > button[aria-pressed="true"] { background: rgb(234, 222, 202); }
+.bench-roster > button:hover { background: rgb(238, 228, 210); }
+.bench-roster .portrait { background: rgb(232, 221, 200); grid-area: 1 / 1 / 3; width: 32px; height: 32px; }
+.bench-roster b { font-weight: 500; grid-area: 1 / 2; font-size: 14px; align-self: end; }
+.roster-status { color: rgb(130, 112, 85); grid-area: 2 / 2; margin: 0px; font-size: 12px; align-self: start; }
+.roster-status.blocked { color: rgb(138, 99, 36); }
+.roster-status.working { color: rgb(78, 107, 123); }
+.roster-status.done { color: rgb(82, 109, 63); }
+}
+@media (max-width: 1100px) {
+.board-notes { grid-template-columns: repeat(2, minmax(0px, 1fr)); }
+.board-note { grid-column: auto; }
+.board-note-boss { grid-column: auto; }
+.board-note-hr { grid-column: 1 / -1; max-width: 400px; justify-self: center; }
+.paper-columns { grid-template-columns: 1fr 1fr; }
+.paper-index { grid-column: 1 / -1; border-left: 0px; padding-left: 0px; border-top: 1px solid var(--line); padding-top: 16px; }
+.paperwork-desk { gap: 28px; padding: 0px; }
+.office-rules, .time-card { padding-inline: 24px; }
+}
+@media (max-width: 700px) {
+.workplace { width: 100%; height: 100dvh; padding: 8px 14px 10px; grid-template-rows: 47px 78px minmax(0px, 1fr) 30px; gap: 9px; }
+.office-header { padding-bottom: 9px; gap: 8px; }
+.wordmark { font-size: 21px; gap: 7px; }
+.on-shift { display: none; }
+.office-header nav { font-size: 11px; gap: 7px; }
+.quiet-button { padding: 5px; font-size: 0px; }
+.office-header select { padding-left: 0px; font-size: 11px; max-width: 91px; }
+.office-heading h1 { letter-spacing: -1px; font-size: 25px; max-width: 220px; }
+.install-button {
+  background: var(--surface); color: var(--ink); border: 1px solid var(--line); min-width: 0px; min-height: 38px; padding: 9px; gap: 7px;
+}
+.worktable { grid-template-columns: minmax(0px, 1fr); grid-template-rows: minmax(0px, 1fr) 205px; gap: 13px; }
+.room-frame { grid-area: 1 / 1; padding-inline: 8px; grid-template-rows: 32px 31px minmax(0px, 1fr) 24px; --room-chrome: 87px; }
+.note-panel {
+  grid-area: 2 / 1; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 24px 46px minmax(0px, 1fr); column-gap: 12px;
+  padding: 12px 14px;
+}
+.note-top { padding: 0px 0px 7px; grid-column: 1 / -1; margin: 0px; font-size: 9px; }
+.state-stamp { font-size: 10px; padding: 3px 4px; }
+.note-person { grid-area: 2 / 1; align-self: end; gap: 7px; }
+.note-person .portrait { width: 36px; height: 36px; }
+.note-person h2 { font-size: 21px; margin-bottom: 2px; }
+.note-person p { font-size: 9px; }
+.note-message { grid-area: 3 / 1; font-size: 13px; line-height: 1.5; margin: 9px 0px 0px; }
+.note-rule { display: none; }
+.note-actions { grid-area: 2 / 2; align-self: end; }
+.note-actions button { line-height: 1.35; font-size: 11px; min-height: 39px; padding: 8px; }
+.sample-copy { line-height: 1.6; grid-area: 3 / 2; font-size: 10px; margin: 10px 0px 0px; }
+.room-caption { left: 0px; right: 0px; bottom: -1px; font-size: 8px; justify-content: center; grid-row: 4; }
+.office-footer { padding-top: 5px; gap: 9px; }
+.live-message { gap: 5px; font-size: 10px; max-width: 140px; }
+.live-message > .pixel-icon { visibility: hidden; position: absolute; }
+.status-counts { gap: 8px; }
+.status-counts button { font-size: 10px; gap: 4px; }
+.status-counts i { width: 4px; height: 4px; }
+.entry-screen { padding: 18px 23px; }
+.entry-header > span:first-child { font-size: 24px; }
+.entry-header > span:last-child { font-size: 8px; letter-spacing: 0.6px; max-width: 105px; text-align: right; line-height: 1.5; }
+.entry-layout { margin-inline: auto; display: block; position: relative; padding: 25px 0px; overflow: visible; }
+.door-illustration { position: absolute; width: 210px; left: -65px; top: 12%; opacity: 0.35; transform: rotate(-4deg); pointer-events: auto; }
+.door-lettering { font-family: var(--display); font-weight: 700; font-size: 29px; }
+.door-transom { min-height: 30px; font-size: 6px; letter-spacing: 0.7px; padding: 7px 10px; }
+.door-frame { padding: 10px; }
+.entry-copy {
+  max-width: 330px; margin: auto; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-end;
+  grid-column: auto;
+}
+.entry-copy > h1 {
+  font-size: 58px; letter-spacing: -2.5px; line-height: 1.03; align-self: flex-end; text-align: right; max-width: 300px; margin-bottom: 16px;
+}
+.entry-description { line-height: 1.7; text-align: right; margin-bottom: 23px; font-size: 14px; }
+.staff-pass { width: 285px; rotate: 2deg; }
+.pass-person { padding: 16px; }
+.pass-person .portrait { width: 54px; height: 54px; }
+.pass-person strong { font-size: 27px; }
+.pass-bottom { padding: 13px 14px; gap: 9px; }
+.pass-bottom button { font-size: 14px; gap: 12px; min-height: 62px; padding: 11px 16px; }
+.pass-heading { padding: 10px 14px; font-size: 10px; }
+.pass-bottom > span { font-size: 9px; }
+.door-lettering > span { font-size: 4px; letter-spacing: 0.7px; margin-top: 6px; }
+.door-sign > span { font-size: 10px; letter-spacing: 1.5px; }
+.pass-person > div > span { font-size: 10px; }
+.entry-copy > small { margin-top: 19px; text-align: right; font-size: 10px; line-height: 1.6; }
+.entry-footer { align-items: end; padding-top: 11px; font-size: 10px; line-height: 1.6; }
+.door-mat { font-size: 6px; bottom: 3px; }
+.install-dialog { padding: 19px 23px 23px; }
+.install-dialog > h2 { font-size: 34px; }
+.install-button > .install-label { font-size: 10px; }
+.mobile-projects {
+  bottom: 21px; left: 0px; right: 0px; position: static; grid-row: 2; display: flex; align-items: center; justify-content: center; gap: 6px;
+  border-bottom: 1px solid var(--line);
+}
+.mobile-projects button {
+  display: flex; align-items: center; gap: 6px; justify-content: center; border: 1px solid var(--line); border-radius: 2px; color: var(--muted);
+  background: transparent; font-size: 10px; min-height: 23px; padding: 3px 11px;
+}
+.mobile-projects button[aria-pressed="true"] { background: var(--surface); color: var(--ink); }
+.mobile-projects button > span { width: 4px; height: 12px; border-radius: 1px; }
+.brand-lockup { gap: 5px; }
+.brand-logo { width: 38px; height: 38px; }
+.brand-type { font-size: 24px; letter-spacing: -1px; }
+.brand-tagline { margin-top: 5px; font-size: 10px; letter-spacing: 0px; }
+.entry-header .brand-logo { width: 46px; height: 46px; }
+.entry-header .brand-type { font-size: 28px; }
+.entry-header .brand-tagline { font-size: 11px; letter-spacing: 0px; }
+.door-brand-logo { width: 40px; height: 40px; margin-bottom: 8px; }
+.pass-bottom button strong { font-size: 21px; }
+.room-toolbar small { font-size: 7px; letter-spacing: 0.5px; margin-left: 3px; }
+.pass-bottom button small { font-size: 12px; }
+.pass-bottom .enter-hint { font-size: 10px; }
+.door-sign { height: 25px; }
+.door-loading { font-size: 14px; bottom: 7%; }
+.door-wall { inset: -23px -30px 22px; }
+.door-transom > span:first-child { font-size: 5px; }
+.glass-door { inset: 10px 10px 8px; }
+.door-glazing { inset: 12px 12px 29%; outline-width: 2px; }
+.door-lettering > b { font-size: 22px; letter-spacing: -1px; }
+.door-sign::before { height: 26px; }
+.door-sign::after { height: 26px; }
+.door-pull { height: 43px; width: 6px; right: 7px; }
+.door-pull > i { width: 9px; height: 7px; }
+.door-lower-panel { left: 12px; right: 12px; padding: 5px; font-size: 4px; letter-spacing: 0.5px; }
+.door-kick { height: 10px; bottom: 6px; }
+.door-hinges { left: 5px; }
+.door-hinges > i { width: 8px; height: 14px; }
+.door-threshold { height: 8px; bottom: -4px; }
+.door-cord { height: 29px; }
+.office-header .brand-logo { width: 36px; height: 36px; }
+.office-header .brand-type { font-size: 23px; }
+.office-header .brand-tagline { font-size: 9px; }
+.install-button .install-label { font-size: 10px; }
+.room-toolbar > span:first-child { font-size: 12px; gap: 5px; }
+.room-toolbar > span:last-child { font-size: 9px; gap: 5px; }
+.room-caption > span:last-child { display: none; }
+.native-scene { max-height: 100%; grid-row: 3; }
+.project-binder { display: none; }
+.local-note { display: none; }
+.pitch { image-rendering: pixelated; width: calc(100% - 28px); gap: 38px; padding-top: 38px; }
+.office-paper { padding: 18px; }
+.paper-masthead { letter-spacing: -1.2px; font-size: 32px; }
+.paper-dateline { flex-direction: column; gap: 3px; font-size: 10px; }
+.office-paper h2 { font-size: 34px; }
+.paper-columns { grid-template-columns: minmax(0px, 1fr); gap: 18px; }
+.paper-columns p { font-size: 16px; }
+.notice-board { padding: 20px 20px 28px; border-width: 6px; }
+.board-header h3 { font-size: 20px; }
+.board-notes { grid-template-columns: minmax(0px, 1fr); gap: 30px; }
+.board-note-hr { grid-column: auto; max-width: none; }
+.board-note { padding: 20px 16px 24px; }
+.paperwork-desk { grid-template-columns: minmax(0px, 1fr); gap: 36px; padding: 0px 4px; }
+.time-card { transform: none; padding-inline: 18px; }
+.time-card-row { grid-template-columns: 12px minmax(0px, 1fr) 70px; gap: 4px; padding-inline: 7px; font-size: 12px; }
+}
+@media (max-height: 700px) and (max-width: 700px) {
+.note-panel { grid-template-rows: 21px 40px minmax(0px, 1fr); }
+.entry-copy > h1 { font-size: 46px; }
+.entry-description { margin-bottom: 15px; font-size: 10px; }
+.pass-person { padding: 12px 14px; }
+.pass-person .portrait { width: 44px; height: 44px; }
+.pass-person strong { font-size: 24px; }
+.pass-bottom { padding: 11px 12px; }
+.entry-copy > small { margin-top: 14px; }
+.entry-layout { margin-inline: auto; padding-block: 15px; }
+.entry-footer { padding-top: 8px; }
+.install-button > .install-label { font-size: 9px; }
+.install-button { background: var(--surface); color: var(--ink); border: 1px solid var(--line); gap: 6px; }
+.mobile-projects { bottom: 16px; }
+.mobile-projects button { min-height: 22px; padding: 3px 9px; font-size: 8px; }
+}
+@media (max-width: 380px) {
+.brand-logo { width: 32px; height: 32px; }
+.brand-type { font-size: 21px; }
+.brand-tagline { font-size: 9px; }
+.office-header nav { gap: 5px; font-size: 10px; }
+.office-header select { font-size: 10px; max-width: 83px; }
+}
+@media (prefers-reduced-motion: reduce) {
+.project-file { transition: none; }
+.install-button { background: var(--surface); color: var(--ink); border: 1px solid var(--line); transition: none; }
+.clock-stamp { animation: auto ease 0s 1 normal none running none; }
+.is-entering .door-illustration { animation-duration: 0s; }
+.entry-screen { transition: none; }
+.entry-screen[data-phase="zooming"] .door-illustration { animation-duration: 0s; }
+.entry-screen[data-phase="revealing"] .door-illustration { animation-duration: 0s; }
+.entry-screen .glass-door, .entry-screen .door-sign { transition: none; }
+}
+
+@keyframes stamp { 
+  0% { scale: 1.4; opacity: 0; }
+  100% { scale: 1; opacity: 1; }
+}
+@keyframes door-center { 
+  0% { transform: translate(var(--from-x), var(--from-y)) scale(1); }
+  100% { transform: translate(var(--to-x), var(--to-y)) scale(var(--door-scale)); }
+}
+@keyframes door-walk-through { 
+  0% { transform: translate(var(--to-x), var(--to-y)) scale(var(--door-scale)); }
+  100% { transform: translate(
+        calc(var(--viewport-x) - var(--portal-x) * var(--zoom-scale)),
+        calc(var(--viewport-y) - var(--portal-y) * var(--zoom-scale))
+      )
+      scale(var(--zoom-scale)); }
+}

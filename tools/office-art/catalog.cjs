@@ -1,0 +1,32 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const {ROOT}=require('./finish.cjs');
+const cast=['headset','red-cap','bun','shiny','curly','mohawk','silver','specs','robot','crt-bot','shiba','husky','tabby','black-cat','raccoon','capybara'];
+const extras=['crew-cut','ponytail','beard','bob','spike','braids','beanie'];
+const skins=[...cast,...extras];
+const brief=fs.readFileSync('docs/art-brief.md','utf8');
+const manifest=JSON.parse(brief.split('## manifest.json template')[1].match(/```json\n([\s\S]+?)\n```/)[1]);
+manifest.characters.cast=cast;
+manifest.characters.skins={};
+for(const id of skins)manifest.characters.skins[id]={sheet:`office/characters/${id}.png`,polo:`office/characters/${id}-polo.png`,portrait:`office/characters/${id}-portrait.png`,portraitPolo:`office/characters/${id}-portrait-polo.png`};
+manifest.objects.benchTagPolo='office/objects/bench-tag-polo.png';
+for(const [key,file]of Object.entries({fluorescent:'fluorescent',phoneChargers:'phone-chargers',wallFan:'wall-fan',dormBlock:'dorm-block'}))manifest.objects[key]=`office/objects/${file}.png`;
+manifest.backgrounds={compoundNight:'office/background/compound-night.png',yard:'office/tiles/yard.png'};
+manifest.ui.fxSleep='office/ui/fx-sleep.png';
+manifest.characters.boss.zapperShape='cartoon-electric-baton';
+manifest.characters.animations={walkDown:[0,1,2,3],walkLeft:[4,5,6,7],walkUp:[8,9,10,11],sitUp:[12],standDown:[13],waveDown:[14],spare:[15,30,31,34,35],typeUp:[16,17,18,19],handUp:[20,21],relaxUp:[22,23],napUp:[24,25],standUp:[26],sitDown:[27],idleDown:[28,29],zappedUp:[32,33]};
+manifest.characters.boss.animations={walkDown:[0,1,2,3],walkLeft:[4,5,6,7],walkUp:[8,9,10,11],idleWalkie:[12,13],tapShoulder:[14,15],knockDesk:[16,17],pressBuzzer:[18,19],newspaper:[20,21,22],spare:[23,35,38,39],megaphone:[24,25],coffee:[26,27],highFive:[28,29],watch:[30,31],whipCrack:[32,33,34],zapper:[36,37]};
+manifest.layout={monitor:{screen:{x:4,y:4,width:24,height:12}},benchTag:{face:{x:2,y:5,width:60,height:7},polo:'office/objects/bench-tag-polo.png'},wall:{left:16,top:64,right:16,bottom:16},bubble:{left:4,top:4,right:4,bottom:4},windowNight:{frame:{width:96,height:48},columns:2,frames:2},gong:{frame:{width:64,height:48},columns:3,frames:3},cctv:{frame:{width:16,height:16},columns:2,frames:2},markerNeeds:{frame:{width:16,height:24},columns:2,frames:2},effects:{frame:{width:16,height:16},columns:3,frames:3},icons:{columns:7,rows:2,order:['ellipsis','check','question','sleep','raised-hand','terminal','door','search','sound-on','sound-off','claude','codex','cursor','other-agent']}};
+const expected={};
+manifest.layout.sleep={frame:{width:16,height:24},columns:3,frames:3,workerFrames:[24,25],offset:{x:30,y:8}};
+manifest.layout.handUp={frames:[20,21],standing:true,workerYOffset:8,chairBehind:true};
+manifest.layout.compoundScene={width:768,height:832,exterior:{x:0,y:0,width:768,height:224},floor:{x:40,y:300,width:688,height:492}};
+function add(file,w,h){expected[file]=[w,h];}
+for(const id of skins){add(`characters/${id}.png`,192,648);add(`characters/${id}-polo.png`,192,648);add(`characters/${id}-portrait.png`,64,64);add(`characters/${id}-portrait-polo.png`,64,64);}
+add('characters/boss.png',192,720);add('characters/boss-portrait.png',64,64);
+for(const [file,w,h]of [['background/compound-night.png',768,224],['tiles/yard.png',32,32],['ui/fx-sleep.png',48,24],['objects/fluorescent.png',96,16],['objects/phone-chargers.png',48,32],['objects/wall-fan.png',32,32],['objects/dorm-block.png',128,96]])add(file,w,h);
+for(const f of ['fx-crack','fx-zap'])add(`ui/${f}.png`,48,16);for(const f of ['whip','zapper'])add(`ui/${f}.png`,16,16);
+for(const [file,w,h]of [['tiles/floor.png',32,32],['tiles/wall.png',96,96],['tiles/aisle.png',32,32],...['l','m','r'].map(s=>[`objects/bench-${s}.png`,32,48]),['objects/monitor.png',32,24],['objects/chair-back.png',32,32],['objects/chair-front.png',32,32],['objects/bench-tag.png',64,16],['objects/bench-tag-polo.png',64,16],...['phone-rack','desk-phone','noodle-cup','mug','papers','energy-drink','desk-buzzer','clock'].map(s=>[`objects/${s}.png`,16,16]),['objects/banner.png',256,32],['objects/kpi-board.png',96,48],['objects/window-night.png',192,48],['objects/cctv.png',32,16],...['door','water-cooler','printer','shredder','dorm-door'].map(s=>[`objects/${s}.png`,32,64]),['objects/gong.png',192,48],['objects/poster-recruit.png',48,32],['objects/noodle-boxes.png',32,48],['objects/drink-crates.png',32,48],['objects/boss-office.png',192,96],['ui/bubble.png',24,24],['ui/bubble-tail.png',8,6],['ui/marker-needs.png',32,24],...['stars','jolt','heart'].map(s=>[`ui/fx-${s}.png`,48,16]),...['megaphone','newspaper','coffee','walkie'].map(s=>[`ui/${s}.png`,16,16]),['ui/icons-16.png',112,32],['ui/icons-32.png',224,64]])add(file,w,h);
+fs.writeFileSync(path.join(ROOT,'manifest.json'),JSON.stringify(manifest,null,2)+'\n');
+module.exports={cast,extras,skins,expected,manifest};
+if(require.main===module)console.log(`Catalog: ${Object.keys(expected).length} PNG files; ${skins.length} skins; 16 default cast; 36 worker frames / 40 boss frames`);

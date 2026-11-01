@@ -1,0 +1,3682 @@
+[
+  {
+    "id": "headset",
+    "frame": 0,
+    "poloPixels": 178
+  },
+  {
+    "id": "headset",
+    "frame": 1,
+    "poloPixels": 175
+  },
+  {
+    "id": "headset",
+    "frame": 2,
+    "poloPixels": 176
+  },
+  {
+    "id": "headset",
+    "frame": 3,
+    "poloPixels": 180
+  },
+  {
+    "id": "headset",
+    "frame": 4,
+    "poloPixels": 127
+  },
+  {
+    "id": "headset",
+    "frame": 5,
+    "poloPixels": 83
+  },
+  {
+    "id": "headset",
+    "frame": 6,
+    "poloPixels": 122
+  },
+  {
+    "id": "headset",
+    "frame": 7,
+    "poloPixels": 133
+  },
+  {
+    "id": "headset",
+    "frame": 8,
+    "poloPixels": 223
+  },
+  {
+    "id": "headset",
+    "frame": 9,
+    "poloPixels": 220
+  },
+  {
+    "id": "headset",
+    "frame": 10,
+    "poloPixels": 218
+  },
+  {
+    "id": "headset",
+    "frame": 11,
+    "poloPixels": 228
+  },
+  {
+    "id": "headset",
+    "frame": 12,
+    "poloPixels": 217
+  },
+  {
+    "id": "headset",
+    "frame": 13,
+    "poloPixels": 173
+  },
+  {
+    "id": "headset",
+    "frame": 14,
+    "poloPixels": 118
+  },
+  {
+    "id": "headset",
+    "frame": 15,
+    "poloPixels": 165
+  },
+  {
+    "id": "headset",
+    "frame": 16,
+    "poloPixels": 221
+  },
+  {
+    "id": "headset",
+    "frame": 17,
+    "poloPixels": 216
+  },
+  {
+    "id": "headset",
+    "frame": 18,
+    "poloPixels": 222
+  },
+  {
+    "id": "headset",
+    "frame": 19,
+    "poloPixels": 225
+  },
+  {
+    "id": "headset",
+    "frame": 20,
+    "poloPixels": 305
+  },
+  {
+    "id": "headset",
+    "frame": 21,
+    "poloPixels": 283
+  },
+  {
+    "id": "headset",
+    "frame": 22,
+    "poloPixels": 211
+  },
+  {
+    "id": "headset",
+    "frame": 23,
+    "poloPixels": 191
+  },
+  {
+    "id": "headset",
+    "frame": 24,
+    "poloPixels": 237
+  },
+  {
+    "id": "headset",
+    "frame": 25,
+    "poloPixels": 234
+  },
+  {
+    "id": "headset",
+    "frame": 26,
+    "poloPixels": 213
+  },
+  {
+    "id": "headset",
+    "frame": 27,
+    "poloPixels": 201
+  },
+  {
+    "id": "headset",
+    "frame": 28,
+    "poloPixels": 181
+  },
+  {
+    "id": "headset",
+    "frame": 29,
+    "poloPixels": 180
+  },
+  {
+    "id": "headset",
+    "frame": 30,
+    "poloPixels": 175
+  },
+  {
+    "id": "headset",
+    "frame": 31,
+    "poloPixels": 179
+  },
+  {
+    "id": "red-cap",
+    "frame": 0,
+    "poloPixels": 183
+  },
+  {
+    "id": "red-cap",
+    "frame": 1,
+    "poloPixels": 172
+  },
+  {
+    "id": "red-cap",
+    "frame": 2,
+    "poloPixels": 183
+  },
+  {
+    "id": "red-cap",
+    "frame": 3,
+    "poloPixels": 177
+  },
+  {
+    "id": "red-cap",
+    "frame": 4,
+    "poloPixels": 131
+  },
+  {
+    "id": "red-cap",
+    "frame": 5,
+    "poloPixels": 88
+  },
+  {
+    "id": "red-cap",
+    "frame": 6,
+    "poloPixels": 132
+  },
+  {
+    "id": "red-cap",
+    "frame": 7,
+    "poloPixels": 127
+  },
+  {
+    "id": "red-cap",
+    "frame": 8,
+    "poloPixels": 220
+  },
+  {
+    "id": "red-cap",
+    "frame": 9,
+    "poloPixels": 215
+  },
+  {
+    "id": "red-cap",
+    "frame": 10,
+    "poloPixels": 204
+  },
+  {
+    "id": "red-cap",
+    "frame": 11,
+    "poloPixels": 221
+  },
+  {
+    "id": "red-cap",
+    "frame": 12,
+    "poloPixels": 209
+  },
+  {
+    "id": "red-cap",
+    "frame": 13,
+    "poloPixels": 171
+  },
+  {
+    "id": "red-cap",
+    "frame": 14,
+    "poloPixels": 122
+  },
+  {
+    "id": "red-cap",
+    "frame": 15,
+    "poloPixels": 172
+  },
+  {
+    "id": "red-cap",
+    "frame": 16,
+    "poloPixels": 249
+  },
+  {
+    "id": "red-cap",
+    "frame": 17,
+    "poloPixels": 239
+  },
+  {
+    "id": "red-cap",
+    "frame": 18,
+    "poloPixels": 234
+  },
+  {
+    "id": "red-cap",
+    "frame": 19,
+    "poloPixels": 238
+  },
+  {
+    "id": "red-cap",
+    "frame": 20,
+    "poloPixels": 298
+  },
+  {
+    "id": "red-cap",
+    "frame": 21,
+    "poloPixels": 277
+  },
+  {
+    "id": "red-cap",
+    "frame": 22,
+    "poloPixels": 196
+  },
+  {
+    "id": "red-cap",
+    "frame": 23,
+    "poloPixels": 185
+  },
+  {
+    "id": "red-cap",
+    "frame": 24,
+    "poloPixels": 231
+  },
+  {
+    "id": "red-cap",
+    "frame": 25,
+    "poloPixels": 228
+  },
+  {
+    "id": "red-cap",
+    "frame": 26,
+    "poloPixels": 205
+  },
+  {
+    "id": "red-cap",
+    "frame": 27,
+    "poloPixels": 95
+  },
+  {
+    "id": "red-cap",
+    "frame": 28,
+    "poloPixels": 171
+  },
+  {
+    "id": "red-cap",
+    "frame": 29,
+    "poloPixels": 172
+  },
+  {
+    "id": "red-cap",
+    "frame": 30,
+    "poloPixels": 168
+  },
+  {
+    "id": "red-cap",
+    "frame": 31,
+    "poloPixels": 174
+  },
+  {
+    "id": "bun",
+    "frame": 0,
+    "poloPixels": 143
+  },
+  {
+    "id": "bun",
+    "frame": 1,
+    "poloPixels": 139
+  },
+  {
+    "id": "bun",
+    "frame": 2,
+    "poloPixels": 146
+  },
+  {
+    "id": "bun",
+    "frame": 3,
+    "poloPixels": 144
+  },
+  {
+    "id": "bun",
+    "frame": 4,
+    "poloPixels": 108
+  },
+  {
+    "id": "bun",
+    "frame": 5,
+    "poloPixels": 72
+  },
+  {
+    "id": "bun",
+    "frame": 6,
+    "poloPixels": 108
+  },
+  {
+    "id": "bun",
+    "frame": 7,
+    "poloPixels": 89
+  },
+  {
+    "id": "bun",
+    "frame": 8,
+    "poloPixels": 177
+  },
+  {
+    "id": "bun",
+    "frame": 9,
+    "poloPixels": 175
+  },
+  {
+    "id": "bun",
+    "frame": 10,
+    "poloPixels": 170
+  },
+  {
+    "id": "bun",
+    "frame": 11,
+    "poloPixels": 175
+  },
+  {
+    "id": "bun",
+    "frame": 12,
+    "poloPixels": 156
+  },
+  {
+    "id": "bun",
+    "frame": 13,
+    "poloPixels": 141
+  },
+  {
+    "id": "bun",
+    "frame": 14,
+    "poloPixels": 142
+  },
+  {
+    "id": "bun",
+    "frame": 15,
+    "poloPixels": 145
+  },
+  {
+    "id": "bun",
+    "frame": 16,
+    "poloPixels": 181
+  },
+  {
+    "id": "bun",
+    "frame": 17,
+    "poloPixels": 181
+  },
+  {
+    "id": "bun",
+    "frame": 18,
+    "poloPixels": 183
+  },
+  {
+    "id": "bun",
+    "frame": 19,
+    "poloPixels": 183
+  },
+  {
+    "id": "bun",
+    "frame": 20,
+    "poloPixels": 286
+  },
+  {
+    "id": "bun",
+    "frame": 21,
+    "poloPixels": 277
+  },
+  {
+    "id": "bun",
+    "frame": 22,
+    "poloPixels": 49
+  },
+  {
+    "id": "bun",
+    "frame": 23,
+    "poloPixels": 186
+  },
+  {
+    "id": "bun",
+    "frame": 24,
+    "poloPixels": 64
+  },
+  {
+    "id": "bun",
+    "frame": 25,
+    "poloPixels": 64
+  },
+  {
+    "id": "bun",
+    "frame": 26,
+    "poloPixels": 143
+  },
+  {
+    "id": "bun",
+    "frame": 27,
+    "poloPixels": 101
+  },
+  {
+    "id": "bun",
+    "frame": 28,
+    "poloPixels": 185
+  },
+  {
+    "id": "bun",
+    "frame": 29,
+    "poloPixels": 192
+  },
+  {
+    "id": "bun",
+    "frame": 30,
+    "poloPixels": 194
+  },
+  {
+    "id": "bun",
+    "frame": 31,
+    "poloPixels": 191
+  },
+  {
+    "id": "shiny",
+    "frame": 0,
+    "poloPixels": 193
+  },
+  {
+    "id": "shiny",
+    "frame": 1,
+    "poloPixels": 198
+  },
+  {
+    "id": "shiny",
+    "frame": 2,
+    "poloPixels": 199
+  },
+  {
+    "id": "shiny",
+    "frame": 3,
+    "poloPixels": 202
+  },
+  {
+    "id": "shiny",
+    "frame": 4,
+    "poloPixels": 139
+  },
+  {
+    "id": "shiny",
+    "frame": 5,
+    "poloPixels": 98
+  },
+  {
+    "id": "shiny",
+    "frame": 6,
+    "poloPixels": 135
+  },
+  {
+    "id": "shiny",
+    "frame": 7,
+    "poloPixels": 132
+  },
+  {
+    "id": "shiny",
+    "frame": 8,
+    "poloPixels": 244
+  },
+  {
+    "id": "shiny",
+    "frame": 9,
+    "poloPixels": 236
+  },
+  {
+    "id": "shiny",
+    "frame": 10,
+    "poloPixels": 236
+  },
+  {
+    "id": "shiny",
+    "frame": 11,
+    "poloPixels": 243
+  },
+  {
+    "id": "shiny",
+    "frame": 12,
+    "poloPixels": 284
+  },
+  {
+    "id": "shiny",
+    "frame": 13,
+    "poloPixels": 226
+  },
+  {
+    "id": "shiny",
+    "frame": 14,
+    "poloPixels": 144
+  },
+  {
+    "id": "shiny",
+    "frame": 15,
+    "poloPixels": 230
+  },
+  {
+    "id": "shiny",
+    "frame": 16,
+    "poloPixels": 275
+  },
+  {
+    "id": "shiny",
+    "frame": 17,
+    "poloPixels": 273
+  },
+  {
+    "id": "shiny",
+    "frame": 18,
+    "poloPixels": 281
+  },
+  {
+    "id": "shiny",
+    "frame": 19,
+    "poloPixels": 279
+  },
+  {
+    "id": "shiny",
+    "frame": 20,
+    "poloPixels": 314
+  },
+  {
+    "id": "shiny",
+    "frame": 21,
+    "poloPixels": 329
+  },
+  {
+    "id": "shiny",
+    "frame": 22,
+    "poloPixels": 226
+  },
+  {
+    "id": "shiny",
+    "frame": 23,
+    "poloPixels": 219
+  },
+  {
+    "id": "shiny",
+    "frame": 24,
+    "poloPixels": 311
+  },
+  {
+    "id": "shiny",
+    "frame": 25,
+    "poloPixels": 307
+  },
+  {
+    "id": "shiny",
+    "frame": 26,
+    "poloPixels": 318
+  },
+  {
+    "id": "shiny",
+    "frame": 27,
+    "poloPixels": 243
+  },
+  {
+    "id": "shiny",
+    "frame": 28,
+    "poloPixels": 266
+  },
+  {
+    "id": "shiny",
+    "frame": 29,
+    "poloPixels": 275
+  },
+  {
+    "id": "shiny",
+    "frame": 30,
+    "poloPixels": 253
+  },
+  {
+    "id": "shiny",
+    "frame": 31,
+    "poloPixels": 261
+  },
+  {
+    "id": "curly",
+    "frame": 0,
+    "poloPixels": 157
+  },
+  {
+    "id": "curly",
+    "frame": 1,
+    "poloPixels": 157
+  },
+  {
+    "id": "curly",
+    "frame": 2,
+    "poloPixels": 157
+  },
+  {
+    "id": "curly",
+    "frame": 3,
+    "poloPixels": 162
+  },
+  {
+    "id": "curly",
+    "frame": 4,
+    "poloPixels": 114
+  },
+  {
+    "id": "curly",
+    "frame": 5,
+    "poloPixels": 78
+  },
+  {
+    "id": "curly",
+    "frame": 6,
+    "poloPixels": 114
+  },
+  {
+    "id": "curly",
+    "frame": 7,
+    "poloPixels": 109
+  },
+  {
+    "id": "curly",
+    "frame": 8,
+    "poloPixels": 191
+  },
+  {
+    "id": "curly",
+    "frame": 9,
+    "poloPixels": 184
+  },
+  {
+    "id": "curly",
+    "frame": 10,
+    "poloPixels": 183
+  },
+  {
+    "id": "curly",
+    "frame": 11,
+    "poloPixels": 191
+  },
+  {
+    "id": "curly",
+    "frame": 12,
+    "poloPixels": 191
+  },
+  {
+    "id": "curly",
+    "frame": 13,
+    "poloPixels": 159
+  },
+  {
+    "id": "curly",
+    "frame": 14,
+    "poloPixels": 129
+  },
+  {
+    "id": "curly",
+    "frame": 15,
+    "poloPixels": 158
+  },
+  {
+    "id": "curly",
+    "frame": 16,
+    "poloPixels": 251
+  },
+  {
+    "id": "curly",
+    "frame": 17,
+    "poloPixels": 251
+  },
+  {
+    "id": "curly",
+    "frame": 18,
+    "poloPixels": 259
+  },
+  {
+    "id": "curly",
+    "frame": 19,
+    "poloPixels": 253
+  },
+  {
+    "id": "curly",
+    "frame": 20,
+    "poloPixels": 294
+  },
+  {
+    "id": "curly",
+    "frame": 21,
+    "poloPixels": 296
+  },
+  {
+    "id": "curly",
+    "frame": 22,
+    "poloPixels": 222
+  },
+  {
+    "id": "curly",
+    "frame": 23,
+    "poloPixels": 202
+  },
+  {
+    "id": "curly",
+    "frame": 24,
+    "poloPixels": 252
+  },
+  {
+    "id": "curly",
+    "frame": 25,
+    "poloPixels": 266
+  },
+  {
+    "id": "curly",
+    "frame": 26,
+    "poloPixels": 218
+  },
+  {
+    "id": "curly",
+    "frame": 27,
+    "poloPixels": 212
+  },
+  {
+    "id": "curly",
+    "frame": 28,
+    "poloPixels": 190
+  },
+  {
+    "id": "curly",
+    "frame": 29,
+    "poloPixels": 183
+  },
+  {
+    "id": "curly",
+    "frame": 30,
+    "poloPixels": 186
+  },
+  {
+    "id": "curly",
+    "frame": 31,
+    "poloPixels": 185
+  },
+  {
+    "id": "mohawk",
+    "frame": 0,
+    "poloPixels": 158
+  },
+  {
+    "id": "mohawk",
+    "frame": 1,
+    "poloPixels": 160
+  },
+  {
+    "id": "mohawk",
+    "frame": 2,
+    "poloPixels": 153
+  },
+  {
+    "id": "mohawk",
+    "frame": 3,
+    "poloPixels": 145
+  },
+  {
+    "id": "mohawk",
+    "frame": 4,
+    "poloPixels": 124
+  },
+  {
+    "id": "mohawk",
+    "frame": 5,
+    "poloPixels": 94
+  },
+  {
+    "id": "mohawk",
+    "frame": 6,
+    "poloPixels": 119
+  },
+  {
+    "id": "mohawk",
+    "frame": 7,
+    "poloPixels": 117
+  },
+  {
+    "id": "mohawk",
+    "frame": 8,
+    "poloPixels": 196
+  },
+  {
+    "id": "mohawk",
+    "frame": 9,
+    "poloPixels": 189
+  },
+  {
+    "id": "mohawk",
+    "frame": 10,
+    "poloPixels": 199
+  },
+  {
+    "id": "mohawk",
+    "frame": 11,
+    "poloPixels": 208
+  },
+  {
+    "id": "mohawk",
+    "frame": 12,
+    "poloPixels": 193
+  },
+  {
+    "id": "mohawk",
+    "frame": 13,
+    "poloPixels": 172
+  },
+  {
+    "id": "mohawk",
+    "frame": 14,
+    "poloPixels": 166
+  },
+  {
+    "id": "mohawk",
+    "frame": 15,
+    "poloPixels": 172
+  },
+  {
+    "id": "mohawk",
+    "frame": 16,
+    "poloPixels": 202
+  },
+  {
+    "id": "mohawk",
+    "frame": 17,
+    "poloPixels": 210
+  },
+  {
+    "id": "mohawk",
+    "frame": 18,
+    "poloPixels": 212
+  },
+  {
+    "id": "mohawk",
+    "frame": 19,
+    "poloPixels": 206
+  },
+  {
+    "id": "mohawk",
+    "frame": 20,
+    "poloPixels": 285
+  },
+  {
+    "id": "mohawk",
+    "frame": 21,
+    "poloPixels": 262
+  },
+  {
+    "id": "mohawk",
+    "frame": 22,
+    "poloPixels": 204
+  },
+  {
+    "id": "mohawk",
+    "frame": 23,
+    "poloPixels": 183
+  },
+  {
+    "id": "mohawk",
+    "frame": 24,
+    "poloPixels": 200
+  },
+  {
+    "id": "mohawk",
+    "frame": 25,
+    "poloPixels": 201
+  },
+  {
+    "id": "mohawk",
+    "frame": 26,
+    "poloPixels": 213
+  },
+  {
+    "id": "mohawk",
+    "frame": 27,
+    "poloPixels": 93
+  },
+  {
+    "id": "mohawk",
+    "frame": 28,
+    "poloPixels": 168
+  },
+  {
+    "id": "mohawk",
+    "frame": 29,
+    "poloPixels": 167
+  },
+  {
+    "id": "mohawk",
+    "frame": 30,
+    "poloPixels": 168
+  },
+  {
+    "id": "mohawk",
+    "frame": 31,
+    "poloPixels": 171
+  },
+  {
+    "id": "silver",
+    "frame": 0,
+    "poloPixels": 164
+  },
+  {
+    "id": "silver",
+    "frame": 1,
+    "poloPixels": 172
+  },
+  {
+    "id": "silver",
+    "frame": 2,
+    "poloPixels": 162
+  },
+  {
+    "id": "silver",
+    "frame": 3,
+    "poloPixels": 171
+  },
+  {
+    "id": "silver",
+    "frame": 4,
+    "poloPixels": 127
+  },
+  {
+    "id": "silver",
+    "frame": 5,
+    "poloPixels": 93
+  },
+  {
+    "id": "silver",
+    "frame": 6,
+    "poloPixels": 125
+  },
+  {
+    "id": "silver",
+    "frame": 7,
+    "poloPixels": 130
+  },
+  {
+    "id": "silver",
+    "frame": 8,
+    "poloPixels": 184
+  },
+  {
+    "id": "silver",
+    "frame": 9,
+    "poloPixels": 206
+  },
+  {
+    "id": "silver",
+    "frame": 10,
+    "poloPixels": 200
+  },
+  {
+    "id": "silver",
+    "frame": 11,
+    "poloPixels": 202
+  },
+  {
+    "id": "silver",
+    "frame": 12,
+    "poloPixels": 235
+  },
+  {
+    "id": "silver",
+    "frame": 13,
+    "poloPixels": 156
+  },
+  {
+    "id": "silver",
+    "frame": 14,
+    "poloPixels": 46
+  },
+  {
+    "id": "silver",
+    "frame": 15,
+    "poloPixels": 151
+  },
+  {
+    "id": "silver",
+    "frame": 16,
+    "poloPixels": 243
+  },
+  {
+    "id": "silver",
+    "frame": 17,
+    "poloPixels": 234
+  },
+  {
+    "id": "silver",
+    "frame": 18,
+    "poloPixels": 245
+  },
+  {
+    "id": "silver",
+    "frame": 19,
+    "poloPixels": 240
+  },
+  {
+    "id": "silver",
+    "frame": 20,
+    "poloPixels": 215
+  },
+  {
+    "id": "silver",
+    "frame": 21,
+    "poloPixels": 210
+  },
+  {
+    "id": "silver",
+    "frame": 22,
+    "poloPixels": 143
+  },
+  {
+    "id": "silver",
+    "frame": 23,
+    "poloPixels": 139
+  },
+  {
+    "id": "silver",
+    "frame": 24,
+    "poloPixels": 210
+  },
+  {
+    "id": "silver",
+    "frame": 25,
+    "poloPixels": 208
+  },
+  {
+    "id": "silver",
+    "frame": 26,
+    "poloPixels": 192
+  },
+  {
+    "id": "silver",
+    "frame": 27,
+    "poloPixels": 105
+  },
+  {
+    "id": "silver",
+    "frame": 28,
+    "poloPixels": 145
+  },
+  {
+    "id": "silver",
+    "frame": 29,
+    "poloPixels": 146
+  },
+  {
+    "id": "silver",
+    "frame": 30,
+    "poloPixels": 146
+  },
+  {
+    "id": "silver",
+    "frame": 31,
+    "poloPixels": 147
+  },
+  {
+    "id": "specs",
+    "frame": 0,
+    "poloPixels": 177
+  },
+  {
+    "id": "specs",
+    "frame": 1,
+    "poloPixels": 187
+  },
+  {
+    "id": "specs",
+    "frame": 2,
+    "poloPixels": 185
+  },
+  {
+    "id": "specs",
+    "frame": 3,
+    "poloPixels": 186
+  },
+  {
+    "id": "specs",
+    "frame": 4,
+    "poloPixels": 133
+  },
+  {
+    "id": "specs",
+    "frame": 5,
+    "poloPixels": 87
+  },
+  {
+    "id": "specs",
+    "frame": 6,
+    "poloPixels": 139
+  },
+  {
+    "id": "specs",
+    "frame": 7,
+    "poloPixels": 134
+  },
+  {
+    "id": "specs",
+    "frame": 8,
+    "poloPixels": 234
+  },
+  {
+    "id": "specs",
+    "frame": 9,
+    "poloPixels": 229
+  },
+  {
+    "id": "specs",
+    "frame": 10,
+    "poloPixels": 232
+  },
+  {
+    "id": "specs",
+    "frame": 11,
+    "poloPixels": 235
+  },
+  {
+    "id": "specs",
+    "frame": 12,
+    "poloPixels": 216
+  },
+  {
+    "id": "specs",
+    "frame": 13,
+    "poloPixels": 175
+  },
+  {
+    "id": "specs",
+    "frame": 14,
+    "poloPixels": 117
+  },
+  {
+    "id": "specs",
+    "frame": 15,
+    "poloPixels": 173
+  },
+  {
+    "id": "specs",
+    "frame": 16,
+    "poloPixels": 212
+  },
+  {
+    "id": "specs",
+    "frame": 17,
+    "poloPixels": 207
+  },
+  {
+    "id": "specs",
+    "frame": 18,
+    "poloPixels": 213
+  },
+  {
+    "id": "specs",
+    "frame": 19,
+    "poloPixels": 202
+  },
+  {
+    "id": "specs",
+    "frame": 20,
+    "poloPixels": 294
+  },
+  {
+    "id": "specs",
+    "frame": 21,
+    "poloPixels": 273
+  },
+  {
+    "id": "specs",
+    "frame": 22,
+    "poloPixels": 205
+  },
+  {
+    "id": "specs",
+    "frame": 23,
+    "poloPixels": 196
+  },
+  {
+    "id": "specs",
+    "frame": 24,
+    "poloPixels": 256
+  },
+  {
+    "id": "specs",
+    "frame": 25,
+    "poloPixels": 247
+  },
+  {
+    "id": "specs",
+    "frame": 26,
+    "poloPixels": 206
+  },
+  {
+    "id": "specs",
+    "frame": 27,
+    "poloPixels": 145
+  },
+  {
+    "id": "specs",
+    "frame": 28,
+    "poloPixels": 177
+  },
+  {
+    "id": "specs",
+    "frame": 29,
+    "poloPixels": 176
+  },
+  {
+    "id": "specs",
+    "frame": 30,
+    "poloPixels": 176
+  },
+  {
+    "id": "specs",
+    "frame": 31,
+    "poloPixels": 177
+  },
+  {
+    "id": "robot",
+    "frame": 0,
+    "poloPixels": 203
+  },
+  {
+    "id": "robot",
+    "frame": 1,
+    "poloPixels": 204
+  },
+  {
+    "id": "robot",
+    "frame": 2,
+    "poloPixels": 168
+  },
+  {
+    "id": "robot",
+    "frame": 3,
+    "poloPixels": 204
+  },
+  {
+    "id": "robot",
+    "frame": 4,
+    "poloPixels": 127
+  },
+  {
+    "id": "robot",
+    "frame": 5,
+    "poloPixels": 112
+  },
+  {
+    "id": "robot",
+    "frame": 6,
+    "poloPixels": 144
+  },
+  {
+    "id": "robot",
+    "frame": 7,
+    "poloPixels": 146
+  },
+  {
+    "id": "robot",
+    "frame": 8,
+    "poloPixels": 185
+  },
+  {
+    "id": "robot",
+    "frame": 9,
+    "poloPixels": 195
+  },
+  {
+    "id": "robot",
+    "frame": 10,
+    "poloPixels": 184
+  },
+  {
+    "id": "robot",
+    "frame": 11,
+    "poloPixels": 192
+  },
+  {
+    "id": "robot",
+    "frame": 12,
+    "poloPixels": 196
+  },
+  {
+    "id": "robot",
+    "frame": 13,
+    "poloPixels": 172
+  },
+  {
+    "id": "robot",
+    "frame": 14,
+    "poloPixels": 68
+  },
+  {
+    "id": "robot",
+    "frame": 15,
+    "poloPixels": 167
+  },
+  {
+    "id": "robot",
+    "frame": 16,
+    "poloPixels": 201
+  },
+  {
+    "id": "robot",
+    "frame": 17,
+    "poloPixels": 204
+  },
+  {
+    "id": "robot",
+    "frame": 18,
+    "poloPixels": 207
+  },
+  {
+    "id": "robot",
+    "frame": 19,
+    "poloPixels": 206
+  },
+  {
+    "id": "robot",
+    "frame": 20,
+    "poloPixels": 233
+  },
+  {
+    "id": "robot",
+    "frame": 21,
+    "poloPixels": 224
+  },
+  {
+    "id": "robot",
+    "frame": 22,
+    "poloPixels": 145
+  },
+  {
+    "id": "robot",
+    "frame": 23,
+    "poloPixels": 148
+  },
+  {
+    "id": "robot",
+    "frame": 24,
+    "poloPixels": 207
+  },
+  {
+    "id": "robot",
+    "frame": 25,
+    "poloPixels": 212
+  },
+  {
+    "id": "robot",
+    "frame": 26,
+    "poloPixels": 184
+  },
+  {
+    "id": "robot",
+    "frame": 27,
+    "poloPixels": 154
+  },
+  {
+    "id": "robot",
+    "frame": 28,
+    "poloPixels": 158
+  },
+  {
+    "id": "robot",
+    "frame": 29,
+    "poloPixels": 163
+  },
+  {
+    "id": "robot",
+    "frame": 30,
+    "poloPixels": 155
+  },
+  {
+    "id": "robot",
+    "frame": 31,
+    "poloPixels": 178
+  },
+  {
+    "id": "crt-bot",
+    "frame": 0,
+    "poloPixels": 208
+  },
+  {
+    "id": "crt-bot",
+    "frame": 1,
+    "poloPixels": 200
+  },
+  {
+    "id": "crt-bot",
+    "frame": 2,
+    "poloPixels": 206
+  },
+  {
+    "id": "crt-bot",
+    "frame": 3,
+    "poloPixels": 171
+  },
+  {
+    "id": "crt-bot",
+    "frame": 4,
+    "poloPixels": 135
+  },
+  {
+    "id": "crt-bot",
+    "frame": 5,
+    "poloPixels": 115
+  },
+  {
+    "id": "crt-bot",
+    "frame": 6,
+    "poloPixels": 154
+  },
+  {
+    "id": "crt-bot",
+    "frame": 7,
+    "poloPixels": 137
+  },
+  {
+    "id": "crt-bot",
+    "frame": 8,
+    "poloPixels": 211
+  },
+  {
+    "id": "crt-bot",
+    "frame": 9,
+    "poloPixels": 185
+  },
+  {
+    "id": "crt-bot",
+    "frame": 10,
+    "poloPixels": 194
+  },
+  {
+    "id": "crt-bot",
+    "frame": 11,
+    "poloPixels": 213
+  },
+  {
+    "id": "crt-bot",
+    "frame": 12,
+    "poloPixels": 224
+  },
+  {
+    "id": "crt-bot",
+    "frame": 13,
+    "poloPixels": 119
+  },
+  {
+    "id": "crt-bot",
+    "frame": 14,
+    "poloPixels": 42
+  },
+  {
+    "id": "crt-bot",
+    "frame": 15,
+    "poloPixels": 148
+  },
+  {
+    "id": "crt-bot",
+    "frame": 16,
+    "poloPixels": 254
+  },
+  {
+    "id": "crt-bot",
+    "frame": 17,
+    "poloPixels": 248
+  },
+  {
+    "id": "crt-bot",
+    "frame": 18,
+    "poloPixels": 242
+  },
+  {
+    "id": "crt-bot",
+    "frame": 19,
+    "poloPixels": 257
+  },
+  {
+    "id": "crt-bot",
+    "frame": 20,
+    "poloPixels": 237
+  },
+  {
+    "id": "crt-bot",
+    "frame": 21,
+    "poloPixels": 222
+  },
+  {
+    "id": "crt-bot",
+    "frame": 22,
+    "poloPixels": 142
+  },
+  {
+    "id": "crt-bot",
+    "frame": 23,
+    "poloPixels": 136
+  },
+  {
+    "id": "crt-bot",
+    "frame": 24,
+    "poloPixels": 172
+  },
+  {
+    "id": "crt-bot",
+    "frame": 25,
+    "poloPixels": 171
+  },
+  {
+    "id": "crt-bot",
+    "frame": 26,
+    "poloPixels": 175
+  },
+  {
+    "id": "crt-bot",
+    "frame": 27,
+    "poloPixels": 166
+  },
+  {
+    "id": "crt-bot",
+    "frame": 28,
+    "poloPixels": 160
+  },
+  {
+    "id": "crt-bot",
+    "frame": 29,
+    "poloPixels": 141
+  },
+  {
+    "id": "crt-bot",
+    "frame": 30,
+    "poloPixels": 156
+  },
+  {
+    "id": "crt-bot",
+    "frame": 31,
+    "poloPixels": 138
+  },
+  {
+    "id": "shiba",
+    "frame": 0,
+    "poloPixels": 190
+  },
+  {
+    "id": "shiba",
+    "frame": 1,
+    "poloPixels": 198
+  },
+  {
+    "id": "shiba",
+    "frame": 2,
+    "poloPixels": 195
+  },
+  {
+    "id": "shiba",
+    "frame": 3,
+    "poloPixels": 204
+  },
+  {
+    "id": "shiba",
+    "frame": 4,
+    "poloPixels": 120
+  },
+  {
+    "id": "shiba",
+    "frame": 5,
+    "poloPixels": 98
+  },
+  {
+    "id": "shiba",
+    "frame": 6,
+    "poloPixels": 122
+  },
+  {
+    "id": "shiba",
+    "frame": 7,
+    "poloPixels": 122
+  },
+  {
+    "id": "shiba",
+    "frame": 8,
+    "poloPixels": 191
+  },
+  {
+    "id": "shiba",
+    "frame": 9,
+    "poloPixels": 197
+  },
+  {
+    "id": "shiba",
+    "frame": 10,
+    "poloPixels": 187
+  },
+  {
+    "id": "shiba",
+    "frame": 11,
+    "poloPixels": 194
+  },
+  {
+    "id": "shiba",
+    "frame": 12,
+    "poloPixels": 163
+  },
+  {
+    "id": "shiba",
+    "frame": 13,
+    "poloPixels": 183
+  },
+  {
+    "id": "shiba",
+    "frame": 14,
+    "poloPixels": 140
+  },
+  {
+    "id": "shiba",
+    "frame": 15,
+    "poloPixels": 182
+  },
+  {
+    "id": "shiba",
+    "frame": 16,
+    "poloPixels": 192
+  },
+  {
+    "id": "shiba",
+    "frame": 17,
+    "poloPixels": 177
+  },
+  {
+    "id": "shiba",
+    "frame": 18,
+    "poloPixels": 180
+  },
+  {
+    "id": "shiba",
+    "frame": 19,
+    "poloPixels": 178
+  },
+  {
+    "id": "shiba",
+    "frame": 20,
+    "poloPixels": 188
+  },
+  {
+    "id": "shiba",
+    "frame": 21,
+    "poloPixels": 197
+  },
+  {
+    "id": "shiba",
+    "frame": 22,
+    "poloPixels": 154
+  },
+  {
+    "id": "shiba",
+    "frame": 23,
+    "poloPixels": 140
+  },
+  {
+    "id": "shiba",
+    "frame": 24,
+    "poloPixels": 205
+  },
+  {
+    "id": "shiba",
+    "frame": 25,
+    "poloPixels": 170
+  },
+  {
+    "id": "shiba",
+    "frame": 26,
+    "poloPixels": 172
+  },
+  {
+    "id": "shiba",
+    "frame": 27,
+    "poloPixels": 128
+  },
+  {
+    "id": "shiba",
+    "frame": 28,
+    "poloPixels": 171
+  },
+  {
+    "id": "shiba",
+    "frame": 29,
+    "poloPixels": 173
+  },
+  {
+    "id": "shiba",
+    "frame": 30,
+    "poloPixels": 174
+  },
+  {
+    "id": "shiba",
+    "frame": 31,
+    "poloPixels": 168
+  },
+  {
+    "id": "husky",
+    "frame": 0,
+    "poloPixels": 204
+  },
+  {
+    "id": "husky",
+    "frame": 1,
+    "poloPixels": 185
+  },
+  {
+    "id": "husky",
+    "frame": 2,
+    "poloPixels": 200
+  },
+  {
+    "id": "husky",
+    "frame": 3,
+    "poloPixels": 211
+  },
+  {
+    "id": "husky",
+    "frame": 4,
+    "poloPixels": 161
+  },
+  {
+    "id": "husky",
+    "frame": 5,
+    "poloPixels": 132
+  },
+  {
+    "id": "husky",
+    "frame": 6,
+    "poloPixels": 158
+  },
+  {
+    "id": "husky",
+    "frame": 7,
+    "poloPixels": 157
+  },
+  {
+    "id": "husky",
+    "frame": 8,
+    "poloPixels": 256
+  },
+  {
+    "id": "husky",
+    "frame": 9,
+    "poloPixels": 204
+  },
+  {
+    "id": "husky",
+    "frame": 10,
+    "poloPixels": 264
+  },
+  {
+    "id": "husky",
+    "frame": 11,
+    "poloPixels": 251
+  },
+  {
+    "id": "husky",
+    "frame": 12,
+    "poloPixels": 225
+  },
+  {
+    "id": "husky",
+    "frame": 13,
+    "poloPixels": 170
+  },
+  {
+    "id": "husky",
+    "frame": 14,
+    "poloPixels": 84
+  },
+  {
+    "id": "husky",
+    "frame": 15,
+    "poloPixels": 202
+  },
+  {
+    "id": "husky",
+    "frame": 16,
+    "poloPixels": 216
+  },
+  {
+    "id": "husky",
+    "frame": 17,
+    "poloPixels": 220
+  },
+  {
+    "id": "husky",
+    "frame": 18,
+    "poloPixels": 200
+  },
+  {
+    "id": "husky",
+    "frame": 19,
+    "poloPixels": 212
+  },
+  {
+    "id": "husky",
+    "frame": 20,
+    "poloPixels": 195
+  },
+  {
+    "id": "husky",
+    "frame": 21,
+    "poloPixels": 200
+  },
+  {
+    "id": "husky",
+    "frame": 22,
+    "poloPixels": 131
+  },
+  {
+    "id": "husky",
+    "frame": 23,
+    "poloPixels": 136
+  },
+  {
+    "id": "husky",
+    "frame": 24,
+    "poloPixels": 211
+  },
+  {
+    "id": "husky",
+    "frame": 25,
+    "poloPixels": 211
+  },
+  {
+    "id": "husky",
+    "frame": 26,
+    "poloPixels": 251
+  },
+  {
+    "id": "husky",
+    "frame": 27,
+    "poloPixels": 179
+  },
+  {
+    "id": "husky",
+    "frame": 28,
+    "poloPixels": 182
+  },
+  {
+    "id": "husky",
+    "frame": 29,
+    "poloPixels": 177
+  },
+  {
+    "id": "husky",
+    "frame": 30,
+    "poloPixels": 173
+  },
+  {
+    "id": "husky",
+    "frame": 31,
+    "poloPixels": 198
+  },
+  {
+    "id": "tabby",
+    "frame": 0,
+    "poloPixels": 181
+  },
+  {
+    "id": "tabby",
+    "frame": 1,
+    "poloPixels": 180
+  },
+  {
+    "id": "tabby",
+    "frame": 2,
+    "poloPixels": 184
+  },
+  {
+    "id": "tabby",
+    "frame": 3,
+    "poloPixels": 184
+  },
+  {
+    "id": "tabby",
+    "frame": 4,
+    "poloPixels": 122
+  },
+  {
+    "id": "tabby",
+    "frame": 5,
+    "poloPixels": 85
+  },
+  {
+    "id": "tabby",
+    "frame": 6,
+    "poloPixels": 121
+  },
+  {
+    "id": "tabby",
+    "frame": 7,
+    "poloPixels": 115
+  },
+  {
+    "id": "tabby",
+    "frame": 8,
+    "poloPixels": 189
+  },
+  {
+    "id": "tabby",
+    "frame": 9,
+    "poloPixels": 186
+  },
+  {
+    "id": "tabby",
+    "frame": 10,
+    "poloPixels": 192
+  },
+  {
+    "id": "tabby",
+    "frame": 11,
+    "poloPixels": 185
+  },
+  {
+    "id": "tabby",
+    "frame": 12,
+    "poloPixels": 182
+  },
+  {
+    "id": "tabby",
+    "frame": 13,
+    "poloPixels": 180
+  },
+  {
+    "id": "tabby",
+    "frame": 14,
+    "poloPixels": 117
+  },
+  {
+    "id": "tabby",
+    "frame": 15,
+    "poloPixels": 182
+  },
+  {
+    "id": "tabby",
+    "frame": 16,
+    "poloPixels": 216
+  },
+  {
+    "id": "tabby",
+    "frame": 17,
+    "poloPixels": 212
+  },
+  {
+    "id": "tabby",
+    "frame": 18,
+    "poloPixels": 209
+  },
+  {
+    "id": "tabby",
+    "frame": 19,
+    "poloPixels": 209
+  },
+  {
+    "id": "tabby",
+    "frame": 20,
+    "poloPixels": 165
+  },
+  {
+    "id": "tabby",
+    "frame": 21,
+    "poloPixels": 171
+  },
+  {
+    "id": "tabby",
+    "frame": 22,
+    "poloPixels": 123
+  },
+  {
+    "id": "tabby",
+    "frame": 23,
+    "poloPixels": 117
+  },
+  {
+    "id": "tabby",
+    "frame": 24,
+    "poloPixels": 165
+  },
+  {
+    "id": "tabby",
+    "frame": 25,
+    "poloPixels": 164
+  },
+  {
+    "id": "tabby",
+    "frame": 26,
+    "poloPixels": 203
+  },
+  {
+    "id": "tabby",
+    "frame": 27,
+    "poloPixels": 137
+  },
+  {
+    "id": "tabby",
+    "frame": 28,
+    "poloPixels": 170
+  },
+  {
+    "id": "tabby",
+    "frame": 29,
+    "poloPixels": 168
+  },
+  {
+    "id": "tabby",
+    "frame": 30,
+    "poloPixels": 169
+  },
+  {
+    "id": "tabby",
+    "frame": 31,
+    "poloPixels": 168
+  },
+  {
+    "id": "black-cat",
+    "frame": 0,
+    "poloPixels": 138
+  },
+  {
+    "id": "black-cat",
+    "frame": 1,
+    "poloPixels": 144
+  },
+  {
+    "id": "black-cat",
+    "frame": 2,
+    "poloPixels": 135
+  },
+  {
+    "id": "black-cat",
+    "frame": 3,
+    "poloPixels": 137
+  },
+  {
+    "id": "black-cat",
+    "frame": 4,
+    "poloPixels": 115
+  },
+  {
+    "id": "black-cat",
+    "frame": 5,
+    "poloPixels": 94
+  },
+  {
+    "id": "black-cat",
+    "frame": 6,
+    "poloPixels": 116
+  },
+  {
+    "id": "black-cat",
+    "frame": 7,
+    "poloPixels": 103
+  },
+  {
+    "id": "black-cat",
+    "frame": 8,
+    "poloPixels": 186
+  },
+  {
+    "id": "black-cat",
+    "frame": 9,
+    "poloPixels": 177
+  },
+  {
+    "id": "black-cat",
+    "frame": 10,
+    "poloPixels": 184
+  },
+  {
+    "id": "black-cat",
+    "frame": 11,
+    "poloPixels": 176
+  },
+  {
+    "id": "black-cat",
+    "frame": 12,
+    "poloPixels": 177
+  },
+  {
+    "id": "black-cat",
+    "frame": 13,
+    "poloPixels": 156
+  },
+  {
+    "id": "black-cat",
+    "frame": 14,
+    "poloPixels": 125
+  },
+  {
+    "id": "black-cat",
+    "frame": 15,
+    "poloPixels": 153
+  },
+  {
+    "id": "black-cat",
+    "frame": 16,
+    "poloPixels": 210
+  },
+  {
+    "id": "black-cat",
+    "frame": 17,
+    "poloPixels": 215
+  },
+  {
+    "id": "black-cat",
+    "frame": 18,
+    "poloPixels": 217
+  },
+  {
+    "id": "black-cat",
+    "frame": 19,
+    "poloPixels": 214
+  },
+  {
+    "id": "black-cat",
+    "frame": 20,
+    "poloPixels": 255
+  },
+  {
+    "id": "black-cat",
+    "frame": 21,
+    "poloPixels": 253
+  },
+  {
+    "id": "black-cat",
+    "frame": 22,
+    "poloPixels": 177
+  },
+  {
+    "id": "black-cat",
+    "frame": 23,
+    "poloPixels": 170
+  },
+  {
+    "id": "black-cat",
+    "frame": 24,
+    "poloPixels": 207
+  },
+  {
+    "id": "black-cat",
+    "frame": 25,
+    "poloPixels": 208
+  },
+  {
+    "id": "black-cat",
+    "frame": 26,
+    "poloPixels": 195
+  },
+  {
+    "id": "black-cat",
+    "frame": 27,
+    "poloPixels": 109
+  },
+  {
+    "id": "black-cat",
+    "frame": 28,
+    "poloPixels": 164
+  },
+  {
+    "id": "black-cat",
+    "frame": 29,
+    "poloPixels": 162
+  },
+  {
+    "id": "black-cat",
+    "frame": 30,
+    "poloPixels": 162
+  },
+  {
+    "id": "black-cat",
+    "frame": 31,
+    "poloPixels": 165
+  },
+  {
+    "id": "raccoon",
+    "frame": 0,
+    "poloPixels": 218
+  },
+  {
+    "id": "raccoon",
+    "frame": 1,
+    "poloPixels": 213
+  },
+  {
+    "id": "raccoon",
+    "frame": 2,
+    "poloPixels": 213
+  },
+  {
+    "id": "raccoon",
+    "frame": 3,
+    "poloPixels": 203
+  },
+  {
+    "id": "raccoon",
+    "frame": 4,
+    "poloPixels": 171
+  },
+  {
+    "id": "raccoon",
+    "frame": 5,
+    "poloPixels": 179
+  },
+  {
+    "id": "raccoon",
+    "frame": 6,
+    "poloPixels": 192
+  },
+  {
+    "id": "raccoon",
+    "frame": 7,
+    "poloPixels": 187
+  },
+  {
+    "id": "raccoon",
+    "frame": 8,
+    "poloPixels": 273
+  },
+  {
+    "id": "raccoon",
+    "frame": 9,
+    "poloPixels": 263
+  },
+  {
+    "id": "raccoon",
+    "frame": 10,
+    "poloPixels": 266
+  },
+  {
+    "id": "raccoon",
+    "frame": 11,
+    "poloPixels": 268
+  },
+  {
+    "id": "raccoon",
+    "frame": 12,
+    "poloPixels": 213
+  },
+  {
+    "id": "raccoon",
+    "frame": 13,
+    "poloPixels": 203
+  },
+  {
+    "id": "raccoon",
+    "frame": 14,
+    "poloPixels": 50
+  },
+  {
+    "id": "raccoon",
+    "frame": 15,
+    "poloPixels": 200
+  },
+  {
+    "id": "raccoon",
+    "frame": 16,
+    "poloPixels": 253
+  },
+  {
+    "id": "raccoon",
+    "frame": 17,
+    "poloPixels": 242
+  },
+  {
+    "id": "raccoon",
+    "frame": 18,
+    "poloPixels": 258
+  },
+  {
+    "id": "raccoon",
+    "frame": 19,
+    "poloPixels": 252
+  },
+  {
+    "id": "raccoon",
+    "frame": 20,
+    "poloPixels": 176
+  },
+  {
+    "id": "raccoon",
+    "frame": 21,
+    "poloPixels": 171
+  },
+  {
+    "id": "raccoon",
+    "frame": 22,
+    "poloPixels": 121
+  },
+  {
+    "id": "raccoon",
+    "frame": 23,
+    "poloPixels": 118
+  },
+  {
+    "id": "raccoon",
+    "frame": 24,
+    "poloPixels": 197
+  },
+  {
+    "id": "raccoon",
+    "frame": 25,
+    "poloPixels": 194
+  },
+  {
+    "id": "raccoon",
+    "frame": 26,
+    "poloPixels": 291
+  },
+  {
+    "id": "raccoon",
+    "frame": 27,
+    "poloPixels": 168
+  },
+  {
+    "id": "raccoon",
+    "frame": 28,
+    "poloPixels": 196
+  },
+  {
+    "id": "raccoon",
+    "frame": 29,
+    "poloPixels": 201
+  },
+  {
+    "id": "raccoon",
+    "frame": 30,
+    "poloPixels": 212
+  },
+  {
+    "id": "raccoon",
+    "frame": 31,
+    "poloPixels": 200
+  },
+  {
+    "id": "capybara",
+    "frame": 0,
+    "poloPixels": 212
+  },
+  {
+    "id": "capybara",
+    "frame": 1,
+    "poloPixels": 200
+  },
+  {
+    "id": "capybara",
+    "frame": 2,
+    "poloPixels": 200
+  },
+  {
+    "id": "capybara",
+    "frame": 3,
+    "poloPixels": 195
+  },
+  {
+    "id": "capybara",
+    "frame": 4,
+    "poloPixels": 152
+  },
+  {
+    "id": "capybara",
+    "frame": 5,
+    "poloPixels": 104
+  },
+  {
+    "id": "capybara",
+    "frame": 6,
+    "poloPixels": 134
+  },
+  {
+    "id": "capybara",
+    "frame": 7,
+    "poloPixels": 145
+  },
+  {
+    "id": "capybara",
+    "frame": 8,
+    "poloPixels": 224
+  },
+  {
+    "id": "capybara",
+    "frame": 9,
+    "poloPixels": 236
+  },
+  {
+    "id": "capybara",
+    "frame": 10,
+    "poloPixels": 230
+  },
+  {
+    "id": "capybara",
+    "frame": 11,
+    "poloPixels": 222
+  },
+  {
+    "id": "capybara",
+    "frame": 12,
+    "poloPixels": 262
+  },
+  {
+    "id": "capybara",
+    "frame": 13,
+    "poloPixels": 200
+  },
+  {
+    "id": "capybara",
+    "frame": 14,
+    "poloPixels": 103
+  },
+  {
+    "id": "capybara",
+    "frame": 15,
+    "poloPixels": 188
+  },
+  {
+    "id": "capybara",
+    "frame": 16,
+    "poloPixels": 284
+  },
+  {
+    "id": "capybara",
+    "frame": 17,
+    "poloPixels": 292
+  },
+  {
+    "id": "capybara",
+    "frame": 18,
+    "poloPixels": 292
+  },
+  {
+    "id": "capybara",
+    "frame": 19,
+    "poloPixels": 276
+  },
+  {
+    "id": "capybara",
+    "frame": 20,
+    "poloPixels": 305
+  },
+  {
+    "id": "capybara",
+    "frame": 21,
+    "poloPixels": 292
+  },
+  {
+    "id": "capybara",
+    "frame": 22,
+    "poloPixels": 235
+  },
+  {
+    "id": "capybara",
+    "frame": 23,
+    "poloPixels": 219
+  },
+  {
+    "id": "capybara",
+    "frame": 24,
+    "poloPixels": 284
+  },
+  {
+    "id": "capybara",
+    "frame": 25,
+    "poloPixels": 293
+  },
+  {
+    "id": "capybara",
+    "frame": 26,
+    "poloPixels": 203
+  },
+  {
+    "id": "capybara",
+    "frame": 27,
+    "poloPixels": 113
+  },
+  {
+    "id": "capybara",
+    "frame": 28,
+    "poloPixels": 191
+  },
+  {
+    "id": "capybara",
+    "frame": 29,
+    "poloPixels": 192
+  },
+  {
+    "id": "capybara",
+    "frame": 30,
+    "poloPixels": 191
+  },
+  {
+    "id": "capybara",
+    "frame": 31,
+    "poloPixels": 190
+  },
+  {
+    "id": "crew-cut",
+    "frame": 0,
+    "poloPixels": 188
+  },
+  {
+    "id": "crew-cut",
+    "frame": 1,
+    "poloPixels": 174
+  },
+  {
+    "id": "crew-cut",
+    "frame": 2,
+    "poloPixels": 183
+  },
+  {
+    "id": "crew-cut",
+    "frame": 3,
+    "poloPixels": 186
+  },
+  {
+    "id": "crew-cut",
+    "frame": 4,
+    "poloPixels": 127
+  },
+  {
+    "id": "crew-cut",
+    "frame": 5,
+    "poloPixels": 84
+  },
+  {
+    "id": "crew-cut",
+    "frame": 6,
+    "poloPixels": 124
+  },
+  {
+    "id": "crew-cut",
+    "frame": 7,
+    "poloPixels": 116
+  },
+  {
+    "id": "crew-cut",
+    "frame": 8,
+    "poloPixels": 214
+  },
+  {
+    "id": "crew-cut",
+    "frame": 9,
+    "poloPixels": 206
+  },
+  {
+    "id": "crew-cut",
+    "frame": 10,
+    "poloPixels": 206
+  },
+  {
+    "id": "crew-cut",
+    "frame": 11,
+    "poloPixels": 227
+  },
+  {
+    "id": "crew-cut",
+    "frame": 12,
+    "poloPixels": 231
+  },
+  {
+    "id": "crew-cut",
+    "frame": 13,
+    "poloPixels": 168
+  },
+  {
+    "id": "crew-cut",
+    "frame": 14,
+    "poloPixels": 111
+  },
+  {
+    "id": "crew-cut",
+    "frame": 15,
+    "poloPixels": 171
+  },
+  {
+    "id": "crew-cut",
+    "frame": 16,
+    "poloPixels": 243
+  },
+  {
+    "id": "crew-cut",
+    "frame": 17,
+    "poloPixels": 248
+  },
+  {
+    "id": "crew-cut",
+    "frame": 18,
+    "poloPixels": 240
+  },
+  {
+    "id": "crew-cut",
+    "frame": 19,
+    "poloPixels": 240
+  },
+  {
+    "id": "crew-cut",
+    "frame": 20,
+    "poloPixels": 297
+  },
+  {
+    "id": "crew-cut",
+    "frame": 21,
+    "poloPixels": 276
+  },
+  {
+    "id": "crew-cut",
+    "frame": 22,
+    "poloPixels": 202
+  },
+  {
+    "id": "crew-cut",
+    "frame": 23,
+    "poloPixels": 192
+  },
+  {
+    "id": "crew-cut",
+    "frame": 24,
+    "poloPixels": 256
+  },
+  {
+    "id": "crew-cut",
+    "frame": 25,
+    "poloPixels": 255
+  },
+  {
+    "id": "crew-cut",
+    "frame": 26,
+    "poloPixels": 191
+  },
+  {
+    "id": "crew-cut",
+    "frame": 27,
+    "poloPixels": 102
+  },
+  {
+    "id": "crew-cut",
+    "frame": 28,
+    "poloPixels": 189
+  },
+  {
+    "id": "crew-cut",
+    "frame": 29,
+    "poloPixels": 167
+  },
+  {
+    "id": "crew-cut",
+    "frame": 30,
+    "poloPixels": 176
+  },
+  {
+    "id": "crew-cut",
+    "frame": 31,
+    "poloPixels": 171
+  },
+  {
+    "id": "ponytail",
+    "frame": 0,
+    "poloPixels": 166
+  },
+  {
+    "id": "ponytail",
+    "frame": 1,
+    "poloPixels": 157
+  },
+  {
+    "id": "ponytail",
+    "frame": 2,
+    "poloPixels": 157
+  },
+  {
+    "id": "ponytail",
+    "frame": 3,
+    "poloPixels": 156
+  },
+  {
+    "id": "ponytail",
+    "frame": 4,
+    "poloPixels": 117
+  },
+  {
+    "id": "ponytail",
+    "frame": 5,
+    "poloPixels": 80
+  },
+  {
+    "id": "ponytail",
+    "frame": 6,
+    "poloPixels": 116
+  },
+  {
+    "id": "ponytail",
+    "frame": 7,
+    "poloPixels": 111
+  },
+  {
+    "id": "ponytail",
+    "frame": 8,
+    "poloPixels": 175
+  },
+  {
+    "id": "ponytail",
+    "frame": 9,
+    "poloPixels": 162
+  },
+  {
+    "id": "ponytail",
+    "frame": 10,
+    "poloPixels": 169
+  },
+  {
+    "id": "ponytail",
+    "frame": 11,
+    "poloPixels": 165
+  },
+  {
+    "id": "ponytail",
+    "frame": 12,
+    "poloPixels": 152
+  },
+  {
+    "id": "ponytail",
+    "frame": 13,
+    "poloPixels": 148
+  },
+  {
+    "id": "ponytail",
+    "frame": 14,
+    "poloPixels": 133
+  },
+  {
+    "id": "ponytail",
+    "frame": 15,
+    "poloPixels": 148
+  },
+  {
+    "id": "ponytail",
+    "frame": 16,
+    "poloPixels": 158
+  },
+  {
+    "id": "ponytail",
+    "frame": 17,
+    "poloPixels": 155
+  },
+  {
+    "id": "ponytail",
+    "frame": 18,
+    "poloPixels": 157
+  },
+  {
+    "id": "ponytail",
+    "frame": 19,
+    "poloPixels": 156
+  },
+  {
+    "id": "ponytail",
+    "frame": 20,
+    "poloPixels": 162
+  },
+  {
+    "id": "ponytail",
+    "frame": 21,
+    "poloPixels": 148
+  },
+  {
+    "id": "ponytail",
+    "frame": 22,
+    "poloPixels": 149
+  },
+  {
+    "id": "ponytail",
+    "frame": 23,
+    "poloPixels": 98
+  },
+  {
+    "id": "ponytail",
+    "frame": 24,
+    "poloPixels": 139
+  },
+  {
+    "id": "ponytail",
+    "frame": 25,
+    "poloPixels": 140
+  },
+  {
+    "id": "ponytail",
+    "frame": 26,
+    "poloPixels": 163
+  },
+  {
+    "id": "ponytail",
+    "frame": 27,
+    "poloPixels": 98
+  },
+  {
+    "id": "ponytail",
+    "frame": 28,
+    "poloPixels": 161
+  },
+  {
+    "id": "ponytail",
+    "frame": 29,
+    "poloPixels": 169
+  },
+  {
+    "id": "ponytail",
+    "frame": 30,
+    "poloPixels": 160
+  },
+  {
+    "id": "ponytail",
+    "frame": 31,
+    "poloPixels": 165
+  },
+  {
+    "id": "beard",
+    "frame": 0,
+    "poloPixels": 132
+  },
+  {
+    "id": "beard",
+    "frame": 1,
+    "poloPixels": 137
+  },
+  {
+    "id": "beard",
+    "frame": 2,
+    "poloPixels": 135
+  },
+  {
+    "id": "beard",
+    "frame": 3,
+    "poloPixels": 137
+  },
+  {
+    "id": "beard",
+    "frame": 4,
+    "poloPixels": 123
+  },
+  {
+    "id": "beard",
+    "frame": 5,
+    "poloPixels": 79
+  },
+  {
+    "id": "beard",
+    "frame": 6,
+    "poloPixels": 118
+  },
+  {
+    "id": "beard",
+    "frame": 7,
+    "poloPixels": 115
+  },
+  {
+    "id": "beard",
+    "frame": 8,
+    "poloPixels": 191
+  },
+  {
+    "id": "beard",
+    "frame": 9,
+    "poloPixels": 207
+  },
+  {
+    "id": "beard",
+    "frame": 10,
+    "poloPixels": 204
+  },
+  {
+    "id": "beard",
+    "frame": 11,
+    "poloPixels": 202
+  },
+  {
+    "id": "beard",
+    "frame": 12,
+    "poloPixels": 214
+  },
+  {
+    "id": "beard",
+    "frame": 13,
+    "poloPixels": 133
+  },
+  {
+    "id": "beard",
+    "frame": 14,
+    "poloPixels": 113
+  },
+  {
+    "id": "beard",
+    "frame": 15,
+    "poloPixels": 141
+  },
+  {
+    "id": "beard",
+    "frame": 16,
+    "poloPixels": 221
+  },
+  {
+    "id": "beard",
+    "frame": 17,
+    "poloPixels": 220
+  },
+  {
+    "id": "beard",
+    "frame": 18,
+    "poloPixels": 208
+  },
+  {
+    "id": "beard",
+    "frame": 19,
+    "poloPixels": 218
+  },
+  {
+    "id": "beard",
+    "frame": 20,
+    "poloPixels": 288
+  },
+  {
+    "id": "beard",
+    "frame": 21,
+    "poloPixels": 270
+  },
+  {
+    "id": "beard",
+    "frame": 22,
+    "poloPixels": 206
+  },
+  {
+    "id": "beard",
+    "frame": 23,
+    "poloPixels": 195
+  },
+  {
+    "id": "beard",
+    "frame": 24,
+    "poloPixels": 225
+  },
+  {
+    "id": "beard",
+    "frame": 25,
+    "poloPixels": 229
+  },
+  {
+    "id": "beard",
+    "frame": 26,
+    "poloPixels": 188
+  },
+  {
+    "id": "beard",
+    "frame": 27,
+    "poloPixels": 228
+  },
+  {
+    "id": "beard",
+    "frame": 28,
+    "poloPixels": 138
+  },
+  {
+    "id": "beard",
+    "frame": 29,
+    "poloPixels": 136
+  },
+  {
+    "id": "beard",
+    "frame": 30,
+    "poloPixels": 138
+  },
+  {
+    "id": "beard",
+    "frame": 31,
+    "poloPixels": 132
+  },
+  {
+    "id": "bob",
+    "frame": 0,
+    "poloPixels": 222
+  },
+  {
+    "id": "bob",
+    "frame": 1,
+    "poloPixels": 214
+  },
+  {
+    "id": "bob",
+    "frame": 2,
+    "poloPixels": 209
+  },
+  {
+    "id": "bob",
+    "frame": 3,
+    "poloPixels": 219
+  },
+  {
+    "id": "bob",
+    "frame": 4,
+    "poloPixels": 146
+  },
+  {
+    "id": "bob",
+    "frame": 5,
+    "poloPixels": 97
+  },
+  {
+    "id": "bob",
+    "frame": 6,
+    "poloPixels": 133
+  },
+  {
+    "id": "bob",
+    "frame": 7,
+    "poloPixels": 141
+  },
+  {
+    "id": "bob",
+    "frame": 8,
+    "poloPixels": 232
+  },
+  {
+    "id": "bob",
+    "frame": 9,
+    "poloPixels": 248
+  },
+  {
+    "id": "bob",
+    "frame": 10,
+    "poloPixels": 223
+  },
+  {
+    "id": "bob",
+    "frame": 11,
+    "poloPixels": 244
+  },
+  {
+    "id": "bob",
+    "frame": 12,
+    "poloPixels": 237
+  },
+  {
+    "id": "bob",
+    "frame": 13,
+    "poloPixels": 227
+  },
+  {
+    "id": "bob",
+    "frame": 14,
+    "poloPixels": 127
+  },
+  {
+    "id": "bob",
+    "frame": 15,
+    "poloPixels": 218
+  },
+  {
+    "id": "bob",
+    "frame": 16,
+    "poloPixels": 270
+  },
+  {
+    "id": "bob",
+    "frame": 17,
+    "poloPixels": 271
+  },
+  {
+    "id": "bob",
+    "frame": 18,
+    "poloPixels": 273
+  },
+  {
+    "id": "bob",
+    "frame": 19,
+    "poloPixels": 269
+  },
+  {
+    "id": "bob",
+    "frame": 20,
+    "poloPixels": 315
+  },
+  {
+    "id": "bob",
+    "frame": 21,
+    "poloPixels": 310
+  },
+  {
+    "id": "bob",
+    "frame": 22,
+    "poloPixels": 235
+  },
+  {
+    "id": "bob",
+    "frame": 23,
+    "poloPixels": 230
+  },
+  {
+    "id": "bob",
+    "frame": 24,
+    "poloPixels": 269
+  },
+  {
+    "id": "bob",
+    "frame": 25,
+    "poloPixels": 270
+  },
+  {
+    "id": "bob",
+    "frame": 26,
+    "poloPixels": 271
+  },
+  {
+    "id": "bob",
+    "frame": 27,
+    "poloPixels": 133
+  },
+  {
+    "id": "bob",
+    "frame": 28,
+    "poloPixels": 204
+  },
+  {
+    "id": "bob",
+    "frame": 29,
+    "poloPixels": 210
+  },
+  {
+    "id": "bob",
+    "frame": 30,
+    "poloPixels": 207
+  },
+  {
+    "id": "bob",
+    "frame": 31,
+    "poloPixels": 197
+  },
+  {
+    "id": "spike",
+    "frame": 0,
+    "poloPixels": 171
+  },
+  {
+    "id": "spike",
+    "frame": 1,
+    "poloPixels": 156
+  },
+  {
+    "id": "spike",
+    "frame": 2,
+    "poloPixels": 167
+  },
+  {
+    "id": "spike",
+    "frame": 3,
+    "poloPixels": 164
+  },
+  {
+    "id": "spike",
+    "frame": 4,
+    "poloPixels": 132
+  },
+  {
+    "id": "spike",
+    "frame": 5,
+    "poloPixels": 93
+  },
+  {
+    "id": "spike",
+    "frame": 6,
+    "poloPixels": 129
+  },
+  {
+    "id": "spike",
+    "frame": 7,
+    "poloPixels": 129
+  },
+  {
+    "id": "spike",
+    "frame": 8,
+    "poloPixels": 225
+  },
+  {
+    "id": "spike",
+    "frame": 9,
+    "poloPixels": 216
+  },
+  {
+    "id": "spike",
+    "frame": 10,
+    "poloPixels": 218
+  },
+  {
+    "id": "spike",
+    "frame": 11,
+    "poloPixels": 229
+  },
+  {
+    "id": "spike",
+    "frame": 12,
+    "poloPixels": 210
+  },
+  {
+    "id": "spike",
+    "frame": 13,
+    "poloPixels": 186
+  },
+  {
+    "id": "spike",
+    "frame": 14,
+    "poloPixels": 177
+  },
+  {
+    "id": "spike",
+    "frame": 15,
+    "poloPixels": 195
+  },
+  {
+    "id": "spike",
+    "frame": 16,
+    "poloPixels": 254
+  },
+  {
+    "id": "spike",
+    "frame": 17,
+    "poloPixels": 257
+  },
+  {
+    "id": "spike",
+    "frame": 18,
+    "poloPixels": 258
+  },
+  {
+    "id": "spike",
+    "frame": 19,
+    "poloPixels": 258
+  },
+  {
+    "id": "spike",
+    "frame": 20,
+    "poloPixels": 337
+  },
+  {
+    "id": "spike",
+    "frame": 21,
+    "poloPixels": 319
+  },
+  {
+    "id": "spike",
+    "frame": 22,
+    "poloPixels": 225
+  },
+  {
+    "id": "spike",
+    "frame": 23,
+    "poloPixels": 220
+  },
+  {
+    "id": "spike",
+    "frame": 24,
+    "poloPixels": 301
+  },
+  {
+    "id": "spike",
+    "frame": 25,
+    "poloPixels": 273
+  },
+  {
+    "id": "spike",
+    "frame": 26,
+    "poloPixels": 279
+  },
+  {
+    "id": "spike",
+    "frame": 27,
+    "poloPixels": 118
+  },
+  {
+    "id": "spike",
+    "frame": 28,
+    "poloPixels": 196
+  },
+  {
+    "id": "spike",
+    "frame": 29,
+    "poloPixels": 196
+  },
+  {
+    "id": "spike",
+    "frame": 30,
+    "poloPixels": 195
+  },
+  {
+    "id": "spike",
+    "frame": 31,
+    "poloPixels": 192
+  },
+  {
+    "id": "braids",
+    "frame": 0,
+    "poloPixels": 177
+  },
+  {
+    "id": "braids",
+    "frame": 1,
+    "poloPixels": 175
+  },
+  {
+    "id": "braids",
+    "frame": 2,
+    "poloPixels": 181
+  },
+  {
+    "id": "braids",
+    "frame": 3,
+    "poloPixels": 183
+  },
+  {
+    "id": "braids",
+    "frame": 4,
+    "poloPixels": 116
+  },
+  {
+    "id": "braids",
+    "frame": 5,
+    "poloPixels": 95
+  },
+  {
+    "id": "braids",
+    "frame": 6,
+    "poloPixels": 125
+  },
+  {
+    "id": "braids",
+    "frame": 7,
+    "poloPixels": 125
+  },
+  {
+    "id": "braids",
+    "frame": 8,
+    "poloPixels": 173
+  },
+  {
+    "id": "braids",
+    "frame": 9,
+    "poloPixels": 221
+  },
+  {
+    "id": "braids",
+    "frame": 10,
+    "poloPixels": 224
+  },
+  {
+    "id": "braids",
+    "frame": 11,
+    "poloPixels": 184
+  },
+  {
+    "id": "braids",
+    "frame": 12,
+    "poloPixels": 166
+  },
+  {
+    "id": "braids",
+    "frame": 13,
+    "poloPixels": 159
+  },
+  {
+    "id": "braids",
+    "frame": 14,
+    "poloPixels": 125
+  },
+  {
+    "id": "braids",
+    "frame": 15,
+    "poloPixels": 172
+  },
+  {
+    "id": "braids",
+    "frame": 16,
+    "poloPixels": 141
+  },
+  {
+    "id": "braids",
+    "frame": 17,
+    "poloPixels": 136
+  },
+  {
+    "id": "braids",
+    "frame": 18,
+    "poloPixels": 165
+  },
+  {
+    "id": "braids",
+    "frame": 19,
+    "poloPixels": 137
+  },
+  {
+    "id": "braids",
+    "frame": 20,
+    "poloPixels": 180
+  },
+  {
+    "id": "braids",
+    "frame": 21,
+    "poloPixels": 184
+  },
+  {
+    "id": "braids",
+    "frame": 22,
+    "poloPixels": 155
+  },
+  {
+    "id": "braids",
+    "frame": 23,
+    "poloPixels": 123
+  },
+  {
+    "id": "braids",
+    "frame": 24,
+    "poloPixels": 119
+  },
+  {
+    "id": "braids",
+    "frame": 25,
+    "poloPixels": 143
+  },
+  {
+    "id": "braids",
+    "frame": 26,
+    "poloPixels": 151
+  },
+  {
+    "id": "braids",
+    "frame": 27,
+    "poloPixels": 121
+  },
+  {
+    "id": "braids",
+    "frame": 28,
+    "poloPixels": 189
+  },
+  {
+    "id": "braids",
+    "frame": 29,
+    "poloPixels": 178
+  },
+  {
+    "id": "braids",
+    "frame": 30,
+    "poloPixels": 173
+  },
+  {
+    "id": "braids",
+    "frame": 31,
+    "poloPixels": 180
+  },
+  {
+    "id": "beanie",
+    "frame": 0,
+    "poloPixels": 176
+  },
+  {
+    "id": "beanie",
+    "frame": 1,
+    "poloPixels": 165
+  },
+  {
+    "id": "beanie",
+    "frame": 2,
+    "poloPixels": 175
+  },
+  {
+    "id": "beanie",
+    "frame": 3,
+    "poloPixels": 176
+  },
+  {
+    "id": "beanie",
+    "frame": 4,
+    "poloPixels": 130
+  },
+  {
+    "id": "beanie",
+    "frame": 5,
+    "poloPixels": 104
+  },
+  {
+    "id": "beanie",
+    "frame": 6,
+    "poloPixels": 125
+  },
+  {
+    "id": "beanie",
+    "frame": 7,
+    "poloPixels": 119
+  },
+  {
+    "id": "beanie",
+    "frame": 8,
+    "poloPixels": 217
+  },
+  {
+    "id": "beanie",
+    "frame": 9,
+    "poloPixels": 236
+  },
+  {
+    "id": "beanie",
+    "frame": 10,
+    "poloPixels": 242
+  },
+  {
+    "id": "beanie",
+    "frame": 11,
+    "poloPixels": 233
+  },
+  {
+    "id": "beanie",
+    "frame": 12,
+    "poloPixels": 237
+  },
+  {
+    "id": "beanie",
+    "frame": 13,
+    "poloPixels": 179
+  },
+  {
+    "id": "beanie",
+    "frame": 14,
+    "poloPixels": 158
+  },
+  {
+    "id": "beanie",
+    "frame": 15,
+    "poloPixels": 181
+  },
+  {
+    "id": "beanie",
+    "frame": 16,
+    "poloPixels": 273
+  },
+  {
+    "id": "beanie",
+    "frame": 17,
+    "poloPixels": 272
+  },
+  {
+    "id": "beanie",
+    "frame": 18,
+    "poloPixels": 266
+  },
+  {
+    "id": "beanie",
+    "frame": 19,
+    "poloPixels": 256
+  },
+  {
+    "id": "beanie",
+    "frame": 20,
+    "poloPixels": 315
+  },
+  {
+    "id": "beanie",
+    "frame": 21,
+    "poloPixels": 320
+  },
+  {
+    "id": "beanie",
+    "frame": 22,
+    "poloPixels": 229
+  },
+  {
+    "id": "beanie",
+    "frame": 23,
+    "poloPixels": 215
+  },
+  {
+    "id": "beanie",
+    "frame": 24,
+    "poloPixels": 214
+  },
+  {
+    "id": "beanie",
+    "frame": 25,
+    "poloPixels": 215
+  },
+  {
+    "id": "beanie",
+    "frame": 26,
+    "poloPixels": 235
+  },
+  {
+    "id": "beanie",
+    "frame": 27,
+    "poloPixels": 107
+  },
+  {
+    "id": "beanie",
+    "frame": 28,
+    "poloPixels": 169
+  },
+  {
+    "id": "beanie",
+    "frame": 29,
+    "poloPixels": 167
+  },
+  {
+    "id": "beanie",
+    "frame": 30,
+    "poloPixels": 171
+  },
+  {
+    "id": "beanie",
+    "frame": 31,
+    "poloPixels": 171
+  }
+]

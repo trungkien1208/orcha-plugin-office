@@ -1,0 +1,6361 @@
+{
+  "passed": true,
+  "expectedPngs": 150,
+  "actualPngs": 150,
+  "opaquePixels": 1386330,
+  "maskPixels": 156905,
+  "checks": 1586,
+  "errors": [],
+  "notes": [
+    "Native icons use a 7×2 grid:112×32 and224×64.",
+    "Window:2×96×48 =192×48. Gong:3×64×48 =192×48.",
+    "Bench-tag-polo is an additional mask for the tinted tag face.",
+    "Visual cast and assembled-bench review is separate from structural checks."
+  ],
+  "details": [
+    {
+      "check": "All 23 exact skin IDs in manifest",
+      "passed": true
+    },
+    {
+      "check": "Default cast contains the exact 16 IDs in requested order",
+      "passed": true
+    },
+    {
+      "check": "Violet absent from manifest",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision beanie-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision beanie-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision beanie-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision beanie.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision beard-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision beard-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision beard-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision beard.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision black-cat-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision black-cat-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision black-cat-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision black-cat.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision bob-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision bob-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision bob-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision bob.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision boss-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision boss.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision braids-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision braids-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision braids-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision braids.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision bun-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision bun-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision bun-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision bun.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision capybara-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision capybara-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision capybara-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision capybara.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision crew-cut-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision crew-cut-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision crew-cut-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision crew-cut.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision crt-bot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision crt-bot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision crt-bot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision crt-bot.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision curly-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision curly-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision curly-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision curly.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision headset-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision headset-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision headset-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision headset.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision husky-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision husky-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision husky-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision husky.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision mohawk-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision mohawk-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision mohawk-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision mohawk.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision ponytail-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision ponytail-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision ponytail-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision ponytail.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision raccoon-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision raccoon-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision raccoon-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision raccoon.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision red-cap-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision red-cap-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision red-cap-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision red-cap.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision robot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision robot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision robot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision robot.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision shiba-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision shiba-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision shiba-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision shiba.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision shiny-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision shiny-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision shiny-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision shiny.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision silver-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision silver-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision silver-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision silver.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision specs-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision specs-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision specs-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision specs.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision spike-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision spike-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision spike-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision spike.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision tabby-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision tabby-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision tabby-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original pixels outside authorized standing-hand revision tabby.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised beanie-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised beanie-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised beanie-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised beanie.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised beard-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised beard-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised beard-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised beard.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised black-cat-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised black-cat-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised black-cat-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised black-cat.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised bob-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised bob-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised bob-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised bob.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised boss-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised boss.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised braids-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised braids-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised braids-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised braids.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised bun-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised bun-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised bun-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised bun.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised capybara-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised capybara-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised capybara-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised capybara.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised crew-cut-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised crew-cut-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised crew-cut-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised crew-cut.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised crt-bot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised crt-bot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised crt-bot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised crt-bot.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised curly-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised curly-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised curly-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised curly.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised headset-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised headset-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised headset-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised headset.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised husky-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised husky-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised husky-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised husky.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised mohawk-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised mohawk-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised mohawk-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised mohawk.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised ponytail-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised ponytail-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised ponytail-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised ponytail.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised raccoon-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised raccoon-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised raccoon-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised raccoon.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised red-cap-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised red-cap-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised red-cap-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised red-cap.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised robot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised robot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised robot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised robot.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised shiba-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised shiba-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised shiba-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised shiba.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised shiny-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised shiny-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised shiny-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised shiny.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised silver-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised silver-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised silver-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised silver.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised specs-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised specs-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised specs-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised specs.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised spike-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised spike-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised spike-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised spike.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised tabby-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised tabby-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised tabby-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Only requested attention/baton frames revised tabby.png",
+      "passed": true
+    },
+    {
+      "check": "Worker rows=9; bossRows=10",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/headset.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/headset-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/headset-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/headset-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/red-cap.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/red-cap-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/red-cap-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/red-cap-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/bun.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/bun-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/bun-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/bun-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/shiny.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/shiny-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/shiny-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/shiny-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/curly.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/curly-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/curly-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/curly-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/mohawk.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/mohawk-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/mohawk-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/mohawk-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/silver.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/silver-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/silver-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/silver-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/specs.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/specs-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/specs-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/specs-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/robot.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/robot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/robot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/robot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/crt-bot.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/crt-bot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/crt-bot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/crt-bot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/shiba.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/shiba-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/shiba-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/shiba-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/husky.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/husky-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/husky-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/husky-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/tabby.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/tabby-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/tabby-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/tabby-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/black-cat.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/black-cat-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/black-cat-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/black-cat-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/raccoon.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/raccoon-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/raccoon-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/raccoon-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/capybara.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/capybara-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/capybara-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/capybara-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/crew-cut.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/crew-cut-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/crew-cut-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/crew-cut-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/ponytail.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/ponytail-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/ponytail-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/ponytail-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/beard.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/beard-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/beard-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/beard-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/bob.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/bob-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/bob-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/bob-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/spike.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/spike-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/spike-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/spike-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/braids.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/braids-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/braids-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/braids-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/beanie.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/beanie-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/beanie-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/beanie-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/boss.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references characters/boss-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references background/compound-night.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references tiles/yard.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references ui/fx-sleep.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/fluorescent.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/phone-chargers.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/wall-fan.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/dorm-block.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references ui/fx-crack.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references ui/fx-zap.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references ui/whip.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references ui/zapper.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references tiles/floor.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references tiles/wall.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references tiles/aisle.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/bench-l.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/bench-m.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/bench-r.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/monitor.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/chair-back.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/chair-front.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/bench-tag.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/bench-tag-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/phone-rack.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/desk-phone.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/noodle-cup.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/mug.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/papers.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/energy-drink.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/desk-buzzer.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/clock.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/banner.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/kpi-board.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/window-night.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/cctv.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/door.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/water-cooler.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/printer.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/shredder.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/dorm-door.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/gong.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/poster-recruit.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/noodle-boxes.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/drink-crates.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references objects/boss-office.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references ui/bubble.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references ui/bubble-tail.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references ui/marker-needs.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references ui/fx-stars.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references ui/fx-jolt.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references ui/fx-heart.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references ui/megaphone.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references ui/newspaper.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references ui/coffee.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references ui/walkie.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references ui/icons-16.png",
+      "passed": true
+    },
+    {
+      "check": "Manifest references ui/icons-32.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG background/compound-night.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/beanie-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/beanie-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/beanie-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/beanie.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/beard-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/beard-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/beard-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/beard.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/black-cat-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/black-cat-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/black-cat-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/black-cat.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/bob-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/bob-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/bob-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/bob.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/boss-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/boss.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/braids-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/braids-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/braids-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/braids.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/bun-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/bun-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/bun-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/bun.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/capybara-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/capybara-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/capybara-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/capybara.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/crew-cut-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/crew-cut-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/crew-cut-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/crew-cut.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/crt-bot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/crt-bot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/crt-bot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/crt-bot.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/curly-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/curly-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/curly-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/curly.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/headset-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/headset-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/headset-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/headset.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/husky-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/husky-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/husky-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/husky.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/mohawk-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/mohawk-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/mohawk-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/mohawk.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/ponytail-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/ponytail-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/ponytail-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/ponytail.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/raccoon-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/raccoon-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/raccoon-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/raccoon.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/red-cap-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/red-cap-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/red-cap-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/red-cap.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/robot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/robot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/robot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/robot.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/shiba-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/shiba-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/shiba-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/shiba.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/shiny-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/shiny-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/shiny-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/shiny.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/silver-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/silver-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/silver-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/silver.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/specs-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/specs-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/specs-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/specs.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/spike-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/spike-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/spike-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/spike.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/tabby-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/tabby-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/tabby-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG characters/tabby.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/banner.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/bench-l.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/bench-m.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/bench-r.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/bench-tag-polo.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/bench-tag.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/boss-office.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/cctv.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/chair-back.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/chair-front.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/clock.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/desk-buzzer.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/desk-phone.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/door.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/dorm-block.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/dorm-door.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/drink-crates.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/energy-drink.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/fluorescent.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/gong.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/kpi-board.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/monitor.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/mug.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/noodle-boxes.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/noodle-cup.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/papers.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/phone-chargers.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/phone-rack.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/poster-recruit.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/printer.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/shredder.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/wall-fan.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/water-cooler.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG objects/window-night.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG tiles/aisle.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG tiles/floor.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG tiles/wall.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG tiles/yard.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG ui/bubble-tail.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG ui/bubble.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG ui/coffee.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG ui/fx-crack.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG ui/fx-heart.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG ui/fx-jolt.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG ui/fx-sleep.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG ui/fx-stars.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG ui/fx-zap.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG ui/icons-16.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG ui/icons-32.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG ui/marker-needs.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG ui/megaphone.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG ui/newspaper.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG ui/walkie.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG ui/whip.png",
+      "passed": true
+    },
+    {
+      "check": "No uncatalogued PNG ui/zapper.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/headset.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/headset.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/headset.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/headset.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/headset.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/headset.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/headset-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/headset-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/headset-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/headset-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/headset-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/headset-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/headset-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/headset-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/headset-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/headset-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/headset-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/headset-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/headset-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/headset-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/headset-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/headset-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/headset-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/headset-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/headset-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/headset-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/headset-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/headset-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/red-cap.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/red-cap.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/red-cap.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/red-cap.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/red-cap.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/red-cap.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/red-cap-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/red-cap-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/red-cap-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/red-cap-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/red-cap-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/red-cap-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/red-cap-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/red-cap-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/red-cap-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/red-cap-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/red-cap-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/red-cap-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/red-cap-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/red-cap-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/red-cap-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/red-cap-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/red-cap-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/red-cap-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/red-cap-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/red-cap-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/red-cap-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/red-cap-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/bun.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/bun.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/bun.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/bun.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/bun.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/bun.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/bun-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/bun-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/bun-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/bun-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/bun-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/bun-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/bun-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/bun-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/bun-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/bun-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/bun-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/bun-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/bun-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/bun-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/bun-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/bun-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/bun-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/bun-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/bun-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/bun-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/bun-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/bun-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/shiny.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/shiny.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/shiny.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/shiny.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/shiny.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/shiny.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/shiny-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/shiny-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/shiny-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/shiny-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/shiny-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/shiny-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/shiny-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/shiny-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/shiny-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/shiny-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/shiny-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/shiny-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/shiny-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/shiny-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/shiny-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/shiny-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/shiny-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/shiny-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/shiny-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/shiny-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/shiny-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/shiny-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/curly.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/curly.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/curly.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/curly.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/curly.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/curly.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/curly-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/curly-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/curly-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/curly-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/curly-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/curly-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/curly-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/curly-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/curly-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/curly-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/curly-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/curly-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/curly-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/curly-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/curly-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/curly-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/curly-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/curly-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/curly-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/curly-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/curly-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/curly-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/mohawk.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/mohawk.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/mohawk.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/mohawk.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/mohawk.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/mohawk.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/mohawk-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/mohawk-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/mohawk-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/mohawk-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/mohawk-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/mohawk-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/mohawk-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/mohawk-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/mohawk-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/mohawk-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/mohawk-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/mohawk-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/mohawk-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/mohawk-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/mohawk-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/mohawk-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/mohawk-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/mohawk-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/mohawk-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/mohawk-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/mohawk-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/mohawk-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/silver.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/silver.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/silver.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/silver.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/silver.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/silver.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/silver-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/silver-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/silver-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/silver-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/silver-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/silver-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/silver-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/silver-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/silver-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/silver-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/silver-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/silver-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/silver-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/silver-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/silver-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/silver-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/silver-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/silver-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/silver-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/silver-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/silver-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/silver-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/specs.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/specs.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/specs.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/specs.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/specs.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/specs.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/specs-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/specs-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/specs-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/specs-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/specs-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/specs-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/specs-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/specs-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/specs-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/specs-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/specs-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/specs-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/specs-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/specs-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/specs-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/specs-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/specs-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/specs-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/specs-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/specs-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/specs-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/specs-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/robot.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/robot.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/robot.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/robot.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/robot.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/robot.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/robot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/robot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/robot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/robot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/robot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/robot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/robot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/robot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/robot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/robot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/robot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/robot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/robot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/robot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/robot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/robot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/robot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/robot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/robot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/robot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/robot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/robot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/crt-bot.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/crt-bot.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/crt-bot.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/crt-bot.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/crt-bot.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/crt-bot.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/crt-bot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/crt-bot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/crt-bot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/crt-bot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/crt-bot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/crt-bot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/crt-bot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/crt-bot-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/crt-bot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/crt-bot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/crt-bot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/crt-bot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/crt-bot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/crt-bot-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/crt-bot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/crt-bot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/crt-bot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/crt-bot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/crt-bot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/crt-bot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/crt-bot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/crt-bot-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/shiba.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/shiba.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/shiba.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/shiba.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/shiba.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/shiba.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/shiba-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/shiba-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/shiba-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/shiba-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/shiba-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/shiba-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/shiba-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/shiba-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/shiba-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/shiba-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/shiba-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/shiba-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/shiba-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/shiba-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/shiba-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/shiba-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/shiba-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/shiba-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/shiba-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/shiba-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/shiba-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/shiba-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/husky.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/husky.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/husky.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/husky.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/husky.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/husky.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/husky-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/husky-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/husky-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/husky-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/husky-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/husky-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/husky-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/husky-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/husky-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/husky-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/husky-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/husky-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/husky-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/husky-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/husky-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/husky-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/husky-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/husky-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/husky-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/husky-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/husky-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/husky-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/tabby.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/tabby.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/tabby.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/tabby.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/tabby.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/tabby.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/tabby-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/tabby-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/tabby-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/tabby-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/tabby-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/tabby-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/tabby-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/tabby-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/tabby-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/tabby-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/tabby-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/tabby-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/tabby-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/tabby-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/tabby-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/tabby-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/tabby-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/tabby-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/tabby-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/tabby-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/tabby-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/tabby-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/black-cat.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/black-cat.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/black-cat.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/black-cat.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/black-cat.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/black-cat.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/black-cat-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/black-cat-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/black-cat-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/black-cat-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/black-cat-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/black-cat-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/black-cat-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/black-cat-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/black-cat-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/black-cat-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/black-cat-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/black-cat-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/black-cat-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/black-cat-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/black-cat-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/black-cat-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/black-cat-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/black-cat-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/black-cat-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/black-cat-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/black-cat-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/black-cat-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/raccoon.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/raccoon.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/raccoon.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/raccoon.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/raccoon.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/raccoon.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/raccoon-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/raccoon-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/raccoon-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/raccoon-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/raccoon-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/raccoon-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/raccoon-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/raccoon-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/raccoon-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/raccoon-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/raccoon-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/raccoon-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/raccoon-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/raccoon-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/raccoon-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/raccoon-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/raccoon-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/raccoon-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/raccoon-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/raccoon-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/raccoon-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/raccoon-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/capybara.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/capybara.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/capybara.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/capybara.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/capybara.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/capybara.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/capybara-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/capybara-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/capybara-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/capybara-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/capybara-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/capybara-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/capybara-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/capybara-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/capybara-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/capybara-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/capybara-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/capybara-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/capybara-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/capybara-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/capybara-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/capybara-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/capybara-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/capybara-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/capybara-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/capybara-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/capybara-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/capybara-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/crew-cut.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/crew-cut.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/crew-cut.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/crew-cut.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/crew-cut.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/crew-cut.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/crew-cut-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/crew-cut-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/crew-cut-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/crew-cut-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/crew-cut-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/crew-cut-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/crew-cut-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/crew-cut-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/crew-cut-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/crew-cut-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/crew-cut-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/crew-cut-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/crew-cut-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/crew-cut-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/crew-cut-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/crew-cut-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/crew-cut-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/crew-cut-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/crew-cut-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/crew-cut-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/crew-cut-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/crew-cut-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/ponytail.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/ponytail.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/ponytail.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/ponytail.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/ponytail.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/ponytail.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/ponytail-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/ponytail-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/ponytail-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/ponytail-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/ponytail-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/ponytail-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/ponytail-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/ponytail-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/ponytail-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/ponytail-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/ponytail-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/ponytail-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/ponytail-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/ponytail-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/ponytail-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/ponytail-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/ponytail-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/ponytail-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/ponytail-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/ponytail-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/ponytail-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/ponytail-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/beard.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/beard.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/beard.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/beard.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/beard.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/beard.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/beard-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/beard-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/beard-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/beard-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/beard-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/beard-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/beard-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/beard-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/beard-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/beard-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/beard-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/beard-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/beard-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/beard-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/beard-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/beard-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/beard-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/beard-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/beard-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/beard-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/beard-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/beard-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/bob.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/bob.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/bob.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/bob.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/bob.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/bob.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/bob-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/bob-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/bob-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/bob-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/bob-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/bob-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/bob-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/bob-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/bob-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/bob-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/bob-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/bob-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/bob-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/bob-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/bob-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/bob-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/bob-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/bob-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/bob-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/bob-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/bob-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/bob-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/spike.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/spike.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/spike.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/spike.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/spike.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/spike.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/spike-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/spike-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/spike-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/spike-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/spike-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/spike-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/spike-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/spike-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/spike-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/spike-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/spike-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/spike-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/spike-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/spike-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/spike-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/spike-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/spike-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/spike-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/spike-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/spike-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/spike-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/spike-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/braids.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/braids.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/braids.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/braids.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/braids.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/braids.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/braids-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/braids-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/braids-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/braids-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/braids-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/braids-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/braids-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/braids-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/braids-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/braids-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/braids-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/braids-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/braids-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/braids-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/braids-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/braids-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/braids-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/braids-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/braids-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/braids-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/braids-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/braids-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/beanie.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/beanie.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/beanie.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/beanie.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/beanie.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/beanie.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/beanie-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/beanie-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/beanie-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/beanie-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/beanie-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/beanie-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/beanie-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/beanie-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/beanie-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/beanie-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/beanie-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/beanie-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/beanie-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/beanie-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/beanie-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/beanie-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/beanie-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/beanie-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/beanie-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/beanie-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys characters/beanie-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base characters/beanie-portrait-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/boss.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/boss.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/boss.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/boss.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/boss.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/boss.png",
+      "passed": true
+    },
+    {
+      "check": "Exists characters/boss-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size characters/boss-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty characters/boss-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA characters/boss-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation characters/boss-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background characters/boss-portrait.png",
+      "passed": true
+    },
+    {
+      "check": "Exists background/compound-night.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size background/compound-night.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty background/compound-night.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA background/compound-night.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation background/compound-night.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background background/compound-night.png",
+      "passed": true
+    },
+    {
+      "check": "Exists tiles/yard.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size tiles/yard.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty tiles/yard.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA tiles/yard.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation tiles/yard.png",
+      "passed": true
+    },
+    {
+      "check": "Exists ui/fx-sleep.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size ui/fx-sleep.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty ui/fx-sleep.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA ui/fx-sleep.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation ui/fx-sleep.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background ui/fx-sleep.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/fluorescent.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/fluorescent.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/fluorescent.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/fluorescent.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/fluorescent.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/fluorescent.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/phone-chargers.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/phone-chargers.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/phone-chargers.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/phone-chargers.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/phone-chargers.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/phone-chargers.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/wall-fan.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/wall-fan.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/wall-fan.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/wall-fan.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/wall-fan.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/wall-fan.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/dorm-block.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/dorm-block.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/dorm-block.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/dorm-block.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/dorm-block.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/dorm-block.png",
+      "passed": true
+    },
+    {
+      "check": "Exists ui/fx-crack.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size ui/fx-crack.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty ui/fx-crack.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA ui/fx-crack.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation ui/fx-crack.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background ui/fx-crack.png",
+      "passed": true
+    },
+    {
+      "check": "Exists ui/fx-zap.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size ui/fx-zap.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty ui/fx-zap.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA ui/fx-zap.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation ui/fx-zap.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background ui/fx-zap.png",
+      "passed": true
+    },
+    {
+      "check": "Exists ui/whip.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size ui/whip.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty ui/whip.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA ui/whip.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation ui/whip.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background ui/whip.png",
+      "passed": true
+    },
+    {
+      "check": "Exists ui/zapper.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size ui/zapper.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty ui/zapper.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA ui/zapper.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation ui/zapper.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background ui/zapper.png",
+      "passed": true
+    },
+    {
+      "check": "Exists tiles/floor.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size tiles/floor.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty tiles/floor.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA tiles/floor.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation tiles/floor.png",
+      "passed": true
+    },
+    {
+      "check": "Exists tiles/wall.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size tiles/wall.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty tiles/wall.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA tiles/wall.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation tiles/wall.png",
+      "passed": true
+    },
+    {
+      "check": "Exists tiles/aisle.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size tiles/aisle.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty tiles/aisle.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA tiles/aisle.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation tiles/aisle.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/bench-l.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/bench-l.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/bench-l.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/bench-l.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/bench-l.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/bench-l.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/bench-m.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/bench-m.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/bench-m.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/bench-m.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/bench-m.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/bench-m.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/bench-r.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/bench-r.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/bench-r.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/bench-r.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/bench-r.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/bench-r.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/monitor.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/monitor.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/monitor.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/monitor.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/monitor.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/monitor.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/chair-back.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/chair-back.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/chair-back.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/chair-back.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/chair-back.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/chair-back.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/chair-front.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/chair-front.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/chair-front.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/chair-front.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/chair-front.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/chair-front.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/bench-tag.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/bench-tag.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/bench-tag.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/bench-tag.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/bench-tag.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/bench-tag.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/bench-tag-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/bench-tag-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/bench-tag-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/bench-tag-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/bench-tag-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/bench-tag-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Only three tint greys objects/bench-tag-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Mask exactly matches base objects/bench-tag-polo.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/phone-rack.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/phone-rack.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/phone-rack.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/phone-rack.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/phone-rack.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/phone-rack.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/desk-phone.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/desk-phone.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/desk-phone.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/desk-phone.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/desk-phone.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/desk-phone.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/noodle-cup.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/noodle-cup.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/noodle-cup.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/noodle-cup.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/noodle-cup.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/noodle-cup.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/mug.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/mug.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/mug.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/mug.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/mug.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/mug.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/papers.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/papers.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/papers.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/papers.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/papers.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/papers.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/energy-drink.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/energy-drink.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/energy-drink.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/energy-drink.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/energy-drink.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/energy-drink.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/desk-buzzer.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/desk-buzzer.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/desk-buzzer.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/desk-buzzer.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/desk-buzzer.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/desk-buzzer.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/clock.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/clock.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/clock.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/clock.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/clock.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/clock.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/banner.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/banner.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/banner.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/banner.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/banner.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/banner.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/kpi-board.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/kpi-board.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/kpi-board.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/kpi-board.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/kpi-board.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/kpi-board.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/window-night.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/window-night.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/window-night.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/window-night.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/window-night.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/window-night.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/cctv.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/cctv.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/cctv.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/cctv.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/cctv.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/cctv.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/door.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/door.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/door.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/door.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/door.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/door.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/water-cooler.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/water-cooler.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/water-cooler.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/water-cooler.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/water-cooler.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/water-cooler.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/printer.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/printer.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/printer.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/printer.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/printer.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/printer.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/shredder.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/shredder.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/shredder.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/shredder.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/shredder.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/shredder.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/dorm-door.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/dorm-door.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/dorm-door.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/dorm-door.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/dorm-door.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/dorm-door.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/gong.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/gong.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/gong.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/gong.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/gong.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/gong.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/poster-recruit.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/poster-recruit.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/poster-recruit.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/poster-recruit.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/poster-recruit.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/poster-recruit.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/noodle-boxes.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/noodle-boxes.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/noodle-boxes.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/noodle-boxes.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/noodle-boxes.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/noodle-boxes.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/drink-crates.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/drink-crates.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/drink-crates.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/drink-crates.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/drink-crates.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/drink-crates.png",
+      "passed": true
+    },
+    {
+      "check": "Exists objects/boss-office.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size objects/boss-office.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty objects/boss-office.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA objects/boss-office.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation objects/boss-office.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background objects/boss-office.png",
+      "passed": true
+    },
+    {
+      "check": "Exists ui/bubble.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size ui/bubble.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty ui/bubble.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA ui/bubble.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation ui/bubble.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background ui/bubble.png",
+      "passed": true
+    },
+    {
+      "check": "Exists ui/bubble-tail.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size ui/bubble-tail.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty ui/bubble-tail.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA ui/bubble-tail.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation ui/bubble-tail.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background ui/bubble-tail.png",
+      "passed": true
+    },
+    {
+      "check": "Exists ui/marker-needs.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size ui/marker-needs.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty ui/marker-needs.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA ui/marker-needs.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation ui/marker-needs.png",
+      "passed": true
+    },
+    {
+      "check": "Needs marker uses gold",
+      "passed": true
+    },
+    {
+      "check": "Transparent background ui/marker-needs.png",
+      "passed": true
+    },
+    {
+      "check": "Exists ui/fx-stars.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size ui/fx-stars.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty ui/fx-stars.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA ui/fx-stars.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation ui/fx-stars.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background ui/fx-stars.png",
+      "passed": true
+    },
+    {
+      "check": "Exists ui/fx-jolt.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size ui/fx-jolt.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty ui/fx-jolt.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA ui/fx-jolt.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation ui/fx-jolt.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background ui/fx-jolt.png",
+      "passed": true
+    },
+    {
+      "check": "Exists ui/fx-heart.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size ui/fx-heart.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty ui/fx-heart.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA ui/fx-heart.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation ui/fx-heart.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background ui/fx-heart.png",
+      "passed": true
+    },
+    {
+      "check": "Exists ui/megaphone.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size ui/megaphone.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty ui/megaphone.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA ui/megaphone.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation ui/megaphone.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background ui/megaphone.png",
+      "passed": true
+    },
+    {
+      "check": "Exists ui/newspaper.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size ui/newspaper.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty ui/newspaper.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA ui/newspaper.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation ui/newspaper.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background ui/newspaper.png",
+      "passed": true
+    },
+    {
+      "check": "Exists ui/coffee.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size ui/coffee.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty ui/coffee.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA ui/coffee.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation ui/coffee.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background ui/coffee.png",
+      "passed": true
+    },
+    {
+      "check": "Exists ui/walkie.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size ui/walkie.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty ui/walkie.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA ui/walkie.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation ui/walkie.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background ui/walkie.png",
+      "passed": true
+    },
+    {
+      "check": "Exists ui/icons-16.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size ui/icons-16.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty ui/icons-16.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA ui/icons-16.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation ui/icons-16.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background ui/icons-16.png",
+      "passed": true
+    },
+    {
+      "check": "Exists ui/icons-32.png",
+      "passed": true
+    },
+    {
+      "check": "Exact size ui/icons-32.png",
+      "passed": true
+    },
+    {
+      "check": "Nonempty ui/icons-32.png",
+      "passed": true
+    },
+    {
+      "check": "Binary alpha / no edge AA ui/icons-32.png",
+      "passed": true
+    },
+    {
+      "check": "Palette and gold reservation ui/icons-32.png",
+      "passed": true
+    },
+    {
+      "check": "Transparent background ui/icons-32.png",
+      "passed": true
+    },
+    {
+      "check": "Monitor screen rectangle x4 y4 w24 h12 fully transparent",
+      "passed": true
+    },
+    {
+      "check": "CCTV keeps its shape and toggles one red LED",
+      "passed": true
+    },
+    {
+      "check": "Night window flickers only neon pixels; geometry stays fixed",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells headset",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 headset",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells headset",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose headset",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells red-cap",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 red-cap",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells red-cap",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose red-cap",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells bun",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 bun",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells bun",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose bun",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells shiny",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 shiny",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells shiny",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose shiny",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells curly",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 curly",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells curly",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose curly",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells mohawk",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 mohawk",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells mohawk",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose mohawk",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells silver",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 silver",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells silver",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose silver",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells specs",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 specs",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells specs",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose specs",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells robot",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 robot",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells robot",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose robot",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells crt-bot",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 crt-bot",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells crt-bot",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose crt-bot",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells shiba",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 shiba",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells shiba",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose shiba",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells husky",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 husky",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells husky",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose husky",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells tabby",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 tabby",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells tabby",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose tabby",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells black-cat",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 black-cat",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells black-cat",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose black-cat",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells raccoon",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 raccoon",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells raccoon",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose raccoon",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells capybara",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 capybara",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells capybara",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose capybara",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells crew-cut",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 crew-cut",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells crew-cut",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose crew-cut",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells ponytail",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 ponytail",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells ponytail",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose ponytail",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells beard",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 beard",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells beard",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose beard",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells bob",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 bob",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells bob",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose bob",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells spike",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 spike",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells spike",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose spike",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells braids",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 braids",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells braids",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose braids",
+      "passed": true
+    },
+    {
+      "check": "36 occupied cells beanie",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 beanie",
+      "passed": true
+    },
+    {
+      "check": "Polo mask in all cloth-bearing cells beanie",
+      "passed": true
+    },
+    {
+      "check": "Full-height standing hand pose beanie",
+      "passed": true
+    },
+    {
+      "check": "40 occupied cells boss",
+      "passed": true
+    },
+    {
+      "check": "Every frame bottom aligned to y71 boss",
+      "passed": true
+    },
+    {
+      "check": "16 distinct front sprite images",
+      "passed": true
+    },
+    {
+      "check": "16 distinct back sprite images",
+      "passed": true
+    },
+    {
+      "check": "Repeat bench middle surface has no seam at x31→x0",
+      "passed": true
+    },
+    {
+      "check": "Left cap, repeat and right cap share continuous surface and front-edge bands",
+      "passed": true
+    },
+    {
+      "check": "Standing hand and animated sleep FX are declared",
+      "passed": true
+    },
+    {
+      "check": "All three ZZZ animation frames are populated",
+      "passed": true
+    }
+  ]
+}

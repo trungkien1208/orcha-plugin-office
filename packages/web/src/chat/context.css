@@ -1,0 +1,7 @@
+/* Context panel cards: one column that never grows past the panel, long text ends in "…". */
+.context .ctx { grid-template-columns: minmax(0, 1fr); min-width: 0; }
+.context .ctx > header > span:last-child, .context .ctx > summary > span:last-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.context .branch, .context .branch-up { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.context .branch-up { font: 11px var(--mono); }
+.context .fuel-row { grid-template-columns: 44px minmax(0, 1fr) 40px; }
+.context .fuel-row .muted { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

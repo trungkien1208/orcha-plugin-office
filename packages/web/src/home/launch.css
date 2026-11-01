@@ -1,0 +1,48 @@
+.dialog .panel.launch { width: min(540px, calc(100vw - 32px)); max-height: calc(100vh - 48px); grid-template-rows: auto minmax(0, 1fr) auto auto; gap: 0; padding: 0; overflow: hidden; }
+.launch-head { padding: 0 18px 12px; }
+.launch-head h2 { margin: 0 -18px 10px; }
+.launch-head p { margin: 0; color: var(--ink-3); font-size: 12.5px; line-height: 1.5; }
+.launch-team { height: 26px; margin: 0 2px; padding: 0 6px; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--surface-2); color: var(--ink); font: 600 12.5px var(--sans); }
+.launch-body { display: grid; gap: 14px; min-height: 0; overflow: auto; padding: 4px 18px 16px; }
+.launch .kind-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; margin: 0; padding: 0; border: 0; }
+.launch .kind-cards legend, .launch-prompt > span, .launch-field { margin-bottom: 6px; padding: 0; color: var(--ink-2); font: 600 11px var(--display); letter-spacing: 0.08em; text-transform: uppercase; }
+.launch .kind-cards label { position: relative; display: flex; align-items: center; gap: 8px; height: 40px; padding: 0 12px; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--surface-2); color: var(--ink-2); font: 600 13px var(--sans); letter-spacing: 0; text-transform: none; cursor: pointer; }
+.launch .kind-cards label:hover { border-color: var(--ink-3); color: var(--ink); }
+.launch .kind-cards label.on { border-color: var(--primary); background: var(--surface-3); color: var(--ink); box-shadow: inset 0 0 0 1px var(--primary); }
+.launch .kind-cards input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.launch .kind-cards label:has(input:focus-visible) { outline: 2px solid var(--ink-2); outline-offset: 2px; }
+.dialog label.launch-prompt { display: grid; gap: 0; letter-spacing: 0; text-transform: none; }
+.launch-prompt small, .launch-options small { color: var(--ink-3); font: 500 11px var(--sans); letter-spacing: 0; text-transform: none; }
+.launch-prompt textarea { min-height: 96px; resize: vertical; font: 13px/1.5 var(--sans); }
+.dialog label.launch-field { display: grid; gap: 6px; margin: 0; }
+.launch-field input { height: 34px; font: 13px var(--sans); letter-spacing: 0; text-transform: none; }
+.dialog label.launch-toggle { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface-2); letter-spacing: 0; text-transform: none; cursor: pointer; }
+.launch-toggle input { width: 16px; height: 16px; margin-top: 2px; }
+.launch-toggle span { display: grid; gap: 2px; }
+.launch-toggle b { color: var(--ink); font: 600 13px var(--sans); }
+.launch-toggle small { color: var(--ink-3); font: 12px var(--sans); }
+.launch-options { border: 1px solid var(--line); border-radius: var(--radius); }
+.launch-options summary { display: flex; align-items: baseline; gap: 10px; padding: 9px 12px; color: var(--ink-2); font: 600 11px var(--display); letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; }
+.launch-options summary small { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.launch-options[open] summary { border-bottom: 1px solid var(--line); }
+.launch-options-body { display: grid; gap: 12px; padding: 12px; }
+.launch-options-body .launch-model-label { color: var(--ink-2); font: 600 11px var(--display); letter-spacing: 0.08em; text-transform: uppercase; }
+.launch-hint { margin: 0; color: var(--ink-3); font-size: 12px; }
+.launch-error { margin: 0; padding: 0 18px 10px; }
+.launch-foot { display: flex; align-items: center; gap: 8px; padding: 12px 18px; border-top: 1px solid var(--line); background: var(--surface-2); }
+.launch-foot small { flex: 1; color: var(--ink-3); font: 11px var(--mono); }
+@media (max-width: 520px) { .launch-foot small { display: none; } }
+.launch-name { display: flex; align-items: flex-end; gap: 6px; }
+.launch-name .launch-field { flex: 1; }
+.launch-shuffle { height: 34px; padding: 0 10px; font-size: 15px; }
+.launch div.launch-field { display: grid; gap: 6px; margin: 0; }
+.launch .choice-trigger { width: 100%; text-transform: none; letter-spacing: 0; }
+.launch-model-fields { display: grid; gap: 10px; }
+.launch-segment { margin: 0; padding: 0; border: 0; display: grid; gap: 6px; }
+.launch-segment legend { margin-bottom: 6px; padding: 0; color: var(--ink-2); font: 600 11px var(--display); letter-spacing: 0.08em; text-transform: uppercase; }
+.launch .segmented label { height: 30px; font-size: 12px; letter-spacing: 0; text-transform: none; }
+.launch-fast { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 10px; border: 1px solid var(--line); border-radius: var(--radius); }
+.launch-fast span { display: grid; gap: 2px; }
+.launch-fast b { color: var(--ink); font: 600 12.5px var(--sans); }
+.launch-fast small { color: var(--ink-3); font-size: 11.5px; }
+.launch .launch-model-label { color: var(--ink-2); font: 600 11px var(--display); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: -4px; }

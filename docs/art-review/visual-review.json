@@ -1,0 +1,20 @@
+{
+  "reviewed": true,
+  "date": "2026-10-30",
+  "defaultCastFrontAndBack": true,
+  "standingHandAll23Skins": true,
+  "chairBehindStandingWorker": true,
+  "napHasFloatingZZZ": true,
+  "electricBatonReplacesGun": true,
+  "compoundExterior": true,
+  "continuousFourSeatBench": true,
+  "browserAutomation": "unavailable; native PNGs share browser renderer; scripts parse",
+  "proofs": [
+    "compound-polished.png",
+    "raised-all-skins.png",
+    "raised-hand-proof.png",
+    "sleep-proof.png",
+    "baton-proof.png"
+  ],
+  "missing": []
+}

@@ -1,0 +1,53 @@
+/* Project rail: one clear job per zone. Head = find and filter, list = Projects and Agents, foot = create. */
+.prail .rail-list { grid-template-columns: minmax(0, 1fr); }
+.prail .pgroup { grid-template-columns: minmax(0, 1fr); min-width: 0; }
+.prail .prow { min-width: 0; }
+.prail .filters { flex-wrap: nowrap; gap: 4px; overflow: hidden; }
+.prail .filter { flex: 0 1 auto; min-width: 0; height: 22px; padding: 0 7px; font-size: 10.5px; white-space: nowrap; }
+
+/* Project header: name and counts always; New agent and the menu on hover or focus. */
+.prail .phead { gap: 0; padding-right: 0; }
+.prail .ptoggle { gap: 6px; height: 28px; padding: 0 4px; }
+.prail .ptoggle .caret { width: 16px; height: 16px; display: grid; place-items: center; flex: none; }
+.pactions { display: flex; align-items: center; gap: 0; opacity: 0; }
+.phead:hover .pactions, .pactions:focus-within, .pactions:has(.menu-anchor.open) { opacity: 1; }
+.pactions .row-more { width: 24px; height: 24px; }
+@media (hover: none) { .pactions { opacity: 1; } }
+
+/* Agent row: portrait, name + model, task; one status slot on the right that the row menu takes over on hover. */
+.prail .prow { padding-left: 8px; }
+.prail .prow .agent-row { grid-template-columns: 32px minmax(0, 1fr) auto; gap: 8px; padding: 5px 6px; }
+.prail .prow .portrait { width: 32px; height: 32px; }
+.prail .agent-row .lines { display: grid; gap: 1px; }
+.prail .agent-row .who { gap: 6px; font-size: 13px; line-height: 1.25; }
+.who-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.prail .agent-row .model { flex: none; max-width: 45%; font: 10.5px var(--mono); }
+.prail .agent-row .task { display: flex; align-items: center; gap: 4px; min-width: 0; font-size: 11.5px; line-height: 1.3; }
+.prail .agent-row .task .stage-art { flex: none; }
+.prail .prow > .menu-anchor { top: 50%; right: 10px; transform: none; margin-top: -13px; }
+.prail .prow:hover .agent-row > :last-child, .prail .prow:focus-within .agent-row > :last-child { visibility: hidden; }
+.prail .prow > .menu-anchor .row-more { background: var(--surface); border-color: var(--line-strong); }
+
+/* Foot: two labelled buttons side by side. */
+.prail .rail-foot { grid-template-columns: 1fr 1fr; gap: 6px; }
+.prail .rail-foot .btn { gap: 6px; height: 30px; padding: 0 8px; font-size: 11.5px; }
+.prail .rail-foot .icon, .rail-toggle .icon { flex: none; }
+
+/* Collapsed rail: icon over a short caption, so nothing is a bare glyph. */
+.chat-card:not(.wide-rail) .prail .rail-foot { grid-template-columns: 1fr; padding: 6px; }
+.chat-card:not(.wide-rail) .prail .rail-foot .btn { flex-direction: column; gap: 2px; height: 44px; padding: 4px 0; }
+.chat-card:not(.wide-rail) .foot-label { font: 600 9px var(--display); letter-spacing: 0.06em; text-transform: uppercase; }
+.chat-card:not(.wide-rail) .rail-toggle { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; width: 100%; height: 40px; }
+
+@media (max-width: 1280px) {
+  .prail .prow .agent-row { grid-template-columns: 28px minmax(0, 1fr) auto; gap: 6px; padding: 4px 6px; }
+  .prail .prow .portrait { width: 28px; height: 28px; }
+  .prail .agent-row .task { display: flex; }
+  .prail .agent-row .model { display: none; }
+  .prail .filter { padding: 0 5px; letter-spacing: 0.02em; }
+}
+
+/* Details drawer below 1280 px (a Radix dialog). */
+.drawer-overlay { position: fixed; inset: 0; z-index: 40; background: rgb(5 7 10 / 55%); }
+.drawer-panel { position: fixed; top: 0; right: 0; bottom: 0; width: min(320px, 88vw); display: flex; background: var(--surface-2); border-left: 2px solid #000; box-shadow: -8px 0 24px rgb(0 0 0 / 35%); outline: none; }
+.drawer-panel .context { display: flex; flex: 1; border-left: 0; }

@@ -1,0 +1,10 @@
+/* Sonner reads these variables; the extra `html` outranks its own theme rule without !important. */
+html [data-sonner-toaster][data-sonner-theme] {
+  --normal-bg: var(--surface);
+  --normal-border: var(--line-strong);
+  --normal-text: var(--ink);
+  --border-radius: var(--radius);
+  font-family: var(--sans);
+}
+html [data-sonner-toaster] [data-sonner-toast].ej-toast { font-size: 13px; box-shadow: 0 8px 24px rgb(0 0 0 / 25%); }
+html[data-calm] [data-sonner-toaster] [data-sonner-toast] { transition: none; animation: none; }

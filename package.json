@@ -1,0 +1,28 @@
+{
+  "name": "easy-job",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "check": "tsc --noEmit && biome check packages scripts e2e && bun test packages",
+    "test": "bun test packages",
+    "test:e2e": "bun run build:web && playwright test",
+    "bridge": "bun packages/bridge/src/main.ts",
+    "dev": "bun packages/bridge/src/main.ts --dev",
+    "dev:fake": "bun packages/bridge/src/dev-fake.ts",
+    "build:web": "bun run --cwd packages/web build",
+    "start": "bun run build:web && bun packages/bridge/src/main.ts",
+    "install-local": "bun scripts/install-local.ts",
+    "release": "bun scripts/release.ts",
+    "easy-job": "bun packages/bridge/src/cli.ts"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.4",
+    "@playwright/test": "^1.64.1",
+    "@types/bun": "^1.4.4",
+    "typescript": "^7.0.2"
+  }
+}

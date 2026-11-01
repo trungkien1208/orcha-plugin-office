@@ -1,0 +1,62 @@
+.files-view { grid-template-columns: minmax(200px, 30%) minmax(0, 1fr); }
+.files-side { min-height: 0; display: flex; flex-direction: column; border-right: 1px solid var(--line); background: var(--surface-2); }
+.files-search { flex: none; padding: 8px 8px 4px; }
+.files-side .files-list { flex: 1; border-right: 0; padding: 4px 4px 12px; gap: 0; }
+.files-note { margin: 8px; font-size: 12px; }
+
+.file-row { display: flex; align-items: center; gap: 2px; min-width: 0; height: 26px; padding-right: 6px; border-radius: 3px; color: var(--ink-2); }
+.file-row:hover { background: var(--surface-3); }
+.file-row.sel { background: var(--surface-3); box-shadow: inset 2px 0 0 var(--primary); color: var(--ink); }
+.file-caret { flex: none; width: 18px; height: 18px; display: grid; place-items: center; padding: 0; border: 0; background: none; color: var(--ink-3); cursor: pointer; }
+.file-name { flex: 1; display: flex; align-items: center; gap: 6px; min-width: 0; height: 100%; padding: 0 2px; border: 0; background: none; color: inherit; font: 12.5px var(--sans); text-align: left; cursor: pointer; }
+.file-name > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.file-row.is-dir .file-name { color: var(--ink); font-weight: 600; }
+.file-count { flex: none; color: var(--ink-3); font: 10.5px var(--mono); }
+.file-changed { flex: none; width: 6px; height: 6px; margin: 0 4px; border-radius: 50%; background: var(--needs); }
+.file-row.flat { width: 100%; gap: 8px; padding: 0 6px; border: 0; background: transparent; text-align: left; cursor: pointer; font: 12.5px var(--sans); }
+.file-flat { flex: 1; display: flex; align-items: baseline; gap: 6px; min-width: 0; overflow: hidden; white-space: nowrap; }
+.file-flat > span { flex: none; max-width: 70%; overflow: hidden; text-overflow: ellipsis; color: var(--ink); }
+.file-flat small { min-width: 0; overflow: hidden; text-overflow: ellipsis; color: var(--ink-3); font: 10.5px var(--mono); }
+.file-status { flex: none; width: 14px; font: 700 11px var(--mono); text-align: center; }
+.file-status.mod { color: var(--needs); }
+.file-status.add { color: var(--done); }
+.file-status.del { color: var(--danger); }
+.file-delta { flex: none; font: 10.5px var(--mono); }
+
+.viewer-pane { min-width: 0; min-height: 0; display: flex; flex-direction: column; background: var(--surface); }
+.viewer-head { flex: none; display: flex; align-items: center; gap: 10px; min-width: 0; height: 34px; padding: 0 10px; border-bottom: 1px solid var(--line); background: var(--surface); }
+.crumbs { flex: 1; display: flex; align-items: center; min-width: 0; overflow: hidden; white-space: nowrap; font: 12px var(--mono); }
+.crumbs > span { display: inline-flex; align-items: center; min-width: 0; }
+.crumbs i { padding: 0 4px; color: var(--ink-3); font-style: normal; }
+.crumbs button { padding: 2px 3px; border: 0; border-radius: 2px; background: none; color: var(--ink-2); font: inherit; cursor: pointer; }
+.crumbs button:hover { background: var(--surface-3); color: var(--ink); }
+.crumbs b { overflow: hidden; text-overflow: ellipsis; color: var(--ink); }
+.viewer-meta { flex: none; color: var(--ink-3); font: 10.5px var(--mono); }
+.viewer-switch { flex: none; display: flex; border: 1px solid var(--line-strong); border-radius: 3px; overflow: hidden; }
+.viewer-switch button { height: 22px; padding: 0 8px; border: 0; background: transparent; color: var(--ink-2); font: 600 10.5px var(--mono); cursor: pointer; }
+.viewer-switch button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+.viewer-copy { flex: none; width: 24px; height: 24px; display: grid; place-items: center; padding: 0; border: 1px solid transparent; border-radius: 3px; background: none; color: var(--ink-3); cursor: pointer; }
+.viewer-copy:hover { border-color: var(--line-strong); color: var(--ink); }
+.viewer-pane .viewer { flex: 1; background: var(--surface); color: var(--ink); }
+.viewer-empty { margin: 0; padding: 16px; font-size: 12.5px; }
+.code-view { display: flex; align-items: flex-start; padding: 0; }
+.code-view pre { margin: 0; padding: 10px 0; font: inherit; white-space: pre; }
+.code-view .gutter { flex: none; position: sticky; left: 0; min-width: 44px; padding-right: 10px; padding-left: 8px; border-right: 1px solid var(--line); background: var(--surface); color: var(--ink-3); text-align: right; user-select: none; }
+.code-view .code-text { flex: 1; padding-left: 12px; padding-right: 14px; }
+.dir-list { flex: 1; min-height: 0; overflow: auto; padding: 6px; display: grid; align-content: start; gap: 1px; background: var(--surface-2); }
+.dir-item { display: flex; align-items: center; gap: 8px; min-width: 0; height: 30px; padding: 0 8px; border: 0; border-radius: 3px; background: transparent; color: var(--ink); text-align: left; font: 12.5px var(--sans); cursor: pointer; }
+.dir-item:hover { background: var(--surface-3); }
+.dir-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dir-item small { flex: none; color: var(--ink-3); font: 10.5px var(--mono); }
+@container conv (max-width: 560px) { .files-view { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 40%) minmax(0, 1fr); } .files-side { border-right: 0; border-bottom: 1px solid var(--line); } .viewer-meta { display: none; } }
+.dir-name.is-dir { font-weight: 600; }
+.file-row:not(.is-dir) .file-name { padding-left: 4px; }
+.viewer-image { flex: 1; min-height: 0; display: grid; place-items: center; overflow: auto; padding: 16px; background: var(--surface-2); }
+.file-tree { display: grid; outline: 0; }
+.file-tree .file-row { cursor: pointer; }
+.file-tree .file-row.focus { box-shadow: inset 0 0 0 1px var(--ink-3); }
+.file-tree .file-name { cursor: inherit; }
+/* Long paths: earlier folders shrink to "…", the file name always shows. */
+.crumbs > span { flex: 0 1 auto; min-width: 0; overflow: hidden; }
+.crumbs > span:last-child { flex: none; max-width: 60%; }
+.crumbs button, .crumbs b { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

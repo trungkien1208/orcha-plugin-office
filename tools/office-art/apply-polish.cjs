@@ -1,0 +1,14 @@
+const fs=require('fs'),path=require('path'),p=require('./finish.cjs'),a=require('./append-actions.cjs');
+const {get,set,crop,blank,copy,save,bbox,nearest,grey}=p;
+const root='docs/art-review/revisions';const logFile=root+'/applied.json';const applied=fs.existsSync(logFile)?JSON.parse(fs.readFileSync(logFile)):{};
+function wipe(im,x,y,w,h){for(let j=y;j<y+h;j++)for(let i=x;i<x+w;i++)set(im,i,j,[0,0,0,0]);}
+function polo(frame,id){const m=blank(48,72),b=bbox(frame);if(!b)return m;const metals=['robot','crt-bot','husky','raccoon','silver'].includes(id);for(let y=b[1];y<b[1]+b[3]*.83;y++)for(let x=b[0];x<b[0]+b[2];x++){const c=get(frame,x,y),t=(y-b[1])/b[3],rx=(x-b[0])/b[2],mx=Math.max(...c.slice(0,3)),mn=Math.min(...c.slice(0,3));
+const torso=t>.48&&rx>.18&&rx<.82;const sleeve=t>.31&&t<.60&&(rx<.26||rx>.74);if(c[3]&&mx-mn<(!metals?35:18)&&mn>88&&mx<229&&(torso||sleeve)){const g=nearest(c,grey);set(frame,x,y,g);set(m,x,y,g);}}
+return m;}
+function applyRaised(r){const frames=a.extract(p.read(r.source),2,1),sheet=p.read(p.ROOT+`/characters/${r.id}.png`),mask=p.read(p.ROOT+`/characters/${r.id}-polo.png`);for(let n=0;n<2;n++){const fitted=a.fit(frames[n],68,42),cell=blank(48,72);copy(fitted,cell,Math.floor((48-fitted.width)/2),72-fitted.height);const m=polo(cell,r.id);let count=0;for(let i=3;i<m.data.length;i+=4)count+=!!m.data[i];if(count<8)throw Error('Too little polo '+r.id);wipe(sheet,n*48,360,48,72);wipe(mask,n*48,360,48,72);copy(cell,sheet,n*48,360);copy(m,mask,n*48,360);}save(sheet,`characters/${r.id}.png`);save(mask,`characters/${r.id}-polo.png`);}
+function applyBoss(r){const frames=a.extract(p.read(r.source),2,1),sheet=p.read(p.ROOT+'/characters/boss.png');for(let n=0;n<2;n++){const sprite=a.fit(frames[n],62,42),cell=blank(48,72);copy(sprite,cell,Math.floor((48-sprite.width)/2),72-sprite.height);wipe(sheet,n*48,648,48,72);copy(cell,sheet,n*48,648);}save(sheet,'characters/boss.png');}
+for(const kind of ['raised','assets']){const dir=root+'/'+kind;if(!fs.existsSync(dir))continue;for(const name of fs.readdirSync(dir).filter(n=>n.endsWith('.json'))){const r=JSON.parse(fs.readFileSync(dir+'/'+name)),key=kind+'/'+r.id;if(applied[key]===r.source)continue;if(kind==='raised')applyRaised(r);else if(r.id==='boss-baton')applyBoss(r);else if(r.id==='compound-night'){
+ const raw=p.read(r.source),b=p.bbox(raw),source=crop(raw,...b),ratio=Math.min(766/source.width,222/source.height),w=Math.round(source.width*ratio),h=Math.round(source.height*ratio),art=p.outline(p.paletteLock(p.sample(source,w,h))),out=blank(768,224);
+ for(let y=1;y<223;y++)for(let x=1;x<767;x++)set(out,x,y,p.rgb('#1d2747'));copy(art,out,Math.floor((768-w)/2),223-h);save(p.outline(out),r.file);
+ }else p.finishObject({...r,columns:r.cols});applied[key]=r.source;console.log('Applied '+key);}}
+fs.writeFileSync(logFile,JSON.stringify(applied,null,2)+'\n');

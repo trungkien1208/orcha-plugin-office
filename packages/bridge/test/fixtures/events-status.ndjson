@@ -1,0 +1,2 @@
+{"id":"st-1","result":{"type":"subscription_started"}}
+{"data":{"agent":"codex","agent_status":"working","display_agent":"Codex","pane_id":"wQ:p2","state_labels":{"blocked":"needs you ⚠","done":"done ✓","idle":"idle","working":"working"},"workspace_id":"wQ"},"event":"pane.agent_status_changed"}

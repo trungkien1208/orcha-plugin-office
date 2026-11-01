@@ -1,0 +1,55 @@
+# Push a tag vX.Y.Z (matching "version" in package.json) to publish Easy Job:
+# - a GitHub release with easy-job-<platform>.tar.gz for every platform and SHA256SUMS
+#   (a draft until every file is attached, so the plugin never points at a half release);
+# - the `plugin` branch, holding only herdr-plugin.toml and fetch.sh for this version, which is what
+#   `orcha plugin install trungkien1208/orcha-plugin-office --ref plugin` and `orcha plugin update` read.
+name: release
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: write
+concurrency:
+  group: release
+  cancel-in-progress: false
+jobs:
+  release:
+    # Only the public repo publishes; the private dev repo just runs CI.
+    if: github.repository == 'trungkien1208/orcha-plugin-office'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.4.0"
+      - run: bun install --frozen-lockfile
+      - name: Tag matches package.json
+        run: |
+          version="$(bun -e 'console.log(require("./package.json").version)')"
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "error: tag $GITHUB_REF_NAME does not match package.json version $version" >&2
+            exit 1
+          fi
+      - run: bun run check
+      - name: Build every platform
+        run: bun run release
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" --draft --title "Easy Job ${GITHUB_REF_NAME#v}" --generate-notes
+          gh release upload "$GITHUB_REF_NAME" dist/release/*.tar.gz dist/release/SHA256SUMS
+          gh release edit "$GITHUB_REF_NAME" --draft=false
+      - name: Point the plugin branch at this release
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          work="$(mktemp -d)"
+          git worktree add --detach "$work"
+          cd "$work"
+          git checkout --orphan plugin-next
+          git rm -rq --cached . && find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp "$GITHUB_WORKSPACE"/dist/release/plugin/* .
+          git add herdr-plugin.toml fetch.sh
+          git commit -qm "Easy Job ${GITHUB_REF_NAME#v}"
+          git push --force origin HEAD:plugin

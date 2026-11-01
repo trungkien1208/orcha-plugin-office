@@ -1,0 +1,168 @@
+/* Themes and calm mode, layered over theme.css.
+   Compound (default): razor wire under the top bar and a fenced frame round the Floor. No textures behind
+   text: tiled backgrounds behind the header and the page read as noise, so the page keeps its flat colour.
+   Cozy Office: cream, sage and warm wood, soft cards, a vine trim; no hazard tape.
+   Calm: no motion, no hazard stripes, needs-you is a quiet dot. Missing art files simply draw nothing. */
+
+/* ---------- Compound decoration ---------- */
+/* The top bar clips its overflow (no horizontal scroll), so the wire is drawn inside it, along the bottom edge. */
+:root:not([data-theme="office"]) .hud {
+  padding-bottom: 14px;
+  background: url("/office/ui/header-wire.png") left bottom 1px / auto 12px repeat-x, var(--night);
+  image-rendering: pixelated;
+}
+:root:not([data-theme="office"]) .floor-card {
+  border-width: 12px;
+  border-style: solid;
+  border-image: url("/office/ui/map-frame.png") 24 fill round;
+  image-rendering: pixelated;
+}
+
+/* ---------- Cozy Office ---------- */
+:root[data-theme="office"] {
+  color-scheme: light;
+  --bg: #f3ece0;
+  --surface: #fffaf2;
+  --surface-2: #f8f1e6;
+  --surface-3: #eee5d6;
+  --line: #e0d4c1;
+  --line-strong: #cdbda4;
+  --ink: #3a332b;
+  --ink-2: #5d5447;
+  --ink-3: #8a7e6d;
+  --night: #3b3229;
+  --night-2: #4a4036;
+  --night-3: #5a4e42;
+  --night-ink: #efe6d6;
+  --phosphor: #6f9a6a;
+  --primary: #c4643f;
+  --primary-2: #d9764f;
+  --primary-soft: #f7e3d8;
+  --neon: #5b9aa8;
+  --needs: #e0a33a;
+  --needs-ink: #7a5212;
+  --needs-soft: #fbefd6;
+  --working: #5b8fc7;
+  --done: #5a9e6f;
+  --idle: #a79c8b;
+  --unknown: #c9bfae;
+  --danger: #c8553d;
+  --display: "Oswald", "IBM Plex Sans", ui-sans-serif, sans-serif;
+  --radius: 6px;
+  --hazard: linear-gradient(var(--needs-soft), var(--needs-soft));
+  --scan: none;
+  --grain: none;
+}
+:root[data-theme="office"] .hud { border-bottom: 3px solid var(--phosphor); box-shadow: none; }
+:root[data-theme="office"] .hud {
+  padding-bottom: 14px;
+  background: url("/office/theme-office/ui/header-trim.png") left bottom 1px / auto 12px repeat-x, var(--night);
+  image-rendering: pixelated;
+}
+:root[data-theme="office"] .card-head { color: var(--night-ink); }
+:root[data-theme="office"] .card { border: 1px solid var(--line-strong); box-shadow: 0 2px 10px rgb(80 60 30 / 10%); }
+:root[data-theme="office"] .card-head { animation: none; border-bottom: 1px solid var(--line); }
+:root[data-theme="office"] .floor-card {
+  border-width: 12px;
+  border-style: solid;
+  border-image: url("/office/theme-office/ui/map-frame.png") 24 fill round;
+  image-rendering: pixelated;
+}
+:root[data-theme="office"] .hud,
+:root[data-theme="office"] .hud button { color: var(--night-ink); }
+:root[data-theme="office"] .msg.user .bubble { background: #d9e6d3; color: var(--ink); border: 1px solid #b9cdb1; box-shadow: none; }
+:root[data-theme="office"] .msg.user .bubble code { background: rgb(0 0 0 / 6%); }
+:root[data-theme="office"] .composer textarea:focus { background: #fff; color: var(--ink); }
+:root[data-theme="office"] .terminal,
+:root[data-theme="office"] .code,
+:root[data-theme="office"] .tool-detail { background: #2f2a24; color: #e8dfcf; }
+:root[data-theme="office"] .pop-menu { background: var(--surface); box-shadow: 0 6px 18px rgb(60 40 20 / 18%); }
+:root[data-theme="office"] .dialog .panel { border: 1px solid var(--line-strong); box-shadow: 0 10px 30px rgb(60 40 20 / 20%); }
+:root[data-theme="office"] .dialog h2 { background: var(--surface-3); color: var(--ink); border-bottom: 2px solid var(--phosphor); }
+:root[data-theme="office"] .rec { display: none; }
+:root[data-theme="office"] .floor-card .ej-floor { border-color: var(--line-strong); }
+
+/* ---------- Calm mode ---------- */
+:root[data-calm] *,
+:root[data-calm] *::before,
+:root[data-calm] *::after {
+  /* biome-ignore lint/complexity/noImportantStyles: calm mode must override every component animation */
+  animation: none !important;
+  /* biome-ignore lint/complexity/noImportantStyles: same for transitions */
+  transition: none !important;
+}
+:root[data-calm] { --hazard: linear-gradient(var(--needs-soft), var(--needs-soft)); }
+:root[data-calm] .rec { display: none; }
+
+/* Native sprite surfaces keep their content on solid panels. */
+.art-sprite { display:inline-block; flex:none; image-rendering:pixelated; background-repeat:no-repeat; vertical-align:middle; }
+.stage-art { display:inline-block; width:32px; height:16px; flex:none; image-rendering:pixelated; background-image:url('/office/ui/stage-strip.png'); background-position:calc(var(--stage) * -32px) -16px; }
+:root:not([data-theme="office"]) .card { border:8px solid transparent; border-image:url('/office/ui/panel-frame.png') 16 stretch; background:var(--surface); }
+:root[data-theme="office"] .card { border:8px solid transparent; border-image:url('/office/theme-office/ui/panel-frame.png') 8 stretch; background:var(--surface); }
+.portrait { outline:2px solid var(--line-strong); border-image:url('/office/ui/avatar-frame.png') 6 stretch; border-width:3px; border-style:solid; }
+.spin { background:url('/office/ui/spinner-16.png') 0 0; width:16px; height:16px; border:0; border-radius:0; animation:art-spin .8s steps(8) infinite; image-rendering:pixelated; }
+@keyframes art-spin { to {background-position:-128px 0} }
+.hicon { display:inline-block; width:16px; height:16px; background:url('/office/ui/hp-icons.png'); image-rendering:pixelated; }
+.hbar.stamina .hicon { background-position:-16px 0; }
+.htrack { border:2px solid transparent; border-image:url('/office/ui/hp-bar-lg.png') 4 stretch; height:12px; background:var(--night); }
+.hfill { background:url('/office/ui/hp-fill-lg.png') 0 0 repeat-x; height:8px; image-rendering:pixelated; }
+.hbar.mid .hfill { background-position:0 -8px; }
+.hbar.low .hfill { background-position:0 -16px; }
+.hbar.stamina .hfill { background-image:url('/office/ui/stamina-fill-lg.png'); }
+:root:not([data-theme="office"]) .ej-floor-canvas { cursor:url('/office/ui/cursor-boss.png') 1 1,default; }
+:root:not([data-theme="office"]) .manager { border-right:4px solid transparent; border-image:url('/office/ui/divider-fence.png') 2 repeat; }
+:root:not([data-theme="office"]) .needs-tag { background-image:url('/office/ui/hazard-tape.png'); }
+:root[data-calm] .spin { animation:none; background-position:0 0; }
+@media(prefers-reduced-motion:reduce){.spin{animation:none;background-position:0 0}}
+.entry-gate { position:fixed; inset:0; z-index:100; height:100dvh; overflow:auto; display:grid; place-items:center; background:#1d2747; padding:24px; isolation:isolate; }
+.entry-scene { position:absolute; inset:0; background-size:cover; background-position:center; image-rendering:pixelated; opacity:.5; pointer-events:none; }
+.entry-content { position:relative; width:min(520px,100%); padding:24px; text-align:center; background:var(--surface); border:2px solid var(--line-strong); box-shadow:6px 6px #1d2747; min-height:360px; }
+.entry-content h1 { font-size:24px; margin:0; min-height:72px; display:grid; place-items:center; }
+.entry-badge { position:relative; width:320px; max-width:100%; height:200px; margin:24px auto; background:url('/office/gate/badge-card.png') center/100% 100%; image-rendering:pixelated; color:#2f3a4f; }
+.entry-badge>span { position:absolute; left:38%; top:40%; font:16px var(--mono); }
+.entry-portrait { position:absolute; width:80px; height:80px; left:5%; top:30%; image-rendering:pixelated; }
+.entry-stamp { position:absolute; width:256px; max-width:90%; left:10%; bottom:5%; image-rendering:pixelated; }
+.entry-approved .entry-stamp { animation:gate-stamp .25s ease-out both; }
+@keyframes gate-stamp { from {transform:scale(1.3);opacity:0} to {transform:scale(1);opacity:1} }
+.entry-progress { width:288px; max-width:100%; height:24px; margin:16px auto; border:6px solid transparent; border-image:url('/office/gate/loading-frame.png') 5 stretch; background:#1d2747; }
+.entry-progress i { display:block; height:8px; background:url('/office/gate/loading-fill.png') repeat-x; animation:gate-load 1s steps(8) infinite; }
+@keyframes gate-load { to {background-position:16px 0} }
+.entry-turnstile { width:64px; height:64px; margin:auto; background:url('/office/gate/turnstile-anim.png'); animation:gate-walk 1s steps(4) infinite; image-rendering:pixelated; }
+@keyframes gate-walk { to {background-position:-256px 0} }
+.entry-offline { width:128px; image-rendering:pixelated; }
+:root[data-calm] .entry-gate * { animation:none!important; }
+@media(prefers-reduced-motion:reduce){.entry-gate *{animation:none!important}}
+:root:not([data-theme="office"]) .card-head { border:4px solid transparent; border-image:url('/office/ui/panel-header.png') 6 stretch; background:var(--night); }
+:root:not([data-theme="office"]) .floor-host { border:8px solid transparent; border-image:url('/office/ui/crt-bezel.png') 12 stretch; min-height:0; }
+:root:not([data-theme="office"]) .floor-card .card-title::before { content:''; display:inline-block; width:16px; height:16px; background:url('/office/ui/corner-lamp.png') 0 0; margin-right:8px; image-rendering:pixelated; }
+.agent-row.blocked .portrait { border-image-source:url('/office/ui/avatar-frame-needs.png'); }
+.skin { border:5px solid transparent; border-image:url('/office/ui/skin-frame.png') 6 stretch; }
+.skin.sel { border-image-source:url('/office/ui/skin-frame-selected.png'); }
+.setup-block { border:10px solid transparent; border-image:url('/office/ui/clipboard.png') 16 stretch; background:var(--surface); }
+:root[data-theme="office"] .setup-block { border-image:url('/office/theme-office/ui/panel-frame.png') 8 stretch; }
+.empty { background:var(--surface); }
+.empty::before { content:''; display:block; width:128px; height:96px; margin:0 auto 24px; background:url('/office/ui/empty-inbox.png') no-repeat; image-rendering:pixelated; }
+.floor-card:has(.ej-floor-hud:first-child) .empty::before { background-image:url('/office/ui/empty-floor.png'); }
+:root:not([data-theme="office"]) .ej-actions { border:6px solid transparent; border-image:url('/office/ui/popup-frame.png') 6 stretch; }
+.ej-actions::after { width:14px; height:8px; background:url('/office/ui/popup-tail.png'); border:0; transform:translateX(-50%); bottom:-10px; }
+:root[data-theme="office"] .ej-actions { border-image:url('/office/theme-office/ui/panel-frame.png') 8 stretch; background:var(--surface); color:var(--ink); }
+:root:not([data-theme="office"]) .q-head>span:first-child::after { content:''; width:48px; height:16px; flex:none; background:url('/office/ui/stamp-urgent.png') center/48px 16px; image-rendering:pixelated; }
+.empty { border:8px solid transparent; border-image:url('/office/ui/note-paper.png') 8 stretch; padding:24px; }
+.empty::after { content:''; display:block; width:24px; height:24px; margin:16px auto 0; background:url('/office/ui/tape-corner.png'); image-rendering:pixelated; }
+.working-line::after { content:''; display:inline-block; width:16px; height:16px; background:url('/office/ui/thinking-dots.png'); animation:typing-art .9s steps(3) infinite; image-rendering:pixelated; }
+@keyframes typing-art { to{background-position:-48px 0} }
+:root[data-calm] .working-line::after { animation:none; }
+@media(prefers-reduced-motion:reduce){.working-line::after{animation:none}}
+:root:not([data-theme="office"]) .floor-host { position:relative; }
+:root:not([data-theme="office"]) .floor-host::after { content:''; position:absolute; inset:-8px; border:8px solid transparent; border-image:url('/office/ui/cctv-corners.png') 16 stretch; pointer-events:none; }
+:root:not([data-theme="office"]) .floor-card .card-head::after { content:''; flex:none; width:16px; height:16px; background:url('/office/ui/corner-lamp.png') 0 0; image-rendering:pixelated; }
+.agent-row.done .dot.ring { width:48px; height:16px; border:0; border-radius:0; background:url('/office/ui/stamp-done.png') center/48px 16px; image-rendering:pixelated; animation:done-stamp 3s forwards; }
+@keyframes done-stamp { 0%,80%{opacity:1} 100%{opacity:0} }
+:root[data-calm] .agent-row.done .dot.ring { animation:none; }
+@media(prefers-reduced-motion:reduce){.agent-row.done .dot.ring{animation:none}}
+.empty { background:url('/office/ui/tape-corner.png') right 4px top 4px/24px 24px no-repeat,var(--surface); }
+.empty::after { width:32px; height:32px; background-image:url('/office/ui/sticker-set.png'); background-position:-160px 0; }
+:root[data-theme="office"] .empty::after { background-image:url('/office/theme-office/ui/sticker-set.png'); }
+.floor-card .card-title { display:inline-flex; align-items:center; gap:8px; }
+.floor-card .card-title::after { content:''; width:24px; height:24px; background:url('/office/ui/sticker-set.png') 0 0/144px 24px; image-rendering:pixelated; }
+:root[data-theme="office"] .floor-card .card-title::after { background-image:url('/office/theme-office/ui/sticker-set.png'); }

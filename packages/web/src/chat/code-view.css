@@ -1,0 +1,10 @@
+/* react-diff-view in the app's colours, both themes. */
+.diff-view { padding: 0; }
+.diff-view .diff { width: 100%; font: 12.5px/1.5 var(--mono); color: var(--ink); }
+.diff-view .diff-gutter { width: 1%; min-width: 44px; padding: 0 8px; color: var(--ink-3); text-align: right; user-select: none; }
+.diff-view .diff-code { padding: 0 12px; white-space: pre; }
+.diff-view .diff-hunk-header { background: var(--surface-2); color: var(--ink-3); }
+.diff-view .diff-hunk-header-content { padding: 2px 12px; font: 11.5px var(--mono); }
+.diff-view .diff-gutter-insert, .diff-view .diff-code-insert { background: color-mix(in srgb, var(--done) 16%, transparent); }
+.diff-view .diff-gutter-delete, .diff-view .diff-code-delete { background: color-mix(in srgb, var(--danger) 16%, transparent); }
+.diff-view .diff-code-edit { background: transparent; }

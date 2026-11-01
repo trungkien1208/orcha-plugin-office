@@ -1,0 +1,40 @@
+/* One block per Agent turn: portrait and name once, prose and tool runs stacked, actions on hover. */
+.msg.agent.turn { align-items: start; max-width: 92%; }
+.turn .body { display: grid; gap: 6px; }
+.turn .who { margin-bottom: 0; }
+.turn .bubble + .bubble { margin-top: 2px; }
+.turn .tool-run { margin-left: 0; max-width: 100%; align-self: start; justify-self: start; }
+.turn .turn-note { margin: 0; text-align: left; }
+.turn-tools { position: absolute; top: -4px; right: 0; display: flex; gap: 4px; opacity: 0; transition: opacity 120ms; }
+.turn:hover .turn-tools, .turn-tools:focus-within { opacity: 1; }
+.turn-tools button { height: 22px; padding: 0 8px; border: 1px solid var(--line-strong); border-radius: 3px; background: var(--surface); color: var(--ink-2); font: 11px var(--mono); cursor: pointer; }
+.turn-tools button:hover { color: var(--ink); border-color: var(--ink-3); }
+.msg.user .msg-tools { position: absolute; top: -4px; left: 0; display: flex; opacity: 0; }
+.msg.user:hover .msg-tools, .msg.user .msg-tools:focus-within { opacity: 1; }
+:root[data-calm] .turn-tools { transition: none; }
+@media (hover: none) { .turn-tools, .msg.user .msg-tools { opacity: 1; position: static; } }
+.code-link { display: inline; padding: 0; border: 0; background: none; color: inherit; font: inherit; cursor: pointer; }
+.code-link code { text-decoration: underline dotted; text-underline-offset: 3px; }
+.code-link:hover code { text-decoration-style: solid; color: var(--ink); }
+.code-link.text { color: var(--working); text-decoration: underline; }
+.bubble-images { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.bubble-images img, .auth-img img { display: block; max-width: 220px; max-height: 160px; object-fit: contain; }
+.auth-img { display: inline-block; padding: 0; border: 1px solid var(--line-strong); border-radius: 3px; background: var(--surface-2); cursor: zoom-in; vertical-align: middle; }
+.auth-img.large img { max-width: 100%; max-height: 70vh; }
+.auth-img.loading { width: 120px; height: 80px; }
+.auth-img.missing { padding: 4px 8px; color: var(--ink-3); font: 11px var(--mono); cursor: default; }
+.lightbox { position: fixed; inset: 0; z-index: 30000; display: grid; place-items: center; padding: 32px; background: rgb(5 7 10 / 88%); cursor: zoom-out; }
+.lightbox-panel { margin: 0; max-width: 100%; max-height: 100%; display: grid; place-items: center; outline: none; }
+.lightbox img { max-width: calc(100vw - 64px); max-height: calc(100vh - 64px); object-fit: contain; box-shadow: 0 12px 48px rgb(0 0 0 / 60%); }
+.tool-images { display: flex; flex-wrap: wrap; gap: 6px; padding: 4px 0 2px 26px; }
+.tool-images img { max-width: 240px; max-height: 160px; object-fit: contain; border: 1px solid var(--line-strong); border-radius: 3px; }
+
+/* Fenced code: the inline-code chip must not apply inside a block, in either theme. */
+.bubble .code pre code, .bubble .code pre code.hljs { padding: 0; background: transparent; color: inherit; font: inherit; }
+:root[data-theme="office"] .code-head { color: #b9ad97; border-bottom-color: rgb(255 255 255 / 10%); }
+:root[data-theme="office"] .code-head button { color: #d8ccb6; }
+:root[data-theme="office"] .code .hljs-comment, :root[data-theme="office"] .code .hljs-quote { color: #a99c86; }
+:root[data-theme="office"] .quick-label { color: var(--ink); }
+/* use-stick-to-bottom: .messages is the scroll box, .messages-inner lays the conversation out. */
+.messages-inner { display: flex; flex-direction: column; gap: 10px; }
+.messages { display: block; }

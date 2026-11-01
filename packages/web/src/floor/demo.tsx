@@ -1,0 +1,15 @@
+import { useState } from "react";
+import { createRoot } from "react-dom/client";
+import "@fontsource/chakra-petch/600.css";
+import "@fontsource/ibm-plex-sans/400.css";
+import { FloorView } from "./FloorView.tsx";
+import { FloorPortrait } from "./Portrait.tsx";
+import { agentKey } from "./contract.ts";
+import { demoAgent, makeDemoOffice } from "./demo-state.ts";
+export function FloorDemo() {
+  const [office, setOffice] = useState(makeDemoOffice), [selected, setSelected] = useState<string | null>(null), [project, setProject] = useState<string | null>(null);
+  const [reduced,setReduced]=useState<boolean|undefined>(undefined),[search,setSearch]=useState("");
+  const [calls,setCalls]=useState<{id:string;line:string}[]>([]);
+  return <><header className="ej-demo-header"><h1>EASY JOB · Floor demo</h1><span>Local sample state · no bridge calls</span><button type="button" onClick={() => setOffice((current) => ({ ...current, agents: [...current.agents, demoAgent(current.agents.length + 100, "project-0"), demoAgent(current.agents.length + 101, "project-0")] }))}>Add Agents to Project A</button><button type="button" onClick={()=>setOffice((o)=>({...o,agents:o.agents.filter((a)=>agentKey(a)!==(selected??agentKey(o.agents.at(-1)??demoAgent(0,"project-0"))))}))}>Remove selected Agent</button><button type="button" onClick={()=>setOffice((o)=>({...o,projects:o.projects.slice(1),agents:o.agents.filter((a)=>a.workspaceId!==o.projects[0]?.workspaceId)}))}>Close first Project</button><button type="button" onClick={()=>setOffice(makeDemoOffice())}>Reset sample</button><button type="button" onClick={()=>setReduced((r)=>!r)}>Reduced motion: {reduced?"on":"off"}</button></header><main className="ej-demo-grid"><FloorView settings={{reducedMotion:reduced}} onSearch={()=>document.getElementById("demo-search")?.focus()} office={office} selectedAgentKey={selected} selectedProjectId={project} onSelectAgent={setSelected} onSelectProject={setProject} onAction={(kind,target,payload)=>setCalls((old)=>[...old,{id:crypto.randomUUID(),line:`${kind} · ${target} · ${JSON.stringify(payload??{})}`}])} /><aside className="ej-demo-panel"><h2>Agents</h2><label>Search Agents<input id="demo-search" value={search} onChange={e=>setSearch(e.target.value)} /></label><p data-testid="work-calls">Work callbacks: {calls.length}</p>{calls.map((call)=><p key={call.id} style={{fontSize:11}}>{call.line}</p>)}<p data-testid="selection">{selected ?? "Choose an Agent"}</p><p>{project ? `Project: ${project}` : "Click a Bench tag"}</p>{office.agents.filter(a=>a.name.toLowerCase().includes(search.toLowerCase())).map((agent) => <button type="button" className="ej-demo-agent" key={agentKey(agent)} onClick={() => setSelected(agentKey(agent))}><FloorPortrait skin={agent.skin} color={office.projects.find((p) => p.workspaceId === agent.workspaceId)?.projectColor ?? "#3b4560"} /><span>{agent.name}<small style={{ display: "block" }}>{agent.status}</small></span></button>)}</aside></main></>;
+}
+const root = document.getElementById("root"); if (root) createRoot(root).render(<FloorDemo />);

@@ -1,0 +1,9 @@
+import {afterEach,expect,test} from 'bun:test';
+import {mergeThread,observeThread,validateRecipients} from './teams.ts';
+import type {ThreadItem} from '../api-accounts.ts';
+const windowDescriptor=Object.getOwnPropertyDescriptor(globalThis,'window');
+afterEach(()=>{if(windowDescriptor)Object.defineProperty(globalThis,'window',windowDescriptor);else Reflect.deleteProperty(globalThis,'window');});
+const entry=(paneId:string,id:string,at:number,from?:string):ThreadItem=>({paneId,id,at,from,role:'user',text:'<script>never execute me</script>'});
+test('recipients are distinct, in this Project, and capped at five',()=>{expect(validateRecipients(['a','b'],['a','a','b'])).toEqual(['a','b']);expect(()=>validateRecipients(['a'],['elsewhere'])).toThrow();expect(()=>validateRecipients([],[])).toThrow();expect(()=>validateRecipients(['a','b','c','d','e','f'],['a','b','c','d','e','f'])).toThrow();});
+test('thread pagination retains older messages and same IDs from different panes',()=>{const merged=mergeThread([entry('a','1',20)],[entry('b','1',10),entry('a','1',20),entry('a','0',5)]);expect(merged.map(i=>`${i.paneId}:${i.id}`)).toEqual(['a:0','b:1','a:1']);expect(merged[0]?.text).toContain('<script>');});
+test('paper planes are attributed, new and deduplicated; history never emits',()=>{const target=new EventTarget();Object.defineProperty(globalThis,'window',{configurable:true,value:target});let flights=0;target.addEventListener('easy-job-team-flight',()=>flights++);observeThread('unit-fx',[entry('b','old',1,'a')],false);expect(flights).toBe(0);const next=entry('b','new',2,'a');observeThread('unit-fx',[next],true);observeThread('unit-fx',[next],true);observeThread('unit-fx',[entry('b','history',0,'a')],false);observeThread('unit-fx',[entry('a','self',3,'a')],true);expect(flights).toBe(1);});

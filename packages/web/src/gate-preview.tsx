@@ -1,0 +1,11 @@
+import { createRoot } from "react-dom/client";
+import { EntryGate } from "./ui/EntryGate.tsx";
+import type { EntryState } from "./ui/EntryGate.tsx";
+import "./theme.css";
+import "./looks.css";
+const states:EntryState[]=['connecting','approved','denied','down'];
+const requested=new URLSearchParams(location.search).get('state');
+const state=states.find(s=>s===requested)??'connecting';
+document.documentElement.dataset.theme=localStorage.getItem('easy-job-theme')??'compound';
+if(localStorage.getItem('easy-job-calm')==='1')document.documentElement.dataset.calm='';
+createRoot(document.getElementById('root') as HTMLElement).render(<EntryGate state={state}/>);

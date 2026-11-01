@@ -1,0 +1,56 @@
+  ✗ ui/icons-ui-16.png: missing
+  ✗ ui/icons-ui-32.png: missing
+  ✗ ui/act-icons.png: missing
+  ✗ ui/popup-frame.png: missing
+  ✗ ui/popup-tail.png: missing
+  ✗ ui/panel-frame.png: missing
+  ✗ ui/panel-header.png: missing
+  ✗ ui/hazard-tape.png: missing
+  ✗ ui/stamp-urgent.png: missing
+  ✗ ui/stamp-done.png: missing
+  ✗ ui/stamp-closed.png: missing
+  ✗ ui/crt-bezel.png: missing
+  ✗ ui/avatar-frame.png: missing
+  ✗ ui/avatar-frame-needs.png: missing
+  ✗ ui/skin-frame.png: missing
+  ✗ ui/skin-frame-selected.png: missing
+  ✗ ui/stage-strip.png: missing
+  ✗ ui/git-status.png: missing
+  ✗ ui/badge-model.png: missing
+  ✗ ui/logo.png: missing
+  ✗ ui/favicon-32.png: missing
+  ✗ ui/favicon-needs-32.png: missing
+  ✗ ui/cursor-boss.png: missing
+  ✗ ui/cursor-hand.png: missing
+  ✗ ui/empty-inbox.png: missing
+  ✗ ui/empty-floor.png: missing
+  ✗ ui/orcha-down.png: missing
+  ✗ manifest: ui/icons-ui-16.png not listed
+  ✗ manifest: ui/icons-ui-32.png not listed
+  ✗ manifest: ui/act-icons.png not listed
+  ✗ manifest: ui/popup-frame.png not listed
+  ✗ manifest: ui/popup-tail.png not listed
+  ✗ manifest: ui/panel-frame.png not listed
+  ✗ manifest: ui/panel-header.png not listed
+  ✗ manifest: ui/hazard-tape.png not listed
+  ✗ manifest: ui/stamp-urgent.png not listed
+  ✗ manifest: ui/stamp-done.png not listed
+  ✗ manifest: ui/stamp-closed.png not listed
+  ✗ manifest: ui/crt-bezel.png not listed
+  ✗ manifest: ui/avatar-frame.png not listed
+  ✗ manifest: ui/avatar-frame-needs.png not listed
+  ✗ manifest: ui/skin-frame.png not listed
+  ✗ manifest: ui/skin-frame-selected.png not listed
+  ✗ manifest: ui/stage-strip.png not listed
+  ✗ manifest: ui/git-status.png not listed
+  ✗ manifest: ui/badge-model.png not listed
+  ✗ manifest: ui/logo.png not listed
+  ✗ manifest: ui/favicon-32.png not listed
+  ✗ manifest: ui/favicon-needs-32.png not listed
+  ✗ manifest: ui/cursor-boss.png not listed
+  ✗ manifest: ui/cursor-hand.png not listed
+  ✗ manifest: ui/empty-inbox.png not listed
+  ✗ manifest: ui/empty-floor.png not listed
+  ✗ manifest: ui/orcha-down.png not listed
+
+76/104 checklist items done (checklist updated)

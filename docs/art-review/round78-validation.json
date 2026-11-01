@@ -1,0 +1,949 @@
+{
+  "files": 84,
+  "errors": [],
+  "audit": [
+    {
+      "file": "characters/bun.png",
+      "width": 192,
+      "height": 792,
+      "sha256": "4543141ef74ef59bd62b242ef5b8f57d940df2bdd95685769721a9eb2b6ecb8d",
+      "colors": 21,
+      "layouts": [
+        "bun"
+      ],
+      "replacedRejected": false
+    },
+    {
+      "file": "characters/bun-polo.png",
+      "width": 192,
+      "height": 792,
+      "sha256": "71a3c42c5addfb03e56982a65787da64a13805e6c60b4e0e92aea4db3b7169ff",
+      "colors": 3,
+      "layouts": [
+        "bunPolo"
+      ],
+      "replacedRejected": false
+    },
+    {
+      "file": "objects/razor-wire.png",
+      "width": 64,
+      "height": 16,
+      "sha256": "4a1ee4a6e93630b46365f8b6bdc4be1eff0b2c295fb7c5f6fb708f0f0d8d9881",
+      "colors": 4,
+      "layouts": [
+        "razorWire"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "characters/bouncer.png",
+      "width": 192,
+      "height": 720,
+      "sha256": "ff4f423e4df9f85285035db1be2def07742bf2edbad78765a7f0e2e02a5819e5",
+      "colors": 21,
+      "layouts": [
+        "bouncer"
+      ],
+      "replacedRejected": false
+    },
+    {
+      "file": "ui/hp-fill.png",
+      "width": 24,
+      "height": 12,
+      "sha256": "6b8bbbd319b36777f1dbb9147f94b767c456e84d0fb96dea1007a4e4558ebe9f",
+      "colors": 7,
+      "layouts": [
+        "hpFill"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/icons-ui2-16.png",
+      "width": 112,
+      "height": 80,
+      "sha256": "dbb541b6ed75efb78604154d703a16d1e4c5f070770d85dffdf3e8cde398a2ab",
+      "colors": 20,
+      "layouts": [
+        "iconsUi216"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/icons-ui2-32.png",
+      "width": 224,
+      "height": 160,
+      "sha256": "e0fda82cd4d38fed697417a30c728afb99a07984426944386d3a6a9b72b8f064",
+      "colors": 20,
+      "layouts": [
+        "iconsUi232"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/spinner-16.png",
+      "width": 128,
+      "height": 16,
+      "sha256": "7482f2bd7c846678c61dbc5fdffa283ee0e5eddb063d791a76a331f1c48de49c",
+      "colors": 4,
+      "layouts": [
+        "spinner16"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/thinking-dots.png",
+      "width": 48,
+      "height": 16,
+      "sha256": "0fafeee1ae92e53ef00de8dbaceda6bb75de09afb5ec90addf670f1b19802d8a",
+      "colors": 4,
+      "layouts": [
+        "thinkingDots"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/act-icons.png",
+      "width": 200,
+      "height": 20,
+      "sha256": "942244c186dec13c99129e26ef88919dae4b295c2a76938215045da377040194",
+      "colors": 22,
+      "layouts": [
+        "actIcons"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/hp-bar-lg.png",
+      "width": 64,
+      "height": 12,
+      "sha256": "382aa981112179e084453fc470e909b813fe0cb6749fec29be29bb741e02ed26",
+      "colors": 6,
+      "layouts": [
+        "hpBarLg"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/hp-fill-lg.png",
+      "width": 48,
+      "height": 24,
+      "sha256": "2088c8966b2a356d51ae80ea2d2a2103bdf5505ea57f60365578ceec95c043c5",
+      "colors": 10,
+      "layouts": [
+        "hpFillLg"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/stamina-fill-lg.png",
+      "width": 48,
+      "height": 8,
+      "sha256": "8f7995f27748be318275314cdc9eb3eff5fbe158abb3b8224b2614796d127fcf",
+      "colors": 4,
+      "layouts": [
+        "staminaFillLg"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/hp-icons.png",
+      "width": 32,
+      "height": 16,
+      "sha256": "3fbb97559c18b0512393a7637773f7b8ed2b087ad3162fc28e59bdfc67579f11",
+      "colors": 6,
+      "layouts": [
+        "hpIcons"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "landing/hero.png",
+      "width": 960,
+      "height": 360,
+      "sha256": "4507abf0430b04e53ba241958b85558d81383202032c5badb52d564be0ac6ff4",
+      "colors": 28,
+      "layouts": [
+        "hero"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "landing/feature-floor.png",
+      "width": 240,
+      "height": 160,
+      "sha256": "eb967888279012e8568ca8ed769bec3298c37acb4ceb750c893d50eb13527d24",
+      "colors": 29,
+      "layouts": [
+        "featureFloor"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "landing/feature-chat.png",
+      "width": 240,
+      "height": 160,
+      "sha256": "5f65a801b547618bf5c857801fb3623b2cb55fbd9b784c6bf9648a2b532fcfeb",
+      "colors": 26,
+      "layouts": [
+        "featureChat"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "landing/feature-hp.png",
+      "width": 240,
+      "height": 160,
+      "sha256": "9fc7acb0ee353ac65ef656d3562864537faff797accc847d963d4efdf1ee867c",
+      "colors": 29,
+      "layouts": [
+        "featureHp"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "landing/feature-hr.png",
+      "width": 240,
+      "height": 160,
+      "sha256": "ae56145f2a1dd268084381e3baf40858e9a48866bfe47021006e70e5681c6315",
+      "colors": 27,
+      "layouts": [
+        "featureHr"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "landing/wordmark.png",
+      "width": 320,
+      "height": 80,
+      "sha256": "94398aa29fa5dbb725478b9f51bb6535bf957400e8ac578673bac6d067cbac37",
+      "colors": 4,
+      "layouts": [
+        "wordmark"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "landing/og-image.png",
+      "width": 1200,
+      "height": 630,
+      "sha256": "03b9e8996d67e0596b3d6b37d96d907682b0cfb1f8b3d60199fe5701a54df252",
+      "colors": 28,
+      "layouts": [
+        "ogImage"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "landing/divider-wire.png",
+      "width": 64,
+      "height": 16,
+      "sha256": "4a1ee4a6e93630b46365f8b6bdc4be1eff0b2c295fb7c5f6fb708f0f0d8d9881",
+      "colors": 4,
+      "layouts": [
+        "dividerWire"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "landing/bg-tile.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "e3312f522dc5385869955562b17c13f65e13a5a2b840f2ce44fefce78b572e72",
+      "colors": 3,
+      "layouts": [
+        "bgTile"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/app-icon-192.png",
+      "width": 192,
+      "height": 192,
+      "sha256": "625591a761f208da3fc72de92b07048091ba791f332df86e35cb40e814f58636",
+      "colors": 4,
+      "layouts": [
+        "appIcon192"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/app-icon-512.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "ba7339796320747ee3896f2c98d1b8d82f453e022c69cbd66149a9e519ad06f8",
+      "colors": 4,
+      "layouts": [
+        "appIcon512"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/apple-touch-180.png",
+      "width": 180,
+      "height": 180,
+      "sha256": "adbd5f69350782d59037bc682bc180abe8b47761adef96c833fadcab8aa55918",
+      "colors": 4,
+      "layouts": [
+        "appleTouch180"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "gate/gate-night.png",
+      "width": 640,
+      "height": 360,
+      "sha256": "9f106d8003b84a54a17f4aa9c87c68b576b3af1df74df241a7842eccb1ebcb95",
+      "colors": 28,
+      "layouts": [
+        "gateNight"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "gate/gate-open.png",
+      "width": 768,
+      "height": 192,
+      "sha256": "ffb16c62547c6cd5726d5a7811907adad7677852c8a2ce0545a48ec7139d5309",
+      "colors": 23,
+      "layouts": [
+        "gateOpen"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "gate/badge-card.png",
+      "width": 160,
+      "height": 100,
+      "sha256": "d4e0f43165a7facd3cbbc5d7c51a4bdae225aab1ce3506e7f37f656421916b1f",
+      "colors": 9,
+      "layouts": [
+        "badgeCard"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "gate/stamp-approved.png",
+      "width": 128,
+      "height": 48,
+      "sha256": "158eb035f6cd11c8c1e087284c965e16d260962ed1435ee19ba120e90eff178c",
+      "colors": 4,
+      "layouts": [
+        "stampApproved"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "gate/stamp-denied.png",
+      "width": 128,
+      "height": 48,
+      "sha256": "c02e561dadf98d765e486c682fc04a69d906a98d054581ea210717d1db4faa6f",
+      "colors": 4,
+      "layouts": [
+        "stampDenied"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "gate/loading-frame.png",
+      "width": 96,
+      "height": 16,
+      "sha256": "9c05f7c0e4f2b8b8d6eba7e512789dd9f09cd78477a25cd78ff11bc6899cca34",
+      "colors": 6,
+      "layouts": [
+        "loadingFrame"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "gate/loading-fill.png",
+      "width": 16,
+      "height": 8,
+      "sha256": "56a66be194d64fc659737931182b5464457fbf818a7358302005dd2b1d38cab2",
+      "colors": 3,
+      "layouts": [
+        "loadingFill"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "gate/turnstile-anim.png",
+      "width": 256,
+      "height": 64,
+      "sha256": "c74feb80c623628d2f0ede1a09899d19e0239240dd9bebbb9f47d07ba6156009",
+      "colors": 25,
+      "layouts": [
+        "turnstileAnim"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/header-wire.png",
+      "width": 64,
+      "height": 12,
+      "sha256": "e6ead34f98b246937562dbcbf063d7030de4bc19651a604eb212f2d081a837c6",
+      "colors": 4,
+      "layouts": [
+        "headerWire"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/map-frame.png",
+      "width": 96,
+      "height": 96,
+      "sha256": "1ae2526b8ec51a13042506f2e0538eaeecc9c2c1f0364b2b1a8df968bc96beae",
+      "colors": 7,
+      "layouts": [
+        "mapFrame"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/corner-lamp.png",
+      "width": 32,
+      "height": 16,
+      "sha256": "776ef32d461346d11179f20b510b91e1a39ebcb9c79769c60bb412b933f1bacc",
+      "colors": 4,
+      "layouts": [
+        "cornerLamp"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/cctv-corners.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "d3903f5eccf07dcd23c0cc8373531c9028c095ffa3cab8ef278d3a154eef6d2e",
+      "colors": 3,
+      "layouts": [
+        "cctvCorners"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/tape-corner.png",
+      "width": 24,
+      "height": 24,
+      "sha256": "828313e44239afcab60188abb99cbab5a4230aa2cc0943a0b2b36b0455bc2fb0",
+      "colors": 4,
+      "layouts": [
+        "tapeCorner"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/note-paper.png",
+      "width": 48,
+      "height": 48,
+      "sha256": "4f5e0af2aa77debaa0789f6684d403a20cba6c5191d4efb6eeaf86c200352454",
+      "colors": 5,
+      "layouts": [
+        "notePaper"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/clipboard.png",
+      "width": 48,
+      "height": 64,
+      "sha256": "b31bfbe614dacac7c5a85e4b35ed05b8113749863c5ca704419f9736e3b38107",
+      "colors": 9,
+      "layouts": [
+        "clipboard"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/divider-fence.png",
+      "width": 64,
+      "height": 8,
+      "sha256": "39336bdd4197e0896bba66e1c3eff5476233a8a072973ae15f3b538534fdf8bf",
+      "colors": 3,
+      "layouts": [
+        "dividerFence"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/sticker-set.png",
+      "width": 192,
+      "height": 32,
+      "sha256": "51ff0d1e44cf8e8c4d0da6ceb4980ef7530006b784a2c28e860e94e370717dfe",
+      "colors": 6,
+      "layouts": [
+        "stickerSet"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/background/city-day.png",
+      "width": 768,
+      "height": 224,
+      "sha256": "91f3fecf1b968d9bcb02cd7cf6cbaed13bb2f2d469b4a69c1e65cf7055aac5e0",
+      "colors": 28,
+      "layouts": [
+        "cityDay",
+        "officeCityDay"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/background/city-dusk.png",
+      "width": 768,
+      "height": 224,
+      "sha256": "beb1ea4e7716bd125bd99b6ac3b776bcb2cb088068aba5ae47a25f93dfe65b33",
+      "colors": 25,
+      "layouts": [
+        "cityDusk",
+        "officeCityDusk"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/tiles/floor.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "50145cb5e0a8ed3685f3bc3c6a316b20f8408ab9c3d4fe52cd4f7bab32de2a95",
+      "colors": 3,
+      "layouts": [
+        "officeFloor"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/tiles/aisle.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "63c8f25282fd40b0c78641e6603805004f3fcd49df6ceadc2e834b426eb9bca5",
+      "colors": 4,
+      "layouts": [
+        "officeAisle"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/tiles/wall.png",
+      "width": 96,
+      "height": 96,
+      "sha256": "d30ba526b66b84444d09a19db06df891daae105544c01a5d30355f4531547470",
+      "colors": 5,
+      "layouts": [
+        "officeWall"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/objects/window-day.png",
+      "width": 192,
+      "height": 48,
+      "sha256": "a7fdcdc572da36f6b7618bfaa4f0928eb5ec991760cc3a249ca00115b7cd56af",
+      "colors": 18,
+      "layouts": [
+        "windowDay",
+        "officeWindowDay"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/objects/banner.png",
+      "width": 256,
+      "height": 32,
+      "sha256": "e34f1d33954476119237d9e45836562c4c634348ebf42306bc713fba99a06259",
+      "colors": 7,
+      "layouts": [
+        "officeBanner"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/objects/poster-recruit.png",
+      "width": 48,
+      "height": 32,
+      "sha256": "9b7c367239fd3e71cf97e2ee81a488dc770a980fca632610b246592d5dd1050e",
+      "colors": 17,
+      "layouts": [
+        "officePosterRecruit"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/objects/door.png",
+      "width": 32,
+      "height": 64,
+      "sha256": "a26f2cb42b9aecfb60704d8749218b509d32d212a8c3d3962a4bd4e56de66334",
+      "colors": 20,
+      "layouts": [
+        "officeDoor"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/objects/door-open.png",
+      "width": 128,
+      "height": 64,
+      "sha256": "e97eb173cb5c10ecd5320beb67b54cde7b099dd15085447ce40130b68936fc7c",
+      "colors": 20,
+      "layouts": [
+        "officeDoorOpen"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/objects/boss-office.png",
+      "width": 192,
+      "height": 96,
+      "sha256": "db52b1cfec1e33c8d92c69bb725ea2ea18111a056783c042860492879fbdbcea",
+      "colors": 21,
+      "layouts": [
+        "officeBossOffice"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/objects/plant.png",
+      "width": 32,
+      "height": 48,
+      "sha256": "4482daca34a0959926db0ba16345a319cce8688b189263cf9c5eb5a2492d4aa2",
+      "colors": 16,
+      "layouts": [
+        "plant",
+        "officePlant"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/objects/plant-hanging.png",
+      "width": 32,
+      "height": 48,
+      "sha256": "81ad4ebe4d713ec42c23342956ec2aac2d28f0b413ca3252c966f1214ec1b634",
+      "colors": 14,
+      "layouts": [
+        "plantHanging",
+        "officePlantHanging"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/objects/bookshelf.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "1c32b8f19cc4e1fe2e2f1df245fae76b27b7158ab5f19ae85282c30ef686c525",
+      "colors": 23,
+      "layouts": [
+        "bookshelf",
+        "officeBookshelf"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/objects/whiteboard.png",
+      "width": 96,
+      "height": 48,
+      "sha256": "14c352763f3385b327a117a795a6ce157b6d6414696fa99e0b69629f5ab4b8ae",
+      "colors": 27,
+      "layouts": [
+        "whiteboard",
+        "officeWhiteboard"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/objects/coffee-machine.png",
+      "width": 64,
+      "height": 48,
+      "sha256": "6cc2e9b0d04aed1bd8d5a28b93dac4def9623e5c44c6a6703d6b800a44d31bb7",
+      "colors": 24,
+      "layouts": [
+        "coffeeMachine",
+        "officeCoffeeMachine"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/objects/desk-lamp.png",
+      "width": 16,
+      "height": 24,
+      "sha256": "e50e87bb82c062b6f19372279888a345242afb8b9c4232d4731228ade876ff02",
+      "colors": 10,
+      "layouts": [
+        "deskLamp",
+        "officeDeskLamp"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/objects/rug.png",
+      "width": 128,
+      "height": 64,
+      "sha256": "f333474e73e4c1085c93d1db287555d9b6268d7e547efe931a868c01876536b7",
+      "colors": 19,
+      "layouts": [
+        "rug",
+        "officeRug"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/objects/sofa.png",
+      "width": 96,
+      "height": 48,
+      "sha256": "a9f315c0b36441c7c13fa783337260486f8c77403e038012b3a0b68a05eddf0c",
+      "colors": 20,
+      "layouts": [
+        "sofa",
+        "officeSofa"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/objects/coffee-table.png",
+      "width": 48,
+      "height": 32,
+      "sha256": "5fc91d479307dbf4d72529b8fc8be3852d71546843800d1bbc9a2fa0ef5cea95",
+      "colors": 18,
+      "layouts": [
+        "coffeeTable",
+        "officeCoffeeTable"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/characters/office-cat.png",
+      "width": 128,
+      "height": 96,
+      "sha256": "c52622cb41bd07736631ace8c40c056a4727911235f2ecb97c628d1d868b99fb",
+      "colors": 15,
+      "layouts": [
+        "officeCat",
+        "officeOfficeCat"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/objects/bench-pack.png",
+      "width": 576,
+      "height": 64,
+      "sha256": "a05d8415240c11eee00920f290d6afbdd89f8c4a8fc8ceba0c57b00338d6e226",
+      "colors": 23,
+      "layouts": [
+        "benchPack",
+        "officeBenchPack"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/objects/boxes.png",
+      "width": 288,
+      "height": 48,
+      "sha256": "ad07ed8d0bfdad69bb719efa3723dc1c3f09de941898b93db423e8e785ed6908",
+      "colors": 23,
+      "layouts": [
+        "boxes",
+        "officeBoxes"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/characters/bouncer.png",
+      "width": 192,
+      "height": 720,
+      "sha256": "612ec116758197f8f5a28798832af0eb72ffeaeae0fd20e488124a0b5c3f6785",
+      "colors": 27,
+      "layouts": [
+        "officeBouncer"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/ui/tag-closed.png",
+      "width": 64,
+      "height": 16,
+      "sha256": "3fe9087ce7f77659d6ca7598f78902fb9a0e7ebe379b34e7b3e101f48c7b7038",
+      "colors": 5,
+      "layouts": [
+        "tagClosed",
+        "officeTagClosed"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/ui/logo.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "af073e7f0e71bf7d716ec2a287c4f824607dae9ed604610b4140aac0b1d2f149",
+      "colors": 5,
+      "layouts": [
+        "officeLogo"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/ui/favicon-32.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "ebba80a5fbac0aea4d10b6fe08b980418894ea368de6687243e2d88895fc7a55",
+      "colors": 4,
+      "layouts": [
+        "officeFavicon32"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/ui/act-icons.png",
+      "width": 200,
+      "height": 20,
+      "sha256": "e54ec0bcf17cb740014289bfcea08641b38acab1f79a9c3f61ef70657975fb01",
+      "colors": 10,
+      "layouts": [
+        "officeActIcons"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/ui/map-frame.png",
+      "width": 96,
+      "height": 96,
+      "sha256": "645ef9a2629626b125b2413bb63a3fd7d92a06b00265c4876820bf75fffda15d",
+      "colors": 13,
+      "layouts": [
+        "officeMapFrame"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/ui/header-trim.png",
+      "width": 64,
+      "height": 12,
+      "sha256": "ae8cadce1cd4195b91744302e6ce60a52008ead20ceebfbdc0941c5c9110dfdc",
+      "colors": 3,
+      "layouts": [
+        "headerTrim",
+        "officeHeaderTrim"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/ui/panel-frame.png",
+      "width": 48,
+      "height": 48,
+      "sha256": "9473097c9fa48cdbcd42b1f82393a8c565eee439c975856b9be9a58c507ac734",
+      "colors": 5,
+      "layouts": [
+        "officePanelFrame"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/ui/sticker-set.png",
+      "width": 192,
+      "height": 32,
+      "sha256": "dc32759f63deb9177c9bc3a0adc4c02d0960a882b645cba8cd62ac044ca6c9f0",
+      "colors": 9,
+      "layouts": [
+        "officeStickerSet"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/characters/boss.png",
+      "width": 192,
+      "height": 720,
+      "sha256": "3e40aba9aa462935c5c19e59bfb60c268f99ac46bc1ffb852b1b17c38d06c8dc",
+      "colors": 25,
+      "layouts": [
+        "officeBoss"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/characters/boss-portrait.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "1b82632db6951c9ca63e252bda8b81c5499cea982b0d65f696c70819aa2a721d",
+      "colors": 22,
+      "layouts": [
+        "officeBossPortrait"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/ui/fx-crack.png",
+      "width": 48,
+      "height": 16,
+      "sha256": "86eb26bb2dd043e709c4a5e883e784d373be5e5bd00ecc3409fb012d440035b0",
+      "colors": 3,
+      "layouts": [
+        "officeFxCrack"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/ui/fx-zap.png",
+      "width": 48,
+      "height": 16,
+      "sha256": "279348b2aedabdec544c95a2b553a866e3b3b41725c9feca052e44ecb6a67ca1",
+      "colors": 3,
+      "layouts": [
+        "officeFxZap"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/gate/gate-open.png",
+      "width": 768,
+      "height": 192,
+      "sha256": "f4fa19cae90e23426bee3bee1fae40fc2b3923e315200744284607dc7f374ec6",
+      "colors": 25,
+      "layouts": [
+        "officeGateOpen"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/gate/lobby-day.png",
+      "width": 640,
+      "height": 360,
+      "sha256": "4d8d5e24939b0fe5a5167d34faf0694167acbf5cd8a93b25760e1c28ba384eb0",
+      "colors": 25,
+      "layouts": [
+        "lobbyDay",
+        "officeLobbyDay"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/bg-concrete.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "98a95b6a3b9dc72642ae0c66e9f27bc8c5289e52ce06d8d7ee7b01d566a9fa83",
+      "colors": 2,
+      "layouts": [
+        "bgConcrete"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "ui/bg-metal.png",
+      "width": 128,
+      "height": 52,
+      "sha256": "94f01cd647c27a676ae540d034a0b7fe865240be2929a08644a5c18ea3d88ae1",
+      "colors": 3,
+      "layouts": [
+        "bgMetal"
+      ],
+      "replacedRejected": true
+    },
+    {
+      "file": "theme-office/ui/bg-paper.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "6b564d9a376674af8640b0149ca5ee22695152be0a5014af6dbf403c03ca173f",
+      "colors": 2,
+      "layouts": [
+        "bgPaper",
+        "officeBgPaper"
+      ],
+      "replacedRejected": true
+    }
+  ]
+}

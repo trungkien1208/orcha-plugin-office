@@ -1,0 +1,4422 @@
+{
+  "style": "open-floor-v1",
+  "tile": 32,
+  "characters": {
+    "frame": {
+      "width": 48,
+      "height": 72,
+      "foot": 71,
+      "columns": 4,
+      "rows": 11
+    },
+    "bossRows": 10,
+    "tinted": true,
+    "cast": [
+      "headset",
+      "red-cap",
+      "bun",
+      "shiny",
+      "curly",
+      "mohawk",
+      "silver",
+      "specs",
+      "robot",
+      "crt-bot",
+      "shiba",
+      "husky",
+      "tabby",
+      "black-cat",
+      "raccoon",
+      "capybara"
+    ],
+    "boss": {
+      "sheet": "office/characters/boss.png",
+      "portrait": "office/characters/boss-portrait.png",
+      "zapperShape": "cartoon-electric-baton",
+      "animations": {
+        "walkDown": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "walkLeft": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "walkUp": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "idleWalkie": [
+          12,
+          13
+        ],
+        "tapShoulder": [
+          14,
+          15
+        ],
+        "knockDesk": [
+          16,
+          17
+        ],
+        "pressBuzzer": [
+          18,
+          19
+        ],
+        "newspaper": [
+          20,
+          21,
+          22
+        ],
+        "spare": [
+          23,
+          35,
+          38,
+          39
+        ],
+        "megaphone": [
+          24,
+          25
+        ],
+        "coffee": [
+          26,
+          27
+        ],
+        "highFive": [
+          28,
+          29
+        ],
+        "watch": [
+          30,
+          31
+        ],
+        "whipCrack": [
+          32,
+          33,
+          34
+        ],
+        "zapper": [
+          36,
+          37
+        ]
+      }
+    },
+    "skins": {
+      "headset": {
+        "sheet": "office/characters/headset.png",
+        "polo": "office/characters/headset-polo.png",
+        "portrait": "office/characters/headset-portrait.png",
+        "portraitPolo": "office/characters/headset-portrait-polo.png"
+      },
+      "red-cap": {
+        "sheet": "office/characters/red-cap.png",
+        "polo": "office/characters/red-cap-polo.png",
+        "portrait": "office/characters/red-cap-portrait.png",
+        "portraitPolo": "office/characters/red-cap-portrait-polo.png"
+      },
+      "bun": {
+        "sheet": "office/characters/bun.png",
+        "polo": "office/characters/bun-polo.png",
+        "portrait": "office/characters/bun-portrait.png",
+        "portraitPolo": "office/characters/bun-portrait-polo.png"
+      },
+      "shiny": {
+        "sheet": "office/characters/shiny.png",
+        "polo": "office/characters/shiny-polo.png",
+        "portrait": "office/characters/shiny-portrait.png",
+        "portraitPolo": "office/characters/shiny-portrait-polo.png"
+      },
+      "curly": {
+        "sheet": "office/characters/curly.png",
+        "polo": "office/characters/curly-polo.png",
+        "portrait": "office/characters/curly-portrait.png",
+        "portraitPolo": "office/characters/curly-portrait-polo.png"
+      },
+      "mohawk": {
+        "sheet": "office/characters/mohawk.png",
+        "polo": "office/characters/mohawk-polo.png",
+        "portrait": "office/characters/mohawk-portrait.png",
+        "portraitPolo": "office/characters/mohawk-portrait-polo.png"
+      },
+      "silver": {
+        "sheet": "office/characters/silver.png",
+        "polo": "office/characters/silver-polo.png",
+        "portrait": "office/characters/silver-portrait.png",
+        "portraitPolo": "office/characters/silver-portrait-polo.png"
+      },
+      "specs": {
+        "sheet": "office/characters/specs.png",
+        "polo": "office/characters/specs-polo.png",
+        "portrait": "office/characters/specs-portrait.png",
+        "portraitPolo": "office/characters/specs-portrait-polo.png"
+      },
+      "robot": {
+        "sheet": "office/characters/robot.png",
+        "polo": "office/characters/robot-polo.png",
+        "portrait": "office/characters/robot-portrait.png",
+        "portraitPolo": "office/characters/robot-portrait-polo.png"
+      },
+      "crt-bot": {
+        "sheet": "office/characters/crt-bot.png",
+        "polo": "office/characters/crt-bot-polo.png",
+        "portrait": "office/characters/crt-bot-portrait.png",
+        "portraitPolo": "office/characters/crt-bot-portrait-polo.png"
+      },
+      "shiba": {
+        "sheet": "office/characters/shiba.png",
+        "polo": "office/characters/shiba-polo.png",
+        "portrait": "office/characters/shiba-portrait.png",
+        "portraitPolo": "office/characters/shiba-portrait-polo.png"
+      },
+      "husky": {
+        "sheet": "office/characters/husky.png",
+        "polo": "office/characters/husky-polo.png",
+        "portrait": "office/characters/husky-portrait.png",
+        "portraitPolo": "office/characters/husky-portrait-polo.png"
+      },
+      "tabby": {
+        "sheet": "office/characters/tabby.png",
+        "polo": "office/characters/tabby-polo.png",
+        "portrait": "office/characters/tabby-portrait.png",
+        "portraitPolo": "office/characters/tabby-portrait-polo.png"
+      },
+      "black-cat": {
+        "sheet": "office/characters/black-cat.png",
+        "polo": "office/characters/black-cat-polo.png",
+        "portrait": "office/characters/black-cat-portrait.png",
+        "portraitPolo": "office/characters/black-cat-portrait-polo.png"
+      },
+      "raccoon": {
+        "sheet": "office/characters/raccoon.png",
+        "polo": "office/characters/raccoon-polo.png",
+        "portrait": "office/characters/raccoon-portrait.png",
+        "portraitPolo": "office/characters/raccoon-portrait-polo.png"
+      },
+      "capybara": {
+        "sheet": "office/characters/capybara.png",
+        "polo": "office/characters/capybara-polo.png",
+        "portrait": "office/characters/capybara-portrait.png",
+        "portraitPolo": "office/characters/capybara-portrait-polo.png"
+      },
+      "crew-cut": {
+        "sheet": "office/characters/crew-cut.png",
+        "polo": "office/characters/crew-cut-polo.png",
+        "portrait": "office/characters/crew-cut-portrait.png",
+        "portraitPolo": "office/characters/crew-cut-portrait-polo.png"
+      },
+      "ponytail": {
+        "sheet": "office/characters/ponytail.png",
+        "polo": "office/characters/ponytail-polo.png",
+        "portrait": "office/characters/ponytail-portrait.png",
+        "portraitPolo": "office/characters/ponytail-portrait-polo.png"
+      },
+      "beard": {
+        "sheet": "office/characters/beard.png",
+        "polo": "office/characters/beard-polo.png",
+        "portrait": "office/characters/beard-portrait.png",
+        "portraitPolo": "office/characters/beard-portrait-polo.png"
+      },
+      "bob": {
+        "sheet": "office/characters/bob.png",
+        "polo": "office/characters/bob-polo.png",
+        "portrait": "office/characters/bob-portrait.png",
+        "portraitPolo": "office/characters/bob-portrait-polo.png"
+      },
+      "spike": {
+        "sheet": "office/characters/spike.png",
+        "polo": "office/characters/spike-polo.png",
+        "portrait": "office/characters/spike-portrait.png",
+        "portraitPolo": "office/characters/spike-portrait-polo.png"
+      },
+      "braids": {
+        "sheet": "office/characters/braids.png",
+        "polo": "office/characters/braids-polo.png",
+        "portrait": "office/characters/braids-portrait.png",
+        "portraitPolo": "office/characters/braids-portrait-polo.png"
+      },
+      "beanie": {
+        "sheet": "office/characters/beanie.png",
+        "polo": "office/characters/beanie-polo.png",
+        "portrait": "office/characters/beanie-portrait.png",
+        "portraitPolo": "office/characters/beanie-portrait-polo.png"
+      }
+    },
+    "animations": {
+      "walkDown": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "walkLeft": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "walkUp": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "sitUp": [
+        12
+      ],
+      "standDown": [
+        13
+      ],
+      "waveDown": [
+        14
+      ],
+      "spare": [
+        15,
+        30,
+        31,
+        34,
+        35
+      ],
+      "typeUp": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "handUp": [
+        20,
+        21
+      ],
+      "relaxUp": [
+        22,
+        23
+      ],
+      "napUp": [
+        24,
+        25
+      ],
+      "standUp": [
+        26
+      ],
+      "sitDown": [
+        27
+      ],
+      "idleDown": [
+        28,
+        29
+      ],
+      "zappedUp": [
+        32,
+        33
+      ],
+      "lifted": [
+        36,
+        37
+      ],
+      "struggle": [
+        38,
+        39
+      ],
+      "carriedDown": [
+        40,
+        41
+      ],
+      "tossed": [
+        42,
+        43
+      ]
+    },
+    "bouncer": {
+      "sheet": "office/characters/bouncer.png",
+      "rows": 10,
+      "columns": 4,
+      "animations": {
+        "walkDown": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "walkLeft": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "walkUp": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "reach": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "grabLeft": [
+          16,
+          17
+        ],
+        "grabRight": [
+          18,
+          19
+        ],
+        "carryLeft": [
+          20,
+          21,
+          22,
+          23
+        ],
+        "carryDown": [
+          24,
+          25,
+          26,
+          27
+        ],
+        "carryUp": [
+          28,
+          29,
+          30,
+          31
+        ],
+        "toss": [
+          32,
+          33,
+          34
+        ],
+        "dustOff": [
+          36,
+          37
+        ],
+        "spare": [
+          35,
+          38,
+          39
+        ]
+      }
+    }
+  },
+  "tiles": {
+    "floor": "office/tiles/floor.png",
+    "wall": "office/tiles/wall.png",
+    "aisle": "office/tiles/aisle.png",
+    "floorWear": "office/tiles/floor-wear.png",
+    "floorDirty": "office/tiles/floor-dirty.png",
+    "floorCracked": "office/tiles/floor-cracked.png",
+    "yard": "office/tiles/yard.png"
+  },
+  "objects": {
+    "benchL": "office/objects/bench-l.png",
+    "benchM": "office/objects/bench-m.png",
+    "benchR": "office/objects/bench-r.png",
+    "monitor": "office/objects/monitor.png",
+    "chairBack": "office/objects/chair-back.png",
+    "chairFront": "office/objects/chair-front.png",
+    "benchTag": "office/objects/bench-tag.png",
+    "banner": "office/objects/banner.png",
+    "kpiBoard": "office/objects/kpi-board.png",
+    "windowNight": "office/objects/window-night.png",
+    "clock": "office/objects/clock.png",
+    "cctv": "office/objects/cctv.png",
+    "door": "office/objects/door.png",
+    "gong": "office/objects/gong.png",
+    "posterRecruit": "office/objects/poster-recruit.png",
+    "phoneRack": "office/objects/phone-rack.png",
+    "deskBuzzer": "office/objects/desk-buzzer.png",
+    "dormDoor": "office/objects/dorm-door.png",
+    "bossOffice": "office/objects/boss-office.png",
+    "stacks": [
+      "office/objects/noodle-boxes.png",
+      "office/objects/drink-crates.png"
+    ],
+    "props": [
+      "office/objects/water-cooler.png",
+      "office/objects/printer.png",
+      "office/objects/shredder.png"
+    ],
+    "clutter": {
+      "phone": "office/objects/desk-phone.png",
+      "noodle": "office/objects/noodle-cup.png",
+      "mug": "office/objects/mug.png",
+      "papers": "office/objects/papers.png",
+      "drink": "office/objects/energy-drink.png"
+    },
+    "benchTagPolo": "office/objects/bench-tag-polo.png",
+    "fluorescent": "office/objects/fluorescent.png",
+    "phoneChargers": "office/objects/phone-chargers.png",
+    "wallFan": "office/objects/wall-fan.png",
+    "dormBlock": "office/objects/dorm-block.png",
+    "benchFire": "office/objects/bench-fire.png",
+    "benchAsh": "office/objects/bench-ash.png",
+    "doorOpen": "office/objects/door-open.png",
+    "chairSpin": "office/objects/chair-spin.png",
+    "benchIgnite": "office/objects/bench-ignite.png",
+    "benchCollapse": "office/objects/bench-collapse.png",
+    "fireAlarm": "office/objects/fire-alarm.png",
+    "extinguisher": "office/objects/extinguisher.png",
+    "teamSignHanging": "office/objects/team-sign-hanging.png",
+    "razorWire": "office/objects/razor-wire.png",
+    "wallLamp": "office/objects/wall-lamp.png",
+    "searchlight": "office/objects/searchlight.png",
+    "neonSign": "office/objects/neon-sign.png",
+    "waterTank": "office/objects/water-tank.png",
+    "satelliteDish": "office/objects/satellite-dish.png",
+    "tangledCables": "office/objects/tangled-cables.png",
+    "bannerHanging1": "office/objects/banner-hanging-1.png",
+    "bannerHanging2": "office/objects/banner-hanging-2.png",
+    "bannerHanging3": "office/objects/banner-hanging-3.png",
+    "bannerWide2": "office/objects/banner-wide-2.png",
+    "posterKpi": "office/objects/poster-kpi.png",
+    "posterTarget": "office/objects/poster-target.png",
+    "posterTeam": "office/objects/poster-team.png",
+    "tvLeaderboard": "office/objects/tv-leaderboard.png",
+    "ceilingLight": "office/objects/ceiling-light.png",
+    "lightPool": "office/objects/light-pool.png",
+    "tubeBroken": "office/objects/tube-broken.png",
+    "bulbBare": "office/objects/bulb-bare.png",
+    "stainDamp": "office/objects/stain-damp.png",
+    "crackWall": "office/objects/crack-wall.png",
+    "noticeBoard": "office/objects/notice-board.png",
+    "floorTape": "office/objects/floor-tape.png",
+    "leakBucket": "office/objects/leak-bucket.png",
+    "fanRusty": "office/objects/fan-rusty.png",
+    "generator": "office/objects/generator.png",
+    "extensionMess": "office/objects/extension-mess.png",
+    "lockerRow": "office/objects/locker-row.png",
+    "shrine": "office/objects/shrine.png",
+    "moneyCounterTable": "office/objects/money-counter-table.png",
+    "supervisorPodium": "office/objects/supervisor-podium.png",
+    "turnstile": "office/objects/turnstile.png",
+    "stackedChairs": "office/objects/stacked-chairs.png",
+    "waterJugs": "office/objects/water-jugs.png",
+    "printerBig": "office/objects/printer-big.png",
+    "serverRack": "office/objects/server-rack.png",
+    "plantDead": "office/objects/plant-dead.png",
+    "phoneTray": "office/objects/phone-tray.png",
+    "laptopOpen": "office/objects/laptop-open.png",
+    "simCards": "office/objects/sim-cards.png",
+    "cashSmall": "office/objects/cash-small.png",
+    "snackPack": "office/objects/snack-pack.png",
+    "ashtray": "office/objects/ashtray.png",
+    "nameCard": "office/objects/name-card.png",
+    "batteryLamp": "office/objects/battery-lamp.png",
+    "deskFan": "office/objects/desk-fan.png",
+    "noodleBoxes": "office/objects/noodle-boxes.png",
+    "drinkCrates": "office/objects/drink-crates.png",
+    "waterCooler": "office/objects/water-cooler.png",
+    "printer": "office/objects/printer.png",
+    "shredder": "office/objects/shredder.png",
+    "deskPhone": "office/objects/desk-phone.png",
+    "noodleCup": "office/objects/noodle-cup.png",
+    "mug": "office/objects/mug.png",
+    "papers": "office/objects/papers.png",
+    "energyDrink": "office/objects/energy-drink.png"
+  },
+  "ui": {
+    "bubble": "office/ui/bubble.png",
+    "bubbleTail": "office/ui/bubble-tail.png",
+    "markerNeeds": "office/ui/marker-needs.png",
+    "icons16": "office/ui/icons-16.png",
+    "icons32": "office/ui/icons-32.png",
+    "fxStars": "office/ui/fx-stars.png",
+    "fxCrack": "office/ui/fx-crack.png",
+    "fxZap": "office/ui/fx-zap.png",
+    "whip": "office/ui/whip.png",
+    "zapper": "office/ui/zapper.png",
+    "fxJolt": "office/ui/fx-jolt.png",
+    "fxHeart": "office/ui/fx-heart.png",
+    "megaphone": "office/ui/megaphone.png",
+    "newspaper": "office/ui/newspaper.png",
+    "coffee": "office/ui/coffee.png",
+    "walkie": "office/ui/walkie.png",
+    "fxSleep": "office/ui/fx-sleep.png",
+    "fxPoof": "office/ui/fx-poof.png",
+    "fxSmoke": "office/ui/fx-smoke.png",
+    "fxDust": "office/ui/fx-dust.png",
+    "fxShoe": "office/ui/fx-shoe.png",
+    "markerOut": "office/ui/marker-out.png",
+    "fxSmokeColumn": "office/ui/fx-smoke-column.png",
+    "fxEmbers": "office/ui/fx-embers.png",
+    "tagBurnt": "office/ui/tag-burnt.png",
+    "hpBar": "office/ui/hp-bar.png",
+    "hpFill": "office/ui/hp-fill.png",
+    "selectMarker": "office/ui/select-marker.png",
+    "selectRing": "office/ui/select-ring.png",
+    "namePlate": "office/ui/name-plate.png",
+    "fxBubbleStage": "office/ui/fx-bubble-stage.png",
+    "iconsUi16": "office/ui/icons-ui-16.png",
+    "iconsUi32": "office/ui/icons-ui-32.png",
+    "actIcons": "office/ui/act-icons.png",
+    "actTap": "office/ui/act-tap.png",
+    "actKnock": "office/ui/act-knock.png",
+    "actHighfive": "office/ui/act-highfive.png",
+    "popupFrame": "office/ui/popup-frame.png",
+    "popupTail": "office/ui/popup-tail.png",
+    "panelFrame": "office/ui/panel-frame.png",
+    "panelHeader": "office/ui/panel-header.png",
+    "hazardTape": "office/ui/hazard-tape.png",
+    "stampUrgent": "office/ui/stamp-urgent.png",
+    "stampDone": "office/ui/stamp-done.png",
+    "stampClosed": "office/ui/stamp-closed.png",
+    "crtBezel": "office/ui/crt-bezel.png",
+    "avatarFrame": "office/ui/avatar-frame.png",
+    "avatarFrameNeeds": "office/ui/avatar-frame-needs.png",
+    "skinFrame": "office/ui/skin-frame.png",
+    "skinFrameSelected": "office/ui/skin-frame-selected.png",
+    "stageStrip": "office/ui/stage-strip.png",
+    "gitStatus": "office/ui/git-status.png",
+    "badgeModel": "office/ui/badge-model.png",
+    "logo": "office/ui/logo.png",
+    "favicon32": "office/ui/favicon-32.png",
+    "faviconNeeds32": "office/ui/favicon-needs-32.png",
+    "cursorBoss": "office/ui/cursor-boss.png",
+    "cursorHand": "office/ui/cursor-hand.png",
+    "emptyInbox": "office/ui/empty-inbox.png",
+    "emptyFloor": "office/ui/empty-floor.png",
+    "orchaDown": "office/ui/orcha-down.png",
+    "cornerLamp": "office/ui/corner-lamp.png",
+    "cctvCorners": "office/ui/cctv-corners.png",
+    "tapeCorner": "office/ui/tape-corner.png",
+    "notePaper": "office/ui/note-paper.png",
+    "clipboard": "office/ui/clipboard.png",
+    "bgConcrete": "office/ui/bg-concrete.png",
+    "bgMetal": "office/ui/bg-metal.png",
+    "dividerFence": "office/ui/divider-fence.png",
+    "stickerSet": "office/ui/sticker-set.png",
+    "iconsUi216": "office/ui/icons-ui2-16.png",
+    "iconsUi232": "office/ui/icons-ui2-32.png",
+    "spinner16": "office/ui/spinner-16.png",
+    "thinkingDots": "office/ui/thinking-dots.png",
+    "hpBarLg": "office/ui/hp-bar-lg.png",
+    "hpFillLg": "office/ui/hp-fill-lg.png",
+    "staminaFillLg": "office/ui/stamina-fill-lg.png",
+    "hpIcons": "office/ui/hp-icons.png",
+    "appIcon192": "office/ui/app-icon-192.png",
+    "appIcon512": "office/ui/app-icon-512.png",
+    "appleTouch180": "office/ui/apple-touch-180.png",
+    "headerWire": "office/ui/header-wire.png",
+    "mapFrame": "office/ui/map-frame.png"
+  },
+  "backgrounds": {
+    "compoundNight": "office/background/compound-night.png",
+    "yard": "office/tiles/yard.png",
+    "compoundNight2": "office/background/compound-night-2.png",
+    "compoundDusk": "office/background/compound-dusk.png"
+  },
+  "layout": {
+    "monitor": {
+      "screen": {
+        "x": 4,
+        "y": 4,
+        "width": 24,
+        "height": 12
+      }
+    },
+    "benchTag": {
+      "face": {
+        "x": 2,
+        "y": 5,
+        "width": 60,
+        "height": 7
+      },
+      "polo": "office/objects/bench-tag-polo.png"
+    },
+    "wall": {
+      "left": 16,
+      "top": 64,
+      "right": 16,
+      "bottom": 16
+    },
+    "bubble": {
+      "left": 4,
+      "top": 4,
+      "right": 4,
+      "bottom": 4
+    },
+    "windowNight": {
+      "frame": {
+        "width": 96,
+        "height": 48
+      },
+      "columns": 2,
+      "frames": 2
+    },
+    "gong": {
+      "frame": {
+        "width": 64,
+        "height": 48
+      },
+      "columns": 3,
+      "frames": 3
+    },
+    "cctv": {
+      "frame": {
+        "width": 16,
+        "height": 16
+      },
+      "columns": 2,
+      "frames": 2
+    },
+    "markerNeeds": {
+      "frame": {
+        "width": 16,
+        "height": 24
+      },
+      "columns": 2,
+      "frames": 2
+    },
+    "effects": {
+      "frame": {
+        "width": 16,
+        "height": 16
+      },
+      "columns": 3,
+      "frames": 3
+    },
+    "icons": {
+      "columns": 7,
+      "rows": 2,
+      "order": [
+        "ellipsis",
+        "check",
+        "question",
+        "sleep",
+        "raised-hand",
+        "terminal",
+        "door",
+        "search",
+        "sound-on",
+        "sound-off",
+        "claude",
+        "codex",
+        "cursor",
+        "other-agent"
+      ]
+    },
+    "sleep": {
+      "frame": {
+        "width": 16,
+        "height": 24
+      },
+      "columns": 3,
+      "frames": 3,
+      "workerFrames": [
+        24,
+        25
+      ],
+      "offset": {
+        "x": 30,
+        "y": 8
+      }
+    },
+    "handUp": {
+      "frames": [
+        20,
+        21
+      ],
+      "standing": true,
+      "workerYOffset": 8,
+      "chairBehind": true
+    },
+    "compoundScene": {
+      "width": 768,
+      "height": 832,
+      "exterior": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 224
+      },
+      "floor": {
+        "x": 40,
+        "y": 300,
+        "width": 688,
+        "height": 492
+      }
+    },
+    "animations": {
+      "bouncer": {
+        "sheet": "office/theme-office/characters/bouncer.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 4,
+        "columns": 4,
+        "rows": 10
+      },
+      "headset": {
+        "sheet": "office/characters/headset.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "headsetPolo": {
+        "sheet": "office/characters/headset-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "redCap": {
+        "sheet": "office/characters/red-cap.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "redCapPolo": {
+        "sheet": "office/characters/red-cap-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "bun": {
+        "sheet": "office/characters/bun.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "bunPolo": {
+        "sheet": "office/characters/bun-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "shiny": {
+        "sheet": "office/characters/shiny.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "shinyPolo": {
+        "sheet": "office/characters/shiny-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "curly": {
+        "sheet": "office/characters/curly.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "curlyPolo": {
+        "sheet": "office/characters/curly-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "mohawk": {
+        "sheet": "office/characters/mohawk.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "mohawkPolo": {
+        "sheet": "office/characters/mohawk-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "silver": {
+        "sheet": "office/characters/silver.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "silverPolo": {
+        "sheet": "office/characters/silver-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "specs": {
+        "sheet": "office/characters/specs.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "specsPolo": {
+        "sheet": "office/characters/specs-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "robot": {
+        "sheet": "office/characters/robot.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "robotPolo": {
+        "sheet": "office/characters/robot-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "crtBot": {
+        "sheet": "office/characters/crt-bot.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "crtBotPolo": {
+        "sheet": "office/characters/crt-bot-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "shiba": {
+        "sheet": "office/characters/shiba.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "shibaPolo": {
+        "sheet": "office/characters/shiba-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "husky": {
+        "sheet": "office/characters/husky.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "huskyPolo": {
+        "sheet": "office/characters/husky-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "tabby": {
+        "sheet": "office/characters/tabby.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "tabbyPolo": {
+        "sheet": "office/characters/tabby-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "blackCat": {
+        "sheet": "office/characters/black-cat.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "blackCatPolo": {
+        "sheet": "office/characters/black-cat-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "raccoon": {
+        "sheet": "office/characters/raccoon.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "raccoonPolo": {
+        "sheet": "office/characters/raccoon-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "capybara": {
+        "sheet": "office/characters/capybara.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "capybaraPolo": {
+        "sheet": "office/characters/capybara-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "crewCut": {
+        "sheet": "office/characters/crew-cut.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "crewCutPolo": {
+        "sheet": "office/characters/crew-cut-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "ponytail": {
+        "sheet": "office/characters/ponytail.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "ponytailPolo": {
+        "sheet": "office/characters/ponytail-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "beard": {
+        "sheet": "office/characters/beard.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "beardPolo": {
+        "sheet": "office/characters/beard-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "bob": {
+        "sheet": "office/characters/bob.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "bobPolo": {
+        "sheet": "office/characters/bob-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "spike": {
+        "sheet": "office/characters/spike.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "spikePolo": {
+        "sheet": "office/characters/spike-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "braids": {
+        "sheet": "office/characters/braids.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "braidsPolo": {
+        "sheet": "office/characters/braids-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "beanie": {
+        "sheet": "office/characters/beanie.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "beaniePolo": {
+        "sheet": "office/characters/beanie-polo.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 44,
+        "frames": 44,
+        "columns": 4,
+        "rows": 11
+      },
+      "doorOpen": {
+        "sheet": "office/theme-office/objects/door-open.png",
+        "frame": {
+          "width": 128,
+          "height": 64
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "chairSpin": {
+        "sheet": "office/objects/chair-spin.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 4,
+        "frames": 4,
+        "columns": 4,
+        "rows": 1
+      },
+      "fxDust": {
+        "sheet": "office/ui/fx-dust.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 4,
+        "frames": 4,
+        "columns": 4,
+        "rows": 1
+      },
+      "fxShoe": {
+        "sheet": "office/ui/fx-shoe.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "markerOut": {
+        "sheet": "office/ui/marker-out.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 2,
+        "frames": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "benchIgnite": {
+        "sheet": "office/objects/bench-ignite.png",
+        "frame": {
+          "width": 144,
+          "height": 64
+        },
+        "count": 4,
+        "frames": 4,
+        "columns": 4,
+        "rows": 1
+      },
+      "benchFire": {
+        "sheet": "office/objects/bench-fire.png",
+        "frame": {
+          "width": 144,
+          "height": 80
+        },
+        "count": 6,
+        "frames": 6,
+        "columns": 6,
+        "rows": 1
+      },
+      "benchCollapse": {
+        "sheet": "office/objects/bench-collapse.png",
+        "frame": {
+          "width": 144,
+          "height": 64
+        },
+        "count": 4,
+        "frames": 4,
+        "columns": 4,
+        "rows": 1
+      },
+      "benchAsh": {
+        "sheet": "office/objects/bench-ash.png",
+        "frame": {
+          "width": 144,
+          "height": 48
+        },
+        "count": 2,
+        "frames": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "fxSmokeColumn": {
+        "sheet": "office/ui/fx-smoke-column.png",
+        "frame": {
+          "width": 48,
+          "height": 96
+        },
+        "count": 4,
+        "frames": 4,
+        "columns": 4,
+        "rows": 1
+      },
+      "fxEmbers": {
+        "sheet": "office/ui/fx-embers.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 3,
+        "frames": 3,
+        "columns": 3,
+        "rows": 1
+      },
+      "fireAlarm": {
+        "sheet": "office/objects/fire-alarm.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 2,
+        "frames": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "extinguisher": {
+        "sheet": "office/objects/extinguisher.png",
+        "frame": {
+          "width": 16,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "tagBurnt": {
+        "sheet": "office/ui/tag-burnt.png",
+        "frame": {
+          "width": 64,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "hpBar": {
+        "sheet": "office/ui/hp-bar.png",
+        "frame": {
+          "width": 32,
+          "height": 8
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "hpFill": {
+        "sheet": "office/ui/hp-fill.png",
+        "frame": {
+          "width": 24,
+          "height": 4
+        },
+        "count": 3,
+        "frames": 3,
+        "columns": 1,
+        "rows": 3
+      },
+      "selectMarker": {
+        "sheet": "office/ui/select-marker.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 2,
+        "frames": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "selectRing": {
+        "sheet": "office/ui/select-ring.png",
+        "frame": {
+          "width": 64,
+          "height": 24
+        },
+        "count": 2,
+        "frames": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "namePlate": {
+        "sheet": "office/ui/name-plate.png",
+        "frame": {
+          "width": 24,
+          "height": 12
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "teamSignHanging": {
+        "sheet": "office/objects/team-sign-hanging.png",
+        "frame": {
+          "width": 96,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "fxBubbleStage": {
+        "sheet": "office/ui/fx-bubble-stage.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 5,
+        "frames": 5,
+        "columns": 5,
+        "rows": 1
+      },
+      "compoundNight": {
+        "sheet": "office/background/compound-night.png",
+        "frame": {
+          "width": 768,
+          "height": 224
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "compoundNight2": {
+        "sheet": "office/background/compound-night-2.png",
+        "frame": {
+          "width": 768,
+          "height": 224
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "compoundDusk": {
+        "sheet": "office/background/compound-dusk.png",
+        "frame": {
+          "width": 768,
+          "height": 224
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "razorWire": {
+        "sheet": "office/objects/razor-wire.png",
+        "frame": {
+          "width": 64,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "wallLamp": {
+        "sheet": "office/objects/wall-lamp.png",
+        "frame": {
+          "width": 16,
+          "height": 32
+        },
+        "count": 2,
+        "frames": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "searchlight": {
+        "sheet": "office/objects/searchlight.png",
+        "frame": {
+          "width": 128,
+          "height": 64
+        },
+        "count": 4,
+        "frames": 4,
+        "columns": 4,
+        "rows": 1
+      },
+      "neonSign": {
+        "sheet": "office/objects/neon-sign.png",
+        "frame": {
+          "width": 96,
+          "height": 32
+        },
+        "count": 3,
+        "frames": 3,
+        "columns": 3,
+        "rows": 1
+      },
+      "waterTank": {
+        "sheet": "office/objects/water-tank.png",
+        "frame": {
+          "width": 32,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "satelliteDish": {
+        "sheet": "office/objects/satellite-dish.png",
+        "frame": {
+          "width": 32,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "tangledCables": {
+        "sheet": "office/objects/tangled-cables.png",
+        "frame": {
+          "width": 32,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "bannerHanging1": {
+        "sheet": "office/objects/banner-hanging-1.png",
+        "frame": {
+          "width": 32,
+          "height": 96
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "bannerHanging2": {
+        "sheet": "office/objects/banner-hanging-2.png",
+        "frame": {
+          "width": 32,
+          "height": 96
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "bannerHanging3": {
+        "sheet": "office/objects/banner-hanging-3.png",
+        "frame": {
+          "width": 32,
+          "height": 96
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "bannerWide2": {
+        "sheet": "office/objects/banner-wide-2.png",
+        "frame": {
+          "width": 256,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "posterKpi": {
+        "sheet": "office/objects/poster-kpi.png",
+        "frame": {
+          "width": 32,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "posterTarget": {
+        "sheet": "office/objects/poster-target.png",
+        "frame": {
+          "width": 32,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "posterTeam": {
+        "sheet": "office/objects/poster-team.png",
+        "frame": {
+          "width": 32,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "tvLeaderboard": {
+        "sheet": "office/objects/tv-leaderboard.png",
+        "frame": {
+          "width": 192,
+          "height": 64
+        },
+        "count": 2,
+        "frames": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "ceilingLight": {
+        "sheet": "office/objects/ceiling-light.png",
+        "frame": {
+          "width": 64,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "lightPool": {
+        "sheet": "office/objects/light-pool.png",
+        "frame": {
+          "width": 96,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "tubeBroken": {
+        "sheet": "office/objects/tube-broken.png",
+        "frame": {
+          "width": 64,
+          "height": 16
+        },
+        "count": 3,
+        "frames": 3,
+        "columns": 3,
+        "rows": 1
+      },
+      "bulbBare": {
+        "sheet": "office/objects/bulb-bare.png",
+        "frame": {
+          "width": 16,
+          "height": 32
+        },
+        "count": 2,
+        "frames": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "stainDamp": {
+        "sheet": "office/objects/stain-damp.png",
+        "frame": {
+          "width": 64,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "crackWall": {
+        "sheet": "office/objects/crack-wall.png",
+        "frame": {
+          "width": 64,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "noticeBoard": {
+        "sheet": "office/objects/notice-board.png",
+        "frame": {
+          "width": 64,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "floorWear": {
+        "sheet": "office/tiles/floor-wear.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "floorDirty": {
+        "sheet": "office/tiles/floor-dirty.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "floorCracked": {
+        "sheet": "office/tiles/floor-cracked.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "floorTape": {
+        "sheet": "office/objects/floor-tape.png",
+        "frame": {
+          "width": 32,
+          "height": 8
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "leakBucket": {
+        "sheet": "office/objects/leak-bucket.png",
+        "frame": {
+          "width": 16,
+          "height": 24
+        },
+        "count": 2,
+        "frames": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "fanRusty": {
+        "sheet": "office/objects/fan-rusty.png",
+        "frame": {
+          "width": 48,
+          "height": 48
+        },
+        "count": 2,
+        "frames": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "generator": {
+        "sheet": "office/objects/generator.png",
+        "frame": {
+          "width": 48,
+          "height": 48
+        },
+        "count": 2,
+        "frames": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "extensionMess": {
+        "sheet": "office/objects/extension-mess.png",
+        "frame": {
+          "width": 32,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "lockerRow": {
+        "sheet": "office/objects/locker-row.png",
+        "frame": {
+          "width": 96,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "shrine": {
+        "sheet": "office/objects/shrine.png",
+        "frame": {
+          "width": 32,
+          "height": 48
+        },
+        "count": 2,
+        "frames": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "moneyCounterTable": {
+        "sheet": "office/objects/money-counter-table.png",
+        "frame": {
+          "width": 96,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "supervisorPodium": {
+        "sheet": "office/objects/supervisor-podium.png",
+        "frame": {
+          "width": 48,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "turnstile": {
+        "sheet": "office/objects/turnstile.png",
+        "frame": {
+          "width": 64,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "stackedChairs": {
+        "sheet": "office/objects/stacked-chairs.png",
+        "frame": {
+          "width": 32,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "waterJugs": {
+        "sheet": "office/objects/water-jugs.png",
+        "frame": {
+          "width": 32,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "printerBig": {
+        "sheet": "office/objects/printer-big.png",
+        "frame": {
+          "width": 32,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "serverRack": {
+        "sheet": "office/objects/server-rack.png",
+        "frame": {
+          "width": 32,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "plantDead": {
+        "sheet": "office/objects/plant-dead.png",
+        "frame": {
+          "width": 32,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "phoneTray": {
+        "sheet": "office/objects/phone-tray.png",
+        "frame": {
+          "width": 32,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "laptopOpen": {
+        "sheet": "office/objects/laptop-open.png",
+        "frame": {
+          "width": 24,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "simCards": {
+        "sheet": "office/objects/sim-cards.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "cashSmall": {
+        "sheet": "office/objects/cash-small.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "snackPack": {
+        "sheet": "office/objects/snack-pack.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "ashtray": {
+        "sheet": "office/objects/ashtray.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "nameCard": {
+        "sheet": "office/objects/name-card.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "batteryLamp": {
+        "sheet": "office/objects/battery-lamp.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "deskFan": {
+        "sheet": "office/objects/desk-fan.png",
+        "frame": {
+          "width": 16,
+          "height": 24
+        },
+        "count": 2,
+        "frames": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "iconsUi16": {
+        "sheet": "office/ui/icons-ui-16.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 42,
+        "frames": 42,
+        "columns": 7,
+        "rows": 6
+      },
+      "iconsUi32": {
+        "sheet": "office/ui/icons-ui-32.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 42,
+        "frames": 42,
+        "columns": 7,
+        "rows": 6
+      },
+      "actIcons": {
+        "sheet": "office/theme-office/ui/act-icons.png",
+        "frame": {
+          "width": 20,
+          "height": 20
+        },
+        "count": 10,
+        "columns": 10,
+        "rows": 1
+      },
+      "actTap": {
+        "sheet": "office/ui/act-tap.png",
+        "frame": {
+          "width": 20,
+          "height": 20
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "actKnock": {
+        "sheet": "office/ui/act-knock.png",
+        "frame": {
+          "width": 20,
+          "height": 20
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "actHighfive": {
+        "sheet": "office/ui/act-highfive.png",
+        "frame": {
+          "width": 20,
+          "height": 20
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "popupFrame": {
+        "sheet": "office/ui/popup-frame.png",
+        "frame": {
+          "width": 48,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "popupTail": {
+        "sheet": "office/ui/popup-tail.png",
+        "frame": {
+          "width": 14,
+          "height": 8
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "panelFrame": {
+        "sheet": "office/theme-office/ui/panel-frame.png",
+        "frame": {
+          "width": 48,
+          "height": 48
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "panelHeader": {
+        "sheet": "office/ui/panel-header.png",
+        "frame": {
+          "width": 48,
+          "height": 24
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "hazardTape": {
+        "sheet": "office/ui/hazard-tape.png",
+        "frame": {
+          "width": 32,
+          "height": 8
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "stampUrgent": {
+        "sheet": "office/ui/stamp-urgent.png",
+        "frame": {
+          "width": 96,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "stampDone": {
+        "sheet": "office/ui/stamp-done.png",
+        "frame": {
+          "width": 96,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "stampClosed": {
+        "sheet": "office/ui/stamp-closed.png",
+        "frame": {
+          "width": 96,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "crtBezel": {
+        "sheet": "office/ui/crt-bezel.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "avatarFrame": {
+        "sheet": "office/ui/avatar-frame.png",
+        "frame": {
+          "width": 40,
+          "height": 40
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "avatarFrameNeeds": {
+        "sheet": "office/ui/avatar-frame-needs.png",
+        "frame": {
+          "width": 40,
+          "height": 40
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "skinFrame": {
+        "sheet": "office/ui/skin-frame.png",
+        "frame": {
+          "width": 40,
+          "height": 40
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "skinFrameSelected": {
+        "sheet": "office/ui/skin-frame-selected.png",
+        "frame": {
+          "width": 40,
+          "height": 40
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "stageStrip": {
+        "sheet": "office/ui/stage-strip.png",
+        "frame": {
+          "width": 32,
+          "height": 16
+        },
+        "count": 8,
+        "frames": 8,
+        "columns": 4,
+        "rows": 2
+      },
+      "gitStatus": {
+        "sheet": "office/ui/git-status.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 4,
+        "frames": 4,
+        "columns": 4,
+        "rows": 1
+      },
+      "badgeModel": {
+        "sheet": "office/ui/badge-model.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 7,
+        "frames": 7,
+        "columns": 7,
+        "rows": 1
+      },
+      "logo": {
+        "sheet": "office/theme-office/ui/logo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "favicon32": {
+        "sheet": "office/theme-office/ui/favicon-32.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "faviconNeeds32": {
+        "sheet": "office/ui/favicon-needs-32.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "cursorBoss": {
+        "sheet": "office/ui/cursor-boss.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "cursorHand": {
+        "sheet": "office/ui/cursor-hand.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "emptyInbox": {
+        "sheet": "office/ui/empty-inbox.png",
+        "frame": {
+          "width": 128,
+          "height": 96
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "emptyFloor": {
+        "sheet": "office/ui/empty-floor.png",
+        "frame": {
+          "width": 128,
+          "height": 96
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "orchaDown": {
+        "sheet": "office/ui/orcha-down.png",
+        "frame": {
+          "width": 128,
+          "height": 96
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "boss": {
+        "sheet": "office/theme-office/characters/boss.png",
+        "frame": {
+          "width": 48,
+          "height": 72
+        },
+        "count": 4,
+        "columns": 4,
+        "rows": 10
+      },
+      "bossPortrait": {
+        "sheet": "office/characters/boss-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "headsetPortrait": {
+        "sheet": "office/characters/headset-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "headsetPortraitPolo": {
+        "sheet": "office/characters/headset-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "redCapPortrait": {
+        "sheet": "office/characters/red-cap-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "redCapPortraitPolo": {
+        "sheet": "office/characters/red-cap-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "bunPortrait": {
+        "sheet": "office/characters/bun-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "bunPortraitPolo": {
+        "sheet": "office/characters/bun-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "shinyPortrait": {
+        "sheet": "office/characters/shiny-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "shinyPortraitPolo": {
+        "sheet": "office/characters/shiny-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "curlyPortrait": {
+        "sheet": "office/characters/curly-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "curlyPortraitPolo": {
+        "sheet": "office/characters/curly-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "mohawkPortrait": {
+        "sheet": "office/characters/mohawk-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "mohawkPortraitPolo": {
+        "sheet": "office/characters/mohawk-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "silverPortrait": {
+        "sheet": "office/characters/silver-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "silverPortraitPolo": {
+        "sheet": "office/characters/silver-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "specsPortrait": {
+        "sheet": "office/characters/specs-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "specsPortraitPolo": {
+        "sheet": "office/characters/specs-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "robotPortrait": {
+        "sheet": "office/characters/robot-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "robotPortraitPolo": {
+        "sheet": "office/characters/robot-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "crtBotPortrait": {
+        "sheet": "office/characters/crt-bot-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "crtBotPortraitPolo": {
+        "sheet": "office/characters/crt-bot-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "shibaPortrait": {
+        "sheet": "office/characters/shiba-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "shibaPortraitPolo": {
+        "sheet": "office/characters/shiba-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "huskyPortrait": {
+        "sheet": "office/characters/husky-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "huskyPortraitPolo": {
+        "sheet": "office/characters/husky-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "tabbyPortrait": {
+        "sheet": "office/characters/tabby-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "tabbyPortraitPolo": {
+        "sheet": "office/characters/tabby-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "blackCatPortrait": {
+        "sheet": "office/characters/black-cat-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "blackCatPortraitPolo": {
+        "sheet": "office/characters/black-cat-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "raccoonPortrait": {
+        "sheet": "office/characters/raccoon-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "raccoonPortraitPolo": {
+        "sheet": "office/characters/raccoon-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "capybaraPortrait": {
+        "sheet": "office/characters/capybara-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "capybaraPortraitPolo": {
+        "sheet": "office/characters/capybara-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "crewCutPortrait": {
+        "sheet": "office/characters/crew-cut-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "crewCutPortraitPolo": {
+        "sheet": "office/characters/crew-cut-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "ponytailPortrait": {
+        "sheet": "office/characters/ponytail-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "ponytailPortraitPolo": {
+        "sheet": "office/characters/ponytail-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "beardPortrait": {
+        "sheet": "office/characters/beard-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "beardPortraitPolo": {
+        "sheet": "office/characters/beard-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "bobPortrait": {
+        "sheet": "office/characters/bob-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "bobPortraitPolo": {
+        "sheet": "office/characters/bob-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "spikePortrait": {
+        "sheet": "office/characters/spike-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "spikePortraitPolo": {
+        "sheet": "office/characters/spike-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "braidsPortrait": {
+        "sheet": "office/characters/braids-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "braidsPortraitPolo": {
+        "sheet": "office/characters/braids-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "beaniePortrait": {
+        "sheet": "office/characters/beanie-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "beaniePortraitPolo": {
+        "sheet": "office/characters/beanie-portrait-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "floor": {
+        "sheet": "office/theme-office/tiles/floor.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "wall": {
+        "sheet": "office/theme-office/tiles/wall.png",
+        "frame": {
+          "width": 96,
+          "height": 96
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "aisle": {
+        "sheet": "office/tiles/aisle.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "benchL": {
+        "sheet": "office/objects/bench-l.png",
+        "frame": {
+          "width": 32,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "benchM": {
+        "sheet": "office/objects/bench-m.png",
+        "frame": {
+          "width": 32,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "benchR": {
+        "sheet": "office/objects/bench-r.png",
+        "frame": {
+          "width": 32,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "monitor": {
+        "sheet": "office/objects/monitor.png",
+        "frame": {
+          "width": 32,
+          "height": 24
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "chairBack": {
+        "sheet": "office/objects/chair-back.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "chairFront": {
+        "sheet": "office/objects/chair-front.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "benchTag": {
+        "sheet": "office/objects/bench-tag.png",
+        "frame": {
+          "width": 64,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "banner": {
+        "sheet": "office/theme-office/objects/banner.png",
+        "frame": {
+          "width": 256,
+          "height": 32
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "kpiBoard": {
+        "sheet": "office/objects/kpi-board.png",
+        "frame": {
+          "width": 96,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "windowNight": {
+        "sheet": "office/objects/window-night.png",
+        "frame": {
+          "width": 96,
+          "height": 48
+        },
+        "count": 2,
+        "frames": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "clock": {
+        "sheet": "office/objects/clock.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "cctv": {
+        "sheet": "office/objects/cctv.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 2,
+        "frames": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "door": {
+        "sheet": "office/theme-office/objects/door.png",
+        "frame": {
+          "width": 32,
+          "height": 64
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "gong": {
+        "sheet": "office/objects/gong.png",
+        "frame": {
+          "width": 64,
+          "height": 48
+        },
+        "count": 3,
+        "frames": 3,
+        "columns": 3,
+        "rows": 1
+      },
+      "posterRecruit": {
+        "sheet": "office/theme-office/objects/poster-recruit.png",
+        "frame": {
+          "width": 48,
+          "height": 32
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "phoneRack": {
+        "sheet": "office/objects/phone-rack.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "deskBuzzer": {
+        "sheet": "office/objects/desk-buzzer.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "dormDoor": {
+        "sheet": "office/objects/dorm-door.png",
+        "frame": {
+          "width": 32,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "bossOffice": {
+        "sheet": "office/objects/boss-office.png",
+        "frame": {
+          "width": 192,
+          "height": 96
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "noodleBoxes": {
+        "sheet": "office/objects/noodle-boxes.png",
+        "frame": {
+          "width": 32,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "drinkCrates": {
+        "sheet": "office/objects/drink-crates.png",
+        "frame": {
+          "width": 32,
+          "height": 48
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "waterCooler": {
+        "sheet": "office/objects/water-cooler.png",
+        "frame": {
+          "width": 32,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "printer": {
+        "sheet": "office/objects/printer.png",
+        "frame": {
+          "width": 32,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "shredder": {
+        "sheet": "office/objects/shredder.png",
+        "frame": {
+          "width": 32,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "deskPhone": {
+        "sheet": "office/objects/desk-phone.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "noodleCup": {
+        "sheet": "office/objects/noodle-cup.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "mug": {
+        "sheet": "office/objects/mug.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "papers": {
+        "sheet": "office/objects/papers.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "energyDrink": {
+        "sheet": "office/objects/energy-drink.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "benchTagPolo": {
+        "sheet": "office/objects/bench-tag-polo.png",
+        "frame": {
+          "width": 64,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "fluorescent": {
+        "sheet": "office/objects/fluorescent.png",
+        "frame": {
+          "width": 96,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "phoneChargers": {
+        "sheet": "office/objects/phone-chargers.png",
+        "frame": {
+          "width": 48,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "wallFan": {
+        "sheet": "office/objects/wall-fan.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "dormBlock": {
+        "sheet": "office/objects/dorm-block.png",
+        "frame": {
+          "width": 128,
+          "height": 96
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "bubble": {
+        "sheet": "office/ui/bubble.png",
+        "frame": {
+          "width": 24,
+          "height": 24
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "bubbleTail": {
+        "sheet": "office/ui/bubble-tail.png",
+        "frame": {
+          "width": 8,
+          "height": 6
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "markerNeeds": {
+        "sheet": "office/ui/marker-needs.png",
+        "frame": {
+          "width": 16,
+          "height": 24
+        },
+        "count": 2,
+        "frames": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "icons16": {
+        "sheet": "office/ui/icons-16.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 14,
+        "frames": 14,
+        "columns": 7,
+        "rows": 2
+      },
+      "icons32": {
+        "sheet": "office/ui/icons-32.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 14,
+        "frames": 14,
+        "columns": 7,
+        "rows": 2
+      },
+      "fxStars": {
+        "sheet": "office/ui/fx-stars.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 3,
+        "frames": 3,
+        "columns": 3,
+        "rows": 1
+      },
+      "fxCrack": {
+        "sheet": "office/theme-office/ui/fx-crack.png",
+        "frame": {
+          "width": 48,
+          "height": 16
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "fxZap": {
+        "sheet": "office/theme-office/ui/fx-zap.png",
+        "frame": {
+          "width": 48,
+          "height": 16
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "whip": {
+        "sheet": "office/ui/whip.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "zapper": {
+        "sheet": "office/ui/zapper.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "fxJolt": {
+        "sheet": "office/ui/fx-jolt.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 3,
+        "frames": 3,
+        "columns": 3,
+        "rows": 1
+      },
+      "fxHeart": {
+        "sheet": "office/ui/fx-heart.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 3,
+        "frames": 3,
+        "columns": 3,
+        "rows": 1
+      },
+      "megaphone": {
+        "sheet": "office/ui/megaphone.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "newspaper": {
+        "sheet": "office/ui/newspaper.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "coffee": {
+        "sheet": "office/ui/coffee.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "walkie": {
+        "sheet": "office/ui/walkie.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "fxSleep": {
+        "sheet": "office/ui/fx-sleep.png",
+        "frame": {
+          "width": 16,
+          "height": 24
+        },
+        "count": 3,
+        "frames": 3,
+        "columns": 3,
+        "rows": 1
+      },
+      "fxPoof": {
+        "sheet": "office/ui/fx-poof.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 3,
+        "frames": 3,
+        "columns": 3,
+        "rows": 1
+      },
+      "fxSmoke": {
+        "sheet": "office/ui/fx-smoke.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 3,
+        "frames": 3,
+        "columns": 3,
+        "rows": 1
+      },
+      "yard": {
+        "sheet": "office/tiles/yard.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "cornerLamp": {
+        "sheet": "office/ui/corner-lamp.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "cctvCorners": {
+        "sheet": "office/ui/cctv-corners.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 4,
+        "columns": 2,
+        "rows": 2
+      },
+      "tapeCorner": {
+        "sheet": "office/ui/tape-corner.png",
+        "frame": {
+          "width": 24,
+          "height": 24
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "notePaper": {
+        "sheet": "office/ui/note-paper.png",
+        "frame": {
+          "width": 48,
+          "height": 48
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "clipboard": {
+        "sheet": "office/ui/clipboard.png",
+        "frame": {
+          "width": 48,
+          "height": 64
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "bgConcrete": {
+        "sheet": "office/ui/bg-concrete.png",
+        "frame": {
+          "width": 128,
+          "height": 128
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "bgMetal": {
+        "sheet": "office/ui/bg-metal.png",
+        "frame": {
+          "width": 128,
+          "height": 52
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "dividerFence": {
+        "sheet": "office/ui/divider-fence.png",
+        "frame": {
+          "width": 64,
+          "height": 8
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "stickerSet": {
+        "sheet": "office/ui/sticker-set.png",
+        "frame": {
+          "width": 192,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "cityDay": {
+        "sheet": "office/theme-office/background/city-day.png",
+        "frame": {
+          "width": 768,
+          "height": 224
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "cityDusk": {
+        "sheet": "office/theme-office/background/city-dusk.png",
+        "frame": {
+          "width": 768,
+          "height": 224
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "windowDay": {
+        "sheet": "office/theme-office/objects/window-day.png",
+        "frame": {
+          "width": 192,
+          "height": 48
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "plant": {
+        "sheet": "office/theme-office/objects/plant.png",
+        "frame": {
+          "width": 32,
+          "height": 48
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "plantHanging": {
+        "sheet": "office/theme-office/objects/plant-hanging.png",
+        "frame": {
+          "width": 32,
+          "height": 48
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "bookshelf": {
+        "sheet": "office/theme-office/objects/bookshelf.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "whiteboard": {
+        "sheet": "office/theme-office/objects/whiteboard.png",
+        "frame": {
+          "width": 96,
+          "height": 48
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "coffeeMachine": {
+        "sheet": "office/theme-office/objects/coffee-machine.png",
+        "frame": {
+          "width": 64,
+          "height": 48
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "deskLamp": {
+        "sheet": "office/theme-office/objects/desk-lamp.png",
+        "frame": {
+          "width": 16,
+          "height": 24
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "rug": {
+        "sheet": "office/theme-office/objects/rug.png",
+        "frame": {
+          "width": 128,
+          "height": 64
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "sofa": {
+        "sheet": "office/theme-office/objects/sofa.png",
+        "frame": {
+          "width": 96,
+          "height": 48
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "coffeeTable": {
+        "sheet": "office/theme-office/objects/coffee-table.png",
+        "frame": {
+          "width": 48,
+          "height": 32
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "officeCat": {
+        "sheet": "office/theme-office/characters/office-cat.png",
+        "frame": {
+          "width": 128,
+          "height": 96
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "benchPack": {
+        "sheet": "office/theme-office/objects/bench-pack.png",
+        "frame": {
+          "width": 576,
+          "height": 64
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "boxes": {
+        "sheet": "office/theme-office/objects/boxes.png",
+        "frame": {
+          "width": 288,
+          "height": 48
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "tagClosed": {
+        "sheet": "office/theme-office/ui/tag-closed.png",
+        "frame": {
+          "width": 64,
+          "height": 16
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "mapFrame": {
+        "sheet": "office/theme-office/ui/map-frame.png",
+        "frame": {
+          "width": 96,
+          "height": 96
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "bgPaper": {
+        "sheet": "office/theme-office/ui/bg-paper.png",
+        "frame": {
+          "width": 128,
+          "height": 128
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "headerTrim": {
+        "sheet": "office/theme-office/ui/header-trim.png",
+        "frame": {
+          "width": 64,
+          "height": 12
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "gateOpen": {
+        "sheet": "office/theme-office/gate/gate-open.png",
+        "frame": {
+          "width": 768,
+          "height": 192
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "lobbyDay": {
+        "sheet": "office/theme-office/gate/lobby-day.png",
+        "frame": {
+          "width": 640,
+          "height": 360
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "charac": {
+        "sheet": "office/theme-office/characters/boss-portrait.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "obj": {
+        "sheet": "office/theme-office/objects/boss-office.png",
+        "frame": {
+          "width": 192,
+          "height": 96
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "": {
+        "sheet": "office/theme-office/ui/sticker-set.png",
+        "frame": {
+          "width": 192,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "t": {
+        "sheet": "office/theme-office/tiles/aisle.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 1,
+        "frames": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "iconsUi216": {
+        "sheet": "office/ui/icons-ui2-16.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 35,
+        "columns": 7,
+        "rows": 5
+      },
+      "iconsUi232": {
+        "sheet": "office/ui/icons-ui2-32.png",
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "count": 35,
+        "columns": 7,
+        "rows": 5
+      },
+      "spinner16": {
+        "sheet": "office/ui/spinner-16.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 8,
+        "columns": 8,
+        "rows": 1
+      },
+      "thinkingDots": {
+        "sheet": "office/ui/thinking-dots.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 3,
+        "columns": 3,
+        "rows": 1
+      },
+      "hpBarLg": {
+        "sheet": "office/ui/hp-bar-lg.png",
+        "frame": {
+          "width": 64,
+          "height": 12
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "hpFillLg": {
+        "sheet": "office/ui/hp-fill-lg.png",
+        "frame": {
+          "width": 48,
+          "height": 8
+        },
+        "count": 3,
+        "columns": 1,
+        "rows": 3
+      },
+      "staminaFillLg": {
+        "sheet": "office/ui/stamina-fill-lg.png",
+        "frame": {
+          "width": 48,
+          "height": 8
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "hpIcons": {
+        "sheet": "office/ui/hp-icons.png",
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "count": 2,
+        "columns": 2,
+        "rows": 1
+      },
+      "hero": {
+        "sheet": "office/landing/hero.png",
+        "frame": {
+          "width": 960,
+          "height": 360
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "featureFloor": {
+        "sheet": "office/landing/feature-floor.png",
+        "frame": {
+          "width": 240,
+          "height": 160
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "featureChat": {
+        "sheet": "office/landing/feature-chat.png",
+        "frame": {
+          "width": 240,
+          "height": 160
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "featureHp": {
+        "sheet": "office/landing/feature-hp.png",
+        "frame": {
+          "width": 240,
+          "height": 160
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "featureHr": {
+        "sheet": "office/landing/feature-hr.png",
+        "frame": {
+          "width": 240,
+          "height": 160
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "wordmark": {
+        "sheet": "office/landing/wordmark.png",
+        "frame": {
+          "width": 320,
+          "height": 80
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "ogImage": {
+        "sheet": "office/landing/og-image.png",
+        "frame": {
+          "width": 1200,
+          "height": 630
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "dividerWire": {
+        "sheet": "office/landing/divider-wire.png",
+        "frame": {
+          "width": 64,
+          "height": 16
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "bgTile": {
+        "sheet": "office/landing/bg-tile.png",
+        "frame": {
+          "width": 64,
+          "height": 64
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "appIcon192": {
+        "sheet": "office/ui/app-icon-192.png",
+        "frame": {
+          "width": 192,
+          "height": 192
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "appIcon512": {
+        "sheet": "office/ui/app-icon-512.png",
+        "frame": {
+          "width": 512,
+          "height": 512
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "appleTouch180": {
+        "sheet": "office/ui/apple-touch-180.png",
+        "frame": {
+          "width": 180,
+          "height": 180
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "gateNight": {
+        "sheet": "office/gate/gate-night.png",
+        "frame": {
+          "width": 640,
+          "height": 360
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "badgeCard": {
+        "sheet": "office/gate/badge-card.png",
+        "frame": {
+          "width": 160,
+          "height": 100
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "stampApproved": {
+        "sheet": "office/gate/stamp-approved.png",
+        "frame": {
+          "width": 128,
+          "height": 48
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "stampDenied": {
+        "sheet": "office/gate/stamp-denied.png",
+        "frame": {
+          "width": 128,
+          "height": 48
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "loadingFrame": {
+        "sheet": "office/gate/loading-frame.png",
+        "frame": {
+          "width": 96,
+          "height": 16
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "loadingFill": {
+        "sheet": "office/gate/loading-fill.png",
+        "frame": {
+          "width": 16,
+          "height": 8
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "turnstileAnim": {
+        "sheet": "office/gate/turnstile-anim.png",
+        "frame": {
+          "width": 256,
+          "height": 64
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      },
+      "headerWire": {
+        "sheet": "office/ui/header-wire.png",
+        "frame": {
+          "width": 64,
+          "height": 12
+        },
+        "count": 1,
+        "columns": 1,
+        "rows": 1
+      }
+    },
+    "hpBar": {
+      "left": 3,
+      "right": 3,
+      "top": 2,
+      "bottom": 2,
+      "fill": {
+        "x": 4,
+        "y": 2,
+        "width": 24,
+        "height": 4
+      }
+    },
+    "namePlate": {
+      "left": 4,
+      "right": 4,
+      "top": 3,
+      "bottom": 3
+    },
+    "teamSignHanging": {
+      "left": 18,
+      "right": 18,
+      "top": 14,
+      "bottom": 6,
+      "tint": {
+        "x": 4,
+        "y": 14,
+        "width": 88,
+        "height": 12
+      }
+    },
+    "iconsUi": {
+      "columns": 7,
+      "rows": 6,
+      "order": [
+        "search",
+        "settings",
+        "bell",
+        "sound-on",
+        "sound-off",
+        "send",
+        "attach",
+        "close",
+        "menu",
+        "chevron-left",
+        "chevron-right",
+        "expand",
+        "open-in-orcha",
+        "show-on-floor",
+        "remove",
+        "close-project",
+        "new-agent",
+        "new-project",
+        "filter",
+        "rec",
+        "tool",
+        "pencil",
+        "key-enter",
+        "key-esc",
+        "branch",
+        "commit",
+        "worktree",
+        "file",
+        "folder",
+        "diff",
+        "fuel",
+        "tab-chat",
+        "tab-changes",
+        "tab-files",
+        "tab-setup",
+        "warning",
+        "check",
+        "cross",
+        "push",
+        "pull",
+        "spare-1",
+        "spare-2"
+      ],
+      "sizes": [
+        16,
+        32
+      ]
+    },
+    "actIcons": {
+      "frame": {
+        "width": 20,
+        "height": 20
+      },
+      "columns": 10,
+      "order": [
+        "tap",
+        "knock",
+        "bonk",
+        "megaphone",
+        "buzzer",
+        "whip",
+        "zap",
+        "coffee",
+        "high-five",
+        "gags"
+      ]
+    },
+    "popupFrame": {
+      "left": 6,
+      "top": 6,
+      "right": 9,
+      "bottom": 9
+    },
+    "panelFrame": {
+      "left": 16,
+      "top": 16,
+      "right": 16,
+      "bottom": 16
+    },
+    "panelHeader": {
+      "left": 8,
+      "top": 4,
+      "right": 8,
+      "bottom": 5
+    },
+    "crtBezel": {
+      "left": 12,
+      "top": 11,
+      "right": 12,
+      "bottom": 14
+    },
+    "stageStrip": {
+      "frame": {
+        "width": 32,
+        "height": 16
+      },
+      "columns": 4,
+      "rows": 2,
+      "order": [
+        "thinking",
+        "coding",
+        "testing",
+        "finished"
+      ],
+      "states": [
+        "off",
+        "on"
+      ]
+    },
+    "iconsUi2": {
+      "columns": 7,
+      "rows": 5,
+      "order": [
+        "caret-down",
+        "caret-right",
+        "more",
+        "copy",
+        "stop",
+        "resume",
+        "jump-latest",
+        "pin",
+        "tool-bash",
+        "tool-read",
+        "tool-edit",
+        "tool-write",
+        "tool-grep",
+        "tool-web",
+        "tool-task",
+        "tool-todo",
+        "thinking",
+        "clock",
+        "heart",
+        "bolt",
+        "boss",
+        "image",
+        "skill",
+        "shell",
+        "retry",
+        "hourglass",
+        "lock",
+        "crown",
+        "theme-office",
+        "theme-compound",
+        "sun",
+        "moon",
+        "keyboard",
+        "help",
+        "spare"
+      ]
+    }
+  },
+  "themes": {
+    "office": {
+      "backgrounds": {
+        "cityDay": "office/theme-office/background/city-day.png",
+        "cityDusk": "office/theme-office/background/city-dusk.png"
+      },
+      "tiles": {
+        "floor": "office/theme-office/tiles/floor.png",
+        "aisle": "office/theme-office/tiles/aisle.png",
+        "wall": "office/theme-office/tiles/wall.png"
+      },
+      "objects": {
+        "windowDay": "office/theme-office/objects/window-day.png",
+        "banner": "office/theme-office/objects/banner.png",
+        "posterRecruit": "office/theme-office/objects/poster-recruit.png",
+        "door": "office/theme-office/objects/door.png",
+        "doorOpen": "office/theme-office/objects/door-open.png",
+        "bossOffice": "office/theme-office/objects/boss-office.png",
+        "plant": "office/theme-office/objects/plant.png",
+        "plantHanging": "office/theme-office/objects/plant-hanging.png",
+        "bookshelf": "office/theme-office/objects/bookshelf.png",
+        "whiteboard": "office/theme-office/objects/whiteboard.png",
+        "coffeeMachine": "office/theme-office/objects/coffee-machine.png",
+        "deskLamp": "office/theme-office/objects/desk-lamp.png",
+        "rug": "office/theme-office/objects/rug.png",
+        "sofa": "office/theme-office/objects/sofa.png",
+        "coffeeTable": "office/theme-office/objects/coffee-table.png",
+        "benchPack": "office/theme-office/objects/bench-pack.png",
+        "boxes": "office/theme-office/objects/boxes.png"
+      },
+      "characters": {
+        "officeCat": "office/theme-office/characters/office-cat.png",
+        "bouncer": "office/theme-office/characters/bouncer.png",
+        "boss": "office/theme-office/characters/boss.png",
+        "bossPortrait": "office/theme-office/characters/boss-portrait.png"
+      },
+      "ui": {
+        "tagClosed": "office/theme-office/ui/tag-closed.png",
+        "logo": "office/theme-office/ui/logo.png",
+        "favicon32": "office/theme-office/ui/favicon-32.png",
+        "actIcons": "office/theme-office/ui/act-icons.png",
+        "mapFrame": "office/theme-office/ui/map-frame.png",
+        "bgPaper": "office/theme-office/ui/bg-paper.png",
+        "headerTrim": "office/theme-office/ui/header-trim.png",
+        "panelFrame": "office/theme-office/ui/panel-frame.png",
+        "stickerSet": "office/theme-office/ui/sticker-set.png",
+        "fxCrack": "office/theme-office/ui/fx-crack.png",
+        "fxZap": "office/theme-office/ui/fx-zap.png"
+      },
+      "gate": {
+        "gateOpen": "office/theme-office/gate/gate-open.png",
+        "lobbyDay": "office/theme-office/gate/lobby-day.png"
+      }
+    }
+  },
+  "landing": {
+    "hero": "office/landing/hero.png",
+    "featureFloor": "office/landing/feature-floor.png",
+    "featureChat": "office/landing/feature-chat.png",
+    "featureHp": "office/landing/feature-hp.png",
+    "featureHr": "office/landing/feature-hr.png",
+    "wordmark": "office/landing/wordmark.png",
+    "ogImage": "office/landing/og-image.png",
+    "dividerWire": "office/landing/divider-wire.png",
+    "bgTile": "office/landing/bg-tile.png"
+  },
+  "gate": {
+    "gateNight": "office/gate/gate-night.png",
+    "gateOpen": "office/gate/gate-open.png",
+    "badgeCard": "office/gate/badge-card.png",
+    "stampApproved": "office/gate/stamp-approved.png",
+    "stampDenied": "office/gate/stamp-denied.png",
+    "loadingFrame": "office/gate/loading-frame.png",
+    "loadingFill": "office/gate/loading-fill.png",
+    "turnstileAnim": "office/gate/turnstile-anim.png"
+  }
+}

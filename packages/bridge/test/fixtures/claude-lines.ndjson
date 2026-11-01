@@ -1,0 +1,7 @@
+{"type":"user","timestamp":"2026-10-30T05:00:00.000Z","uuid":"u1","isSidechain":false,"message":{"role":"user","content":"placeholder user text"}}
+{"type":"assistant","timestamp":"2026-10-30T05:00:01.000Z","uuid":"a1","isSidechain":false,"message":{"role":"assistant","content":[{"type":"thinking","thinking":"hidden"},{"type":"text","text":"placeholder reply"},{"type":"tool_use","id":"tool-1","name":"Bash","input":{"command":"bun test","description":"run tests"}}]}}
+{"type":"user","timestamp":"2026-10-30T05:00:02.000Z","uuid":"u2","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"tool-1","is_error":false,"content":"ok"}]}}
+{"type":"user","isSidechain":true,"timestamp":"2026-10-30T05:00:03.000Z","uuid":"u3","message":{"role":"user","content":"sidechain should be skipped"}}
+{"type":"system","isMeta":true,"timestamp":"2026-10-30T05:00:04.000Z","uuid":"s1","message":"meta"}
+{"type":"assistant","timestamp":"2026-10-30T05:00:05.000Z","uuid":"a2","message":{"role":"assistant","content":[{"type":"text","text":"see <img src=x onerror=alert(1)>"},{"type":"image","source":{"type":"base64","media_type":"image/png","data":"aaaa"}}]}}
+not json

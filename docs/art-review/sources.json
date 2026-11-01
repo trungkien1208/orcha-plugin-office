@@ -1,0 +1,228 @@
+{
+  "characters": {
+    "crew-cut": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-bfc82e74-24e9-42d1-b133-288d4ceb6feb.png",
+    "specs": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-3877c94b-888e-4279-a94a-9167765dfaf7.png",
+    "boss": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-d9cd9de7-cbb6-4907-a309-0426402a01f4.png",
+    "bun": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-544d33a9-801d-4b7e-9f48-e10dc7384cc4.png",
+    "headset": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-809370f0-c22a-4f5d-985a-f9ac5343fa82.png",
+    "red-cap": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-801d1417-6604-4bff-b9bd-72637a7cf9e9.png",
+    "beard": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-60940fd4-3f3a-4ff9-9b2d-47e986bfda52.png",
+    "ponytail": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-c9173a47-65c6-4000-beb8-31941a44bd5e.png",
+    "bob": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-e5ba35e9-141d-4752-9f69-5ce257dc5f75.png",
+    "shiny": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-956a70f9-caaf-4851-a3ed-f3a289f2388b.png",
+    "curly": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-5ace5a7f-e2d5-48f7-b9ad-b2fcf289a580.png",
+    "spike": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-da9307c2-0bd1-46fb-81bb-70efdbbb1fab.png",
+    "beanie": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-ca3f6f94-5146-4635-90b3-0d6cdedee5b6.png",
+    "braids": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-ae80e122-7334-48d8-898e-3abf3daeeb52.png",
+    "mohawk": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-5fc1624f-a6d3-4236-adbc-515462b6060f.png",
+    "silver": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-97e8a681-8da5-4b7f-a9ab-e13917f21a6c.png",
+    "robot": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-fbf9c565-3300-4ab9-ab41-82b3f3801657.png",
+    "shiba": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-de6e4207-a90c-4b41-97a6-16d12ada64ea.png",
+    "tabby": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-4fffffb8-f9b8-42d6-9adf-4de14d378687.png",
+    "black-cat": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-f2bed34f-9bf6-4183-9020-8040bf2cc393.png",
+    "crt-bot": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-c3b10c73-c11c-455f-9395-eb8f8dc920bf.png",
+    "raccoon": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-03983d3d-92ac-4eb3-9626-9e7cda86bdc8.png",
+    "capybara": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-1a63df7d-83e9-4cb6-a6cd-6fea7bd23d76.png",
+    "husky": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-e5612343-7393-48d2-8911-9d0ded30cc82.png"
+  },
+  "objects": [
+    {
+      "file": "objects/chair-back.png",
+      "width": 32,
+      "height": 32,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-c64a1d36-f2d4-4212-a870-73d45aedd68f.png"
+    },
+    {
+      "file": "objects/chair-front.png",
+      "width": 32,
+      "height": 32,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-d18af8db-317a-4af8-9661-983ddc439273.png"
+    },
+    {
+      "file": "objects/desk-phone.png",
+      "width": 16,
+      "height": 16,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-2c6a2ad5-66dc-494e-9df1-3506e19a9004.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Dark corded desk telephone with handset across top, tiny white display and3x3 keys. Native canvas 16x16 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/mug.png",
+      "width": 16,
+      "height": 16,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-7be1c5ec-a991-4e72-93c6-be6b91aa5ffa.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: White ceramic coffee mug with dark coffee surface, loop handle and small red stripe. Native canvas 16x16 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/noodle-cup.png",
+      "width": 16,
+      "height": 16,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-0301d06b-be90-4987-aca9-0f082551ea14.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: White tapered instant-noodle cup with red sleeve, cream noodles on top, two chopsticks sticking out. Native canvas 16x16 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/phone-rack.png",
+      "width": 16,
+      "height": 16,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-9a7210bf-7521-4a71-a301-81675662df89.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Tiny three-slot steel phone rack holding three upright dark smartphones with cyan lit rectangular screens on one low base. Native canvas 16x16 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/clock.png",
+      "width": 16,
+      "height": 16,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-8cc2c112-5277-4aae-a2bb-ba9f17b7c90a.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Round white office wall clock, navy hour tick marks, dark hands pointing10:10. Native canvas 16x16 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/desk-buzzer.png",
+      "width": 16,
+      "height": 16,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-ec1c2aa0-f058-4b96-aa77-8b9823666a1f.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Large red round desk buzzer button with two-tone cap and white small gleam, on dark square base. Native canvas 16x16 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/energy-drink.png",
+      "width": 16,
+      "height": 16,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-f19842d7-f9ee-4ed8-a191-805896fafb2f.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Slim energy drink can, dark steel body with red stripe, white lightning pictogram and pull tab. Native canvas 16x16 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/papers.png",
+      "width": 16,
+      "height": 16,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-1cd92f20-23a0-425b-85d1-063c3af7ff0e.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Stack of three staggered white office paper sheets with tiny navy print lines and red paperclip. Native canvas 16x16 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/door.png",
+      "width": 32,
+      "height": 64,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-78c54292-7294-427a-b14c-1aee948d67c3.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Closed pale steel entrance door with rectangular frosted window, red header panel, small horizontal handle and dark low threshold. No text. Native canvas 32x64 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/dorm-door.png",
+      "width": 32,
+      "height": 64,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-fd661a93-326d-46c2-842c-4b1e6202f987.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Open pale steel dormitory doorway showing TWO bunk beds stacked vertically inside, white mattresses, pale teal grey blankets, dark ladder, door swung partly left. Tiny red header plate without text. No bars. Native canvas 32x64 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/drink-crates.png",
+      "width": 32,
+      "height": 48,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-bb82f234-643e-4b00-ab7a-275ac5a1b060.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Two stacked dark plastic energy drink crates, open gridded sides showing red cans, red block labels, pale steel corners. Native canvas 32x48 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/noodle-boxes.png",
+      "width": 32,
+      "height": 48,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-14fd74d5-7791-4d72-807c-1eb34365721e.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Three stacked corrugated instant-noodle cartons, cream #fff3c4 and tan #c98f6a packing, red block labels with noodle bowl pictograms, tape and folded flaps. No real writing. Native canvas 32x48 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/printer.png",
+      "width": 32,
+      "height": 64,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-0edff7af-ad94-4339-a719-b3d1742f4a65.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Floor-standing office photocopier printer, pale grey with dark hinged scanner lid, cyan control display, paper in tray, lower drawers and small vents. Native canvas 32x64 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/shredder.png",
+      "width": 32,
+      "height": 64,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-b77a053c-bec6-445a-a18a-7ae5feea4a73.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Tall slim paper shredder, dark steel head with one white paper entering slot, pale grey waste bin with small window showing shredded strips. Native canvas 32x64 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/water-cooler.png",
+      "width": 32,
+      "height": 64,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-1257689c-cfbc-4e14-aaf9-41ced8cc6653.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Water cooler with large cyan-blue water bottle on pale grey dispenser, red and cyan taps, recessed tray, lower vent, plinth. Native canvas 32x64 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/boss-office.png",
+      "width": 192,
+      "height": 96,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-32eab6b3-1d92-4ab6-aad3-78b6d617fea3.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Rectangular glass-walled boss office, top-down three-quarter RPG NOT isometric. Bright pale teal grey floor. Dark brown wood desk #8d5a3b #c98f6a across centre, black leather chair behind. On desk left three stacks of banknotes in #8fa3a0 #c9d8d4 with white bands, right a money counter with paper notes fed through and cyan display, white coffee mug, red buzzer. Thin steel glass framing, sparse pale cyan glass streaks, transparent glass allows furniture view. Front glass doorway on right. No people, no letters, no extra scenery. Native canvas 192x96 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/cctv.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-1d07a532-ad4a-42c9-9b6c-8758fd4aed5c.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Exactly TWO matching ceiling dome CCTV camera frames side by side, each16x16. Pale steel ceiling mount, dark navy hemispherical dome, small cyan lens. Frame1 tiny red LED on, frame2 dark LED. Native canvas 32x16 pixels, 2 equal frames in one horizontal row. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/gong.png",
+      "width": 192,
+      "height": 48,
+      "columns": 3,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-5795e7e4-23dd-416a-b4e5-6f9b9e6cc67e.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Exactly THREE matching ceremonial gong frames side by side, each64x48 native. Circular cream #fff3c4 metal disc with #e2b089 tan shade and central circular boss, hanging cords and dark wood rectangular stand #8d5a3b with feet. Frame1 still, frame2 gong tilted right with small mallet at edge, frame3 gong tilted left with tiny cream ringing ticks. No #ffb020. Native canvas 192x48 pixels, 3 equal frames in one horizontal row. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "objects/window-night.png",
+      "width": 192,
+      "height": 48,
+      "columns": 2,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-e9fd29b3-39af-46ba-a32a-73f26b05fa7f.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Exactly TWO matching night windows side by side, each96x48 native. Unbarred pale steel frame. Dark #1d2747 sky, tall concrete compound boundary wall across lower third, two dark palm silhouettes above, casino buildings with purple pink cyan neon rectangles and sign strokes. Second frame differs only neon flicker. No readable words, no people, no bars. Native canvas 192x48 pixels, 2 equal frames in one horizontal row. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "ui/megaphone.png",
+      "width": 16,
+      "height": 16,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-735c6e19-ece6-482c-963a-55ea9a681928.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Handheld megaphone, pale grey cone with white lip, red body, dark grip. Pixel menu icon. Native canvas 16x16 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "ui/newspaper.png",
+      "width": 16,
+      "height": 16,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-774c9c4b-052f-49ef-930c-3158530e6959.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Rolled white newspaper with curled end, navy tiny print marks and narrow red band. Pixel menu icon. Native canvas 16x16 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "ui/walkie.png",
+      "width": 16,
+      "height": 16,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-a0771de5-d6bf-4716-9f03-76fe329f07a0.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: Black handheld walkie-talkie with antenna, pale steel display, red push-to-talk button and three speaker grille marks. Pixel menu icon. Native canvas 16x16 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    },
+    {
+      "file": "ui/coffee.png",
+      "width": 16,
+      "height": 16,
+      "columns": 1,
+      "source": "~/.codex/generated_images/01a18b50-cbd7-7af0-9933-288ed2f91e89/exec-942f383b-4de5-4825-82ff-06688f132a91.png",
+      "prompt": "Production isolated game sprite for Orcha Office. ONE asset: White takeaway coffee cup with red sleeve, pale grey lid, tiny white steam curl. Pixel menu icon. Native canvas 16x16 pixels. Make actual low-resolution pixel art using square chunky colour clusters; essential details readable at native size. Transparent background. Top-down3/4 RPG camera with top and front visible, parallel edges, NOT isometric. 1px #2f3a4f outline. Flat2-tone shading. No AA, gradients, shadows, text labels, watermark, people, unrelated objects. Cold fluorescent industrial office, bright and readable. Only palette #2f3a4f #c9d8d4 #bfcfcb #aebdb9 #e3ece9 #8fa3a0 #dfe5e4 #9aa8ad #b7c4c8 #2a2f38 #444b57 #3b4560 #c8322f #9e2522 #fff3c4 #1d2747 #6a4bd8 #e0559c #3fd2e8 #f6d2b2 #f3c9a5 #e2b089 #c98f6a #8d5a3b #ffffff #d0d0d0 #a0a0a0 #707070. Never #ffb020. Bottom-center asset in box with1px margin. Deliver sprite itself."
+    }
+  ]
+}
