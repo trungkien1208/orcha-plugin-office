@@ -1,6 +1,6 @@
 id = "easy-job"
 name = "Easy Job"
-version = "0.1.0"
+version = "0.1.1"
 min_herdr_version = "0.9.0"
 description = "Open the Easy Job office for your agents"
 platforms = ["macos", "linux"]

@@ -3,7 +3,7 @@ import type { SessionSnapshot } from "@easy-job/shared";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { launchAgentPlist } from "../src/cli.ts";
+import { launchAgentPlist, startViaOrcha } from "../src/cli.ts";
 import { startOrchaServer } from "../src/http/routes.ts";
 import { commandFor, webDistDir } from "../src/paths.ts";
 import { manifestFiles, runDoctor } from "../src/doctor.ts";
@@ -118,5 +118,46 @@ describe("page token", () => {
     saveToken(home, "a".repeat(64));
     expect(readToken(home)).toBe("a".repeat(64));
     expect(fs.statSync(tokenFile(home)).mode & 0o777).toBe(0o600);
+  });
+});
+
+describe("open --via-orcha", () => {
+  /** Orcha's rule since plugin v1: a tab pane takes workspace_id, never target_pane_id or direction. */
+  function fakeClient(workspaces: Array<{ workspace_id: string; label: string; tokens?: Record<string, string> }>) {
+    const calls: Array<{ method: string; params: Record<string, unknown> }> = [];
+    const panes = workspaces.map((ws) => ({ pane_id: `${ws.workspace_id}:p1`, workspace_id: ws.workspace_id }));
+    const client = {
+      async request(method: string, params: Record<string, unknown> = {}) {
+        calls.push({ method, params });
+        if (method === "session.snapshot") return { snapshot: { workspaces, panes } };
+        if (method === "workspace.create") {
+          const ws = { workspace_id: `w${workspaces.length + 1}`, label: String(params.label) };
+          workspaces.push(ws);
+          panes.push({ pane_id: `${ws.workspace_id}:p1`, workspace_id: ws.workspace_id });
+          return { workspace: { workspace_id: ws.workspace_id } };
+        }
+        if (method === "plugin.pane.open" && params.placement === "tab" && ("target_pane_id" in params || "direction" in params)) {
+          throw new Error("tab plugin panes support workspace_id but not target_pane_id or direction");
+        }
+        return {};
+      },
+    };
+    return { client, calls };
+  }
+
+  test("opens the server tab in the existing bridge workspace by workspace_id", async () => {
+    const { client, calls } = fakeClient([
+      { workspace_id: "w1", label: "acme-superapp" },
+      { workspace_id: "w2", label: "Easy Job bridge", tokens: { easy_job: "bridge" } },
+    ]);
+    await startViaOrcha(client);
+    expect(calls.at(-1)).toEqual({ method: "plugin.pane.open", params: { plugin_id: "easy-job", entrypoint: "server", placement: "tab", workspace_id: "w2", focus: false } });
+  });
+
+  test("creates and tags the bridge workspace the first time", async () => {
+    const { client, calls } = fakeClient([{ workspace_id: "w1", label: "acme-superapp" }]);
+    await startViaOrcha(client);
+    expect(calls.map((call) => call.method)).toEqual(["session.snapshot", "workspace.create", "session.snapshot", "workspace.report_metadata", "plugin.pane.open"]);
+    expect(calls.at(-1)?.params.workspace_id).toBe("w2");
   });
 });

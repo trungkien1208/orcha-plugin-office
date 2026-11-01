@@ -7,7 +7,7 @@ import path from "node:path";
 import { formatChecks, runDoctor } from "./doctor.ts";
 import { pidAlive, readBridge, type BridgeRecord } from "./instance.ts";
 import { serve } from "./main.ts";
-import { createClient } from "./orcha/client.ts";
+import { createClient, type OrchaClient } from "./orcha/client.ts";
 import { connect, resolveSocketPath } from "./orcha/transport.ts";
 import { HOST_TOKEN, HOST_TOKEN_VALUE, HOST_WORKSPACE_LABEL, isHostWorkspace } from "./state/hide.ts";
 import { commandFor, publicArtDir } from "./paths.ts";
@@ -68,9 +68,9 @@ function startInBackground() {
 }
 
 /** Inside Orcha: host the bridge in an Orcha-managed tab of a hidden host workspace, without moving focus. */
-async function startViaOrcha(): Promise<void> {
+/** Open the plugin's server pane as a tab of the hidden bridge workspace (creating and tagging it the first time). */
+export async function startViaOrcha(client: OrchaClient = createClient(() => connect(resolveSocketPath()))): Promise<void> {
   type Snap = { snapshot: { workspaces: { workspace_id: string; label: string; tokens?: Record<string, string> }[]; panes: { pane_id: string; workspace_id: string }[] } };
-  const client = createClient(() => connect(resolveSocketPath()));
   let snap = (await client.request("session.snapshot")) as Snap;
   let host = snap.snapshot.workspaces.find(isHostWorkspace);
   if (!host) {
@@ -81,12 +81,12 @@ async function startViaOrcha(): Promise<void> {
     if (!host) throw new Error("Orcha did not create the Easy Job bridge workspace");
     await markHost(client, host.workspace_id);
   }
-  const target = snap.snapshot.panes.find((pane) => pane.workspace_id === host?.workspace_id);
-  await client.request("plugin.pane.open", { plugin_id: "easy-job", entrypoint: "server", placement: "tab", target_pane_id: target?.pane_id ?? null, focus: false });
+  // Tab placement takes the workspace; Orcha rejects target_pane_id or direction for it.
+  await client.request("plugin.pane.open", { plugin_id: "easy-job", entrypoint: "server", placement: "tab", workspace_id: host.workspace_id, focus: false });
 }
 
 /** Tag the host workspace so the Floor hides it (tokens are not restored after an Orcha restart; serve re-tags it). */
-export async function markHost(client: ReturnType<typeof createClient>, workspaceId: string) {
+export async function markHost(client: OrchaClient, workspaceId: string) {
   await client.request("workspace.report_metadata", { workspace_id: workspaceId, source: "easy-job", tokens: { [HOST_TOKEN]: HOST_TOKEN_VALUE } });
 }
 
